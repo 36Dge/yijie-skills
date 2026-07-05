@@ -1,0 +1,7 @@
+[workspace]
+name = "yijie-skills"
+stack = "Codex Skills + Plugins + Prompt Packs + Evals"
+
+[rules]
+no_real_merchant_data = true
+approval_required_for_high_risk_tools = true

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ListingDiagnosisOutput",
+  "type": "object",
+  "properties": {
+    "summary": { "type": "string" },
+    "issues": { "type": "array" },
+    "next_actions": { "type": "array" }
+  }
+}

@@ -1,0 +1,5 @@
+id = "amazon-listing-optimizer"
+name = "Amazon Listing Optimizer"
+version = "0.1.0"
+description = "Amazon listing diagnosis and optimization skills."
+risk_level = "medium"

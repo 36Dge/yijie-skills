@@ -1,0 +1,12 @@
+{
+  "name": "@yijie/skills",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "lint": "node scripts/lint-skills.mjs",
+    "test": "node scripts/lint-skills.mjs",
+    "package": "node scripts/package-plugin.mjs",
+    "eval": "node scripts/run-evals.mjs"
+  }
+}

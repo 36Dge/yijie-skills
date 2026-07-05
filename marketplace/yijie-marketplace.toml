@@ -1,0 +1,9 @@
+[marketplace]
+name = "Yijie AI Marketplace"
+version = "0.1.0"
+
+[[plugins]]
+id = "amazon-listing-optimizer"
+name = "Amazon Listing Optimizer"
+version = "0.1.0"
+risk_level = "medium"
