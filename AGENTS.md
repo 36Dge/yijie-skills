@@ -58,12 +58,19 @@
 
 ## 工具、契约与审批
 
-- 工具 schema、权限 scope 和公共数据结构先在 `yijie-contracts` 或连接器清单中定义；
+- 每个任务先标记 `contract-impact = none | additive | semantic | breaking`；分类覆盖跨进程、跨仓、跨版本及持久化/重放边界，工具名称、输入输出、scope、风险、审批、失败或 Skill 结构化公共输出变化都属于契约影响，`none` 必须说明理由；
+- 按 `breaking > semantic > additive > none` 的最高风险唯一选择；任一受支持交互可能失效即 breaking，不确定时不能假定 additive/none；
+- 易界工具 schema、权限 scope 和跨仓公共数据结构先在 `yijie-contracts` 定义并形成不可变引用；第三方平台细节可由连接器清单适配，但不能成为新的易界公共权威源；
 - Skill 只声明需要的最小工具集合，不直接嵌入 endpoint、token 或平台认证细节；
 - 工具风险等级必须与 Plugin manifest、Marketplace 元信息和 Agent Host 策略一致；
 - 读操作也要考虑 PII、费用和访问范围，不能默认全部是低风险；
 - 写操作必须明确影响对象、参数、幂等要求和审批点，缺少审批时只生成提案；
 - 不通过改写 prompt 绕过 `yijie-agent-host` 或 `yijie-connectors` 的拒绝结果。
+
+本仓固定精确 contract version、完整 commit 和可用时的 digest 后，相关 Skill/Plugin
+才可合并或发布；示例和 eval 必须覆盖 unknown、拒绝、失败及版本不兼容。dirty/floating
+sibling 只能用于本地候选验证。兄弟元仓存在时同时遵循
+`../yijie/docs/dev/contract-first.md`。
 
 ## 数据与 Eval
 
@@ -113,5 +120,6 @@ make package # 当前为占位，不生成发布包
 - 示例、checklist、schema、eval 和 rubric 与行为变更同步；
 - 数据公开、获授权或合成，且没有真实凭据和商家敏感信息；
 - 工具及风险定义与 contracts、connectors、Agent Host 策略一致；
+- 当 `contract-impact != none` 时按权威源路由：公共工具/结构化输出提供 contracts 不可变引用、consumer pin 和 conformance；Skill/Plugin 包、manifest 或 eval 基线提供自身版本/摘要、兼容 eval 与迁移证据；不适用的 contracts 字段写 `N/A + 理由`；所有路径记录发布/回滚顺序；`none` 只需分类理由；
 - `make lint` 和 `make test` 通过，真实模型质量没有被结构校验冒充；
 - 未完成的模型 eval、MCP 集成、打包或 Marketplace 发布被明确说明。
