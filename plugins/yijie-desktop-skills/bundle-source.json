@@ -1,8 +1,12 @@
 {
   "schema_version": 2,
   "bundle_id": "yijie.desktop.skill-packages",
-  "bundle_version": "0.2.0",
+  "bundle_version": "0.3.0",
   "distribution_channel": "local-development",
+  "authorized_distribution_channels": [
+    "local-development",
+    "desktop-release"
+  ],
   "repository": "https://github.com/36Dge/yijie-skills.git",
   "skills": [
     {
@@ -13,7 +17,13 @@
       "display_name": "AliExpress 供应商评估",
       "description": "评估 AliExpress 供应商的基础能力、风险信号与合作适配度。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/aliexpress-supplier-evaluator",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillSourcing"
@@ -21,25 +31,24 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/aliexpress-supplier-evaluator",
         "source_version": "0.0.94",
-        "source_sha256": "54fe4253c3fbbf50ca6f26717a679b355c4f5a38f1d35176bc3b97010caa491a",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
@@ -47,14 +56,12 @@
         "network": "required",
         "filesystem": "none",
         "required_tools": [
-          "browser.search",
-          "supplier.data"
+          "browser.search"
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -65,33 +72,38 @@
       "display_name": "代发货供应商集成",
       "description": "梳理代发货供应商接入、商品同步与履约协同方案。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/dropshipping-supplier-integrator",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillSourcing"
       },
       "risk": {
-        "level": "medium",
+        "level": "critical",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力可能影响订单、库存、履约、支付或供应链关键状态。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、幂等和审计控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/dropshipping-supplier-integrator",
         "source_version": "0.0.94",
-        "source_sha256": "39bea71fd75aa38f2c41af4fadcabeaf330367ba7f67033c253fed54b3504043",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
@@ -104,9 +116,8 @@
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -117,7 +128,13 @@
       "display_name": "产品供应商寻源",
       "description": "根据产品条件查找并比较潜在供应商与供货方案。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/product-supplier-sourcing",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillSourcing"
@@ -125,25 +142,24 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/product-supplier-sourcing",
         "source_version": "0.0.94",
-        "source_sha256": "36d5f8716f9028093a2c3d6110a62a5216aa14b5216ef3912eb1f7c45312c8fa",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
@@ -151,14 +167,13 @@
         "network": "required",
         "filesystem": "none",
         "required_tools": [
-          "browser.search",
-          "supplier.data"
+          "product_supplier.search",
+          "web.search"
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -169,7 +184,24 @@
       "display_name": "销售谈判专家",
       "description": "为 B2B 销售谈判准备目标、策略、问题与沟通草案。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/sales-negotiator",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md",
+        "rules/_sections.md",
+        "rules/closing-techniques.md",
+        "rules/multiparty-procurement.md",
+        "rules/multiparty-stakeholders.md",
+        "rules/preparation-batna.md",
+        "rules/preparation-planning.md",
+        "rules/pricing-discounts.md",
+        "rules/pricing-value.md",
+        "rules/psychology-buyer.md",
+        "rules/tactics-anchoring.md",
+        "rules/tactics-concessions.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillSourcing"
@@ -177,25 +209,24 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/sales-negotiator",
         "source_version": "0.0.94",
-        "source_sha256": "7b903c33034b3afae0eb2b6a797be68327275fa364c43383cb3e4b8551ebdd47",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
@@ -205,9 +236,8 @@
         "required_tools": []
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -218,33 +248,38 @@
       "display_name": "供应商绩效管理",
       "description": "建立供应商绩效指标并辅助识别履约与质量风险。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/supplier-performance-manager",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillSourcing"
       },
       "risk": {
-        "level": "medium",
+        "level": "critical",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力可能影响订单、库存、履约、支付或供应链关键状态。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、幂等和审计控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/supplier-performance-manager",
         "source_version": "0.0.94",
-        "source_sha256": "155dbcbdb0b585e83ceb27dd1ca92d7023480fb39b847af0ec6dac95c976dd75",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
@@ -256,9 +291,8 @@
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -269,47 +303,146 @@
       "display_name": "阿里巴巴与亚马逊市场洞察",
       "description": "对阿里巴巴与亚马逊市场数据进行跨平台洞察分析。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/alibaba-amazon-market-intel",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md",
+        "reference/help.md",
+        "reference/historical_search_volume/ad-campaign-timing.md",
+        "reference/historical_search_volume/competitive-benchmarking.md",
+        "reference/historical_search_volume/inventory-demand-forecasting.md",
+        "reference/historical_search_volume/product-launch-timing.md",
+        "reference/historical_search_volume/seasonal-demand-profiling.md",
+        "reference/historical_search_volume/year-over-year-growth.md",
+        "reference/keywords_by_asin/keyword-gap-analysis.md",
+        "reference/keywords_by_asin/listing-seo-optimization.md",
+        "reference/keywords_by_asin/market-entry-research.md",
+        "reference/keywords_by_asin/multi-asin-portfolio.md",
+        "reference/keywords_by_asin/ppc-keyword-harvesting.md",
+        "reference/keywords_by_asin/reverse-asin-research.md",
+        "reference/keywords_by_asin/share-of-search-tracking.md",
+        "reference/keywords_by_asin/trend-seasonality-asin.md",
+        "reference/keywords_by_keyword/ad-keyword-portfolio.md",
+        "reference/keywords_by_keyword/category-niche-mapping.md",
+        "reference/keywords_by_keyword/content-seo-strategy.md",
+        "reference/keywords_by_keyword/cross-market-comparison.md",
+        "reference/keywords_by_keyword/keyword-expansion.md",
+        "reference/keywords_by_keyword/ppc-bid-strategy.md",
+        "reference/keywords_by_keyword/search-volume-benchmark.md",
+        "reference/keywords_by_keyword/trend-detection.md",
+        "reference/product_database/asin-deep-dive-enrichment.md",
+        "reference/product_database/brand-seller-intelligence.md",
+        "reference/product_database/category-market-sizing.md",
+        "reference/product_database/competitive-landscape-analysis.md",
+        "reference/product_database/listing-quality-auditing.md",
+        "reference/product_database/market-opportunity-discovery.md",
+        "reference/product_database/new-product-launch-monitoring.md",
+        "reference/product_database/pricing-strategy-elasticity.md",
+        "reference/product_database/product-sourcing-private-label.md",
+        "reference/sales_estimates/competitive-sales-tracking.md",
+        "reference/sales_estimates/deal-and-promotion-impact.md",
+        "reference/sales_estimates/pricing-strategy-and-elasticity.md",
+        "reference/sales_estimates/revenue-and-financial-modeling.md",
+        "reference/sales_estimates/stock-out-detection.md",
+        "reference/setup.md",
+        "reference/share_of_voice/advertising-effectiveness.md",
+        "reference/share_of_voice/brand-market-share.md",
+        "reference/share_of_voice/competitive-threat-monitoring.md",
+        "reference/share_of_voice/conversion-performance.md",
+        "reference/share_of_voice/keyword-competitive-intel.md",
+        "reference/share_of_voice/weighted-positioning-analysis.md",
+        "scripts/historical_search_volume/__init__.py",
+        "scripts/historical_search_volume/ad_timing.py",
+        "scripts/historical_search_volume/competitive_benchmark.py",
+        "scripts/historical_search_volume/inventory_forecast.py",
+        "scripts/historical_search_volume/launch_timing.py",
+        "scripts/historical_search_volume/seasonal_demand.py",
+        "scripts/historical_search_volume/yoy_growth.py",
+        "scripts/keywords_by_asin/__init__.py",
+        "scripts/keywords_by_asin/keyword_gap_analysis.py",
+        "scripts/keywords_by_asin/listing_seo_optimization.py",
+        "scripts/keywords_by_asin/market_entry_research.py",
+        "scripts/keywords_by_asin/multi_asin_portfolio.py",
+        "scripts/keywords_by_asin/ppc_keyword_harvesting.py",
+        "scripts/keywords_by_asin/reverse_asin_research.py",
+        "scripts/keywords_by_asin/share_of_search_tracking.py",
+        "scripts/keywords_by_asin/trend_seasonality_asin.py",
+        "scripts/keywords_by_keyword/__init__.py",
+        "scripts/keywords_by_keyword/ad_portfolio.py",
+        "scripts/keywords_by_keyword/benchmark_demand.py",
+        "scripts/keywords_by_keyword/compare_markets.py",
+        "scripts/keywords_by_keyword/content_seo.py",
+        "scripts/keywords_by_keyword/detect_trends.py",
+        "scripts/keywords_by_keyword/expand_keywords.py",
+        "scripts/keywords_by_keyword/map_niches.py",
+        "scripts/keywords_by_keyword/ppc_bid_strategy.py",
+        "scripts/product_database/__init__.py",
+        "scripts/product_database/asin_deep_dive_enrichment.py",
+        "scripts/product_database/brand_seller_intelligence.py",
+        "scripts/product_database/category_market_sizing.py",
+        "scripts/product_database/competitive_landscape_analysis.py",
+        "scripts/product_database/listing_quality_auditing.py",
+        "scripts/product_database/market_opportunity_discovery.py",
+        "scripts/product_database/new_product_launch_monitoring.py",
+        "scripts/product_database/pricing_strategy_elasticity.py",
+        "scripts/product_database/product_sourcing_private_label.py",
+        "scripts/sales_estimates/__init__.py",
+        "scripts/sales_estimates/competitive_sales.py",
+        "scripts/sales_estimates/pricing_elasticity.py",
+        "scripts/sales_estimates/promotion_impact.py",
+        "scripts/sales_estimates/revenue_model.py",
+        "scripts/sales_estimates/stockout_detect.py",
+        "scripts/share_of_voice/__init__.py",
+        "scripts/share_of_voice/advertising_effectiveness.py",
+        "scripts/share_of_voice/brand_market_share.py",
+        "scripts/share_of_voice/competitive_threat_monitoring.py",
+        "scripts/share_of_voice/conversion_performance.py",
+        "scripts/share_of_voice/keyword_competitive_intel.py",
+        "scripts/share_of_voice/weighted_positioning_analysis.py"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillResearch"
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/alibaba-amazon-market-intel",
         "source_version": "0.0.94",
-        "source_sha256": "d6f209079db51a7ed82f8ddeb0aaadda4e8d7f65b19b4ec8ec67e3fe26f4e4f6",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
         "execution_mode": "tool-assisted",
         "network": "required",
-        "filesystem": "none",
+        "filesystem": "write",
         "required_tools": [
-          "marketplace.data"
+          "filesystem.read",
+          "filesystem.write",
+          "jungle_scout.search",
+          "python.execute"
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -320,7 +453,13 @@
       "display_name": "竞品深度分析",
       "description": "从定位、商品、价格与营销等维度分析主要竞品。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/competitor-deep-analysis",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillResearch"
@@ -328,25 +467,24 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/competitor-deep-analysis",
         "source_version": "0.0.94",
-        "source_sha256": "c1cfa70cbd136b2b772833e2d4f296efef56bcbce6a18c5805b97e7a94851e36",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
@@ -359,9 +497,8 @@
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -372,47 +509,55 @@
       "display_name": "跨境选品",
       "description": "结合跨境市场数据评估候选商品的机会与风险。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/cross-border-selection",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md",
+        "references/scraping-guide.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillResearch"
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/cross-border-selection",
         "source_version": "0.0.94",
-        "source_sha256": "9e04322bc35994204c01144fe4c4011fb87a035708c656e68aeee2379295a893",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
         "execution_mode": "tool-assisted",
         "network": "required",
-        "filesystem": "none",
+        "filesystem": "write",
         "required_tools": [
-          "marketplace.data"
+          "browser.use",
+          "filesystem.write",
+          "network.http",
+          "python.execute"
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -423,47 +568,73 @@
       "display_name": "Jungle Scout 深度分析",
       "description": "基于 Jungle Scout 数据开展亚马逊市场与商品分析。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/jungle-scout-deep-dive-analyzer",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md",
+        "assets/chart-design-guide.md",
+        "assets/report_template.md",
+        "assets/report_template_zh.md",
+        "references/analysis_criteria.md",
+        "references/api_reference.md",
+        "references/csv_schema.md",
+        "references/data_source_badges.md",
+        "references/indicator_definitions.md",
+        "references/js_data_answer_prompt.md",
+        "references/merge_tiers_example.md",
+        "references/sdk_pitfalls.md",
+        "references/subquestion_templates.md",
+        "scripts/analyze_indicators.py",
+        "scripts/answer_with_js_data.py",
+        "scripts/collect_js_data.py",
+        "scripts/models.py",
+        "scripts/pipeline.py"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillResearch"
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/jungle-scout-deep-dive-analyzer",
         "source_version": "0.0.94",
-        "source_sha256": "11e2d41668510cccf2e2e59d1d4d54a5856cd74c9b95fa9b0748324944550da6",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
         "execution_mode": "tool-assisted",
         "network": "required",
-        "filesystem": "none",
+        "filesystem": "write",
         "required_tools": [
-          "jungle_scout.data"
+          "filesystem.read",
+          "filesystem.write",
+          "jungle_scout.collect",
+          "product_supplier.search",
+          "python.execute",
+          "shell.execute"
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -474,7 +645,14 @@
       "display_name": "市场洞察选品",
       "description": "依据市场规模、竞争强度与需求趋势形成选品判断。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/market-insight-product-selection",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md",
+        "chart-design-guide.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillResearch"
@@ -482,25 +660,24 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/market-insight-product-selection",
         "source_version": "0.0.94",
-        "source_sha256": "580a91de7d73b1e1b2294f4e5645f3b60daaa13014d084f2fa3ae753a7241cc4",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
@@ -508,13 +685,14 @@
         "network": "required",
         "filesystem": "none",
         "required_tools": [
-          "marketplace.data"
+          "marketplace.data",
+          "web.fetch",
+          "web.search"
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -525,45 +703,54 @@
       "display_name": "产品属性分析",
       "description": "从已提供的产品资料中提取、整理并分析关键属性。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/product-attribute-analyzer",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md",
+        "chart-design-guide.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillResearch"
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/product-attribute-analyzer",
         "source_version": "0.0.94",
-        "source_sha256": "014d985b460fcaf83b1e935afca0fb0808ef8e0dc058589686bbadaf178901c0",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
-        "execution_mode": "model-only",
-        "network": "none",
-        "filesystem": "none",
-        "required_tools": []
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "write",
+        "required_tools": [
+          "filesystem.write",
+          "marketplace.data",
+          "python.execute"
+        ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -574,7 +761,14 @@
       "display_name": "产品选品",
       "description": "根据目标市场与经营约束对候选商品进行筛选排序。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/product-selection",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md",
+        "chart-design-guide.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillResearch"
@@ -582,25 +776,24 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/product-selection",
         "source_version": "0.0.94",
-        "source_sha256": "3433148b6b1bb757b0482850feab6384e0a7aa3920e9dbd8608dc487c4dce2fb",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
@@ -608,13 +801,14 @@
         "network": "required",
         "filesystem": "none",
         "required_tools": [
-          "marketplace.data"
+          "marketplace.data",
+          "product_supplier.search",
+          "web.search"
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -625,47 +819,56 @@
       "display_name": "评论分析助手",
       "description": "分析商品评论中的情绪、痛点、需求与改进机会。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/review-analyst-agent",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md",
+        "agents/improvement-recommender.md",
+        "agents/issue-identifier.md",
+        "agents/review-scraper.md",
+        "agents/sentiment-analyzer.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillResearch"
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/review-analyst-agent",
         "source_version": "0.0.94",
-        "source_sha256": "e356932f3ddead77bea3f397c312d5789a7a8b1a2401e8771bfb17622605cad3",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
         "execution_mode": "tool-assisted",
         "network": "required",
-        "filesystem": "none",
+        "filesystem": "write",
         "required_tools": [
-          "marketplace.reviews"
+          "browser.use",
+          "filesystem.write"
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -676,7 +879,18 @@
       "display_name": "场景驱动选品",
       "description": "从用户场景和问题出发发现并评估潜在商品机会。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/scenario-driven-product-scout",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md",
+        "references/product-strategies.md",
+        "references/shopping-moments.md",
+        "references/tools-guide.md",
+        "templates/product-validation-checklist.md",
+        "templates/seasonal-planning-template.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillResearch"
@@ -684,39 +898,37 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/scenario-driven-product-scout",
         "source_version": "0.0.94",
-        "source_sha256": "959fc795dddb44842fe5cdc08c790d3e6eab4289e19c5a1ee90acf73758ab883",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
         "execution_mode": "tool-assisted",
-        "network": "required",
+        "network": "optional",
         "filesystem": "none",
         "required_tools": [
-          "browser.search"
+          "web.search"
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -727,45 +939,87 @@
       "display_name": "内容拆解",
       "description": "拆解已提供内容的结构、表达策略与可复用模式。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/content-breakdown",
+      "package_files": [
+        "NOTICE.md",
+        "README.md",
+        "SKILL.md",
+        "fix_bili_api.py",
+        "pyproject.toml",
+        "references/cookie-guide.md",
+        "references/dependencies.md",
+        "scripts/bilibili/bilibili_api.py",
+        "scripts/bilibili/cookie_helper.py",
+        "scripts/bilibili/generate_report.py",
+        "scripts/bilibili/run.py",
+        "scripts/douyin/bcut_asr.py",
+        "scripts/douyin/config.py",
+        "scripts/douyin/cookie_helper.py",
+        "scripts/douyin/douyin_api.py",
+        "scripts/douyin/downloader.py",
+        "scripts/douyin/generate_report.py",
+        "scripts/douyin/html_structure_detector.py",
+        "scripts/douyin/run.py",
+        "scripts/douyin/structure_history.json",
+        "scripts/douyin/subtitle_extractor.py",
+        "scripts/douyin/transcriber.py",
+        "scripts/generate_cross_report.py",
+        "scripts/install_deps.py",
+        "scripts/run.py",
+        "scripts/runner.py",
+        "scripts/xiaohongshu/config.py",
+        "scripts/xiaohongshu/cookie_helper.py",
+        "scripts/xiaohongshu/downloader.py",
+        "scripts/xiaohongshu/generate_report.py",
+        "scripts/xiaohongshu/run.py",
+        "scripts/xiaohongshu/subtitle_extractor.py",
+        "scripts/xiaohongshu/transcriber.py",
+        "scripts/xiaohongshu/xhs_api.py"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillContent"
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/content-breakdown",
         "source_version": "0.0.94",
-        "source_sha256": "7d914e8cd3e7a539cedc37ce4dc6e2e491cfe56415c804c6ff920fcea52d506a",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
-        "execution_mode": "model-only",
-        "network": "none",
-        "filesystem": "none",
-        "required_tools": []
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "write",
+        "required_tools": [
+          "browser.use",
+          "filesystem.write",
+          "network.http",
+          "python.execute",
+          "shell.execute"
+        ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -776,7 +1030,13 @@
       "display_name": "内容策略",
       "description": "围绕受众、目标与渠道制定结构化内容策略。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/content-strategy",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillContent"
@@ -784,37 +1044,37 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/content-strategy",
         "source_version": "0.0.94",
-        "source_sha256": "8af7493497d3047c949189c28e896516e527b1080b0a5ee80faccb59294c005a",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
-        "execution_mode": "model-only",
+        "execution_mode": "tool-assisted",
         "network": "none",
-        "filesystem": "none",
-        "required_tools": []
+        "filesystem": "read",
+        "required_tools": [
+          "filesystem.read"
+        ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -826,7 +1086,7 @@
       "description": "根据已确认的商品事实和受众，生成诚实、清晰、可测试的跨境营销文案。",
       "version": "0.1.0",
       "catalog_entry_mode": "bundled",
-      "source_dir": "skills/copywriting",
+      "source_dir": "plugins/yijie-desktop-skills/skills/copywriting",
       "package_files": [
         "NOTICE.md",
         "SKILL.md",
@@ -851,15 +1111,15 @@
         "source_reference": "plugins/yijie-desktop-skills/skills/copywriting",
         "source_version": "0.1.0",
         "review_status": "verified",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "LicenseRef-YiJie-Local-Development-Only",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
         "redistribution_status": "verified",
-        "authorization_scope": "local-development",
-        "evidence_reference": "docs/provenance/copywriting-0.1.0.md",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
@@ -881,7 +1141,13 @@
       "display_name": "产品营销上下文",
       "description": "将产品事实、受众、卖点与约束整理为营销上下文。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/product-marketing-context",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillContent"
@@ -889,37 +1155,38 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/product-marketing-context",
         "source_version": "0.0.94",
-        "source_sha256": "6098a7124a01e6fec9e5b7a468ad6d01623cc19f9aa63d454d2993a16838ac0a",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
-        "execution_mode": "model-only",
+        "execution_mode": "tool-assisted",
         "network": "none",
-        "filesystem": "none",
-        "required_tools": []
+        "filesystem": "write",
+        "required_tools": [
+          "filesystem.read",
+          "filesystem.write"
+        ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -930,7 +1197,13 @@
       "display_name": "社交媒体内容创作",
       "description": "为指定社交渠道规划并起草适配平台的内容。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/social-media-content-creator",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillContent"
@@ -938,39 +1211,35 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/social-media-content-creator",
         "source_version": "0.0.94",
-        "source_sha256": "8e37dad5eeaf8e952cbd9269d2ae9535de7c88c548ece87d293d4dc9c423986b",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
-        "execution_mode": "tool-assisted",
-        "network": "required",
+        "execution_mode": "model-only",
+        "network": "none",
         "filesystem": "none",
-        "required_tools": [
-          "social.publish"
-        ]
+        "required_tools": []
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -981,7 +1250,13 @@
       "display_name": "氛围营销",
       "description": "围绕品牌调性和消费场景设计氛围化营销表达。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/vibe-marketing",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillContent"
@@ -989,25 +1264,24 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/vibe-marketing",
         "source_version": "0.0.94",
-        "source_sha256": "20930e159d3b82033b80968eca7a5c237ea76b878fe189bd8183ebdceabd68ae",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
@@ -1017,9 +1291,8 @@
         "required_tools": []
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -1030,7 +1303,13 @@
       "display_name": "小红书内容创作",
       "description": "为小红书场景规划并起草符合平台表达习惯的内容。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/xiaohongshu-content-creator",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillContent"
@@ -1038,39 +1317,35 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/xiaohongshu-content-creator",
         "source_version": "0.0.94",
-        "source_sha256": "02be6c7a35983faaef517eeffeacd0577505598d98b66b39d0f210bdd6a65bd8",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
-        "execution_mode": "tool-assisted",
-        "network": "required",
+        "execution_mode": "model-only",
+        "network": "none",
         "filesystem": "none",
-        "required_tools": [
-          "xiaohongshu.publish"
-        ]
+        "required_tools": []
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -1081,7 +1356,13 @@
       "display_name": "亚马逊 Listing 专家",
       "description": "诊断并优化亚马逊 Listing 的内容结构与转化表达。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/amazon-listing-expert",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillTraffic"
@@ -1089,39 +1370,35 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/amazon-listing-expert",
         "source_version": "0.0.94",
-        "source_sha256": "7ca7efdde72424907b876c69c7696f59940aec11d49a5746a41d2985ae5ad323",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
-        "execution_mode": "tool-assisted",
-        "network": "required",
+        "execution_mode": "model-only",
+        "network": "none",
         "filesystem": "none",
-        "required_tools": [
-          "amazon.listing"
-        ]
+        "required_tools": []
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -1132,7 +1409,13 @@
       "display_name": "亚马逊 PPC 广告管理",
       "description": "分析并规划亚马逊 PPC 广告结构、投放与优化动作。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/amazon-ppc-campaign-manager",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillTraffic"
@@ -1140,39 +1423,35 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/amazon-ppc-campaign-manager",
         "source_version": "0.0.94",
-        "source_sha256": "332542cb9782fa9e446e3c5b3ab9be2f7be9f9f5c41d3eb074d259f1967fca97",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
-        "execution_mode": "tool-assisted",
-        "network": "required",
+        "execution_mode": "model-only",
+        "network": "none",
         "filesystem": "none",
-        "required_tools": [
-          "amazon.ads"
-        ]
+        "required_tools": []
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -1183,47 +1462,54 @@
       "display_name": "亚马逊热门关键词",
       "description": "研究并整理亚马逊商品相关的热门搜索关键词。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/amz-hot-keywords",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md",
+        "scripts/amz_scraper.py"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillTraffic"
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/amz-hot-keywords",
         "source_version": "0.0.94",
-        "source_sha256": "22457646d8fcd0f265e5ef0ce928e8e74565af02e934a305b115421e7a30811c",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
         "execution_mode": "tool-assisted",
         "network": "required",
-        "filesystem": "none",
+        "filesystem": "write",
         "required_tools": [
-          "amazon.keywords"
+          "browser.use",
+          "filesystem.write",
+          "python.execute"
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -1234,47 +1520,58 @@
       "display_name": "亚马逊产品优化",
       "description": "基于商品与市场数据提出亚马逊商品优化建议。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/amz-product-optimizer",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md",
+        "hooks/hooks.json",
+        "scripts/product_optimizer.py",
+        "scripts/verify_setup.py",
+        "test_cases/tc_optimization.json"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillTraffic"
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/amz-product-optimizer",
         "source_version": "0.0.94",
-        "source_sha256": "e3e26b571f3e53f97c503274ee557d5f2a5a25b0951d1350e94f075573968237",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
         "execution_mode": "tool-assisted",
         "network": "required",
-        "filesystem": "none",
+        "filesystem": "write",
         "required_tools": [
-          "amazon.listing"
+          "browser.use",
+          "filesystem.write",
+          "image.generate",
+          "python.execute"
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -1285,7 +1582,13 @@
       "display_name": "电商 SEO 优化",
       "description": "为电商页面研究搜索意图并提出 SEO 优化方案。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/ecommerce-seo-optimizer",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillTraffic"
@@ -1293,39 +1596,35 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/ecommerce-seo-optimizer",
         "source_version": "0.0.94",
-        "source_sha256": "5a73a11739387d96dee3f3ed6c697802394a67d63061dc618e9f533b97436fb6",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
-        "execution_mode": "tool-assisted",
-        "network": "required",
+        "execution_mode": "model-only",
+        "network": "none",
         "filesystem": "none",
-        "required_tools": [
-          "browser.search"
-        ]
+        "required_tools": []
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -1336,7 +1635,17 @@
       "display_name": "Etsy SEO 优化",
       "description": "诊断并优化 Etsy 商品页面的关键词与搜索表达。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/etsy-seo-optimizer",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md",
+        "references/erank_metrics_guide.md",
+        "references/etsy_algorithm_guide.md",
+        "references/keyword_strategy_examples.md",
+        "templates/listing_optimization_checklist.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillTraffic"
@@ -1344,39 +1653,37 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/etsy-seo-optimizer",
         "source_version": "0.0.94",
-        "source_sha256": "5f57ff7a548b1a1279e517350be2552fd7818dc6052b51b39b33d403f49d2b32",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
         "execution_mode": "tool-assisted",
-        "network": "required",
-        "filesystem": "none",
+        "network": "none",
+        "filesystem": "read",
         "required_tools": [
-          "etsy.listing"
+          "filesystem.read"
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -1387,7 +1694,18 @@
       "display_name": "产品描述生成",
       "description": "根据已确认的产品事实生成结构化商品描述草案。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/product-description-generator",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md",
+        "_meta.json",
+        "scripts/__init__.py",
+        "scripts/bulk_generate.py",
+        "scripts/generate_description.py",
+        "scripts/optimize_description.py"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillTraffic"
@@ -1395,37 +1713,38 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/product-description-generator",
         "source_version": "0.0.94",
-        "source_sha256": "8b45ec3a9e6a5937737e16dbdf247c838f27dbf96cdc71e5e6c4258fbcfc7bff",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
-        "execution_mode": "model-only",
+        "execution_mode": "tool-assisted",
         "network": "none",
-        "filesystem": "none",
-        "required_tools": []
+        "filesystem": "write",
+        "required_tools": [
+          "filesystem.write",
+          "python.execute"
+        ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -1436,7 +1755,13 @@
       "display_name": "SEO 关键词研究",
       "description": "围绕目标主题研究关键词、搜索意图与内容机会。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/seo-keyword-research",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillTraffic"
@@ -1444,39 +1769,37 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/seo-keyword-research",
         "source_version": "0.0.94",
-        "source_sha256": "cc13939ad2fabba68911b548d4a5dad5d73aaf180ead29d79938487744a5c5e7",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
         "execution_mode": "tool-assisted",
-        "network": "required",
+        "network": "optional",
         "filesystem": "none",
         "required_tools": [
-          "browser.search"
+          "web.search"
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -1487,7 +1810,13 @@
       "display_name": "TikTok 广告策略",
       "description": "为 TikTok 广告制定受众、创意、投放与验证策略。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/tiktok-ads-strategy",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillTraffic"
@@ -1495,39 +1824,35 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/tiktok-ads-strategy",
         "source_version": "0.0.94",
-        "source_sha256": "867aff47e894ec577c5445501ecbfbaf14e9c59bce3ae3eb4657851381dad24b",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
-        "execution_mode": "tool-assisted",
-        "network": "required",
+        "execution_mode": "model-only",
+        "network": "none",
         "filesystem": "none",
-        "required_tools": [
-          "tiktok.ads"
-        ]
+        "required_tools": []
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -1538,7 +1863,13 @@
       "display_name": "亚马逊品牌保护",
       "description": "识别亚马逊品牌风险并规划监测、举证与保护动作。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/amazon-brand-protection",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillOperations"
@@ -1546,39 +1877,35 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/amazon-brand-protection",
         "source_version": "0.0.94",
-        "source_sha256": "ca2f754b2f72a73056f02448a820959a323c8a20bc1014f6125eb278c2ba1fda",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
-        "execution_mode": "tool-assisted",
-        "network": "required",
+        "execution_mode": "model-only",
+        "network": "none",
         "filesystem": "none",
-        "required_tools": [
-          "amazon.brand"
-        ]
+        "required_tools": []
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -1589,47 +1916,49 @@
       "display_name": "先买后付配置",
       "description": "梳理先买后付能力接入、配置与风险控制要求。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/buy-now-pay-later-setup",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillOperations"
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/buy-now-pay-later-setup",
         "source_version": "0.0.94",
-        "source_sha256": "810fb54ee8489a4d2b60207338714b6cb24ef72fef2633649cd62a1dc2d363aa",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
-        "execution_mode": "tool-assisted",
-        "network": "required",
+        "execution_mode": "model-only",
+        "network": "none",
         "filesystem": "none",
-        "required_tools": [
-          "payments.configure"
-        ]
+        "required_tools": []
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -1640,7 +1969,13 @@
       "display_name": "电商 GDPR 合规",
       "description": "检查电商数据处理场景并整理 GDPR 合规改进项。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/ecommerce-gdpr-compliance",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillOperations"
@@ -1648,39 +1983,35 @@
       "risk": {
         "level": "medium",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/ecommerce-gdpr-compliance",
         "source_version": "0.0.94",
-        "source_sha256": "96e51f79cfacb8de0cdee322ce0a18537ad34b9a2f1f9846e5f7082127e81310",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
-        "execution_mode": "tool-assisted",
-        "network": "required",
+        "execution_mode": "model-only",
+        "network": "none",
         "filesystem": "none",
-        "required_tools": [
-          "store.data"
-        ]
+        "required_tools": []
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -1691,47 +2022,49 @@
       "display_name": "发票生成",
       "description": "根据订单与开票信息生成结构化发票内容。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/invoice-generator",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillOperations"
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/invoice-generator",
         "source_version": "0.0.94",
-        "source_sha256": "2c9065c34a0a6bb3be27674e02a1e8b532d25cf866492a35fb1b9e701e281ccc",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
-        "execution_mode": "tool-assisted",
-        "network": "required",
+        "execution_mode": "model-only",
+        "network": "none",
         "filesystem": "none",
-        "required_tools": [
-          "store.orders"
-        ]
+        "required_tools": []
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -1742,33 +2075,38 @@
       "display_name": "多渠道库存同步",
       "description": "规划并执行多渠道库存读取、对账与同步流程。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/multichannel-inventory-sync",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillOperations"
       },
       "risk": {
-        "level": "medium",
+        "level": "critical",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力可能影响订单、库存、履约、支付或供应链关键状态。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、幂等和审计控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/multichannel-inventory-sync",
         "source_version": "0.0.94",
-        "source_sha256": "69bc05e6ea0b17238e138b5614489a1fb73b968b87940c47dd670064ecd968a1",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
@@ -1781,9 +2119,8 @@
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -1794,33 +2131,38 @@
       "display_name": "支付欺诈检测",
       "description": "分析支付风险信号并辅助识别潜在欺诈交易。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/payment-fraud-detector",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillOperations"
       },
       "risk": {
-        "level": "medium",
+        "level": "critical",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力可能影响订单、库存、履约、支付或供应链关键状态。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、幂等和审计控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/payment-fraud-detector",
         "source_version": "0.0.94",
-        "source_sha256": "6e578f889b59bfde3b0ed5ca2a92dbd5b187e5413e67c7ddd77b68314d8ac489",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
@@ -1832,9 +2174,8 @@
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -1845,33 +2186,38 @@
       "display_name": "TikTok Shop 配置",
       "description": "梳理 TikTok Shop 开店、商品与经营基础配置。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/tiktok-shop-setup",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillOperations"
       },
       "risk": {
-        "level": "medium",
+        "level": "critical",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力可能影响订单、库存、履约、支付或供应链关键状态。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、幂等和审计控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/tiktok-shop-setup",
         "source_version": "0.0.94",
-        "source_sha256": "dc99e52358d653a08d4f6e3c812b1d3b7338b92d2c50c63ea847c9d2767299cb",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
@@ -1883,9 +2229,8 @@
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     },
     {
@@ -1896,33 +2241,38 @@
       "display_name": "仓储履约工作流",
       "description": "设计仓储、拣配、发货与异常处理的履约工作流。",
       "version": "0.0.94",
-      "catalog_entry_mode": "catalog-only",
+      "catalog_entry_mode": "bundled",
+      "source_dir": "vendor/feat-129/warehouse-fulfillment-workflow",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md"
+      ],
+      "entrypoint": "SKILL.md",
       "icon": {
         "registry": "yj-icon-v1",
         "key": "skillOperations"
       },
       "risk": {
-        "level": "medium",
+        "level": "critical",
         "reasons": [
-          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
-          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+          "该能力可能影响订单、库存、履约、支付或供应链关键状态。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、幂等和审计控制。"
         ]
       },
       "provenance": {
-        "source_type": "third-party",
-        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_type": "internal",
+        "source_reference": "vendor/feat-129/warehouse-fulfillment-workflow",
         "source_version": "0.0.94",
-        "source_sha256": "beb9aa639089fa0163ffe7736c9efd7b0c37e8825be13aa712ee45e5c137f12b",
-        "review_status": "blocked",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product owner and technical security reviewer",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "license": {
-        "expression": "NOASSERTION",
-        "redistribution_status": "blocked",
-        "authorization_scope": "none",
-        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
-        "reviewed_by": "FEAT-129 product and technical owner",
+        "expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+        "redistribution_status": "verified",
+        "authorization_scope": "desktop-distribution",
+        "evidence_reference": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+        "reviewed_by": "FEAT-129 product and repository owner",
         "reviewed_at": "2026-08-25T00:00:00Z"
       },
       "capabilities": {
@@ -1934,9 +2284,8 @@
         ]
       },
       "release": {
-        "catalog_status": "blocked",
-        "maintenance_status": "maintained",
-        "blocked_reason": "license_unverified"
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
       }
     }
   ]

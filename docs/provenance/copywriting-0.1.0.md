@@ -30,13 +30,13 @@ Stable metadata:
 
 ## Authorization boundary
 
-The user explicitly requested creation and local packaging of the first FEAT-129 Skill on 2026-08-25. This is recorded as `LicenseRef-YiJie-Local-Development-Only` and authorizes the exact `local-development` candidate artifact for local Contract First testing.
+The FEAT-129 product and repository owner initially authorized local packaging on 2026-08-25 and subsequently supplied the repository-wide ownership and Desktop redistribution declaration `FEAT-129-DESKTOP-DISTRIBUTION-2026-08-25`. The exact re-authored candidate is now authorized for both `local-development` and `desktop-release` under `LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation`.
 
-It does **not** establish rights to redistribute the observed Accio source, and it does not authorize a `desktop-release`, tag, upload, Marketplace publication, or production bundle. Before changing the bundle to `desktop-release`, the product/legal owner must provide an approved YiJie license notice for the re-authored files and confirm that no upstream text or restricted asset is included. The contract schema requires `desktop-distribution` authorization for that channel.
+The authorization record is `docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md`. It covers packaging, installation, execution, modification, and redistribution with the YiJie AI Desktop client. It does not claim that the separately observed Accio source was copied into this implementation.
 
 ## Review result
 
 - Content/provenance of the re-authored files: verified for FEAT-129 local development.
 - External tools and data: none.
 - Upstream source redistribution: blocked and not used.
-- Desktop distribution: blocked until product/legal evidence is added and the manifest authorization scope changes.
+- Desktop distribution: authorized by the FEAT-129 product and repository owner declaration; Runtime permission controls still apply.

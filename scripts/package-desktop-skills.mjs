@@ -53,8 +53,8 @@ function canonicalJson(value) {
   return JSON.stringify(value);
 }
 
-async function readPackagedEntries(pluginRoot, skill) {
-  const sourceRoot = path.resolve(pluginRoot, skill.source_dir);
+async function readPackagedEntries(skill) {
+  const sourceRoot = path.resolve(skill.source_dir);
   const entries = [];
   for (const relative of [...skill.package_files].sort()) {
     if (!isSafeRelativePath(relative)) throw new Error(`Unsafe package file: ${relative}`);
@@ -118,9 +118,13 @@ function publicSkillMetadata(skill, packaged) {
   };
 }
 
-export async function buildDesktopSkillBundle(outputDirectory = DEFAULT_OUTPUT) {
+export async function buildDesktopSkillBundle(outputDirectory = DEFAULT_OUTPUT, options = {}) {
   const source = JSON.parse(await readFile(SOURCE_PATH, "utf8"));
   const pluginRoot = path.dirname(SOURCE_PATH);
+  const distributionChannel = options.distributionChannel ?? source.distribution_channel;
+  if (!source.authorized_distribution_channels?.includes(distributionChannel)) {
+    throw new Error(`Distribution channel is not authorized by bundle source: ${distributionChannel}`);
+  }
   assertUnique(source.skills.map(({ id }) => id), "Skill id");
   assertUnique(source.skills.map(({ runtime_name: runtimeName }) => runtimeName), "Runtime name");
   const builtSkills = [];
@@ -132,7 +136,7 @@ export async function buildDesktopSkillBundle(outputDirectory = DEFAULT_OUTPUT) 
     if (skill.catalog_entry_mode !== "bundled") {
       throw new Error(`${skill.id} has unsupported catalog_entry_mode: ${skill.catalog_entry_mode}`);
     }
-    const entries = await readPackagedEntries(pluginRoot, skill);
+    const entries = await readPackagedEntries(skill);
     const archive = createStoredZip(entries);
     builtSkills.push({ source: skill, packaged: { entries, archive } });
   }
@@ -140,6 +144,7 @@ export async function buildDesktopSkillBundle(outputDirectory = DEFAULT_OUTPUT) 
   const revision = await repositoryRevision([
     SOURCE_PATH,
     pluginRoot,
+    "vendor/feat-129",
     "contracts/lock.json",
     CONTRACT_SCHEMA_PATH,
     CATALOG_AUDIT_PATH,
@@ -151,7 +156,7 @@ export async function buildDesktopSkillBundle(outputDirectory = DEFAULT_OUTPUT) 
     schema_version: source.schema_version,
     bundle_id: source.bundle_id,
     bundle_version: source.bundle_version,
-    distribution_channel: source.distribution_channel,
+    distribution_channel: distributionChannel,
     source: {
       repository: source.repository,
       ...revision,
@@ -189,9 +194,12 @@ export async function buildDesktopSkillBundle(outputDirectory = DEFAULT_OUTPUT) 
 const invokedPath = process.argv[1] ? path.resolve(process.argv[1]) : "";
 if (invokedPath === fileURLToPath(import.meta.url)) {
   const outputIndex = process.argv.indexOf("--output");
+  const channelIndex = process.argv.indexOf("--channel");
   const outputDirectory = outputIndex >= 0 ? process.argv[outputIndex + 1] : DEFAULT_OUTPUT;
+  const distributionChannel = channelIndex >= 0 ? process.argv[channelIndex + 1] : undefined;
   if (!outputDirectory) throw new Error("--output requires a directory");
-  const manifest = await buildDesktopSkillBundle(outputDirectory);
+  if (channelIndex >= 0 && !distributionChannel) throw new Error("--channel requires a value");
+  const manifest = await buildDesktopSkillBundle(outputDirectory, { distributionChannel });
   const archiveCount = manifest.skills.filter(({ archive }) => archive).length;
   console.log(
     `Generated ${manifest.skills.length} catalog entries and ${archiveCount} deterministic Desktop Skill archive(s) in ${outputDirectory} (${manifest.distribution_channel}).`,

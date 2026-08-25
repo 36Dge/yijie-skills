@@ -1,6 +1,6 @@
 [marketplace]
 name = "Yijie AI Marketplace"
-version = "0.2.0"
+version = "0.3.0"
 
 [[plugins]]
 id = "amazon-listing-optimizer"
@@ -11,5 +11,5 @@ risk_level = "medium"
 [[plugins]]
 id = "yijie-desktop-skills"
 name = "YiJie Desktop Skills"
-version = "0.2.0"
+version = "0.3.0"
 risk_level = "medium"

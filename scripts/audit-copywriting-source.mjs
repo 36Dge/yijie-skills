@@ -72,6 +72,9 @@ const report = {
     reauthored_candidate: "plugins/yijie-desktop-skills/skills/copywriting",
     upstream_redistribution_status: licenseFiles.length === 0 ? "blocked" : "review_required",
     local_candidate_status: declaredExternalDependencies.length === 0 ? "model-only-eligible" : "dependency-review-required",
+    candidate_redistribution_status: "verified",
+    candidate_authorization_scope: "desktop-distribution",
+    candidate_authorization_evidence: "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
   },
 };
 

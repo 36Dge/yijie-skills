@@ -1,4 +1,4 @@
-.PHONY: lint test package eval
+.PHONY: lint test package package-desktop-release eval
 
 lint:
 	pnpm lint
@@ -8,6 +8,9 @@ test:
 
 package:
 	pnpm package
+
+package-desktop-release:
+	pnpm package:desktop-release
 
 eval:
 	pnpm eval

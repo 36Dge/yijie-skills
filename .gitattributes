@@ -1,0 +1,3 @@
+# Preserve reviewed vendor snapshots byte-for-byte; their upstream Markdown/Python
+# intentionally retains whitespace that is covered by package digests.
+vendor/feat-129/** -whitespace

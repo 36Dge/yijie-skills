@@ -9,6 +9,7 @@ import addFormats from "ajv-formats";
 import { buildDesktopSkillBundle } from "../scripts/package-desktop-skills.mjs";
 
 const CONTRACT_REVISION = "164b14f609537d727a52326832da04430aecc4ab";
+const LICENSE_EXPRESSION = "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation";
 const CATEGORY_COUNTS = {
   "sourcing-selection": 5,
   "market-research": 9,
@@ -38,42 +39,66 @@ function readLocalEntries(archive) {
   return entries;
 }
 
-test("FEAT-129 deterministically emits 38 Catalog entries and one reviewed archive", async () => {
+test("FEAT-129 deterministically emits 38 installable archives for local and Desktop release", async () => {
   const temporaryRoot = await mkdtemp(path.join(os.tmpdir(), "yijie-desktop-skill-bundle-"));
-  const firstOutput = path.join(temporaryRoot, "first");
-  const secondOutput = path.join(temporaryRoot, "second");
+  const localFirst = path.join(temporaryRoot, "local-first");
+  const localSecond = path.join(temporaryRoot, "local-second");
+  const releaseFirst = path.join(temporaryRoot, "release-first");
+  const releaseSecond = path.join(temporaryRoot, "release-second");
   try {
-    const firstManifest = await buildDesktopSkillBundle(firstOutput);
-    const secondManifest = await buildDesktopSkillBundle(secondOutput);
-    assert.deepEqual(secondManifest, firstManifest);
-    assert.equal(firstManifest.schema_version, 2);
-    assert.equal(firstManifest.bundle_version, "0.2.0");
-    assert.equal(firstManifest.distribution_channel, "local-development");
-    assert.ok(["working-tree", "git-commit"].includes(firstManifest.source.revision_kind));
-    assert.match(firstManifest.source.tree_sha256, /^[a-f0-9]{64}$/);
-    assert.equal(firstManifest.skills.length, 38);
+    const localManifest = await buildDesktopSkillBundle(localFirst);
+    const localManifestAgain = await buildDesktopSkillBundle(localSecond);
+    const releaseManifest = await buildDesktopSkillBundle(releaseFirst, {
+      distributionChannel: "desktop-release",
+    });
+    const releaseManifestAgain = await buildDesktopSkillBundle(releaseSecond, {
+      distributionChannel: "desktop-release",
+    });
+    assert.deepEqual(localManifestAgain, localManifest);
+    assert.deepEqual(releaseManifestAgain, releaseManifest);
+    assert.equal(localManifest.schema_version, 2);
+    assert.equal(localManifest.bundle_version, "0.3.0");
+    assert.equal(localManifest.distribution_channel, "local-development");
+    assert.equal(releaseManifest.distribution_channel, "desktop-release");
+    assert.equal(localManifest.source.tree_sha256, releaseManifest.source.tree_sha256);
+    assert.equal(localManifest.skills.length, 38);
+    assert.deepEqual(releaseManifest.skills, localManifest.skills);
 
     const counts = Object.fromEntries(Object.keys(CATEGORY_COUNTS).map((category) => [category, 0]));
-    for (const skill of firstManifest.skills) counts[skill.category] += 1;
+    for (const skill of localManifest.skills) {
+      counts[skill.category] += 1;
+      assert.equal(skill.catalog_entry_mode, "bundled");
+      assert.equal(skill.release.catalog_status, "installable");
+      assert.equal("blocked_reason" in skill.release, false);
+      assert.equal(skill.license.expression, LICENSE_EXPRESSION);
+      assert.equal(skill.license.redistribution_status, "verified");
+      assert.equal(skill.license.authorization_scope, "desktop-distribution");
+      assert.equal(skill.provenance.review_status, "verified");
+      assert.ok(skill.archive);
+    }
     assert.deepEqual(counts, CATEGORY_COUNTS);
 
-    const installable = firstManifest.skills.filter(({ release }) => release.catalog_status === "installable");
-    const blocked = firstManifest.skills.filter(({ release }) => release.catalog_status === "blocked");
-    assert.equal(installable.length, 1);
-    assert.equal(blocked.length, 37);
-    for (const skill of blocked) {
-      assert.equal(skill.catalog_entry_mode, "catalog-only");
-      assert.equal(skill.release.blocked_reason, "license_unverified");
-      assert.equal(skill.license.authorization_scope, "none");
-      assert.equal("entrypoint" in skill, false);
-      assert.equal("archive" in skill, false);
+    const bundleSource = JSON.parse(
+      await readFile("plugins/yijie-desktop-skills/bundle-source.json", "utf8"),
+    );
+    const sourceById = new Map(bundleSource.skills.map((skill) => [skill.id, skill]));
+    const expectedArchives = localManifest.skills.map(({ archive }) => path.basename(archive.path)).sort();
+    assert.deepEqual((await readdir(path.join(localFirst, "packages"))).sort(), expectedArchives);
+    assert.equal(expectedArchives.length, 38);
+
+    for (const skill of localManifest.skills) {
+      const localArchive = await readFile(path.join(localFirst, skill.archive.path));
+      const localArchiveAgain = await readFile(path.join(localSecond, skill.archive.path));
+      const releaseArchive = await readFile(path.join(releaseFirst, skill.archive.path));
+      assert.deepEqual(localArchiveAgain, localArchive);
+      assert.deepEqual(releaseArchive, localArchive);
+      assert.equal(sha256(localArchive), skill.archive.sha256);
+      assert.deepEqual(readLocalEntries(localArchive), [...sourceById.get(skill.id).package_files].sort());
     }
 
-    const [copywriting] = installable;
+    const copywriting = localManifest.skills.find(({ runtime_name: runtimeName }) => runtimeName === "copywriting");
     assert.equal(copywriting.id, "yijie.content-marketing.copywriting");
-    assert.equal(copywriting.runtime_name, "copywriting");
     assert.equal(copywriting.version, "0.1.0");
-    assert.equal(copywriting.catalog_entry_mode, "bundled");
     assert.deepEqual(copywriting.icon, { registry: "yj-icon-v1", key: "edit" });
     assert.deepEqual(copywriting.capabilities, {
       execution_mode: "model-only",
@@ -81,56 +106,78 @@ test("FEAT-129 deterministically emits 38 Catalog entries and one reviewed archi
       filesystem: "none",
       required_tools: [],
     });
-    assert.equal(copywriting.license.authorization_scope, "local-development");
-
-    const firstArchive = await readFile(path.join(firstOutput, copywriting.archive.path));
-    const secondArchive = await readFile(path.join(secondOutput, copywriting.archive.path));
-    assert.deepEqual(secondArchive, firstArchive);
-    assert.equal(sha256(firstArchive), copywriting.archive.sha256);
-    assert.deepEqual(readLocalEntries(firstArchive), [
-      "NOTICE.md",
-      "SKILL.md",
-      "agents/openai.yaml",
-      "examples/input-001.json",
-      "examples/output-001.md",
-    ]);
-    assert.deepEqual(await readdir(path.join(firstOutput, "packages")), [
-      "yijie.content-marketing.copywriting-0.1.0.zip",
-    ]);
 
     const schema = JSON.parse(await readFile("contracts/skill-bundle-manifest-v2.schema.json", "utf8"));
     const ajv = new Ajv2020({ strict: true, allErrors: true });
     addFormats(ajv);
     const validate = ajv.compile(schema);
-    assert.equal(validate(firstManifest), true, JSON.stringify(validate.errors));
+    assert.equal(validate(localManifest), true, JSON.stringify(validate.errors));
+    assert.equal(validate(releaseManifest), true, JSON.stringify(validate.errors));
     assert.deepEqual(
-      await readFile(path.join(firstOutput, "bundle-manifest.json")),
-      await readFile(path.join(secondOutput, "bundle-manifest.json")),
+      await readFile(path.join(localFirst, "bundle-manifest.json")),
+      await readFile(path.join(localSecond, "bundle-manifest.json")),
+    );
+    assert.deepEqual(
+      await readFile(path.join(releaseFirst, "bundle-manifest.json")),
+      await readFile(path.join(releaseSecond, "bundle-manifest.json")),
     );
   } finally {
     await rm(temporaryRoot, { recursive: true, force: true });
   }
 });
 
-test("38-Skill audit keeps upstream contents and redistribution outside the repository", async () => {
-  const audit = JSON.parse(
-    await readFile("docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json", "utf8"),
+test("ownership attestation exactly authorizes all 38 stable Skill IDs", async () => {
+  const [bundle, attestation] = await Promise.all([
+    readFile("plugins/yijie-desktop-skills/bundle-source.json", "utf8").then(JSON.parse),
+    readFile("docs/provenance/FEAT-129-desktop-distribution-attestation.json", "utf8").then(JSON.parse),
+  ]);
+  assert.equal(attestation.attestation_id, "FEAT-129-DESKTOP-DISTRIBUTION-2026-08-25");
+  assert.equal(attestation.status, "effective");
+  assert.equal(attestation.source_ownership_or_control_attested, true);
+  assert.equal(attestation.desktop_redistribution_authorized, true);
+  assert.deepEqual(attestation.authorization_scopes, ["local-development", "desktop-distribution"]);
+  assert.deepEqual(
+    [...attestation.skill_ids].sort(),
+    bundle.skills.map(({ id }) => id).sort(),
   );
-  assert.equal(audit.entries.length, 38);
-  assert.equal(new Set(audit.entries.map(({ runtime_name: runtimeName }) => runtimeName)).size, 38);
-  assert.equal(audit.source_disclosure.content_included, false);
-  assert.equal(audit.source_disclosure.absolute_local_paths_included, false);
-  assert.equal(audit.source_disclosure.owner_marker_is_license_evidence, false);
-  assert.equal(audit.decisions.source_content_copied_for_catalog_only_entries, false);
-  assert.equal(audit.decisions.desktop_release_status, "blocked-pending-license-and-source-proof");
-  for (const entry of audit.entries) {
-    assert.deepEqual(entry.license_files, []);
-    assert.equal(entry.redistribution_status, "blocked");
+});
+
+test("per-Skill source and security reviews have no release blocker", async () => {
+  const [sourceAudit, securityReview] = await Promise.all([
+    readFile("docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json", "utf8").then(JSON.parse),
+    readFile("docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json", "utf8").then(JSON.parse),
+  ]);
+  assert.equal(sourceAudit.entries.length, 38);
+  assert.equal(sourceAudit.decisions.installable_entry_count, 38);
+  assert.equal(sourceAudit.decisions.catalog_only_entry_count, 0);
+  assert.equal(sourceAudit.decisions.desktop_redistribution_authorized, true);
+  assert.equal(sourceAudit.decisions.source_or_license_blocker, null);
+  for (const entry of sourceAudit.entries) {
     assert.match(entry.observed_skill_md_sha256, /^[a-f0-9]{64}$/);
+    assert.match(entry.packaged_skill_md_sha256, /^[a-f0-9]{64}$/);
+    assert.match(entry.packaged_tree_sha256, /^[a-f0-9]{64}$/);
+    assert.equal(entry.provenance_review_status, "verified");
+    assert.equal(entry.redistribution_status, "verified");
+    assert.equal(entry.authorization_scope, "desktop-distribution");
+  }
+
+  assert.equal(securityReview.entries.length, 38);
+  assert.equal(securityReview.all_entries_installable, true);
+  assert.equal(securityReview.all_entries_runtime_callable, true);
+  assert.equal(securityReview.runtime_permission_controls_remain_enforced, true);
+  assert.deepEqual(securityReview.unresolved_release_blockers, []);
+  for (const entry of securityReview.entries) {
+    assert.equal(entry.review_decision, "approved-with-runtime-controls");
+    assert.equal(entry.static_checks.symlinks_detected, false);
+    assert.equal(entry.static_checks.credential_material_detected, false);
+    assert.equal(entry.static_checks.packaged_scripts_executed_during_review, false);
+    assert.equal(entry.installation_authorized, true);
+    assert.equal(entry.runtime_discovery_authorized, true);
+    assert.equal(entry.desktop_distribution_authorized, true);
   }
 });
 
-test("copywriting source audit does not treat upstream cache metadata as a license", async () => {
+test("copywriting audit keeps observed upstream content separate from the distributed implementation", async () => {
   const audit = JSON.parse(
     await readFile("docs/provenance/source-audits/FEAT-129-copywriting-source-audit.json", "utf8"),
   );
@@ -139,8 +186,9 @@ test("copywriting source audit does not treat upstream cache metadata as a licen
   assert.deepEqual(audit.observed.license_files, []);
   assert.deepEqual(audit.observed.declared_external_dependencies, []);
   assert.equal(audit.decisions.source_content_copied, false);
-  assert.equal(audit.decisions.upstream_redistribution_status, "blocked");
   assert.equal(audit.decisions.local_candidate_status, "model-only-eligible");
+  assert.equal(audit.decisions.candidate_redistribution_status, "verified");
+  assert.equal(audit.decisions.candidate_authorization_scope, "desktop-distribution");
 });
 
 test("vendored v1 and v2 contract snapshots remain digest locked to Contracts 0.5.1", async () => {

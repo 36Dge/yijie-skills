@@ -1,0 +1,1817 @@
+{
+  "schema_version": 1,
+  "feature_id": "FEAT-129",
+  "review_id": "FEAT-129-CATALOG-38-SECURITY-2026-08-25",
+  "reviewed_at": "2026-08-25T00:00:00Z",
+  "reviewed_by": "FEAT-129 technical security reviewer",
+  "review_method": [
+    "exact source and package digest verification",
+    "frontmatter/runtime-name verification",
+    "safe path and symlink inspection",
+    "credential and private-key pattern scan",
+    "Python syntax compilation without running Skill workflows",
+    "network, shell, filesystem, cookie, and commerce-state capability classification"
+  ],
+  "build_time_execution_prohibited": true,
+  "all_entries_installable": true,
+  "all_entries_runtime_callable": true,
+  "runtime_permission_controls_remain_enforced": true,
+  "entries": [
+    {
+      "id": "yijie.sourcing-selection.aliexpress-supplier-evaluator",
+      "runtime_name": "aliexpress-supplier-evaluator",
+      "version": "0.0.94",
+      "package_tree_sha256": "72f36d255cdd889994da9c81e67f4f4850488b124195a225395447ab67f5465a",
+      "archive_sha256": "48ce468839d310a739c21b0cafb1655a5b70f85fa8627a49bc4ef7c4e973d60b",
+      "package_file_count": 2,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "browser.search"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access",
+        "browser-automation"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "network-destination-policy",
+        "secret-redaction"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.sourcing-selection.dropshipping-supplier-integrator",
+      "runtime_name": "dropshipping-supplier-integrator",
+      "version": "0.0.94",
+      "package_tree_sha256": "f9039e4e47936d73242cadfaacb23f33982fb4ff773d15887ef7e77bfa0067b7",
+      "archive_sha256": "778e049034c74ded4886fd1715ad2aafeee6e87e8f0c763a786f72c6cc2ac45c",
+      "package_file_count": 2,
+      "risk": {
+        "level": "critical",
+        "reasons": [
+          "该能力可能影响订单、库存、履约、支付或供应链关键状态。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、幂等和审计控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "supplier.data",
+          "store.write"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access",
+        "commerce-state-or-financial-impact"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "network-destination-policy",
+        "secret-redaction",
+        "explicit-user-approval-for-state-change"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.sourcing-selection.product-supplier-sourcing",
+      "runtime_name": "product-supplier-sourcing",
+      "version": "0.0.94",
+      "package_tree_sha256": "f7f5429d415aea1044d85677d12e07522ee6c543b06d27313eb1e284517a272a",
+      "archive_sha256": "a3bd14080790b34fcd854a187f229c49e31f36c2953d3d6e8df43ecc9d5b4448",
+      "package_file_count": 2,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "product_supplier.search",
+          "web.search"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "network-destination-policy",
+        "secret-redaction"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.sourcing-selection.sales-negotiator",
+      "runtime_name": "sales-negotiator",
+      "version": "0.0.94",
+      "package_tree_sha256": "b21f8f993a99a95575b323b96a65b93779e58a32aa2b89fa2959e4dfe5807385",
+      "archive_sha256": "24bfab224c665c46dcad8c2cf687e4fc1cb126eb363f148a270b283056045a6d",
+      "package_file_count": 13,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.sourcing-selection.supplier-performance-manager",
+      "runtime_name": "supplier-performance-manager",
+      "version": "0.0.94",
+      "package_tree_sha256": "54dab0609d6ccf0c7fb2be828fa42b430b2560b5a143b5c014bb46e7968a909e",
+      "archive_sha256": "63551f0cb966533de869e730e7e7789cb79032ca51ce578532e9c98ec1a90b17",
+      "package_file_count": 2,
+      "risk": {
+        "level": "critical",
+        "reasons": [
+          "该能力可能影响订单、库存、履约、支付或供应链关键状态。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、幂等和审计控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "supplier.data"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access",
+        "commerce-state-or-financial-impact"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "network-destination-policy",
+        "secret-redaction",
+        "explicit-user-approval-for-state-change"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.market-research.alibaba-amazon-market-intel",
+      "runtime_name": "alibaba-amazon-market-intel",
+      "version": "0.0.94",
+      "package_tree_sha256": "00e5bb134b0d02ef8a0cfb2038e53fb77e7bf01235d67eaca28b8ac4c6f3df99",
+      "archive_sha256": "8801948dac35b5dd25c152d6cbd9904e9dc0113007c4f42f2fb3472ff8ef8585",
+      "package_file_count": 94,
+      "risk": {
+        "level": "high",
+        "reasons": [
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "write",
+        "required_tools": [
+          "filesystem.read",
+          "filesystem.write",
+          "jungle_scout.search",
+          "python.execute"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "passed",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access",
+        "filesystem-read-write",
+        "python-execution"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "skill-root-path-confinement",
+        "network-destination-policy",
+        "secret-redaction",
+        "explicit-user-approval-for-state-change"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.market-research.competitor-deep-analysis",
+      "runtime_name": "competitor-deep-analysis",
+      "version": "0.0.94",
+      "package_tree_sha256": "fd74145e7f1fd12b915dbff1e7046849b73b6f584899ed71512d64c50ce562bd",
+      "archive_sha256": "351dc0d1689c68f73d8c7de86fa8e591410afe0f7da758aea8f6d1f4330089c5",
+      "package_file_count": 2,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "browser.search",
+          "marketplace.data"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access",
+        "browser-automation"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "network-destination-policy",
+        "secret-redaction"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.market-research.cross-border-selection",
+      "runtime_name": "cross-border-selection",
+      "version": "0.0.94",
+      "package_tree_sha256": "55f57e776ef4557e6abe11c47ac228da14c7e276942622e9c172ef135c646b39",
+      "archive_sha256": "b62aae351b8792706055bb1374823bc09685c4ba335beb08b83ca54da58b837b",
+      "package_file_count": 3,
+      "risk": {
+        "level": "high",
+        "reasons": [
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "write",
+        "required_tools": [
+          "browser.use",
+          "filesystem.write",
+          "network.http",
+          "python.execute"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access",
+        "filesystem-read-write",
+        "python-execution",
+        "browser-automation"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "skill-root-path-confinement",
+        "network-destination-policy",
+        "secret-redaction",
+        "explicit-user-approval-for-state-change"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.market-research.jungle-scout-deep-dive-analyzer",
+      "runtime_name": "jungle-scout-deep-dive-analyzer",
+      "version": "0.0.94",
+      "package_tree_sha256": "d652bf5a27e46562662363263b6e4827715f8c586e878f1afec202e9d515271c",
+      "archive_sha256": "aa7c3a6c1aa60379017cd79845f8c0e1a82a34943af2ecea879ff9db5c57eb49",
+      "package_file_count": 19,
+      "risk": {
+        "level": "high",
+        "reasons": [
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "write",
+        "required_tools": [
+          "filesystem.read",
+          "filesystem.write",
+          "jungle_scout.collect",
+          "product_supplier.search",
+          "python.execute",
+          "shell.execute"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "passed",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access",
+        "filesystem-read-write",
+        "shell-execution",
+        "python-execution"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "skill-root-path-confinement",
+        "network-destination-policy",
+        "secret-redaction",
+        "explicit-user-approval-for-state-change"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.market-research.market-insight-product-selection",
+      "runtime_name": "market-insight-product-selection",
+      "version": "0.0.94",
+      "package_tree_sha256": "d0a81dec5f57107fdbb9967f108658bdbfe93e4acae6f08c6efe5240c5ff0915",
+      "archive_sha256": "dd5b7fdb1e4d03a8ee3eb1c893a27b42ef708024ef9f063676d0939ce609974a",
+      "package_file_count": 3,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "marketplace.data",
+          "web.fetch",
+          "web.search"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "network-destination-policy",
+        "secret-redaction"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.market-research.product-attribute-analyzer",
+      "runtime_name": "product-attribute-analyzer",
+      "version": "0.0.94",
+      "package_tree_sha256": "ecdc153c52e4d8842f951a599b7766be16ab26c84957b10409093d98d48bd390",
+      "archive_sha256": "0094818797317f9d565e4fcbbcd6295094578b77c5529f2a5a064e041f9f548d",
+      "package_file_count": 3,
+      "risk": {
+        "level": "high",
+        "reasons": [
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "write",
+        "required_tools": [
+          "filesystem.write",
+          "marketplace.data",
+          "python.execute"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access",
+        "filesystem-read-write",
+        "python-execution"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "skill-root-path-confinement",
+        "network-destination-policy",
+        "secret-redaction",
+        "explicit-user-approval-for-state-change"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.market-research.product-selection",
+      "runtime_name": "product-selection",
+      "version": "0.0.94",
+      "package_tree_sha256": "fa90594a58c41c280877b301aabc05366bee8858577eaa1d22a2bcfa60c4b920",
+      "archive_sha256": "4516c195d878c37aba1f21d64634e017974cc610fbd9163fdae85f2beb4b16a3",
+      "package_file_count": 3,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "marketplace.data",
+          "product_supplier.search",
+          "web.search"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "network-destination-policy",
+        "secret-redaction"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.market-research.review-analyst-agent",
+      "runtime_name": "review-analyst-agent",
+      "version": "0.0.94",
+      "package_tree_sha256": "92ab47c5b0c65a460181585b50fd95027157fd91161a6c6d7b0210f6d3398111",
+      "archive_sha256": "87bddc99457a57994b83875236e4905dcba1671c2f802e92f1508b00b6cfe446",
+      "package_file_count": 6,
+      "risk": {
+        "level": "high",
+        "reasons": [
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "write",
+        "required_tools": [
+          "browser.use",
+          "filesystem.write"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access",
+        "filesystem-read-write",
+        "browser-automation"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "skill-root-path-confinement",
+        "network-destination-policy",
+        "secret-redaction",
+        "explicit-user-approval-for-state-change"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.market-research.scenario-driven-product-scout",
+      "runtime_name": "scenario-driven-product-scout",
+      "version": "0.0.94",
+      "package_tree_sha256": "5e9c317093ec35e612691bd31dd3752ba11996d7608fac179f7ae33572ee68d2",
+      "archive_sha256": "3ea08f91d59dc8eadaf125105daaf51da3f66d601edfd5d164145512bdbecc12",
+      "package_file_count": 7,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "optional",
+        "filesystem": "none",
+        "required_tools": [
+          "web.search"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "network-destination-policy",
+        "secret-redaction"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.content-marketing.content-breakdown",
+      "runtime_name": "content-breakdown",
+      "version": "0.0.94",
+      "package_tree_sha256": "2ba09e12331d114c342a6ed994b8db24e2a77d06cc5e42637b18c20b6ca9e188",
+      "archive_sha256": "ec868241d93bb67b85f5c7e0b462051a8208208dc08085a20f08b7cbba76ee1a",
+      "package_file_count": 34,
+      "risk": {
+        "level": "high",
+        "reasons": [
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "write",
+        "required_tools": [
+          "browser.use",
+          "filesystem.write",
+          "network.http",
+          "python.execute",
+          "shell.execute"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "passed",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access",
+        "filesystem-read-write",
+        "shell-execution",
+        "python-execution",
+        "browser-automation",
+        "cookie-handling-guidance",
+        "runtime-dependency-install-guidance"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "skill-root-path-confinement",
+        "network-destination-policy",
+        "secret-redaction",
+        "explicit-user-approval-for-state-change"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.content-marketing.content-strategy",
+      "runtime_name": "content-strategy",
+      "version": "0.0.94",
+      "package_tree_sha256": "48839904567b44dc02d578014cf86857b823f719adbb140938be57dd2d1391e2",
+      "archive_sha256": "bc47472e7d9c6fae25aec2f7006d4bd13f43c7a61d1b9d5d828369c46e729bd9",
+      "package_file_count": 2,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "none",
+        "filesystem": "read",
+        "required_tools": [
+          "filesystem.read"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "filesystem-read"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "skill-root-path-confinement"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.content-marketing.copywriting",
+      "runtime_name": "copywriting",
+      "version": "0.1.0",
+      "package_tree_sha256": "0e5b2a9d9fad2e6fc7f9c8e147febd7974ae6d5e6e05b96445ede36184523771",
+      "archive_sha256": "efb7abe5460c5b66def57575cacac1486887e9faf6139d8466f086caf661333b",
+      "package_file_count": 5,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "营销文案可能形成未经证实的商品、效果或合规声明。",
+          "生成结果是草稿，发布到电商平台属于独立写操作。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.content-marketing.product-marketing-context",
+      "runtime_name": "product-marketing-context",
+      "version": "0.0.94",
+      "package_tree_sha256": "df3a9af55be31dd21df0827ed095039b0a6dc5d69ddebc01084c45db893ca344",
+      "archive_sha256": "2f59566878841802db7109e21900bf47e2d1108ca6368d83780336083a1f40d8",
+      "package_file_count": 2,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "none",
+        "filesystem": "write",
+        "required_tools": [
+          "filesystem.read",
+          "filesystem.write"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "filesystem-read-write"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "skill-root-path-confinement"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.content-marketing.social-media-content-creator",
+      "runtime_name": "social-media-content-creator",
+      "version": "0.0.94",
+      "package_tree_sha256": "68e4240b4be86eb5cb89849a9e6a2ac9b68f5773fd01e4034b518fffca9ca0b0",
+      "archive_sha256": "c5050fb4eb30bfe66af3b78a8887e2cf815d5d4254ed13dbe94f73651cfe3614",
+      "package_file_count": 2,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.content-marketing.vibe-marketing",
+      "runtime_name": "vibe-marketing",
+      "version": "0.0.94",
+      "package_tree_sha256": "4914b6667ad033bcebff8a2bfca0034a3be7e0b22bdd560c9ef754b6b5b8bbf1",
+      "archive_sha256": "051c85a7e02cd73d7965a7df2c2526daf25020765e0793b019e6a98c0446fc18",
+      "package_file_count": 2,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.content-marketing.xiaohongshu-content-creator",
+      "runtime_name": "xiaohongshu-content-creator",
+      "version": "0.0.94",
+      "package_tree_sha256": "986951dc580d22bec876745c7ca2bbb59eb24c6fc2901fce44c97969db0c467f",
+      "archive_sha256": "5f6de568302cb3ccdfb21cc02570ae94358ea16b75369050cf131ffe524ba364",
+      "package_file_count": 2,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.traffic-advertising.amazon-listing-expert",
+      "runtime_name": "amazon-listing-expert",
+      "version": "0.0.94",
+      "package_tree_sha256": "d5f4667d3dfb971673e549c25a08577f26ce53b1a76fffd07375b9d641a0bb11",
+      "archive_sha256": "bb53246ea7ce499d3f90800289cf7afc49e5e130897f230f57633df3c2608d60",
+      "package_file_count": 2,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.traffic-advertising.amazon-ppc-campaign-manager",
+      "runtime_name": "amazon-ppc-campaign-manager",
+      "version": "0.0.94",
+      "package_tree_sha256": "40b4fa13df31e6239f23e4510edc35982994054d1b501cc5903637da1d07b83a",
+      "archive_sha256": "2ceef91b28f60020228946eac141640ca618b7154bda299e80f83adef874e0b3",
+      "package_file_count": 2,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.traffic-advertising.amz-hot-keywords",
+      "runtime_name": "amz-hot-keywords",
+      "version": "0.0.94",
+      "package_tree_sha256": "97387cbfbfa8e9a399d68ce3c822be4e4fefa471f8751cddffedf8cb489249a3",
+      "archive_sha256": "651de7bb315970729640663441207f504609849c1341a35584bf73562a44ef63",
+      "package_file_count": 3,
+      "risk": {
+        "level": "high",
+        "reasons": [
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "write",
+        "required_tools": [
+          "browser.use",
+          "filesystem.write",
+          "python.execute"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "passed",
+        "captured_debug_page_excluded": true
+      },
+      "findings": [
+        "network-access",
+        "filesystem-read-write",
+        "python-execution",
+        "browser-automation"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "skill-root-path-confinement",
+        "network-destination-policy",
+        "secret-redaction",
+        "explicit-user-approval-for-state-change"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.traffic-advertising.amz-product-optimizer",
+      "runtime_name": "amz-product-optimizer",
+      "version": "0.0.94",
+      "package_tree_sha256": "69100e9895bff703aa30eb64cda9dde60e02ebcb42b002d239cd17c855e4f88e",
+      "archive_sha256": "33ce2676f54f2c8f236362c41685e75b69a7c25a7404b6dfd56d63c1cf12d66f",
+      "package_file_count": 6,
+      "risk": {
+        "level": "high",
+        "reasons": [
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "write",
+        "required_tools": [
+          "browser.use",
+          "filesystem.write",
+          "image.generate",
+          "python.execute"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "passed",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access",
+        "filesystem-read-write",
+        "python-execution",
+        "browser-automation"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "skill-root-path-confinement",
+        "network-destination-policy",
+        "secret-redaction",
+        "explicit-user-approval-for-state-change"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.traffic-advertising.ecommerce-seo-optimizer",
+      "runtime_name": "ecommerce-seo-optimizer",
+      "version": "0.0.94",
+      "package_tree_sha256": "c7bcbc7ad2fb6a7996eff676f526bbe7157ea1a1b9af33064f7936100ff14ba6",
+      "archive_sha256": "6922f6c86de17a45e25201c5f7c92befc6e39a8499182e02a4a4b868486949ae",
+      "package_file_count": 2,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.traffic-advertising.etsy-seo-optimizer",
+      "runtime_name": "etsy-seo-optimizer",
+      "version": "0.0.94",
+      "package_tree_sha256": "d4b92e066472fc4553af66f924e2c75f7ab4a23d4a41d6ba5e6c5d40c706f80d",
+      "archive_sha256": "8d66b6431620f0bf1eecd7509e6b286aa8fb952149b65231878c21bf4fd0ed5b",
+      "package_file_count": 6,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "none",
+        "filesystem": "read",
+        "required_tools": [
+          "filesystem.read"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "filesystem-read"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "skill-root-path-confinement"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.traffic-advertising.product-description-generator",
+      "runtime_name": "product-description-generator",
+      "version": "0.0.94",
+      "package_tree_sha256": "7554bee1f6bf4ed8457dc24887b042b51b114206a552326ef0d3e6b5586a6c0e",
+      "archive_sha256": "bb6e0f3c26ebf35a9c637c571bd6366ec90d3303e94e1470b1056bef8b9b7bf9",
+      "package_file_count": 7,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "none",
+        "filesystem": "write",
+        "required_tools": [
+          "filesystem.write",
+          "python.execute"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "passed",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "filesystem-read-write",
+        "python-execution"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "skill-root-path-confinement"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.traffic-advertising.seo-keyword-research",
+      "runtime_name": "seo-keyword-research",
+      "version": "0.0.94",
+      "package_tree_sha256": "6304f5de6a53a5e5450c183c45d31f272456246a0fa1a516c7387b96bff5a84d",
+      "archive_sha256": "a192ea17a05e8644a3e7044377e2bda5ffdd4f4f0b3444c912b3b31f1d23d64a",
+      "package_file_count": 2,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "optional",
+        "filesystem": "none",
+        "required_tools": [
+          "web.search"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "network-destination-policy",
+        "secret-redaction"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.traffic-advertising.tiktok-ads-strategy",
+      "runtime_name": "tiktok-ads-strategy",
+      "version": "0.0.94",
+      "package_tree_sha256": "5f3b951624486fa9ed243687d49e4a28c93a365c775dcf6410a8148b1dd8c6ea",
+      "archive_sha256": "49905b7f97d1107c7ab4d02989c921f3234d1817d9bea1fb874f5c86c0776092",
+      "package_file_count": 2,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.store-operations.amazon-brand-protection",
+      "runtime_name": "amazon-brand-protection",
+      "version": "0.0.94",
+      "package_tree_sha256": "3544645677c95f6323f3c9acb0dfa109322d152587fdab3c6a19821922b808fe",
+      "archive_sha256": "75e50c2e15a6d2156e5b7683c0bfd007582ce031f032d50ee7a69d294454c582",
+      "package_file_count": 2,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.store-operations.buy-now-pay-later-setup",
+      "runtime_name": "buy-now-pay-later-setup",
+      "version": "0.0.94",
+      "package_tree_sha256": "25a8ff2da637b3c9b60267b101f711d64d3345126c425bebf0500b1a1352a46b",
+      "archive_sha256": "a2add0cf673dd7cab2222d61e231fee400a8dbdfe037665eb7f7e03c6fcb631e",
+      "package_file_count": 2,
+      "risk": {
+        "level": "high",
+        "reasons": [
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "explicit-user-approval-for-state-change"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.store-operations.ecommerce-gdpr-compliance",
+      "runtime_name": "ecommerce-gdpr-compliance",
+      "version": "0.0.94",
+      "package_tree_sha256": "1cd527991efc39008e6187a5bb0c01b76ebc44b5efe61b1780866cb03eb8ed99",
+      "archive_sha256": "bde430ada27effe2dc146125a1b5086d1300b74c0dee13a0fc3c64d83f33b2c4",
+      "package_file_count": 2,
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "该能力会影响跨境电商经营判断或生成面向外部平台的操作建议。",
+          "静态审核未发现凭据或自执行行为；实际工具调用仍由 Runtime 权限控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.store-operations.invoice-generator",
+      "runtime_name": "invoice-generator",
+      "version": "0.0.94",
+      "package_tree_sha256": "159675b5fec145d6288ab1ed59bf3188a12410d0690876f0e1b166faff8e5bbf",
+      "archive_sha256": "a29d777d2b8a589eb3f58d63d8063d0f42c74fed2b0c2afff1866e3df18644d8",
+      "package_file_count": 2,
+      "risk": {
+        "level": "high",
+        "reasons": [
+          "该能力涉及网络访问、脚本执行、文件写入、Cookie 或外部平台数据。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、路径隔离和审计控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "explicit-user-approval-for-state-change"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.store-operations.multichannel-inventory-sync",
+      "runtime_name": "multichannel-inventory-sync",
+      "version": "0.0.94",
+      "package_tree_sha256": "272223ea128316d43711eadc24aee097662f893645c86103a1a54d9260bc784c",
+      "archive_sha256": "8c65e7d4d9880c97937d7e61fd5ff979b50a765a6a1b22180c8e71021b976337",
+      "package_file_count": 2,
+      "risk": {
+        "level": "critical",
+        "reasons": [
+          "该能力可能影响订单、库存、履约、支付或供应链关键状态。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、幂等和审计控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "inventory.read",
+          "inventory.write"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access",
+        "commerce-state-or-financial-impact"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "network-destination-policy",
+        "secret-redaction",
+        "explicit-user-approval-for-state-change"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.store-operations.payment-fraud-detector",
+      "runtime_name": "payment-fraud-detector",
+      "version": "0.0.94",
+      "package_tree_sha256": "2e303cf1100c2b2180ee033e52108b10a05affb7f65e3c25cc8967cf4947fb78",
+      "archive_sha256": "87f306b6d42cfdaa497ea3ec3c2e51d098a21e75d091c0ef10e45b8dcf31a5ef",
+      "package_file_count": 2,
+      "risk": {
+        "level": "critical",
+        "reasons": [
+          "该能力可能影响订单、库存、履约、支付或供应链关键状态。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、幂等和审计控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "payments.risk"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access",
+        "commerce-state-or-financial-impact"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "network-destination-policy",
+        "secret-redaction",
+        "explicit-user-approval-for-state-change"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.store-operations.tiktok-shop-setup",
+      "runtime_name": "tiktok-shop-setup",
+      "version": "0.0.94",
+      "package_tree_sha256": "0d405efaad7a80a9d129918da23d85a4ec4ca5b02a44cd0e1f36a5899fca297a",
+      "archive_sha256": "b90e9f63ec69fcd92cef14cdde376429a6e9f71280b1a579a1e4d93dc6961076",
+      "package_file_count": 2,
+      "risk": {
+        "level": "critical",
+        "reasons": [
+          "该能力可能影响订单、库存、履约、支付或供应链关键状态。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、幂等和审计控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "tiktok.shop"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access",
+        "commerce-state-or-financial-impact"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "network-destination-policy",
+        "secret-redaction",
+        "explicit-user-approval-for-state-change"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    },
+    {
+      "id": "yijie.store-operations.warehouse-fulfillment-workflow",
+      "runtime_name": "warehouse-fulfillment-workflow",
+      "version": "0.0.94",
+      "package_tree_sha256": "2d414caba81baa434bbd24679ec063181a7acb8ec5a83bb8a73d00401a8738c1",
+      "archive_sha256": "bcf1bb79821c5c33bd3bb4e26db9d2431950df2e73a234eaa26f1901c6cd8ff2",
+      "package_file_count": 2,
+      "risk": {
+        "level": "critical",
+        "reasons": [
+          "该能力可能影响订单、库存、履约、支付或供应链关键状态。",
+          "执行工具调用前必须通过 Runtime 最小权限、用户批准、幂等和审计控制。"
+        ]
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "warehouse.fulfillment"
+        ]
+      },
+      "static_checks": {
+        "frontmatter_runtime_name_matches": true,
+        "safe_relative_paths": true,
+        "regular_files_only": true,
+        "symlinks_detected": false,
+        "credential_material_detected": false,
+        "packaged_scripts_executed_during_review": false,
+        "python_syntax_check": "not-applicable",
+        "captured_debug_page_excluded": false
+      },
+      "findings": [
+        "network-access",
+        "commerce-state-or-financial-impact"
+      ],
+      "required_runtime_controls": [
+        "agent-host-permission-enforcement",
+        "audit-log",
+        "untrusted-input-isolation",
+        "network-destination-policy",
+        "secret-redaction",
+        "explicit-user-approval-for-state-change"
+      ],
+      "review_decision": "approved-with-runtime-controls",
+      "installation_authorized": true,
+      "runtime_discovery_authorized": true,
+      "desktop_distribution_authorized": true
+    }
+  ],
+  "overall_decision": "approved-for-local-development-and-desktop-release",
+  "unresolved_release_blockers": []
+}

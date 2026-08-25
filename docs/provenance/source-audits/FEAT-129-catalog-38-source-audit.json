@@ -1,506 +1,833 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "feature_id": "FEAT-129",
-  "audit_scope": "catalog-metadata-only",
+  "audit_scope": "38-skill-packaged-source-and-provenance",
   "observed_at": "2026-08-25T00:00:00Z",
+  "reviewed_at": "2026-08-25T00:00:00Z",
+  "reviewed_by": "FEAT-129 product owner and technical security reviewer",
   "source_label": "user-provided/05Skill广场",
   "source_disclosure": {
-    "content_included": false,
+    "source_snapshots_included": true,
     "absolute_local_paths_included": false,
+    "real_credentials_or_merchant_data_included": false,
     "upstream_owner_marker": "official",
-    "owner_marker_is_license_evidence": false
+    "owner_marker_used_as_license_evidence": false,
+    "authorization_basis": "FEAT-129 owner attestation"
   },
   "entries": [
     {
+      "id": "yijie.sourcing-selection.aliexpress-supplier-evaluator",
       "runtime_name": "aliexpress-supplier-evaluator",
       "category": "sourcing-selection",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/aliexpress-supplier-evaluator",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "54fe4253c3fbbf50ca6f26717a679b355c4f5a38f1d35176bc3b97010caa491a",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "browser.search",
-        "supplier.data"
+      "packaged_skill_md_sha256": "04ee483b4b61603e8532b41a74165c74e0cdaadf9116cc8158513e778ecfe36d",
+      "packaged_tree_sha256": "72f36d255cdd889994da9c81e67f4f4850488b124195a225395447ab67f5465a",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.sourcing-selection.dropshipping-supplier-integrator",
       "runtime_name": "dropshipping-supplier-integrator",
       "category": "sourcing-selection",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/dropshipping-supplier-integrator",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "39bea71fd75aa38f2c41af4fadcabeaf330367ba7f67033c253fed54b3504043",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "supplier.data",
-        "store.write"
+      "packaged_skill_md_sha256": "c5a09c670632fa8885bf8f593e04a24620ce34f7f4239451fbbbf895410bbdc8",
+      "packaged_tree_sha256": "f9039e4e47936d73242cadfaacb23f33982fb4ff773d15887ef7e77bfa0067b7",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.sourcing-selection.product-supplier-sourcing",
       "runtime_name": "product-supplier-sourcing",
       "category": "sourcing-selection",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/product-supplier-sourcing",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "36d5f8716f9028093a2c3d6110a62a5216aa14b5216ef3912eb1f7c45312c8fa",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "browser.search",
-        "supplier.data"
+      "packaged_skill_md_sha256": "af47d85b67a36337807e5b6333422da14ee0a69d14a107d6125e558286224a61",
+      "packaged_tree_sha256": "f7f5429d415aea1044d85677d12e07522ee6c543b06d27313eb1e284517a272a",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.sourcing-selection.sales-negotiator",
       "runtime_name": "sales-negotiator",
       "category": "sourcing-selection",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/sales-negotiator",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "7b903c33034b3afae0eb2b6a797be68327275fa364c43383cb3e4b8551ebdd47",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "packaged_skill_md_sha256": "207fd479dc4aaa912c20be976a417d9d6469b96f15c4a7720f9540c86bf1378a",
+      "packaged_tree_sha256": "b21f8f993a99a95575b323b96a65b93779e58a32aa2b89fa2959e4dfe5807385",
+      "package_file_count": 13,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
+      ],
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.sourcing-selection.supplier-performance-manager",
       "runtime_name": "supplier-performance-manager",
       "category": "sourcing-selection",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/supplier-performance-manager",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "155dbcbdb0b585e83ceb27dd1ca92d7023480fb39b847af0ec6dac95c976dd75",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "supplier.data"
+      "packaged_skill_md_sha256": "de61aa1eeb14e833097d3e55144024b2d71cbe033e016bd7cefdaf3929e7967f",
+      "packaged_tree_sha256": "54dab0609d6ccf0c7fb2be828fa42b430b2560b5a143b5c014bb46e7968a909e",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.market-research.alibaba-amazon-market-intel",
       "runtime_name": "alibaba-amazon-market-intel",
       "category": "market-research",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/alibaba-amazon-market-intel",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "d6f209079db51a7ed82f8ddeb0aaadda4e8d7f65b19b4ec8ec67e3fe26f4e4f6",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "marketplace.data"
+      "packaged_skill_md_sha256": "d6f209079db51a7ed82f8ddeb0aaadda4e8d7f65b19b4ec8ec67e3fe26f4e4f6",
+      "packaged_tree_sha256": "00e5bb134b0d02ef8a0cfb2038e53fb77e7bf01235d67eaca28b8ac4c6f3df99",
+      "package_file_count": 94,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.market-research.competitor-deep-analysis",
       "runtime_name": "competitor-deep-analysis",
       "category": "market-research",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/competitor-deep-analysis",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "c1cfa70cbd136b2b772833e2d4f296efef56bcbce6a18c5805b97e7a94851e36",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "browser.search",
-        "marketplace.data"
+      "packaged_skill_md_sha256": "6028c0175fa90d257008e177fbef1fde81cb5cc290b5b3c76739f1990a03af11",
+      "packaged_tree_sha256": "fd74145e7f1fd12b915dbff1e7046849b73b6f584899ed71512d64c50ce562bd",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.market-research.cross-border-selection",
       "runtime_name": "cross-border-selection",
       "category": "market-research",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/cross-border-selection",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "9e04322bc35994204c01144fe4c4011fb87a035708c656e68aeee2379295a893",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "marketplace.data"
+      "packaged_skill_md_sha256": "a74c33ce104db61e245965af5c3aac625d6ef060caebf646ad2747a69020eab3",
+      "packaged_tree_sha256": "55f57e776ef4557e6abe11c47ac228da14c7e276942622e9c172ef135c646b39",
+      "package_file_count": 3,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.market-research.jungle-scout-deep-dive-analyzer",
       "runtime_name": "jungle-scout-deep-dive-analyzer",
       "category": "market-research",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/jungle-scout-deep-dive-analyzer",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "11e2d41668510cccf2e2e59d1d4d54a5856cd74c9b95fa9b0748324944550da6",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "jungle_scout.data"
+      "packaged_skill_md_sha256": "11e2d41668510cccf2e2e59d1d4d54a5856cd74c9b95fa9b0748324944550da6",
+      "packaged_tree_sha256": "d652bf5a27e46562662363263b6e4827715f8c586e878f1afec202e9d515271c",
+      "package_file_count": 19,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.market-research.market-insight-product-selection",
       "runtime_name": "market-insight-product-selection",
       "category": "market-research",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/market-insight-product-selection",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "580a91de7d73b1e1b2294f4e5645f3b60daaa13014d084f2fa3ae753a7241cc4",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "marketplace.data"
+      "packaged_skill_md_sha256": "acc02255cffaa8b50f76f8381ddd5255c1e432e3be665e87de907e87d290b371",
+      "packaged_tree_sha256": "d0a81dec5f57107fdbb9967f108658bdbfe93e4acae6f08c6efe5240c5ff0915",
+      "package_file_count": 3,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.market-research.product-attribute-analyzer",
       "runtime_name": "product-attribute-analyzer",
       "category": "market-research",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/product-attribute-analyzer",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "014d985b460fcaf83b1e935afca0fb0808ef8e0dc058589686bbadaf178901c0",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "packaged_skill_md_sha256": "bf17fa4ca47a1fa0c9edfa17de0174221617242f4f80711b47f385e3707b47a0",
+      "packaged_tree_sha256": "ecdc153c52e4d8842f951a599b7766be16ab26c84957b10409093d98d48bd390",
+      "package_file_count": 3,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
+      ],
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.market-research.product-selection",
       "runtime_name": "product-selection",
       "category": "market-research",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/product-selection",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "3433148b6b1bb757b0482850feab6384e0a7aa3920e9dbd8608dc487c4dce2fb",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "marketplace.data"
+      "packaged_skill_md_sha256": "800a5322c1ebbe0c5c4612b8bfe07c48d4d3710d522739de9d09f23a5f95d20f",
+      "packaged_tree_sha256": "fa90594a58c41c280877b301aabc05366bee8858577eaa1d22a2bcfa60c4b920",
+      "package_file_count": 3,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.market-research.review-analyst-agent",
       "runtime_name": "review-analyst-agent",
       "category": "market-research",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/review-analyst-agent",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "e356932f3ddead77bea3f397c312d5789a7a8b1a2401e8771bfb17622605cad3",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "marketplace.reviews"
+      "packaged_skill_md_sha256": "09292f025b406d551a29f93536e7beef5b3f3afcd2331c080db24f984c9ea288",
+      "packaged_tree_sha256": "92ab47c5b0c65a460181585b50fd95027157fd91161a6c6d7b0210f6d3398111",
+      "package_file_count": 6,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.market-research.scenario-driven-product-scout",
       "runtime_name": "scenario-driven-product-scout",
       "category": "market-research",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/scenario-driven-product-scout",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "959fc795dddb44842fe5cdc08c790d3e6eab4289e19c5a1ee90acf73758ab883",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "browser.search"
+      "packaged_skill_md_sha256": "14fc02015879536bee234021560898f1e24172f450f65ece31064a4cd05373bf",
+      "packaged_tree_sha256": "5e9c317093ec35e612691bd31dd3752ba11996d7608fac179f7ae33572ee68d2",
+      "package_file_count": 7,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.content-marketing.content-breakdown",
       "runtime_name": "content-breakdown",
       "category": "content-marketing",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/content-breakdown",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "7d914e8cd3e7a539cedc37ce4dc6e2e491cfe56415c804c6ff920fcea52d506a",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "packaged_skill_md_sha256": "89ce89aafa5ed97d3240fed7d9ef685ffc6b549c19fef06793c2250c85997d36",
+      "packaged_tree_sha256": "2ba09e12331d114c342a6ed994b8db24e2a77d06cc5e42637b18c20b6ca9e188",
+      "package_file_count": 34,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
+      ],
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.content-marketing.content-strategy",
       "runtime_name": "content-strategy",
       "category": "content-marketing",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/content-strategy",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "8af7493497d3047c949189c28e896516e527b1080b0a5ee80faccb59294c005a",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "packaged_skill_md_sha256": "0a6cd2ce31d24ad8b15cc4441693e5ee72ab7a73b1771db1431223abf3eab435",
+      "packaged_tree_sha256": "48839904567b44dc02d578014cf86857b823f719adbb140938be57dd2d1391e2",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
+      ],
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.content-marketing.copywriting",
       "runtime_name": "copywriting",
       "category": "content-marketing",
-      "observed_version": "0.0.94",
+      "version": "0.1.0",
+      "source_reference": "plugins/yijie-desktop-skills/skills/copywriting",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "5e379fc912293f05c3d70d112339117e5fe066956d2ff8fb592526b81eb2370b",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [],
-      "source_review_status": "reauthored-locally",
-      "redistribution_status": "blocked"
+      "packaged_skill_md_sha256": "785a47c30626608911e8b3e6221efb533116518b4463bf16f4419ca43ed9c328",
+      "packaged_tree_sha256": "0e5b2a9d9fad2e6fc7f9c8e147febd7974ae6d5e6e05b96445ede36184523771",
+      "package_file_count": 5,
+      "source_transformation": "YiJie-authored narrower implementation; no observed upstream text copied",
+      "excluded_files": [
+        ".DS_Store"
+      ],
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.content-marketing.product-marketing-context",
       "runtime_name": "product-marketing-context",
       "category": "content-marketing",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/product-marketing-context",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "6098a7124a01e6fec9e5b7a468ad6d01623cc19f9aa63d454d2993a16838ac0a",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "packaged_skill_md_sha256": "644459f50ccb8ae8bd89250faf536e2d95054f7319fce4ec4108568e12fc3011",
+      "packaged_tree_sha256": "df3a9af55be31dd21df0827ed095039b0a6dc5d69ddebc01084c45db893ca344",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
+      ],
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.content-marketing.social-media-content-creator",
       "runtime_name": "social-media-content-creator",
       "category": "content-marketing",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/social-media-content-creator",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "8e37dad5eeaf8e952cbd9269d2ae9535de7c88c548ece87d293d4dc9c423986b",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "social.publish"
+      "packaged_skill_md_sha256": "f6ea06841a453eb29122e744a14ff3f4d3a8151d1dcfb8aa9452c1addb8736ba",
+      "packaged_tree_sha256": "68e4240b4be86eb5cb89849a9e6a2ac9b68f5773fd01e4034b518fffca9ca0b0",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.content-marketing.vibe-marketing",
       "runtime_name": "vibe-marketing",
       "category": "content-marketing",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/vibe-marketing",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "20930e159d3b82033b80968eca7a5c237ea76b878fe189bd8183ebdceabd68ae",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "packaged_skill_md_sha256": "bd916662e7ab5cd8b9918d38468aab91979864105b0fdf87464f05ea0dc3a2ec",
+      "packaged_tree_sha256": "4914b6667ad033bcebff8a2bfca0034a3be7e0b22bdd560c9ef754b6b5b8bbf1",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
+      ],
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.content-marketing.xiaohongshu-content-creator",
       "runtime_name": "xiaohongshu-content-creator",
       "category": "content-marketing",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/xiaohongshu-content-creator",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "02be6c7a35983faaef517eeffeacd0577505598d98b66b39d0f210bdd6a65bd8",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "xiaohongshu.publish"
+      "packaged_skill_md_sha256": "d29c8b1cc1908732163d9f5a78bb0a01a0e41544d10e9db7bc1046a9cc5ea78f",
+      "packaged_tree_sha256": "986951dc580d22bec876745c7ca2bbb59eb24c6fc2901fce44c97969db0c467f",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.traffic-advertising.amazon-listing-expert",
       "runtime_name": "amazon-listing-expert",
       "category": "traffic-advertising",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/amazon-listing-expert",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "7ca7efdde72424907b876c69c7696f59940aec11d49a5746a41d2985ae5ad323",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "amazon.listing"
+      "packaged_skill_md_sha256": "02d1bf0f46ca84ea2c15e4ed7d70a0d611c4a0b00bce4cfb0ddc6c40f2c752a2",
+      "packaged_tree_sha256": "d5f4667d3dfb971673e549c25a08577f26ce53b1a76fffd07375b9d641a0bb11",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.traffic-advertising.amazon-ppc-campaign-manager",
       "runtime_name": "amazon-ppc-campaign-manager",
       "category": "traffic-advertising",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/amazon-ppc-campaign-manager",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "332542cb9782fa9e446e3c5b3ab9be2f7be9f9f5c41d3eb074d259f1967fca97",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "amazon.ads"
+      "packaged_skill_md_sha256": "b5bd6a422d1f7dc675c60f0bb4d91efe1b70851560ed033f39334a0ee571f87e",
+      "packaged_tree_sha256": "40b4fa13df31e6239f23e4510edc35982994054d1b501cc5903637da1d07b83a",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.traffic-advertising.amz-hot-keywords",
       "runtime_name": "amz-hot-keywords",
       "category": "traffic-advertising",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/amz-hot-keywords",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "22457646d8fcd0f265e5ef0ce928e8e74565af02e934a305b115421e7a30811c",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "amazon.keywords"
+      "packaged_skill_md_sha256": "9f095b56d843afe6b7dd23cbd946e1044d17d68a9bd774169463d96e8df99f69",
+      "packaged_tree_sha256": "97387cbfbfa8e9a399d68ce3c822be4e4fefa471f8751cddffedf8cb489249a3",
+      "package_file_count": 3,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store",
+        "scripts/debug_page.html"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.traffic-advertising.amz-product-optimizer",
       "runtime_name": "amz-product-optimizer",
       "category": "traffic-advertising",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/amz-product-optimizer",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "e3e26b571f3e53f97c503274ee557d5f2a5a25b0951d1350e94f075573968237",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "amazon.listing"
+      "packaged_skill_md_sha256": "551dfd93e4f0abb7d1f35e773ab8fbdb82526be28550514c058062f2a08d9e15",
+      "packaged_tree_sha256": "69100e9895bff703aa30eb64cda9dde60e02ebcb42b002d239cd17c855e4f88e",
+      "package_file_count": 6,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.traffic-advertising.ecommerce-seo-optimizer",
       "runtime_name": "ecommerce-seo-optimizer",
       "category": "traffic-advertising",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/ecommerce-seo-optimizer",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "5a73a11739387d96dee3f3ed6c697802394a67d63061dc618e9f533b97436fb6",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "browser.search"
+      "packaged_skill_md_sha256": "737d89b1ddc6fc41a32f9bd115153198b6e982e8ab77b455dbfa812fb23b1083",
+      "packaged_tree_sha256": "c7bcbc7ad2fb6a7996eff676f526bbe7157ea1a1b9af33064f7936100ff14ba6",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.traffic-advertising.etsy-seo-optimizer",
       "runtime_name": "etsy-seo-optimizer",
       "category": "traffic-advertising",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/etsy-seo-optimizer",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "5f57ff7a548b1a1279e517350be2552fd7818dc6052b51b39b33d403f49d2b32",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "etsy.listing"
+      "packaged_skill_md_sha256": "65e5cbb8db9e898bdf236903b9d376d407f086fc8c0a6c32af592626d6328698",
+      "packaged_tree_sha256": "d4b92e066472fc4553af66f924e2c75f7ab4a23d4a41d6ba5e6c5d40c706f80d",
+      "package_file_count": 6,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.traffic-advertising.product-description-generator",
       "runtime_name": "product-description-generator",
       "category": "traffic-advertising",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/product-description-generator",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "8b45ec3a9e6a5937737e16dbdf247c838f27dbf96cdc71e5e6c4258fbcfc7bff",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "packaged_skill_md_sha256": "1ca1bc3b32b85bc5dee1f03797798ea818b5a0ebfbbef4a57804a9f04f246bb4",
+      "packaged_tree_sha256": "7554bee1f6bf4ed8457dc24887b042b51b114206a552326ef0d3e6b5586a6c0e",
+      "package_file_count": 7,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
+      ],
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.traffic-advertising.seo-keyword-research",
       "runtime_name": "seo-keyword-research",
       "category": "traffic-advertising",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/seo-keyword-research",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "cc13939ad2fabba68911b548d4a5dad5d73aaf180ead29d79938487744a5c5e7",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "browser.search"
+      "packaged_skill_md_sha256": "9089a4d165ab556ea0db238499082c182c7f099c6877cbaa82b9cb72004ed5e0",
+      "packaged_tree_sha256": "6304f5de6a53a5e5450c183c45d31f272456246a0fa1a516c7387b96bff5a84d",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.traffic-advertising.tiktok-ads-strategy",
       "runtime_name": "tiktok-ads-strategy",
       "category": "traffic-advertising",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/tiktok-ads-strategy",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "867aff47e894ec577c5445501ecbfbaf14e9c59bce3ae3eb4657851381dad24b",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "tiktok.ads"
+      "packaged_skill_md_sha256": "97bfaec72771df4505e48aabb89636c43726ccef1f86926e284c26ad2f71784e",
+      "packaged_tree_sha256": "5f3b951624486fa9ed243687d49e4a28c93a365c775dcf6410a8148b1dd8c6ea",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.store-operations.amazon-brand-protection",
       "runtime_name": "amazon-brand-protection",
       "category": "store-operations",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/amazon-brand-protection",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "ca2f754b2f72a73056f02448a820959a323c8a20bc1014f6125eb278c2ba1fda",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "amazon.brand"
+      "packaged_skill_md_sha256": "4d8190e2959fe82e757f8242cbb967e98b5cd49527f07bef4b6f3080d9d2c8a8",
+      "packaged_tree_sha256": "3544645677c95f6323f3c9acb0dfa109322d152587fdab3c6a19821922b808fe",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.store-operations.buy-now-pay-later-setup",
       "runtime_name": "buy-now-pay-later-setup",
       "category": "store-operations",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/buy-now-pay-later-setup",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "810fb54ee8489a4d2b60207338714b6cb24ef72fef2633649cd62a1dc2d363aa",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "payments.configure"
+      "packaged_skill_md_sha256": "e55614b8df2f335145b08382698ac5e34035cc81113d9a0b76b0485986529b37",
+      "packaged_tree_sha256": "25a8ff2da637b3c9b60267b101f711d64d3345126c425bebf0500b1a1352a46b",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.store-operations.ecommerce-gdpr-compliance",
       "runtime_name": "ecommerce-gdpr-compliance",
       "category": "store-operations",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/ecommerce-gdpr-compliance",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "96e51f79cfacb8de0cdee322ce0a18537ad34b9a2f1f9846e5f7082127e81310",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "store.data"
+      "packaged_skill_md_sha256": "dd91896e118be5bf691ebbeb63fec2fc079be657e5e2ed79d209e7b8ec2e7c93",
+      "packaged_tree_sha256": "1cd527991efc39008e6187a5bb0c01b76ebc44b5efe61b1780866cb03eb8ed99",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.store-operations.invoice-generator",
       "runtime_name": "invoice-generator",
       "category": "store-operations",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/invoice-generator",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "2c9065c34a0a6bb3be27674e02a1e8b532d25cf866492a35fb1b9e701e281ccc",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "store.orders"
+      "packaged_skill_md_sha256": "fbc9dcf4a4ce623b29f54c795781eb4e78203e5478fc9cc2cf76c286513d54b8",
+      "packaged_tree_sha256": "159675b5fec145d6288ab1ed59bf3188a12410d0690876f0e1b166faff8e5bbf",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.store-operations.multichannel-inventory-sync",
       "runtime_name": "multichannel-inventory-sync",
       "category": "store-operations",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/multichannel-inventory-sync",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "69bc05e6ea0b17238e138b5614489a1fb73b968b87940c47dd670064ecd968a1",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "inventory.read",
-        "inventory.write"
+      "packaged_skill_md_sha256": "fd6ba36ff231d5f0073e153f0bed415b3391cfcb075c51a051c5498b40a80ffc",
+      "packaged_tree_sha256": "272223ea128316d43711eadc24aee097662f893645c86103a1a54d9260bc784c",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.store-operations.payment-fraud-detector",
       "runtime_name": "payment-fraud-detector",
       "category": "store-operations",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/payment-fraud-detector",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "6e578f889b59bfde3b0ed5ca2a92dbd5b187e5413e67c7ddd77b68314d8ac489",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "payments.risk"
+      "packaged_skill_md_sha256": "099cbc00c941699585dded94323238474e759b66bc99ce531f02dafeff17ce5f",
+      "packaged_tree_sha256": "2e303cf1100c2b2180ee033e52108b10a05affb7f65e3c25cc8967cf4947fb78",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.store-operations.tiktok-shop-setup",
       "runtime_name": "tiktok-shop-setup",
       "category": "store-operations",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/tiktok-shop-setup",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "dc99e52358d653a08d4f6e3c812b1d3b7338b92d2c50c63ea847c9d2767299cb",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "tiktok.shop"
+      "packaged_skill_md_sha256": "6724a32c6280331b5ce38314c7082d672e610e599ca397bffbbbfcf0e90a7a4f",
+      "packaged_tree_sha256": "0d405efaad7a80a9d129918da23d85a4ec4ca5b02a44cd0e1f36a5899fca297a",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     },
     {
+      "id": "yijie.store-operations.warehouse-fulfillment-workflow",
       "runtime_name": "warehouse-fulfillment-workflow",
       "category": "store-operations",
-      "observed_version": "0.0.94",
+      "version": "0.0.94",
+      "source_reference": "vendor/feat-129/warehouse-fulfillment-workflow",
+      "observed_source_version": "0.0.94",
       "observed_skill_md_sha256": "beb9aa639089fa0163ffe7736c9efd7b0c37e8825be13aa712ee45e5c137f12b",
-      "observed_owner_marker": "official",
-      "license_files": [],
-      "declared_capability_dependencies": [
-        "warehouse.fulfillment"
+      "packaged_skill_md_sha256": "ba82e99e9310c3273ca7e1d097c3d11f253dadaf0188e1ae845ad4efca624d5a",
+      "packaged_tree_sha256": "2d414caba81baa434bbd24679ec063181a7acb8ec5a83bb8a73d00401a8738c1",
+      "package_file_count": 2,
+      "source_transformation": "Text snapshot normalized to LF and supplied with YiJie Desktop distribution NOTICE.md",
+      "excluded_files": [
+        ".DS_Store"
       ],
-      "source_review_status": "metadata-only-blocked",
-      "redistribution_status": "blocked"
+      "provenance_review_status": "verified",
+      "redistribution_status": "verified",
+      "authorization_scope": "desktop-distribution",
+      "authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md",
+      "security_review": "docs/provenance/source-audits/FEAT-129-catalog-38-security-review.json"
     }
   ],
   "decisions": {
     "catalog_entry_count": 38,
-    "source_content_copied_for_catalog_only_entries": false,
-    "default_blocked_reason": "license_unverified",
-    "official_marker_treated_as_distribution_authorization": false,
-    "copywriting_candidate": "A separately re-authored local-development candidate; upstream source remains redistribution-blocked.",
-    "desktop_release_status": "blocked-pending-license-and-source-proof"
+    "installable_entry_count": 38,
+    "catalog_only_entry_count": 0,
+    "source_snapshots_packaged": 37,
+    "copywriting_reauthored_candidate_packaged": true,
+    "desktop_redistribution_authorized": true,
+    "authorized_channels": [
+      "local-development",
+      "desktop-release"
+    ],
+    "license_expression": "LicenseRef-YiJie-Desktop-Distribution-Owner-Attestation",
+    "source_or_license_blocker": null,
+    "status": "verified"
   }
 }

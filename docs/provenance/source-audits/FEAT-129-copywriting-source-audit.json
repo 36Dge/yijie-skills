@@ -23,6 +23,9 @@
     "source_content_copied": false,
     "reauthored_candidate": "plugins/yijie-desktop-skills/skills/copywriting",
     "upstream_redistribution_status": "blocked",
-    "local_candidate_status": "model-only-eligible"
+    "local_candidate_status": "model-only-eligible",
+    "candidate_redistribution_status": "verified",
+    "candidate_authorization_scope": "desktop-distribution",
+    "candidate_authorization_evidence": "docs/provenance/FEAT-129-ownership-and-desktop-redistribution.md"
   }
 }
