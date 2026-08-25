@@ -1,0 +1,6 @@
+interface:
+  display_name: "跨境营销文案"
+  short_description: "基于已确认事实生成清晰、诚实、可测试的跨境营销文案"
+  default_prompt: "使用 $copywriting 根据我提供的商品事实和目标受众起草营销页面文案。"
+policy:
+  allow_implicit_invocation: true

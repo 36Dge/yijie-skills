@@ -1,1 +1,1 @@
-{"id":"listing-001","input":{"platform":"amazon","url":"https://example.com/product/B000000000"},"expected":"diagnosis with no platform write"}
+{"id":"listing-001","source":"synthetic","input":{"platform":"amazon","url":"https://example.com/product/B000000000"},"expected":"diagnosis with no platform write"}

@@ -1,0 +1,7 @@
+id = "yijie-desktop-skills"
+name = "YiJie Desktop Skills"
+version = "0.1.0"
+description = "Reviewed model-only Skills for the YiJie Desktop local marketplace."
+risk_level = "medium"
+distribution_scope = "local-development"
+contracts_version = "0.5.0"

@@ -1,0 +1,17 @@
+{
+  "page_type": "landing_page",
+  "market": "US",
+  "language": "en-US",
+  "audience": "remote workers who take video calls from shared spaces",
+  "primary_action": "View product details",
+  "product": {
+    "name": "FocusFold Desk Screen",
+    "confirmed_facts": [
+      "folds flat to 48 × 35 × 4 cm",
+      "weighs 1.8 kg",
+      "surface is made from 70% recycled PET felt"
+    ]
+  },
+  "tone": "clear and calm",
+  "unsupported_claims": ["eliminates all background noise"]
+}

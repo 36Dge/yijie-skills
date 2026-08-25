@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "feature_id": "FEAT-129",
+  "source_label": "user-provided/05Skill广场/内容创作与营销/copywriting",
+  "observed_at": "2026-08-25T00:00:00Z",
+  "observed": {
+    "cache_id": "27_copywriting",
+    "runtime_name": "copywriting",
+    "version": "0.0.94",
+    "owner_type": "official",
+    "official_marker": true,
+    "source_url": "https://skill.accio.com/skills/phoenix/official/0.0.94/copywriting.zip",
+    "skill_sha256": "5e379fc912293f05c3d70d112339117e5fe066956d2ff8fb592526b81eb2370b",
+    "top_level_files": [
+      "SKILL.md"
+    ],
+    "top_level_directories": [],
+    "license_files": [],
+    "declared_external_dependencies": []
+  },
+  "decisions": {
+    "selected_capability": true,
+    "source_content_copied": false,
+    "reauthored_candidate": "plugins/yijie-desktop-skills/skills/copywriting",
+    "upstream_redistribution_status": "blocked",
+    "local_candidate_status": "model-only-eligible"
+  }
+}

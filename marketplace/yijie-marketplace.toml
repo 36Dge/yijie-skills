@@ -7,3 +7,9 @@ id = "amazon-listing-optimizer"
 name = "Amazon Listing Optimizer"
 version = "0.1.0"
 risk_level = "medium"
+
+[[plugins]]
+id = "yijie-desktop-skills"
+name = "YiJie Desktop Skills"
+version = "0.1.0"
+risk_level = "medium"

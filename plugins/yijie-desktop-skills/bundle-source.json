@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "bundle_id": "yijie.desktop.skill-packages",
+  "bundle_version": "0.1.0",
+  "distribution_channel": "local-development",
+  "repository": "https://github.com/36Dge/yijie-skills.git",
+  "skills": [
+    {
+      "id": "yijie.content-marketing.copywriting",
+      "runtime_name": "copywriting",
+      "category": "content-marketing",
+      "order": 0,
+      "display_name": "跨境营销文案",
+      "description": "根据已确认的商品事实和受众，生成诚实、清晰、可测试的跨境营销文案。",
+      "version": "0.1.0",
+      "source_dir": "skills/copywriting",
+      "package_files": [
+        "NOTICE.md",
+        "SKILL.md",
+        "agents/openai.yaml",
+        "examples/input-001.json",
+        "examples/output-001.md"
+      ],
+      "entrypoint": "SKILL.md",
+      "icon": { "registry": "yj-icon-v1", "key": "edit" },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "营销文案可能形成未经证实的商品、效果或合规声明。",
+          "生成结果是草稿，发布到电商平台属于独立写操作。"
+        ]
+      },
+      "provenance": {
+        "source_type": "internal",
+        "source_reference": "plugins/yijie-desktop-skills/skills/copywriting",
+        "source_version": "0.1.0",
+        "review_status": "verified",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "LicenseRef-YiJie-Local-Development-Only",
+        "redistribution_status": "verified",
+        "authorization_scope": "local-development",
+        "evidence_reference": "docs/provenance/copywriting-0.1.0.md",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "release": {
+        "catalog_status": "installable",
+        "maintenance_status": "maintained"
+      }
+    }
+  ]
+}

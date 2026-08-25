@@ -11,7 +11,7 @@
 当前仓库包含一个 `amazon-listing-optimizer` 示例 Plugin 和一个 Listing 诊断 Skill。现有自动化主要验证目录、必需章节、TOML、JSON Schema、示例和合成 eval 数据格式：
 
 - `scripts/run-evals.mjs` 目前不调用模型，也不执行 rubric 评分；
-- `scripts/package-plugin.mjs` 目前只输出占位提示，不生成可发布产物；
+- `scripts/package-plugin.mjs` 仍是旧 Plugin 占位器；`pnpm package` 已切换到 FEAT-129 的确定性 Desktop Skill 本地候选打包器，但不生成获准发布的 Marketplace/生产产物；
 - MCP server 和 tools 文档仍是占位；
 - lint、test 或 package 命令成功不能被描述为模型质量、工具集成或 Marketplace 发布已经完成。
 
@@ -87,7 +87,7 @@ sibling 只能用于本地候选验证。兄弟元仓存在时同时遵循
 - Plugin ID 发布后保持稳定，版本遵循语义化版本；
 - 行为、schema、工具权限或风险等级变化时同步更新 `plugin.toml`、Marketplace 条目和发布说明；
 - 扩大权限、增加写工具或改变审批要求属于高风险变更，不能只做 patch 版本静默发布；
-- `pnpm package` 在真实 packager 和产物校验接通前只是占位，不得上传或宣称已发布；
+- `pnpm package` 只生成经过 schema 校验的 `local-development` Desktop Skill 候选；不得上传、宣称已发布或将其改为 `desktop-release`，除非许可、不可变 Contracts pin、签名和发布审批全部完成；
 - 发布产物必须可复现，不包含本地路径、秘密、缓存、eval 报告中的敏感内容或未声明依赖。
 
 ## 必须先确认的决策
@@ -109,7 +109,7 @@ pnpm install
 make lint    # Skill 章节、manifest、schema 和示例校验
 make test    # Node 测试及当前合成 eval 数据校验
 make eval    # 当前只做数据结构校验
-make package # 当前为占位，不生成发布包
+make package # 生成本地候选，不上传或发布
 ```
 
 修改 Skill、prompt、schema、工具或风险规则时，至少执行 `make lint && make test`。涉及真实模型质量时必须额外运行已确认的模型 eval，并报告模型、参数、样本数、基线、结果和未覆盖风险。

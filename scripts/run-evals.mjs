@@ -1,20 +1,35 @@
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
+import path from "node:path";
 
-const datasetPath = "plugins/amazon-listing-optimizer/skills/listing-diagnosis/evals/dataset.jsonl";
-const lines = (await readFile(datasetPath, "utf8")).split("\n").filter(Boolean);
-if (lines.length === 0) throw new Error("Eval dataset is empty.");
-
-const ids = new Set();
-for (const [index, line] of lines.entries()) {
-  const entry = JSON.parse(line);
-  if (!entry.id || ids.has(entry.id)) throw new Error(`Invalid or duplicate eval ID at line ${index + 1}.`);
-  if (entry.input?.platform !== "amazon" || !URL.canParse(entry.input?.url)) {
-    throw new Error(`Invalid eval input at line ${index + 1}.`);
+async function findDatasets(directory) {
+  const files = [];
+  for (const entry of await readdir(directory, { withFileTypes: true })) {
+    const child = path.join(directory, entry.name);
+    if (entry.isDirectory()) files.push(...(await findDatasets(child)));
+    else if (entry.name === "dataset.jsonl") files.push(child);
   }
-  if (typeof entry.expected !== "string" || entry.expected.length === 0) {
-    throw new Error(`Missing expected behavior at line ${index + 1}.`);
-  }
-  ids.add(entry.id);
+  return files.sort();
 }
 
-console.log(`Validated ${lines.length} synthetic eval case(s).`);
+const datasets = await findDatasets("plugins");
+if (datasets.length === 0) throw new Error("No eval datasets found");
+const ids = new Set();
+let cases = 0;
+for (const dataset of datasets) {
+  const lines = (await readFile(dataset, "utf8")).split("\n").filter(Boolean);
+  if (lines.length === 0) throw new Error(`${dataset} is empty`);
+  for (const [index, line] of lines.entries()) {
+    const entry = JSON.parse(line);
+    if (!entry.id || ids.has(entry.id)) throw new Error(`Invalid or duplicate eval ID at ${dataset}:${index + 1}`);
+    if (entry.source !== "synthetic" || entry.input === null || typeof entry.input !== "object" || Array.isArray(entry.input)) {
+      throw new Error(`Eval input must be a synthetic object at ${dataset}:${index + 1}`);
+    }
+    if (typeof entry.expected !== "string" || entry.expected.length === 0) {
+      throw new Error(`Missing expected behavior at ${dataset}:${index + 1}`);
+    }
+    ids.add(entry.id);
+    cases += 1;
+  }
+}
+
+console.log(`Validated ${cases} synthetic eval case(s) across ${datasets.length} dataset(s).`);
