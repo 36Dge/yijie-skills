@@ -1,0 +1,506 @@
+{
+  "schema_version": 1,
+  "feature_id": "FEAT-129",
+  "audit_scope": "catalog-metadata-only",
+  "observed_at": "2026-08-25T00:00:00Z",
+  "source_label": "user-provided/05Skill广场",
+  "source_disclosure": {
+    "content_included": false,
+    "absolute_local_paths_included": false,
+    "upstream_owner_marker": "official",
+    "owner_marker_is_license_evidence": false
+  },
+  "entries": [
+    {
+      "runtime_name": "aliexpress-supplier-evaluator",
+      "category": "sourcing-selection",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "54fe4253c3fbbf50ca6f26717a679b355c4f5a38f1d35176bc3b97010caa491a",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "browser.search",
+        "supplier.data"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "dropshipping-supplier-integrator",
+      "category": "sourcing-selection",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "39bea71fd75aa38f2c41af4fadcabeaf330367ba7f67033c253fed54b3504043",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "supplier.data",
+        "store.write"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "product-supplier-sourcing",
+      "category": "sourcing-selection",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "36d5f8716f9028093a2c3d6110a62a5216aa14b5216ef3912eb1f7c45312c8fa",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "browser.search",
+        "supplier.data"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "sales-negotiator",
+      "category": "sourcing-selection",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "7b903c33034b3afae0eb2b6a797be68327275fa364c43383cb3e4b8551ebdd47",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "supplier-performance-manager",
+      "category": "sourcing-selection",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "155dbcbdb0b585e83ceb27dd1ca92d7023480fb39b847af0ec6dac95c976dd75",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "supplier.data"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "alibaba-amazon-market-intel",
+      "category": "market-research",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "d6f209079db51a7ed82f8ddeb0aaadda4e8d7f65b19b4ec8ec67e3fe26f4e4f6",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "marketplace.data"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "competitor-deep-analysis",
+      "category": "market-research",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "c1cfa70cbd136b2b772833e2d4f296efef56bcbce6a18c5805b97e7a94851e36",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "browser.search",
+        "marketplace.data"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "cross-border-selection",
+      "category": "market-research",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "9e04322bc35994204c01144fe4c4011fb87a035708c656e68aeee2379295a893",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "marketplace.data"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "jungle-scout-deep-dive-analyzer",
+      "category": "market-research",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "11e2d41668510cccf2e2e59d1d4d54a5856cd74c9b95fa9b0748324944550da6",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "jungle_scout.data"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "market-insight-product-selection",
+      "category": "market-research",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "580a91de7d73b1e1b2294f4e5645f3b60daaa13014d084f2fa3ae753a7241cc4",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "marketplace.data"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "product-attribute-analyzer",
+      "category": "market-research",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "014d985b460fcaf83b1e935afca0fb0808ef8e0dc058589686bbadaf178901c0",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "product-selection",
+      "category": "market-research",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "3433148b6b1bb757b0482850feab6384e0a7aa3920e9dbd8608dc487c4dce2fb",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "marketplace.data"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "review-analyst-agent",
+      "category": "market-research",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "e356932f3ddead77bea3f397c312d5789a7a8b1a2401e8771bfb17622605cad3",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "marketplace.reviews"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "scenario-driven-product-scout",
+      "category": "market-research",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "959fc795dddb44842fe5cdc08c790d3e6eab4289e19c5a1ee90acf73758ab883",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "browser.search"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "content-breakdown",
+      "category": "content-marketing",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "7d914e8cd3e7a539cedc37ce4dc6e2e491cfe56415c804c6ff920fcea52d506a",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "content-strategy",
+      "category": "content-marketing",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "8af7493497d3047c949189c28e896516e527b1080b0a5ee80faccb59294c005a",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "copywriting",
+      "category": "content-marketing",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "5e379fc912293f05c3d70d112339117e5fe066956d2ff8fb592526b81eb2370b",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [],
+      "source_review_status": "reauthored-locally",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "product-marketing-context",
+      "category": "content-marketing",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "6098a7124a01e6fec9e5b7a468ad6d01623cc19f9aa63d454d2993a16838ac0a",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "social-media-content-creator",
+      "category": "content-marketing",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "8e37dad5eeaf8e952cbd9269d2ae9535de7c88c548ece87d293d4dc9c423986b",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "social.publish"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "vibe-marketing",
+      "category": "content-marketing",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "20930e159d3b82033b80968eca7a5c237ea76b878fe189bd8183ebdceabd68ae",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "xiaohongshu-content-creator",
+      "category": "content-marketing",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "02be6c7a35983faaef517eeffeacd0577505598d98b66b39d0f210bdd6a65bd8",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "xiaohongshu.publish"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "amazon-listing-expert",
+      "category": "traffic-advertising",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "7ca7efdde72424907b876c69c7696f59940aec11d49a5746a41d2985ae5ad323",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "amazon.listing"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "amazon-ppc-campaign-manager",
+      "category": "traffic-advertising",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "332542cb9782fa9e446e3c5b3ab9be2f7be9f9f5c41d3eb074d259f1967fca97",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "amazon.ads"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "amz-hot-keywords",
+      "category": "traffic-advertising",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "22457646d8fcd0f265e5ef0ce928e8e74565af02e934a305b115421e7a30811c",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "amazon.keywords"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "amz-product-optimizer",
+      "category": "traffic-advertising",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "e3e26b571f3e53f97c503274ee557d5f2a5a25b0951d1350e94f075573968237",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "amazon.listing"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "ecommerce-seo-optimizer",
+      "category": "traffic-advertising",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "5a73a11739387d96dee3f3ed6c697802394a67d63061dc618e9f533b97436fb6",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "browser.search"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "etsy-seo-optimizer",
+      "category": "traffic-advertising",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "5f57ff7a548b1a1279e517350be2552fd7818dc6052b51b39b33d403f49d2b32",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "etsy.listing"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "product-description-generator",
+      "category": "traffic-advertising",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "8b45ec3a9e6a5937737e16dbdf247c838f27dbf96cdc71e5e6c4258fbcfc7bff",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "seo-keyword-research",
+      "category": "traffic-advertising",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "cc13939ad2fabba68911b548d4a5dad5d73aaf180ead29d79938487744a5c5e7",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "browser.search"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "tiktok-ads-strategy",
+      "category": "traffic-advertising",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "867aff47e894ec577c5445501ecbfbaf14e9c59bce3ae3eb4657851381dad24b",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "tiktok.ads"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "amazon-brand-protection",
+      "category": "store-operations",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "ca2f754b2f72a73056f02448a820959a323c8a20bc1014f6125eb278c2ba1fda",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "amazon.brand"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "buy-now-pay-later-setup",
+      "category": "store-operations",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "810fb54ee8489a4d2b60207338714b6cb24ef72fef2633649cd62a1dc2d363aa",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "payments.configure"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "ecommerce-gdpr-compliance",
+      "category": "store-operations",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "96e51f79cfacb8de0cdee322ce0a18537ad34b9a2f1f9846e5f7082127e81310",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "store.data"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "invoice-generator",
+      "category": "store-operations",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "2c9065c34a0a6bb3be27674e02a1e8b532d25cf866492a35fb1b9e701e281ccc",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "store.orders"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "multichannel-inventory-sync",
+      "category": "store-operations",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "69bc05e6ea0b17238e138b5614489a1fb73b968b87940c47dd670064ecd968a1",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "inventory.read",
+        "inventory.write"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "payment-fraud-detector",
+      "category": "store-operations",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "6e578f889b59bfde3b0ed5ca2a92dbd5b187e5413e67c7ddd77b68314d8ac489",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "payments.risk"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "tiktok-shop-setup",
+      "category": "store-operations",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "dc99e52358d653a08d4f6e3c812b1d3b7338b92d2c50c63ea847c9d2767299cb",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "tiktok.shop"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    },
+    {
+      "runtime_name": "warehouse-fulfillment-workflow",
+      "category": "store-operations",
+      "observed_version": "0.0.94",
+      "observed_skill_md_sha256": "beb9aa639089fa0163ffe7736c9efd7b0c37e8825be13aa712ee45e5c137f12b",
+      "observed_owner_marker": "official",
+      "license_files": [],
+      "declared_capability_dependencies": [
+        "warehouse.fulfillment"
+      ],
+      "source_review_status": "metadata-only-blocked",
+      "redistribution_status": "blocked"
+    }
+  ],
+  "decisions": {
+    "catalog_entry_count": 38,
+    "source_content_copied_for_catalog_only_entries": false,
+    "default_blocked_reason": "license_unverified",
+    "official_marker_treated_as_distribution_authorization": false,
+    "copywriting_candidate": "A separately re-authored local-development candidate; upstream source remains redistribution-blocked.",
+    "desktop_release_status": "blocked-pending-license-and-source-proof"
+  }
+}

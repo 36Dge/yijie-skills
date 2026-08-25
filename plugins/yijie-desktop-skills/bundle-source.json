@@ -1,18 +1,831 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "bundle_id": "yijie.desktop.skill-packages",
-  "bundle_version": "0.1.0",
+  "bundle_version": "0.2.0",
   "distribution_channel": "local-development",
   "repository": "https://github.com/36Dge/yijie-skills.git",
   "skills": [
     {
+      "id": "yijie.sourcing-selection.aliexpress-supplier-evaluator",
+      "runtime_name": "aliexpress-supplier-evaluator",
+      "category": "sourcing-selection",
+      "order": 0,
+      "display_name": "AliExpress 供应商评估",
+      "description": "评估 AliExpress 供应商的基础能力、风险信号与合作适配度。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillSourcing"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "54fe4253c3fbbf50ca6f26717a679b355c4f5a38f1d35176bc3b97010caa491a",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "browser.search",
+          "supplier.data"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.sourcing-selection.dropshipping-supplier-integrator",
+      "runtime_name": "dropshipping-supplier-integrator",
+      "category": "sourcing-selection",
+      "order": 1,
+      "display_name": "代发货供应商集成",
+      "description": "梳理代发货供应商接入、商品同步与履约协同方案。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillSourcing"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "39bea71fd75aa38f2c41af4fadcabeaf330367ba7f67033c253fed54b3504043",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "supplier.data",
+          "store.write"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.sourcing-selection.product-supplier-sourcing",
+      "runtime_name": "product-supplier-sourcing",
+      "category": "sourcing-selection",
+      "order": 2,
+      "display_name": "产品供应商寻源",
+      "description": "根据产品条件查找并比较潜在供应商与供货方案。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillSourcing"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "36d5f8716f9028093a2c3d6110a62a5216aa14b5216ef3912eb1f7c45312c8fa",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "browser.search",
+          "supplier.data"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.sourcing-selection.sales-negotiator",
+      "runtime_name": "sales-negotiator",
+      "category": "sourcing-selection",
+      "order": 3,
+      "display_name": "销售谈判专家",
+      "description": "为 B2B 销售谈判准备目标、策略、问题与沟通草案。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillSourcing"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "7b903c33034b3afae0eb2b6a797be68327275fa364c43383cb3e4b8551ebdd47",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.sourcing-selection.supplier-performance-manager",
+      "runtime_name": "supplier-performance-manager",
+      "category": "sourcing-selection",
+      "order": 4,
+      "display_name": "供应商绩效管理",
+      "description": "建立供应商绩效指标并辅助识别履约与质量风险。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillSourcing"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "155dbcbdb0b585e83ceb27dd1ca92d7023480fb39b847af0ec6dac95c976dd75",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "supplier.data"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.market-research.alibaba-amazon-market-intel",
+      "runtime_name": "alibaba-amazon-market-intel",
+      "category": "market-research",
+      "order": 0,
+      "display_name": "阿里巴巴与亚马逊市场洞察",
+      "description": "对阿里巴巴与亚马逊市场数据进行跨平台洞察分析。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillResearch"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "d6f209079db51a7ed82f8ddeb0aaadda4e8d7f65b19b4ec8ec67e3fe26f4e4f6",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "marketplace.data"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.market-research.competitor-deep-analysis",
+      "runtime_name": "competitor-deep-analysis",
+      "category": "market-research",
+      "order": 1,
+      "display_name": "竞品深度分析",
+      "description": "从定位、商品、价格与营销等维度分析主要竞品。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillResearch"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "c1cfa70cbd136b2b772833e2d4f296efef56bcbce6a18c5805b97e7a94851e36",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "browser.search",
+          "marketplace.data"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.market-research.cross-border-selection",
+      "runtime_name": "cross-border-selection",
+      "category": "market-research",
+      "order": 2,
+      "display_name": "跨境选品",
+      "description": "结合跨境市场数据评估候选商品的机会与风险。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillResearch"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "9e04322bc35994204c01144fe4c4011fb87a035708c656e68aeee2379295a893",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "marketplace.data"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.market-research.jungle-scout-deep-dive-analyzer",
+      "runtime_name": "jungle-scout-deep-dive-analyzer",
+      "category": "market-research",
+      "order": 3,
+      "display_name": "Jungle Scout 深度分析",
+      "description": "基于 Jungle Scout 数据开展亚马逊市场与商品分析。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillResearch"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "11e2d41668510cccf2e2e59d1d4d54a5856cd74c9b95fa9b0748324944550da6",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "jungle_scout.data"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.market-research.market-insight-product-selection",
+      "runtime_name": "market-insight-product-selection",
+      "category": "market-research",
+      "order": 4,
+      "display_name": "市场洞察选品",
+      "description": "依据市场规模、竞争强度与需求趋势形成选品判断。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillResearch"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "580a91de7d73b1e1b2294f4e5645f3b60daaa13014d084f2fa3ae753a7241cc4",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "marketplace.data"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.market-research.product-attribute-analyzer",
+      "runtime_name": "product-attribute-analyzer",
+      "category": "market-research",
+      "order": 5,
+      "display_name": "产品属性分析",
+      "description": "从已提供的产品资料中提取、整理并分析关键属性。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillResearch"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "014d985b460fcaf83b1e935afca0fb0808ef8e0dc058589686bbadaf178901c0",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.market-research.product-selection",
+      "runtime_name": "product-selection",
+      "category": "market-research",
+      "order": 6,
+      "display_name": "产品选品",
+      "description": "根据目标市场与经营约束对候选商品进行筛选排序。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillResearch"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "3433148b6b1bb757b0482850feab6384e0a7aa3920e9dbd8608dc487c4dce2fb",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "marketplace.data"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.market-research.review-analyst-agent",
+      "runtime_name": "review-analyst-agent",
+      "category": "market-research",
+      "order": 7,
+      "display_name": "评论分析助手",
+      "description": "分析商品评论中的情绪、痛点、需求与改进机会。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillResearch"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "e356932f3ddead77bea3f397c312d5789a7a8b1a2401e8771bfb17622605cad3",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "marketplace.reviews"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.market-research.scenario-driven-product-scout",
+      "runtime_name": "scenario-driven-product-scout",
+      "category": "market-research",
+      "order": 8,
+      "display_name": "场景驱动选品",
+      "description": "从用户场景和问题出发发现并评估潜在商品机会。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillResearch"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "959fc795dddb44842fe5cdc08c790d3e6eab4289e19c5a1ee90acf73758ab883",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "browser.search"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.content-marketing.content-breakdown",
+      "runtime_name": "content-breakdown",
+      "category": "content-marketing",
+      "order": 0,
+      "display_name": "内容拆解",
+      "description": "拆解已提供内容的结构、表达策略与可复用模式。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillContent"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "7d914e8cd3e7a539cedc37ce4dc6e2e491cfe56415c804c6ff920fcea52d506a",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.content-marketing.content-strategy",
+      "runtime_name": "content-strategy",
+      "category": "content-marketing",
+      "order": 1,
+      "display_name": "内容策略",
+      "description": "围绕受众、目标与渠道制定结构化内容策略。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillContent"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "8af7493497d3047c949189c28e896516e527b1080b0a5ee80faccb59294c005a",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
       "id": "yijie.content-marketing.copywriting",
       "runtime_name": "copywriting",
       "category": "content-marketing",
-      "order": 0,
+      "order": 2,
       "display_name": "跨境营销文案",
       "description": "根据已确认的商品事实和受众，生成诚实、清晰、可测试的跨境营销文案。",
       "version": "0.1.0",
+      "catalog_entry_mode": "bundled",
       "source_dir": "skills/copywriting",
       "package_files": [
         "NOTICE.md",
@@ -22,7 +835,10 @@
         "examples/output-001.md"
       ],
       "entrypoint": "SKILL.md",
-      "icon": { "registry": "yj-icon-v1", "key": "edit" },
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "edit"
+      },
       "risk": {
         "level": "medium",
         "reasons": [
@@ -55,6 +871,1072 @@
       "release": {
         "catalog_status": "installable",
         "maintenance_status": "maintained"
+      }
+    },
+    {
+      "id": "yijie.content-marketing.product-marketing-context",
+      "runtime_name": "product-marketing-context",
+      "category": "content-marketing",
+      "order": 3,
+      "display_name": "产品营销上下文",
+      "description": "将产品事实、受众、卖点与约束整理为营销上下文。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillContent"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "6098a7124a01e6fec9e5b7a468ad6d01623cc19f9aa63d454d2993a16838ac0a",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.content-marketing.social-media-content-creator",
+      "runtime_name": "social-media-content-creator",
+      "category": "content-marketing",
+      "order": 4,
+      "display_name": "社交媒体内容创作",
+      "description": "为指定社交渠道规划并起草适配平台的内容。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillContent"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "8e37dad5eeaf8e952cbd9269d2ae9535de7c88c548ece87d293d4dc9c423986b",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "social.publish"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.content-marketing.vibe-marketing",
+      "runtime_name": "vibe-marketing",
+      "category": "content-marketing",
+      "order": 5,
+      "display_name": "氛围营销",
+      "description": "围绕品牌调性和消费场景设计氛围化营销表达。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillContent"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "20930e159d3b82033b80968eca7a5c237ea76b878fe189bd8183ebdceabd68ae",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.content-marketing.xiaohongshu-content-creator",
+      "runtime_name": "xiaohongshu-content-creator",
+      "category": "content-marketing",
+      "order": 6,
+      "display_name": "小红书内容创作",
+      "description": "为小红书场景规划并起草符合平台表达习惯的内容。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillContent"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "02be6c7a35983faaef517eeffeacd0577505598d98b66b39d0f210bdd6a65bd8",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "xiaohongshu.publish"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.traffic-advertising.amazon-listing-expert",
+      "runtime_name": "amazon-listing-expert",
+      "category": "traffic-advertising",
+      "order": 0,
+      "display_name": "亚马逊 Listing 专家",
+      "description": "诊断并优化亚马逊 Listing 的内容结构与转化表达。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillTraffic"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "7ca7efdde72424907b876c69c7696f59940aec11d49a5746a41d2985ae5ad323",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "amazon.listing"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.traffic-advertising.amazon-ppc-campaign-manager",
+      "runtime_name": "amazon-ppc-campaign-manager",
+      "category": "traffic-advertising",
+      "order": 1,
+      "display_name": "亚马逊 PPC 广告管理",
+      "description": "分析并规划亚马逊 PPC 广告结构、投放与优化动作。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillTraffic"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "332542cb9782fa9e446e3c5b3ab9be2f7be9f9f5c41d3eb074d259f1967fca97",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "amazon.ads"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.traffic-advertising.amz-hot-keywords",
+      "runtime_name": "amz-hot-keywords",
+      "category": "traffic-advertising",
+      "order": 2,
+      "display_name": "亚马逊热门关键词",
+      "description": "研究并整理亚马逊商品相关的热门搜索关键词。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillTraffic"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "22457646d8fcd0f265e5ef0ce928e8e74565af02e934a305b115421e7a30811c",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "amazon.keywords"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.traffic-advertising.amz-product-optimizer",
+      "runtime_name": "amz-product-optimizer",
+      "category": "traffic-advertising",
+      "order": 3,
+      "display_name": "亚马逊产品优化",
+      "description": "基于商品与市场数据提出亚马逊商品优化建议。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillTraffic"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "e3e26b571f3e53f97c503274ee557d5f2a5a25b0951d1350e94f075573968237",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "amazon.listing"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.traffic-advertising.ecommerce-seo-optimizer",
+      "runtime_name": "ecommerce-seo-optimizer",
+      "category": "traffic-advertising",
+      "order": 4,
+      "display_name": "电商 SEO 优化",
+      "description": "为电商页面研究搜索意图并提出 SEO 优化方案。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillTraffic"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "5a73a11739387d96dee3f3ed6c697802394a67d63061dc618e9f533b97436fb6",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "browser.search"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.traffic-advertising.etsy-seo-optimizer",
+      "runtime_name": "etsy-seo-optimizer",
+      "category": "traffic-advertising",
+      "order": 5,
+      "display_name": "Etsy SEO 优化",
+      "description": "诊断并优化 Etsy 商品页面的关键词与搜索表达。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillTraffic"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "5f57ff7a548b1a1279e517350be2552fd7818dc6052b51b39b33d403f49d2b32",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "etsy.listing"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.traffic-advertising.product-description-generator",
+      "runtime_name": "product-description-generator",
+      "category": "traffic-advertising",
+      "order": 6,
+      "display_name": "产品描述生成",
+      "description": "根据已确认的产品事实生成结构化商品描述草案。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillTraffic"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "8b45ec3a9e6a5937737e16dbdf247c838f27dbf96cdc71e5e6c4258fbcfc7bff",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "model-only",
+        "network": "none",
+        "filesystem": "none",
+        "required_tools": []
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.traffic-advertising.seo-keyword-research",
+      "runtime_name": "seo-keyword-research",
+      "category": "traffic-advertising",
+      "order": 7,
+      "display_name": "SEO 关键词研究",
+      "description": "围绕目标主题研究关键词、搜索意图与内容机会。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillTraffic"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "cc13939ad2fabba68911b548d4a5dad5d73aaf180ead29d79938487744a5c5e7",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "browser.search"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.traffic-advertising.tiktok-ads-strategy",
+      "runtime_name": "tiktok-ads-strategy",
+      "category": "traffic-advertising",
+      "order": 8,
+      "display_name": "TikTok 广告策略",
+      "description": "为 TikTok 广告制定受众、创意、投放与验证策略。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillTraffic"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "867aff47e894ec577c5445501ecbfbaf14e9c59bce3ae3eb4657851381dad24b",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "tiktok.ads"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.store-operations.amazon-brand-protection",
+      "runtime_name": "amazon-brand-protection",
+      "category": "store-operations",
+      "order": 0,
+      "display_name": "亚马逊品牌保护",
+      "description": "识别亚马逊品牌风险并规划监测、举证与保护动作。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillOperations"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "ca2f754b2f72a73056f02448a820959a323c8a20bc1014f6125eb278c2ba1fda",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "amazon.brand"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.store-operations.buy-now-pay-later-setup",
+      "runtime_name": "buy-now-pay-later-setup",
+      "category": "store-operations",
+      "order": 1,
+      "display_name": "先买后付配置",
+      "description": "梳理先买后付能力接入、配置与风险控制要求。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillOperations"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "810fb54ee8489a4d2b60207338714b6cb24ef72fef2633649cd62a1dc2d363aa",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "payments.configure"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.store-operations.ecommerce-gdpr-compliance",
+      "runtime_name": "ecommerce-gdpr-compliance",
+      "category": "store-operations",
+      "order": 2,
+      "display_name": "电商 GDPR 合规",
+      "description": "检查电商数据处理场景并整理 GDPR 合规改进项。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillOperations"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "96e51f79cfacb8de0cdee322ce0a18537ad34b9a2f1f9846e5f7082127e81310",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "store.data"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.store-operations.invoice-generator",
+      "runtime_name": "invoice-generator",
+      "category": "store-operations",
+      "order": 3,
+      "display_name": "发票生成",
+      "description": "根据订单与开票信息生成结构化发票内容。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillOperations"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "2c9065c34a0a6bb3be27674e02a1e8b532d25cf866492a35fb1b9e701e281ccc",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "store.orders"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.store-operations.multichannel-inventory-sync",
+      "runtime_name": "multichannel-inventory-sync",
+      "category": "store-operations",
+      "order": 4,
+      "display_name": "多渠道库存同步",
+      "description": "规划并执行多渠道库存读取、对账与同步流程。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillOperations"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "69bc05e6ea0b17238e138b5614489a1fb73b968b87940c47dd670064ecd968a1",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "inventory.read",
+          "inventory.write"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.store-operations.payment-fraud-detector",
+      "runtime_name": "payment-fraud-detector",
+      "category": "store-operations",
+      "order": 5,
+      "display_name": "支付欺诈检测",
+      "description": "分析支付风险信号并辅助识别潜在欺诈交易。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillOperations"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "6e578f889b59bfde3b0ed5ca2a92dbd5b187e5413e67c7ddd77b68314d8ac489",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "payments.risk"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.store-operations.tiktok-shop-setup",
+      "runtime_name": "tiktok-shop-setup",
+      "category": "store-operations",
+      "order": 6,
+      "display_name": "TikTok Shop 配置",
+      "description": "梳理 TikTok Shop 开店、商品与经营基础配置。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillOperations"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "dc99e52358d653a08d4f6e3c812b1d3b7338b92d2c50c63ea847c9d2767299cb",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "tiktok.shop"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
+      }
+    },
+    {
+      "id": "yijie.store-operations.warehouse-fulfillment-workflow",
+      "runtime_name": "warehouse-fulfillment-workflow",
+      "category": "store-operations",
+      "order": 7,
+      "display_name": "仓储履约工作流",
+      "description": "设计仓储、拣配、发货与异常处理的履约工作流。",
+      "version": "0.0.94",
+      "catalog_entry_mode": "catalog-only",
+      "icon": {
+        "registry": "yj-icon-v1",
+        "key": "skillOperations"
+      },
+      "risk": {
+        "level": "medium",
+        "reasons": [
+          "能力可能影响跨境电商经营判断或外部系统数据，调用前需验证输入、权限与输出。",
+          "来源和再分发许可尚未完成验证，当前仅展示目录元数据。"
+        ]
+      },
+      "provenance": {
+        "source_type": "third-party",
+        "source_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "source_version": "0.0.94",
+        "source_sha256": "beb9aa639089fa0163ffe7736c9efd7b0c37e8825be13aa712ee45e5c137f12b",
+        "review_status": "blocked",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "license": {
+        "expression": "NOASSERTION",
+        "redistribution_status": "blocked",
+        "authorization_scope": "none",
+        "evidence_reference": "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json",
+        "reviewed_by": "FEAT-129 product and technical owner",
+        "reviewed_at": "2026-08-25T00:00:00Z"
+      },
+      "capabilities": {
+        "execution_mode": "tool-assisted",
+        "network": "required",
+        "filesystem": "none",
+        "required_tools": [
+          "warehouse.fulfillment"
+        ]
+      },
+      "release": {
+        "catalog_status": "blocked",
+        "maintenance_status": "maintained",
+        "blocked_reason": "license_unverified"
       }
     }
   ]

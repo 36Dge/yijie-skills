@@ -10,7 +10,8 @@ import { createStoredZip, isSafeRelativePath } from "./lib/deterministic-zip.mjs
 
 const execFileAsync = promisify(execFile);
 const SOURCE_PATH = "plugins/yijie-desktop-skills/bundle-source.json";
-const CONTRACT_SCHEMA_PATH = "contracts/skill-bundle-manifest-v1.schema.json";
+const CONTRACT_SCHEMA_PATH = "contracts/skill-bundle-manifest-v2.schema.json";
+const CATALOG_AUDIT_PATH = "docs/provenance/source-audits/FEAT-129-catalog-38-source-audit.json";
 const DEFAULT_OUTPUT = "dist/skill-packages";
 
 function sha256(value) {
@@ -25,7 +26,7 @@ function assertUnique(values, label) {
   }
 }
 
-function treeSha256(skills) {
+function packageTreeSha256(skills) {
   const digest = createHash("sha256");
   for (const skill of [...skills].sort((left, right) => left.id.localeCompare(right.id))) {
     for (const entry of [...skill.entries].sort((left, right) => left.name.localeCompare(right.name))) {
@@ -39,6 +40,17 @@ function treeSha256(skills) {
     }
   }
   return digest.digest("hex");
+}
+
+function canonicalJson(value) {
+  if (Array.isArray(value)) return `[${value.map(canonicalJson).join(",")}]`;
+  if (value !== null && typeof value === "object") {
+    return `{${Object.keys(value)
+      .sort()
+      .map((key) => `${JSON.stringify(key)}:${canonicalJson(value[key])}`)
+      .join(",")}}`;
+  }
+  return JSON.stringify(value);
 }
 
 async function readPackagedEntries(pluginRoot, skill) {
@@ -69,9 +81,8 @@ async function repositoryRevision(inputPaths) {
   };
 }
 
-function publicSkillMetadata(skill, entries, archive) {
-  const sourceDigest = treeSha256([{ id: skill.id, entries }]);
-  return {
+function publicSkillMetadata(skill, packaged) {
+  const metadata = {
     id: skill.id,
     runtime_name: skill.runtime_name,
     category: skill.category,
@@ -79,12 +90,24 @@ function publicSkillMetadata(skill, entries, archive) {
     display_name: skill.display_name,
     description: skill.description,
     version: skill.version,
-    entrypoint: skill.entrypoint,
+    catalog_entry_mode: skill.catalog_entry_mode,
     icon: skill.icon,
     risk: skill.risk,
-    provenance: { ...skill.provenance, source_sha256: sourceDigest },
+    provenance: skill.provenance,
     license: skill.license,
     capabilities: skill.capabilities,
+    release: skill.release,
+  };
+  if (skill.catalog_entry_mode === "catalog-only") return metadata;
+  if (!packaged) throw new Error(`${skill.id} is bundled but has no packaged content`);
+  const { entries, archive } = packaged;
+  return {
+    ...metadata,
+    entrypoint: skill.entrypoint,
+    provenance: {
+      ...skill.provenance,
+      source_sha256: packageTreeSha256([{ id: skill.id, entries }]),
+    },
     archive: {
       path: `packages/${skill.id}-${skill.version}.zip`,
       sha256: sha256(archive),
@@ -92,7 +115,6 @@ function publicSkillMetadata(skill, entries, archive) {
       uncompressed_size_bytes: entries.reduce((total, entry) => total + entry.content.length, 0),
       file_count: entries.length,
     },
-    release: skill.release,
   };
 }
 
@@ -103,18 +125,28 @@ export async function buildDesktopSkillBundle(outputDirectory = DEFAULT_OUTPUT) 
   assertUnique(source.skills.map(({ runtime_name: runtimeName }) => runtimeName), "Runtime name");
   const builtSkills = [];
   for (const skill of source.skills) {
+    if (skill.catalog_entry_mode === "catalog-only") {
+      builtSkills.push({ source: skill, packaged: null });
+      continue;
+    }
+    if (skill.catalog_entry_mode !== "bundled") {
+      throw new Error(`${skill.id} has unsupported catalog_entry_mode: ${skill.catalog_entry_mode}`);
+    }
     const entries = await readPackagedEntries(pluginRoot, skill);
     const archive = createStoredZip(entries);
-    builtSkills.push({ source: skill, entries, archive });
+    builtSkills.push({ source: skill, packaged: { entries, archive } });
   }
 
   const revision = await repositoryRevision([
     SOURCE_PATH,
     pluginRoot,
+    "contracts/lock.json",
     CONTRACT_SCHEMA_PATH,
+    CATALOG_AUDIT_PATH,
     "scripts/package-desktop-skills.mjs",
     "scripts/lib/deterministic-zip.mjs",
   ]);
+  const publicSkills = builtSkills.map(({ source: skill, packaged }) => publicSkillMetadata(skill, packaged));
   const manifest = {
     schema_version: source.schema_version,
     bundle_id: source.bundle_id,
@@ -123,13 +155,9 @@ export async function buildDesktopSkillBundle(outputDirectory = DEFAULT_OUTPUT) 
     source: {
       repository: source.repository,
       ...revision,
-      tree_sha256: treeSha256(
-        builtSkills.map(({ source: skill, entries }) => ({ id: skill.id, entries })),
-      ),
+      tree_sha256: sha256(Buffer.from(canonicalJson(publicSkills), "utf8")),
     },
-    skills: builtSkills.map(({ source: skill, entries, archive }) =>
-      publicSkillMetadata(skill, entries, archive),
-    ),
+    skills: publicSkills,
   };
 
   const schema = JSON.parse(await readFile(CONTRACT_SCHEMA_PATH, "utf8"));
@@ -143,8 +171,10 @@ export async function buildDesktopSkillBundle(outputDirectory = DEFAULT_OUTPUT) 
   const staging = await mkdtemp(path.join(parent, ".skill-packages-"));
   try {
     await mkdir(path.join(staging, "packages"), { recursive: true });
-    for (const { source: skill, archive } of builtSkills) {
-      await writeFile(path.join(staging, "packages", `${skill.id}-${skill.version}.zip`), archive);
+    for (const { source: skill, packaged } of builtSkills) {
+      if (packaged) {
+        await writeFile(path.join(staging, "packages", `${skill.id}-${skill.version}.zip`), packaged.archive);
+      }
     }
     await writeFile(path.join(staging, "bundle-manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`);
     await rm(outputDirectory, { recursive: true, force: true });
@@ -162,7 +192,8 @@ if (invokedPath === fileURLToPath(import.meta.url)) {
   const outputDirectory = outputIndex >= 0 ? process.argv[outputIndex + 1] : DEFAULT_OUTPUT;
   if (!outputDirectory) throw new Error("--output requires a directory");
   const manifest = await buildDesktopSkillBundle(outputDirectory);
+  const archiveCount = manifest.skills.filter(({ archive }) => archive).length;
   console.log(
-    `Packaged ${manifest.skills.length} deterministic Desktop Skill archive(s) in ${outputDirectory} (${manifest.distribution_channel}).`,
+    `Generated ${manifest.skills.length} catalog entries and ${archiveCount} deterministic Desktop Skill archive(s) in ${outputDirectory} (${manifest.distribution_channel}).`,
   );
 }
