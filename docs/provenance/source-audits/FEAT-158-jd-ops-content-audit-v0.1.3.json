@@ -1,0 +1,175 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-11T14:20:07Z",
+  "content_version": "0.1.3",
+  "source_root": "plugins/yijie-desktop-skills/experts/jd-ops-expert/skills/jd-ops-kb",
+  "review_kind": "static-content-and-structure",
+  "source": {
+    "label": "user-provided-jd-kb",
+    "bytes": 224337,
+    "lines": 2291,
+    "sha256": "ce352f4f8ce2e21b5526ac5471104aff52802d5c36b099c0f6b425718f026d4e"
+  },
+  "decisions": {
+    "source_full_text_copied": false,
+    "third_party_avatar_copied": false,
+    "source_files_modified": false,
+    "current_policy_verification": "NOT RUN",
+    "model_eval": "NOT RUN for0.1.3; run8 stopped after6cases by user scope reduction, c01 failure retained",
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "module_count": 14,
+    "scene_count": 42,
+    "scripts_in_archive": false,
+    "automatic_external_calls": false
+  },
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 761,
+      "sha256": "e739535a61470e9b4d029cfaccd73ee510f2ed5cd9d87a3a44d659cd4496c78b"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 3188,
+      "sha256": "a644bf12c4573895d3e6edc7b7a619cc95cc429c910260a5ef16b5f2bce7b6f5"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 5122,
+      "sha256": "b090640ebdced923f1fbe31014e1a07570f6a4870cd37312d00b93242ba21f4b"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 1690,
+      "sha256": "5adff7220b35080e8aded6c7b917fc7d51baf50d9fff4b8e0d90a23037dd0909"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 4820,
+      "sha256": "06e073674085bff0aa8f176e5ea973c0e45b6c2b4921da9a7c25ee060a0910c1"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 2602,
+      "sha256": "a7cb4828aaa6690abbc6428e92f228fc225d144fdd8af99c143dc01fa3a66cc6"
+    },
+    {
+      "path": "examples/input-001.json",
+      "bytes": 566,
+      "sha256": "de8b44eab71af41df4499801f56a8877a75527d7e575ad6b6f23b0f149ee984f"
+    },
+    {
+      "path": "examples/output-001.md",
+      "bytes": 2077,
+      "sha256": "502ec806099270b4eda817f5c9ef77fc6fe42cf6a70488f43cb8bb48c3c7caa8"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 3582,
+      "sha256": "ee6106e03c197b5cdd98942f1448732c9284769f49a93f050b72fe01713cafa3"
+    },
+    {
+      "path": "references/m01-foundations.md",
+      "bytes": 3355,
+      "sha256": "168b975a9e2f5d6b4d6b69b94bae1eecfbde47fbf15f0271904e165f0d2ff8f4"
+    },
+    {
+      "path": "references/m02-entry.md",
+      "bytes": 3103,
+      "sha256": "004a25067deed5687c32366c4ce682b64f4a1726abd6c353c240720335dbcae2"
+    },
+    {
+      "path": "references/m03-listing.md",
+      "bytes": 3712,
+      "sha256": "68177c67dda306cd7e8befcc377545cb1a48bdc17518b17b1e3e2b4c85df4eeb"
+    },
+    {
+      "path": "references/m04-media.md",
+      "bytes": 2954,
+      "sha256": "5a959b9fc39a997b4823d1e6868084d6ec17af84d1f1c25e95cd6fd13e590dd5"
+    },
+    {
+      "path": "references/m05-pricing.md",
+      "bytes": 3148,
+      "sha256": "1f1eb7ba2ffd99d2267c995c893e60bbf00c2929a76e2dba51d1cbe668280158"
+    },
+    {
+      "path": "references/m06-launch.md",
+      "bytes": 3043,
+      "sha256": "5f2c91e5681ff29797bf5847edd3b9ffc727252727ddc3e4bd627f1b0262348d"
+    },
+    {
+      "path": "references/m07-campaigns.md",
+      "bytes": 2994,
+      "sha256": "6df91f3c3622fca850be92d77a33dac6ac87a5eb5b468a2c69e50ddbb0bfe835"
+    },
+    {
+      "path": "references/m08-advertising.md",
+      "bytes": 3147,
+      "sha256": "75d60bb2707d4c59d7081ba3607d2c297dc985e646f75c8f083a49ae45f5a7a4"
+    },
+    {
+      "path": "references/m09-health.md",
+      "bytes": 2927,
+      "sha256": "16dd0bb8a11ab8034549f4054ac0feaaa9b96bbd1964bb1a723bb442ee44d5d7"
+    },
+    {
+      "path": "references/m10-service.md",
+      "bytes": 2928,
+      "sha256": "b3be2f78af4193d7e0bef903a8192e79c6b599d921eb7dec755972d26c7ea175"
+    },
+    {
+      "path": "references/m11-fulfillment.md",
+      "bytes": 2928,
+      "sha256": "86ee9cef28e3eb79075781f460bd538dd69074a42cb0ada01a6007ab452039c8"
+    },
+    {
+      "path": "references/m12-compliance.md",
+      "bytes": 3190,
+      "sha256": "6cb9d0211961dede2bbe8bc5182269a58b83041c1c80a8ad0e31cf7b45890c52"
+    },
+    {
+      "path": "references/m13-review.md",
+      "bytes": 3402,
+      "sha256": "6a6d5b3a4246c2f9f99231d4f537c8d335b4f867a18252c81a20e7661f6a18ba"
+    },
+    {
+      "path": "references/m14-creators.md",
+      "bytes": 2950,
+      "sha256": "b96006684422dd4ee7ac9a41f238d39bce035c08cf87fb922e7256b38e9f6ca4"
+    },
+    {
+      "path": "references/scene-index.json",
+      "bytes": 26180,
+      "sha256": "4027effc95d95d5c1de771e20a5b12f9fa54f4271666cfba3b2c8d62f5f4e459"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 3110,
+      "sha256": "4cd38e99412ea85c55048411b6109a7a2e4dc8a11defa3219c54f7630c986e1a"
+    },
+    {
+      "path": "tests/README.md",
+      "bytes": 562,
+      "sha256": "a85810e4843882c3b1b801e6c00dfa1368ad928b58ebcb3ca546959cfdc22b54"
+    }
+  ],
+  "predecessor": {
+    "content_version": "0.1.2",
+    "audit_path": "docs/provenance/source-audits/FEAT-158-jd-ops-content-audit-v0.1.2.json",
+    "audit_sha256": "aab73fda3807004efc8ad413bf73e9694f059e8ede1163b59aa4ebf98e5fdf8e",
+    "manifest_sha256": "a176bfba892afbc4de8622ebde955a72aef240ab51a9256d7bfb6c5ec40c0936",
+    "model_eval": "run8 6first answers:5PASS,1FAIL with serious unsupported sales fact;remaining7–17NOT RUN by user scope reduction. Original records unchanged.",
+    "review_sha256": "80273ff34067a2433665c18a0a276706a4de9da2db97ed3725ba9866dc9b7dc7",
+    "source_snapshot": "dist/feat158-v012-run8-source",
+    "preservation_record": "dist/feat158-v012-run8-preservation.json"
+  },
+  "changes": [
+    "OnlyROLE andM03-01 substantive guidance: map each fact value to original evidence, missing remains unknown, derived/conditional statements separate",
+    "Other archive content changed onlybymechanical0.1.2→0.1.3version replacement;same12case inputs/expected/rubric exceptversion parameter",
+    "No new product profile,installation,UI,modelcall,network or knowledge scope; oldcontent/evidence retained"
+  ],
+  "contract_impact": "semantic",
+  "contract_scope": "Versioned expert behavior content only; wire, archive format and permissions unchanged; consumer and real-model qualification pending"
+}

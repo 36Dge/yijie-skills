@@ -1,0 +1,179 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-11T13:27:42Z",
+  "content_version": "0.1.2",
+  "source_root": "plugins/yijie-desktop-skills/experts/jd-ops-expert/skills/jd-ops-kb",
+  "review_kind": "static-content-and-structure",
+  "source": {
+    "label": "user-provided-jd-kb",
+    "bytes": 224337,
+    "lines": 2291,
+    "sha256": "ce352f4f8ce2e21b5526ac5471104aff52802d5c36b099c0f6b425718f026d4e"
+  },
+  "decisions": {
+    "source_full_text_copied": false,
+    "third_party_avatar_copied": false,
+    "source_files_modified": false,
+    "current_policy_verification": "NOT RUN",
+    "model_eval": "NOT RUN for0.1.2; predecessor run7 NOT PASS retained",
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "module_count": 14,
+    "scene_count": 42,
+    "scripts_in_archive": false,
+    "automatic_external_calls": false
+  },
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 761,
+      "sha256": "f609a8344d2c9108b8500f05833ff8968b1624260ab0f6a506b80b50a1667fb4"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 2928,
+      "sha256": "fcf23ad407cfe0df4f43c6167855d30edcdee9d8194b37d30df2c59136fa8838"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 5122,
+      "sha256": "64050c759705f7d26e1c5eb57d21fc16410cf6854b535b8eb0d251567554052e"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 1690,
+      "sha256": "5adff7220b35080e8aded6c7b917fc7d51baf50d9fff4b8e0d90a23037dd0909"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 4820,
+      "sha256": "59f8ef064502a912773215a617b952cc995f553ec50566033c1d65ded77d24e6"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 2602,
+      "sha256": "073fe5abfec502fd355fb508e72852290196d02b83010608cee67f0f71bab108"
+    },
+    {
+      "path": "examples/input-001.json",
+      "bytes": 566,
+      "sha256": "de8b44eab71af41df4499801f56a8877a75527d7e575ad6b6f23b0f149ee984f"
+    },
+    {
+      "path": "examples/output-001.md",
+      "bytes": 2077,
+      "sha256": "e6e3a84fd2a0f2719b595243dfd46e7ab2db22de2ba1ef75b988cefe2218aa60"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 3582,
+      "sha256": "00845bdfb1e64ccd0869bfd9eede24fdeeca307d2fe24b85698a253e7e10ec48"
+    },
+    {
+      "path": "references/m01-foundations.md",
+      "bytes": 3355,
+      "sha256": "a12c7ff89a0ca4aac98d7f77fe7d33b5eacc0b9f1e071743cbb0a1b82f063631"
+    },
+    {
+      "path": "references/m02-entry.md",
+      "bytes": 3103,
+      "sha256": "91c35b241ea6d62fa5c648de399b7d64b29b63c7fda02039d679ddaa762f9419"
+    },
+    {
+      "path": "references/m03-listing.md",
+      "bytes": 3430,
+      "sha256": "9e095ffc0705efc3ade54e61b6b49a7db14108604892a91bc8e4018ff3e9d99e"
+    },
+    {
+      "path": "references/m04-media.md",
+      "bytes": 2954,
+      "sha256": "563866c764163732488f66ff29fb0fc5ab6419912a55559031a178ada85a96eb"
+    },
+    {
+      "path": "references/m05-pricing.md",
+      "bytes": 3148,
+      "sha256": "8a0593944c86cc790d9eb0d3fd0faaacc10e7c8d69f6dcacff526d621cd2ecc9"
+    },
+    {
+      "path": "references/m06-launch.md",
+      "bytes": 3043,
+      "sha256": "791677a412cd1a9445661f96695cbf53bcbd155bf513a2d65894f5f1f569c23e"
+    },
+    {
+      "path": "references/m07-campaigns.md",
+      "bytes": 2994,
+      "sha256": "3523614a4ac6627f1f350fdb25f83c4cf034ec34eea9fccc6c8c1712e81cf31c"
+    },
+    {
+      "path": "references/m08-advertising.md",
+      "bytes": 3147,
+      "sha256": "e0479ad28dbdc9cae9770f4d0d6cd067e50d4d84f03e248b6f0e8ea7d0830208"
+    },
+    {
+      "path": "references/m09-health.md",
+      "bytes": 2927,
+      "sha256": "c41964f5b9bfd7119a7649cbeb849cfc23091beb87f17127bd25da02cab703a2"
+    },
+    {
+      "path": "references/m10-service.md",
+      "bytes": 2928,
+      "sha256": "4190af4a50cd4e77245327511c82c339fc5ae2719bb401e72998a6396854b5c3"
+    },
+    {
+      "path": "references/m11-fulfillment.md",
+      "bytes": 2928,
+      "sha256": "b707db5e911f79ada422b4abcb1344a53e895b0c54db2752d0dd66330bc8977e"
+    },
+    {
+      "path": "references/m12-compliance.md",
+      "bytes": 3190,
+      "sha256": "a44122d51d7c1246b0e7465de60d681676b65907e3d50c4cb13b68e4077d15e3"
+    },
+    {
+      "path": "references/m13-review.md",
+      "bytes": 3402,
+      "sha256": "c855a5d3a957554303f35ef0412c77190622c33e8312085ed6f5cb49da2e391f"
+    },
+    {
+      "path": "references/m14-creators.md",
+      "bytes": 2950,
+      "sha256": "4f2eccef9e6280816305d312e8802a77a1d4f975e1fc238f0ba22b77347f34ce"
+    },
+    {
+      "path": "references/scene-index.json",
+      "bytes": 26180,
+      "sha256": "730ecce813c3439fa08569960ec8c011edd120230d8e0a871f7830220e97ff80"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 3110,
+      "sha256": "d050e5ebf01f027386cdc05e88cccf2ae86adbbb7fb763822eda3fbb6e49e103"
+    },
+    {
+      "path": "tests/README.md",
+      "bytes": 562,
+      "sha256": "a85810e4843882c3b1b801e6c00dfa1368ad928b58ebcb3ca546959cfdc22b54"
+    }
+  ],
+  "predecessor": {
+    "content_version": "0.1.1",
+    "audit_path": "docs/provenance/source-audits/FEAT-158-jd-ops-content-audit-v0.1.1.json",
+    "audit_sha256": "64e4c44b8686762e012ac6db9ec5867872ed0ceecbc97e56c86b928886d71a37",
+    "manifest_sha256": "31e7f42193263356c1e4939600ebd95961e6eb682c96f53429b47417dc3d1b6d",
+    "model_eval": "run7 NOT PASS:6first-complete,5first-partial,1cancellation-variant;3explicit-followup recoveries;serious0;23/23locatable supporting scene citations. First failures retained.",
+    "review_sha256": "4e7c9816667945f23eb55059839fbd0b5eed0f5df55be11d82c8418cedf5d0ea",
+    "source_snapshot": "dist/feat158-v011-run7-source",
+    "preservation_record": "dist/feat158-v011-run7-preservation.json"
+  },
+  "changes": [
+    "Cover each independent question and route store setup separately from product listing",
+    "Separate provable arithmetic mismatch from unproven cause hypotheses",
+    "Require matching numerator denominator and units before using metric names",
+    "Limit absence statements to actual inspected resources, not all historical versions",
+    "Compare requested inventory against known deliverable quantity by ordering; unknown remains unknown",
+    "Verify item counts while retaining same12evalIDs,14modules42scenes and original-source mappings",
+    "Keep original failure records and unchanged all-selected-cases threshold; current0.1.2 real-model eval pending"
+  ],
+  "contract_impact": "semantic",
+  "contract_scope": "Versioned expert behavior content only; wire, archive format and permissions unchanged; consumer and real-model qualification pending"
+}

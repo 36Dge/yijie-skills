@@ -1,0 +1,169 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-11T11:06:59Z",
+  "content_version": "0.1.1",
+  "source_root": "plugins/yijie-desktop-skills/experts/jd-ops-expert/skills/jd-ops-kb",
+  "review_kind": "static-content-and-structure",
+  "source": {
+    "label": "user-provided-jd-kb",
+    "bytes": 224337,
+    "lines": 2291,
+    "sha256": "ce352f4f8ce2e21b5526ac5471104aff52802d5c36b099c0f6b425718f026d4e"
+  },
+  "decisions": {
+    "source_full_text_copied": false,
+    "third_party_avatar_copied": false,
+    "source_files_modified": false,
+    "current_policy_verification": "NOT RUN",
+    "model_eval": "NOT RUN for 0.1.1",
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "module_count": 14,
+    "scene_count": 42,
+    "scripts_in_archive": false,
+    "automatic_external_calls": false
+  },
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 761,
+      "sha256": "06358f298e10ca9a696260c156d1f99b1cc7d1b1c5e052ac82083f6fb188d08f"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 2156,
+      "sha256": "cd30368006f57ab8c400182600a53019b960bb23e49395972ec782e5e37e43da"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 4434,
+      "sha256": "8f6c1a10227f9dc5f6b22d34cb03182811e95822114d3ebfc59c219681597aeb"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 1108,
+      "sha256": "2e5f2447f20ee1d6a1c460fbb07a8c12a12f6a76cef551771b20f70617521f50"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 4138,
+      "sha256": "ef5284d50e691dad033bf41c0158a10a308f90716284f27d1dedf5555c363f4c"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 2048,
+      "sha256": "f5cb3b50599f1fbaa3f19a86b80621f10fae01ccbc3c3c5d8e385d712b7f69b0"
+    },
+    {
+      "path": "examples/input-001.json",
+      "bytes": 354,
+      "sha256": "d58e7da9ee1b2a3d59f0379323f808073b280d08e2b1b9d0a827fad692c307a8"
+    },
+    {
+      "path": "examples/output-001.md",
+      "bytes": 1206,
+      "sha256": "dcce3292f9c0949f9960f7fd63f5fddd074b4b413a2ce0106c0b84b14009c825"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 3274,
+      "sha256": "28fbc4106c148fddf6abe9334fe527bc3c78dd8233edb2226c45a273e5e6b1e5"
+    },
+    {
+      "path": "references/m01-foundations.md",
+      "bytes": 3355,
+      "sha256": "de680c014cf969dbb46ec95ce05f2ba7adb3d0ab5118c8052aeeaf405e325273"
+    },
+    {
+      "path": "references/m02-entry.md",
+      "bytes": 3103,
+      "sha256": "8cc839ec39c7e43bc3da206bf17a1f915de6dfc6720491bf43da5715c4e94e23"
+    },
+    {
+      "path": "references/m03-listing.md",
+      "bytes": 3096,
+      "sha256": "3f63d884cbb26c798f47a9e9795359a5f609aa2ccbbfbd45eb6e958f75b7fa12"
+    },
+    {
+      "path": "references/m04-media.md",
+      "bytes": 2954,
+      "sha256": "2f082a77d0ee38fafacd314d1150b623af56aee0f73a16c0e512f2661bc17fc3"
+    },
+    {
+      "path": "references/m05-pricing.md",
+      "bytes": 2947,
+      "sha256": "f05b0b7e6c948d9f684f7401a9f84fdc254ccbf4a070cac1ddd90d2f8863b50d"
+    },
+    {
+      "path": "references/m06-launch.md",
+      "bytes": 3043,
+      "sha256": "637fc36c83edfdee7040da06c54a027afd92929a66bdb6aeb96049398df8fe9f"
+    },
+    {
+      "path": "references/m07-campaigns.md",
+      "bytes": 2994,
+      "sha256": "cb57236620eeb5fdd139ce6e7a26ad639aef125582692ed1d42864bbc1b1b3ef"
+    },
+    {
+      "path": "references/m08-advertising.md",
+      "bytes": 3147,
+      "sha256": "2ef9a04f3e0cd09153416d815bfba22a727c8dc509df5128dbd2255a63fef21d"
+    },
+    {
+      "path": "references/m09-health.md",
+      "bytes": 2927,
+      "sha256": "bc536fa5d76f106588ce14b755a4daec4c7bd46c930bb2fd67489673722b9f66"
+    },
+    {
+      "path": "references/m10-service.md",
+      "bytes": 2928,
+      "sha256": "46f5e5c8040be061fa462d2d7fd31e1cab2e0d398f906030df9b30be2e09a31e"
+    },
+    {
+      "path": "references/m11-fulfillment.md",
+      "bytes": 2928,
+      "sha256": "507f3a13aeae8c7c7d246aeb258c067659bb317cdfcffb660dce62d8ad534eb5"
+    },
+    {
+      "path": "references/m12-compliance.md",
+      "bytes": 3190,
+      "sha256": "63ffddcd935d7c19905b1ba12f265e5ad026b4a45cabbc95e71eb90cd0e64f34"
+    },
+    {
+      "path": "references/m13-review.md",
+      "bytes": 2981,
+      "sha256": "8e168ce2b460342ffb8cef6263e8a8f76ffae18a607e92c6d8a26f9d230ef727"
+    },
+    {
+      "path": "references/m14-creators.md",
+      "bytes": 2950,
+      "sha256": "150fc7d8545f919f25238d512481a85ad8e372f0ea2c142995f8e43cfa36d9f7"
+    },
+    {
+      "path": "references/scene-index.json",
+      "bytes": 26180,
+      "sha256": "34efd019135da5db6985c314bb369ab9061b91d9a241c4dc67d9ca41eac39f1c"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 2670,
+      "sha256": "cc8d98b403f726973e6c89e8446ff6eeafc55062c23e16dd3ee71e164ce7191e"
+    },
+    {
+      "path": "tests/README.md",
+      "bytes": 562,
+      "sha256": "a85810e4843882c3b1b801e6c00dfa1368ad928b58ebcb3ca546959cfdc22b54"
+    }
+  ],
+  "predecessor": {
+    "content_version": "0.1.0",
+    "audit_path": "docs/provenance/source-audits/FEAT-158-jd-ops-content-audit.json",
+    "audit_sha256": "3701239c1ea1868eeea5bfcb607500d9da79fb9ba0ef4de42c1811c1dd70d675",
+    "model_eval": "FAILED run5; original missing-brand fact inference and unauthorized builtin search preserved"
+  },
+  "changes": [
+    "Distinguish missing brand evidence from confirmed unbranded product",
+    "Distinguish current-turn reference reads from verifiable prior-turn reads",
+    "Keep14modules42scenes and source mappings; synchronize content identity0.1.1"
+  ]
+}

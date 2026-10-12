@@ -1,0 +1,158 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-11",
+  "content_version": "0.1.0",
+  "source_root": "plugins/yijie-desktop-skills/experts/jd-ops-expert/skills/jd-ops-kb",
+  "review_kind": "static-content-and-structure",
+  "source": {
+    "label": "user-provided-jd-kb",
+    "bytes": 224337,
+    "lines": 2291,
+    "sha256": "ce352f4f8ce2e21b5526ac5471104aff52802d5c36b099c0f6b425718f026d4e"
+  },
+  "decisions": {
+    "source_full_text_copied": false,
+    "third_party_avatar_copied": false,
+    "source_files_modified": false,
+    "current_policy_verification": "NOT RUN",
+    "model_eval": "NOT RUN",
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "module_count": 14,
+    "scene_count": 42,
+    "scripts_in_archive": false,
+    "automatic_external_calls": false
+  },
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 761,
+      "sha256": "488b6ee42bc4f04f62b72b23201b1447066b56992386c8d9ddddb9b605b1788a"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 1730,
+      "sha256": "7173636f07506ce525c15af7b6fc29b564536c3be41798ac614714a26b4c70f0"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 4049,
+      "sha256": "fb5161779e62a7acf174fb3b2e05ebf53824f7a841ee1e702d411a2faebf0133"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 874,
+      "sha256": "57ad34c3cb23f0447e18be333a081a5c0049a6b16f05756f1b66b14524e2af58"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 3691,
+      "sha256": "1a8214930c29574b4f13b0c0ff68343426c4438b4fef34bfba16984c0782602d"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 1769,
+      "sha256": "01014193a7256b91b7cdcfded121e161b0dbb178da77018f0bc779feb5d8a90a"
+    },
+    {
+      "path": "examples/input-001.json",
+      "bytes": 354,
+      "sha256": "d58e7da9ee1b2a3d59f0379323f808073b280d08e2b1b9d0a827fad692c307a8"
+    },
+    {
+      "path": "examples/output-001.md",
+      "bytes": 989,
+      "sha256": "2da02453b014b9d1d39b9101567f70b9f14d045064738f476b928eed6456c210"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 3274,
+      "sha256": "0d3a5bd635ac3719c96533c3b00b5277bb599a55518e84c7748148850c66155c"
+    },
+    {
+      "path": "references/m01-foundations.md",
+      "bytes": 3355,
+      "sha256": "5f14c15f69de7ec23020e9d61605b364a698eccd200f2785b1362b3bc4d33ff0"
+    },
+    {
+      "path": "references/m02-entry.md",
+      "bytes": 3103,
+      "sha256": "b5c237723936ced5396dce881239ad3c69f70b8d5f29caff86768fefb6f07b08"
+    },
+    {
+      "path": "references/m03-listing.md",
+      "bytes": 3096,
+      "sha256": "5e82ce5ed4207e531c3ff1e40327f2b77ad69e14f7f379a0406964cd3b502dbd"
+    },
+    {
+      "path": "references/m04-media.md",
+      "bytes": 2954,
+      "sha256": "8d05853d5bca4b81247c40f0c3f850276211bf491b6de5bf75fa0d73380695e2"
+    },
+    {
+      "path": "references/m05-pricing.md",
+      "bytes": 2947,
+      "sha256": "a65ea3b41a64e73eb6a11ec66684e8919859c656da547d3644138aa5791abb2f"
+    },
+    {
+      "path": "references/m06-launch.md",
+      "bytes": 3043,
+      "sha256": "fd945f47520f7643594e1c65c9669640624a3ffa1c225c7ac96c65c912e9acba"
+    },
+    {
+      "path": "references/m07-campaigns.md",
+      "bytes": 2994,
+      "sha256": "247acb7cec88b33d52c254dcafdbee646dc00ae26418114e4c0e811f06062b3f"
+    },
+    {
+      "path": "references/m08-advertising.md",
+      "bytes": 3147,
+      "sha256": "ccb170508505d6c0560ae5df2bcd97d4dafe7ed6ba79a10efe91a4514614b233"
+    },
+    {
+      "path": "references/m09-health.md",
+      "bytes": 2927,
+      "sha256": "f98eed5fdf30d83b196cda52cb2095f9275a7552ddf78a2e103d28dc83ae16e4"
+    },
+    {
+      "path": "references/m10-service.md",
+      "bytes": 2928,
+      "sha256": "f5e5bd1c38883ebf728de56e3645a8f71cccd8fedf72d2eb86f3df7135b49dd4"
+    },
+    {
+      "path": "references/m11-fulfillment.md",
+      "bytes": 2928,
+      "sha256": "c0a844c2ffb8eda97dbc016166690b177497ae7e8ea11ce11457d746bd427694"
+    },
+    {
+      "path": "references/m12-compliance.md",
+      "bytes": 3190,
+      "sha256": "d809aebd7b95b98a444cb68674c4deca60101ad451bf86055f37b0c34a01451d"
+    },
+    {
+      "path": "references/m13-review.md",
+      "bytes": 2981,
+      "sha256": "6fd5c743611f0ea508cc329b45df5ac2dcb175e680b5af134b447962bf2f2f40"
+    },
+    {
+      "path": "references/m14-creators.md",
+      "bytes": 2950,
+      "sha256": "38cfca5c192f25250935837c9e9aacc3ec6824e0f7514bf89a8dfcacbea5ce0f"
+    },
+    {
+      "path": "references/scene-index.json",
+      "bytes": 26180,
+      "sha256": "87a12bdf1775b518763af464fc07c5ac898e5d3f18c147f1291e83fd498dd0e7"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 2544,
+      "sha256": "7c501231cac63c4e82c233502e105094e8bec0461b0b2bb1b20b0ddb8369115a"
+    },
+    {
+      "path": "tests/README.md",
+      "bytes": 562,
+      "sha256": "a85810e4843882c3b1b801e6c00dfa1368ad928b58ebcb3ca546959cfdc22b54"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "source": "synthetic",
+  "question": "请核对这段京东商品标题和事实，分别整理新店基础设置与商品上架检查项。",
+  "store_type": "POP",
+  "title": "棉质衣物收纳袋20件装",
+  "product_facts": {
+    "name": "衣物收纳袋",
+    "material": "聚酯纤维",
+    "package_count": 10,
+    "brand": null
+  },
+  "current_category_rules": null,
+  "store_setup": {
+    "shipping_address": null,
+    "return_address": null,
+    "delivery_regions_and_fees": null,
+    "customer_service_hours": null,
+    "payment_methods": null
+  }
+}

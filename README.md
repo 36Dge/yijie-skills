@@ -37,3 +37,28 @@ Manifest 精确消费 `yijie-contracts` 0.5.1 的 `skill-bundle-manifest-v2`，�
 ## 安全要求
 
 不得放入真实商家数据、平台 token、cookie、订单、买家 PII 或财务数据。
+
+## FEAT-158 本地专家候选
+
+京东专向专家内容位于 `plugins/yijie-desktop-skills/experts/jd-ops-expert/skills/jd-ops-kb/`，
+包含同包短角色、14模块42场景、来源行号和良性Eval。当前内容为0.1.3；0.1.0的事实边界/未授权搜索失败与0.1.1 run7未全部通过的内容评测均保留，0.1.2 run8前6题中1项事实保真失败、5项通过，其余依用户收窄未执行；0.1.3仅作本地逻辑修订，真实模型Eval未执行。政策联网核验未执行。
+
+原 `pnpm package` 和 `package:desktop-release` 继续构建38项v2包。专家通过同一确定性打包器的
+显式source/output生成独立本地v3候选，复用原38项资源并追加一个 `expert_resources` 条目：
+
+```bash
+node ../yijie-contracts/scripts/sync-experts.mjs --consumer=skills --check
+node scripts/package-desktop-skills.mjs --source plugins/yijie-desktop-skills/experts/bundle-source.json --output dist/skills-experts-candidate-v013
+```
+
+候选输出含 `bundle-manifest.json`、39个普通归档和 `authority.json`。authority固定manifest、
+来源树、角色、知识、内容审校和本地授权摘要，供Host/Desktop通过明确的开发同步固定来源；不能接受
+renderer任意路径或manifest自证。它标记 `release=false`，不是已发布commit或桌面再分发授权。
+旧 `contracts/lock.json` 不变；新v3源由Contracts canonical同步生成到 `contracts/experts.candidate.json`，
+不得手写复制schema或把working-tree候选伪称不可变发布pin。
+
+当前内容/授权记录见 `docs/provenance/FEAT-158-jd-ops-v0.1.3-content-review.md` 与
+`docs/provenance/FEAT-158-local-use-authorization-v0.1.3.md`；原0.1.0/0.1.1/0.1.2文档、旧候选及对应源快照保留。专家不进入全局Runtime Skill投影；
+本地安装不授予外部调用或额外文件权限。
+
+本次源码与知识正文公开 Git 推送已由用户明确授权；范围、不可变 Contracts 来源与仍保留的本地产品边界见 [FEAT-158 Git 交付记录](docs/provenance/FEAT-158-git-publication.md)。
