@@ -1,0 +1,373 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-16T17:36:40Z",
+  "content_version": "0.1.0",
+  "source_root": "plugins/yijie-desktop-skills/experts/linkfox-expert-1688-sourcing-expert/skills/sourcing-1688",
+  "review_kind": "source/editorial and normal offline code/protocol review; not account/model validation",
+  "original_package": {
+    "id": "linkfox-expert-1688-sourcing-expert",
+    "version": "2.2.0"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "bytes": 2503,
+      "sha256": "e69f8adeda4886310dfa76df1aa7e8fe94913eb518d43cc4c3afa80cb3fecd0e",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": ".downloaded_at",
+      "bytes": 24,
+      "sha256": "cb16c83143fd5f7e69687ccf6bfff2ccc19f5b0ee7580d0195d87e3003f44f6f",
+      "decision": "Provenance only"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1017,
+      "sha256": "86c69b86800723908220ce8707b8cf4b3f7b2748fd07e174b15f430df38a62e6",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "agents/linkfox-expert-1688-sourcing-expert.md",
+      "bytes": 6856,
+      "sha256": "a51247f95d262b99fea8fcc4ef5936daea8ad0b19b432a26fb6e8f2517566336",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "avatars/expert.png",
+      "bytes": 217652,
+      "sha256": "851ef519616c5757aee8495fade124f070755176662ea8204f75aa291bac7422",
+      "decision": "Existing local UI avatar; not runtime knowledge"
+    },
+    {
+      "path": "skills/linkfox-1688-search-by-image/SKILL.md",
+      "bytes": 11548,
+      "sha256": "3d744768bb5c66987209c9c16131f96d9511dfb0c42e515556d2553747de89b4",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-1688-search-by-image/references/api.md",
+      "bytes": 8148,
+      "sha256": "9c9aaf13263c24dc4134bfcd30110f785e94a3882a76b2d2eac7304bf64b2ef6",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-1688-source-profiler/SKILL.md",
+      "bytes": 22924,
+      "sha256": "e36810dd54609cf496157a1cfc9a2c25cb020d15e04d6148d1c359f13209f48a",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-1688-source-profiler/references/aigc-prompt-templates.md",
+      "bytes": 2622,
+      "sha256": "1e4288216077433b17151cfcc38b787ab51da2e5c0c66e72da35d81ee7935bcf",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-1688-source-profiler/references/fba-fee-table.md",
+      "bytes": 1859,
+      "sha256": "2745cca165817b159c69c81dddcea62494ea09c7b6a576f24bdaf2a2298dd6ad",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-1688-source-profiler/scripts/linkfox_paths.py",
+      "bytes": 1658,
+      "sha256": "e5e9b77ca6ac05df19fd5ce03342f0feba76f673dc3a4bca55f12e9a56b73d96",
+      "decision": "Excluded original executable/template; offline helper rewritten with exact identity and missing-cost rules"
+    },
+    {
+      "path": "skills/linkfox-1688-source-profiler/scripts/step_4_calc_profit.py",
+      "bytes": 29772,
+      "sha256": "fda2d260162b733e7a1cabcb194dd68192cfb0a3ccb8bd92c8e4bbb07ce099cd",
+      "decision": "Excluded original executable/template; offline helper rewritten with exact identity and missing-cost rules"
+    },
+    {
+      "path": "skills/linkfox-1688-source-profiler/scripts/title_prefilter.py",
+      "bytes": 2345,
+      "sha256": "35fa68a0c340701beb2f2b9d728b8c70c451b99de70cce419fca3752d8540254",
+      "decision": "Excluded original executable/template; offline helper rewritten with exact identity and missing-cost rules"
+    },
+    {
+      "path": "skills/linkfox-ai-mode-google-search/SKILL.md",
+      "bytes": 10147,
+      "sha256": "f5833dff1530ea026ba1bd6ebb9c9cb1eac021c5834bef2fcb8fa2bb09ce3925",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-ai-mode-google-search/references/api.md",
+      "bytes": 3659,
+      "sha256": "cc0beb1010fd57c961ec82322b319be1f47f97255104e92366f357a12c6f97cf",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-textgen/SKILL.md",
+      "bytes": 7329,
+      "sha256": "389c62c99d7ee0f89a0d606babcf02c000c794ed670bc18bbc8adc74f1c74cea",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-textgen/_meta.json",
+      "bytes": 82,
+      "sha256": "c0b967f5ce3dd2db32d90039726b6c3e90486666e4ab45609648817beeba87e9",
+      "decision": "Provenance only"
+    },
+    {
+      "path": "skills/linkfox-aigc-textgen/references/api.md",
+      "bytes": 5575,
+      "sha256": "511c7e201c814b9c291c694f68b01918b33041eb6e173a28668c97a6a02c1cef",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-amazon-search/SKILL.md",
+      "bytes": 9891,
+      "sha256": "6090e2f70dbebc4c15f720a905548eef6b15517657a236f3a4dc67bcabb38990",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-amazon-search/references/api.md",
+      "bytes": 7457,
+      "sha256": "582bd7598dd0446c49776291bec5b9fedbcf5618fb38a37ecc80b1c370cbe1bc",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-dld-product-search/SKILL.md",
+      "bytes": 11273,
+      "sha256": "a3afbab1b3bed491d6388d32b0da1d04f42cf91459be9242bf858bb144247350",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-dld-product-search/references/api.md",
+      "bytes": 6656,
+      "sha256": "ea2620e3cfba96dfdb0698ec514cfeeb5d8f498c7a66f91f8facde680756e7d6",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-file-upload/SKILL.md",
+      "bytes": 2029,
+      "sha256": "e6615cd322b6699d56e0cd82491515866f0fcee8265ee376aad14079ff963656",
+      "decision": "Excluded original executable/template; offline helper rewritten with exact identity and missing-cost rules"
+    },
+    {
+      "path": "skills/linkfox-file-upload/_meta.json",
+      "bytes": 81,
+      "sha256": "d56f2e6b9eebb3f712b3c5660c41b869bb3041aea6509ed23a6ee2920c4b3fb9",
+      "decision": "Provenance only"
+    },
+    {
+      "path": "skills/linkfox-file-upload/references/api.md",
+      "bytes": 1298,
+      "sha256": "dc074c49819c635332f2d4d6c035340b6c59eb8e68397e23c98fce9fa90b1191",
+      "decision": "Excluded original executable/template; offline helper rewritten with exact identity and missing-cost rules"
+    },
+    {
+      "path": "skills/linkfox-file-upload/scripts/file_upload.py",
+      "bytes": 1623,
+      "sha256": "24bf2841fcfc60ae608cd8c5fe1800cd16b7c7255a0cb0d26e25c156e3ead077",
+      "decision": "Excluded original executable/template; offline helper rewritten with exact identity and missing-cost rules"
+    },
+    {
+      "path": "skills/linkfox-jiimore-get-niche-info-by-keyword/SKILL.md",
+      "bytes": 12837,
+      "sha256": "9a5f9a19168ff082d59c9b8be8446be8da0b1a6f4d4355e6531321011f6a59a0",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-jiimore-get-niche-info-by-keyword/references/api.md",
+      "bytes": 10817,
+      "sha256": "71d1f7c3021d13f295651a33cbe9617fa40414ab26dafb3404c346a13e968146",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-keepa-product-request/SKILL.md",
+      "bytes": 8537,
+      "sha256": "5e8de905db116a10dea4792921ed0a53c6f71af2027afd8d83a9516fd9d2a92a",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-keepa-product-request/references/api.md",
+      "bytes": 7047,
+      "sha256": "5307a06685144694c2ac5c1c694bda323b0ed876930f34a52f6cef081bf52df4",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-keepa-product-series/SKILL.md",
+      "bytes": 9970,
+      "sha256": "61d937396781550e091f16efc269ed3d2e6f873c71c9d642716f1f154dac65a2",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-keepa-product-series/references/api.md",
+      "bytes": 4753,
+      "sha256": "9ea73acbf64a8f177f437826baff52068c6f53ef14657b6f22ba8f473154c450",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-report-generator/SKILL.md",
+      "bytes": 9725,
+      "sha256": "be057127e5313a7b36fa0e57316e6d9d33038fee5becbc799eaea5c72881f61e",
+      "decision": "Excluded original executable/template; offline helper rewritten with exact identity and missing-cost rules"
+    },
+    {
+      "path": "skills/linkfox-report-generator/_meta.json",
+      "bytes": 86,
+      "sha256": "62731ab0a6722a717825cd1115a40928bc38f52766aea9b730209b562441d4c0",
+      "decision": "Provenance only"
+    },
+    {
+      "path": "skills/linkfox-report-generator/assets/template-analysis.html",
+      "bytes": 45400,
+      "sha256": "f6485bff7b6a85597e78a1cc6b628ab7665ed1d3cda7d8bcb59c3122a8080f9a",
+      "decision": "Excluded original executable/template; offline helper rewritten with exact identity and missing-cost rules"
+    },
+    {
+      "path": "skills/linkfox-report-generator/references/analysis-layouts.md",
+      "bytes": 11766,
+      "sha256": "26565f7aab0e79cdd68f30402c964e55932cbf4e6d775713b37012b102fa721b",
+      "decision": "Excluded original executable/template; offline helper rewritten with exact identity and missing-cost rules"
+    },
+    {
+      "path": "skills/linkfox-report-generator/scripts/inject_report.py",
+      "bytes": 9068,
+      "sha256": "6398a72ac93754c51f14b9a594d64a3759a8763a4202dcc36443e6d794062b56",
+      "decision": "Excluded original executable/template; offline helper rewritten with exact identity and missing-cost rules"
+    },
+    {
+      "path": "skills/linkfox-report-generator/scripts/linkfox_paths.py",
+      "bytes": 12770,
+      "sha256": "471007963d7db0130ea986001c970393f422a41011ba8fa62d5521b81c967518",
+      "decision": "Excluded original executable/template; offline helper rewritten with exact identity and missing-cost rules"
+    },
+    {
+      "path": "skills/linkfox-sellersprite-traffic-keyword/SKILL.md",
+      "bytes": 4504,
+      "sha256": "e75b563d491348815767fecad919d20378e35edd20972f82078d0bc3e6afceb3",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-sellersprite-traffic-keyword/references/api.md",
+      "bytes": 6822,
+      "sha256": "2f695630fd767175595bbadd186925122a4bfd93caf2e3385dd31cb7e963acf0",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-sif-asin-keywords/SKILL.md",
+      "bytes": 16718,
+      "sha256": "f1170c8f855d22307d2860ddde4d9cf084850d2b23e97cd9c01ef5cfe9d75085",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-sif-asin-keywords/references/api.md",
+      "bytes": 8997,
+      "sha256": "fbdfb245fbecdbc6710413c6b59c22334b947abc78b9ced76cd7a59d4580b807",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-sif-asin-summary/SKILL.md",
+      "bytes": 17619,
+      "sha256": "4236630a57797d18caa6861a389b5978509afd84ce91f7a904ef4a2f9b2a49a9",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-sif-asin-summary/references/api.md",
+      "bytes": 9910,
+      "sha256": "9a77691497d4a22e1ea62fb70ba5bb5a95e02b5c048a40149e58b49fd2246eea",
+      "decision": "Adapted reference only; no WorkBuddy instruction authority"
+    }
+  ],
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 316,
+      "sha256": "12230e335a56aaee6233df3ac53033a649fadc8cded95229503ee323abc630a0"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 4086,
+      "sha256": "d6539769e26773e8532dce383b1bbbbe042265396057761cddb6b93c7ece27c8"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 1659,
+      "sha256": "a3d3fea08f1d610a05bb7aa233940f416d6c097a35ef0e4b0755701f55b085be"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 823,
+      "sha256": "4ad452969018f00677bbdb15abdb696d8471d1bc0a8c9986b558c55107c301cc"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 2138,
+      "sha256": "8621f56449bc1782613509745c3b3302f12ef223de282b7ddd3677caba67693b"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 380,
+      "sha256": "44e6a23e8550d8e9ea7a84f201cb992cf1cb9757eac2f878f352206d4ed6e0ad"
+    },
+    {
+      "path": "examples/query.json",
+      "bytes": 88,
+      "sha256": "0f528e3f8dcbfa34947e05647bb186608ab712803c32296633e30f5563d2579a"
+    },
+    {
+      "path": "examples/scenario.json",
+      "bytes": 7774,
+      "sha256": "b659665d12ad6993350bebaca3e49dfa97e6c15691a75fb3e5fd215a687e0180"
+    },
+    {
+      "path": "examples/workflow.md",
+      "bytes": 464,
+      "sha256": "a3b5cc8f85a94ab8dae9bfc962c150187775e029a66bb6ec1de994c9efb5ca03"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 383,
+      "sha256": "6b4aa8ace8429e71e00489c38d6db8dfca5fd4f596d84b5fe519af4cce2dc6d3"
+    },
+    {
+      "path": "references/local-helper.md",
+      "bytes": 2213,
+      "sha256": "2910b955c6a0dcd1200646257a8699216b3c2384cf0a8d49e870fa9d0ce49bd9"
+    },
+    {
+      "path": "references/profit-method.md",
+      "bytes": 2569,
+      "sha256": "54045e997b517be36988442392a0968fb3582f30d2948d8fd7ddb925a992e020"
+    },
+    {
+      "path": "references/source-identity.md",
+      "bytes": 1776,
+      "sha256": "84a65c00b963f22264b6e47dde0fcaf57e47c9842a6f4423d17be1c440dd9e12"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 1486,
+      "sha256": "97f56aa8d980062182e91db6cc54bb87535ede6f35f2bf8dcf6cb246e91dd9b6"
+    },
+    {
+      "path": "references/tools.md",
+      "bytes": 2022,
+      "sha256": "0ce5ce63950a767f652773ebd35c4f6381497a339e708d6ae6411c525a8484c7"
+    },
+    {
+      "path": "references/workflow.md",
+      "bytes": 1729,
+      "sha256": "2104fd65e02378c91dbb258567e85684a53b780681d140a45d9c688397df1be6"
+    },
+    {
+      "path": "scripts/sourcing.py",
+      "bytes": 24455,
+      "sha256": "4b6bd2b088dea3e51f323428f23ef50a92766eecd2a40a2d19d12c45454e2ee8"
+    }
+  ],
+  "decisions": {
+    "source_files_modified": false,
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "credential_copy": false,
+    "network_scripts": false,
+    "automatic_feedback": false,
+    "real_validation": "NOT RUN by explicit user instruction"
+  }
+}

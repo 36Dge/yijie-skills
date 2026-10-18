@@ -1,0 +1,8 @@
+{
+  "expert_id": "tb-tm-ops-expert",
+  "platforms": [
+    "taobao",
+    "tmall"
+  ],
+  "version": "0.1.2"
+}

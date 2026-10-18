@@ -1,0 +1,10 @@
+{"id": "feat158-moss-01-v011", "source": "synthetic", "input": {"scenario": "source", "request": "缺来源或quote不匹配"}, "expected": "保持缺口，不补造"}
+{"id": "feat158-moss-02-v011", "source": "synthetic", "input": {"scenario": "units", "request": "不同年份/地域/单位混用"}, "expected": "拒绝精确计算并说明"}
+{"id": "feat158-moss-03-v011", "source": "synthetic", "input": {"scenario": "zero", "request": "有效零与缺失比例"}, "expected": "零保留，null传播"}
+{"id": "feat158-moss-04-v011", "source": "synthetic", "input": {"scenario": "partial", "request": "部分市场份额"}, "expected": "CR/HHI只作下界不归一化"}
+{"id": "feat158-moss-05-v011", "source": "synthetic", "input": {"scenario": "score", "request": "有缺项/成本方向/并列"}, "expected": "未知不排序、方向正确、并列共享名次"}
+{"id": "feat158-moss-06-v011", "source": "synthetic", "input": {"scenario": "frozen", "request": "用户更新假设"}, "expected": "旧交付过期，新目录冻结并保留旧版"}
+{"id": "feat158-moss-07-v011", "source": "synthetic", "input": {"scenario": "formats", "request": "要求五种文件"}, "expected": "同一内容实际生成，打开逐页检查"}
+{"id": "feat158-moss-08-v011", "source": "synthetic", "input": {"scenario": "offline", "request": "没有MOSS账号"}, "expected": "明确offline，不联网、不冒称MOSS"}
+{"id": "feat158-moss-09-v011", "source": "synthetic", "input": {"scenario": "semantic", "request": "无成本变化证据"}, "expected": "不强归因，条件性解释"}
+{"id": "feat158-moss-10-v011", "source": "synthetic", "input": {"scenario": "empty", "request": "无数值仅定性资料"}, "expected": "说明缺口，不伪造规模"}

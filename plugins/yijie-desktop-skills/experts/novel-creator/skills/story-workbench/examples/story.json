@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "project_id": "synthetic-lighthouse",
+  "title": "合成灯塔故事",
+  "revision": 1,
+  "stage": "draft",
+  "brief": {
+    "genre": "悬疑",
+    "length": "短篇三章",
+    "protagonist": "守塔人岚",
+    "conflict": "查明失踪日志",
+    "tone": "克制",
+    "pov": "第三人称有限"
+  },
+  "bible": "# 灯塔设定\n岚不能游泳。故事发生在无魔法海岛，钥匙藏在蓝色信封。",
+  "bible_confirmed": true,
+  "confirmation_source": "合成验收指令：上述设定已确认，开始写作。",
+  "characters": [
+    {
+      "id": "lan",
+      "name": "岚",
+      "motivation": "找到失踪日志",
+      "voice": "短句，观察机械细节"
+    }
+  ],
+  "facts": [
+    {
+      "id": "f_swim",
+      "text": "岚不会游泳。",
+      "character_id": "lan",
+      "established_chapter": null
+    }
+  ],
+  "chapters": [
+    {
+      "id": "ch001",
+      "number": 1,
+      "title": "蓝信封",
+      "pov": "lan",
+      "goal": "发现线索",
+      "summary": "岚发现蓝色信封，未打开。",
+      "text": "岚把潮湿的信封压在台灯底下。蓝纸上只有一道指甲划痕。她听了听窗外的水声，把门闩推了回去。",
+      "fact_ids": [
+        "f_swim"
+      ]
+    }
+  ],
+  "tracking": {
+    "plot-tracker": [
+      {
+        "id": "p_key",
+        "description": "蓝色信封中的钥匙",
+        "planted_chapter": "ch001",
+        "due_chapter": 3,
+        "status": "open",
+        "resolved_chapter": null
+      }
+    ],
+    "timeline": [
+      {
+        "id": "t001",
+        "chapter_id": "ch001",
+        "sequence": 1,
+        "time_label": "第一日夜",
+        "event": "发现信封",
+        "character_ids": [
+          "lan"
+        ]
+      }
+    ],
+    "character-state": [
+      {
+        "character_id": "lan",
+        "as_of_chapter": "ch001",
+        "location": "灯塔",
+        "status": "存活",
+        "known_fact_ids": [
+          "f_swim"
+        ]
+      }
+    ],
+    "relationships": []
+  }
+}

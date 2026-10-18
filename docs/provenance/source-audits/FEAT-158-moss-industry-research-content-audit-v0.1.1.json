@@ -1,0 +1,1878 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-17T13:25:00Z",
+  "content_version": "0.1.1",
+  "source_root": "plugins/yijie-desktop-skills/experts/moss-industry-research/versions/0.1.1/moss-workbench",
+  "review_kind": "Original YiJie bounded industry calculation, frozen multi-format delivery and existing connector routing; source metadata review; normal font configuration and complete PPTX relationship repair",
+  "original_package": {
+    "id": "moss-industry-research",
+    "version": "1.0.6"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "bytes": 3561,
+      "sha256": "0557e7f1f6179427aa121ea84146a544cb723b55e110ea9c91fbb00d1d5fe16c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": ".downloaded_at",
+      "bytes": 24,
+      "sha256": "6951a5a0eb351569d96c216b49d7aeb946b5cc0ac3e5164248f67e05bc80d661",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "README.md",
+      "bytes": 6709,
+      "sha256": "44151cedec29c847ffc046881bd0e013030949d3314ed1346a62e3233a3ab22d",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "agents/moss-industry-research.md",
+      "bytes": 17656,
+      "sha256": "d2e92d02d1d505e27c43746ea642b8a605b32f26caadf3c02356ebf60889f363",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "avatars/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "avatars/expert.png",
+      "bytes": 1529698,
+      "sha256": "33b38d5bbe8584945fad02d6400b084de71511f24f3ad016bdf08a780f5cdf64",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/business-analysis-calculator/SKILL.md",
+      "bytes": 10025,
+      "sha256": "6b943e2831291ae6437cb5e81e4ea19c289e6b46095805606643725ebdc866b8",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/business-analysis-calculator/references/formulas-and-examples.md",
+      "bytes": 10664,
+      "sha256": "1a0e2aef879982b33c6ce12aba596b2152c7969fadac0af8c92a86875040a7d6",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/business-analysis-calculator/scripts/calculate.py",
+      "bytes": 29901,
+      "sha256": "abc1657c3e5d1ace88c763b8a54e7bdaa0d833f9562331fad545275cca0d30b7",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/delivery-orchestration/SKILL.md",
+      "bytes": 3870,
+      "sha256": "c72c852156f31f45e6795e7bc7c2f98a5a50bc2ebc658b0375f4ed1c383cebb0",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/delivery-orchestration/references/delivery-package-contract.md",
+      "bytes": 1339,
+      "sha256": "fc3fd9fcdbb5c355cfb225e6eb5c7f14ba36269909d01cdf48125cfd6e59790b",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/delivery-orchestration/references/industry-research-delivery-spec.md",
+      "bytes": 3821,
+      "sha256": "94635aa13740884a5ca51fa7b1ca3120df1cdc791a03950e294838d97d11e799",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/delivery-orchestration/references/runtime-delivery-contract.md",
+      "bytes": 2720,
+      "sha256": "8e592f036f8bd436c756fe1e7c0a26cd9a165fcc73a94d7099f96dc9f8a4e318",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/delivery-orchestration/scripts/delivery_runner.py",
+      "bytes": 2446,
+      "sha256": "82f8cef1a9a0171258c9b444e420c81e8db241b4f75b605df1f9ccf5e4a5a182",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/delivery-orchestration/scripts/validate_frozen_package.py",
+      "bytes": 2206,
+      "sha256": "2c5548213d2554be656c7ecca821d6fffa30ed68c1e733b02a5dd05e7389ea10",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/delivery-orchestration/scripts/validate_manifest.py",
+      "bytes": 4954,
+      "sha256": "d4f44d3d98b20abc3a8fced5c457231697929d64a54a992bca5c4208d3f9cbf2",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/industry-research/SKILL.md",
+      "bytes": 46438,
+      "sha256": "61e43d3fe79c88d07d12cea1266e12c98cd2f7baf3f7c94dd1f2328222788308",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/industry-research/references/HTML报告生成规范.md",
+      "bytes": 33217,
+      "sha256": "eeeb5c7802da57ac17377881794a5b221cb07422aeda3406f60ea86e602f3498",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/industry-research/references/charts可视化规范.md",
+      "bytes": 10393,
+      "sha256": "b56db02cc89b1c3676ad26204765789da4110f8fea7566e9b06e770ba92c7454",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/industry-research/references/charts快速参考.md",
+      "bytes": 4942,
+      "sha256": "6e1bb6249ae2cd0afe14c87007a0795629b3f228d59570d172ac492a9253cff1",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/industry-research/references/决策看板设计指南.md",
+      "bytes": 6276,
+      "sha256": "acf0cab6fe87ec0ea416a6386d1ad13eb86f8429aea3c71944109a71b8cf2557",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/industry-research/references/报告深度规范.md",
+      "bytes": 14384,
+      "sha256": "d291620e3aa9e2ac9a502f020f0466b6a15e8436089dad06f52a8da22b395873",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/industry-research/references/证据交互规范.md",
+      "bytes": 4479,
+      "sha256": "5c69eaca423e1a89f1b9c8c81bb835b3b1e5f1ca98a77e68782a586576e1540c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/industry-research/scripts/delivery_manifest.py",
+      "bytes": 6257,
+      "sha256": "1f334a2ccc1d04826819c9a6d4053700c2360d4911bb1a0f26dbbf533876af6a",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/industry-research/templates/决策看板模板.md",
+      "bytes": 6512,
+      "sha256": "e65db9223ac60d5c184941ce303c150d57e789b222dab4531a7334bfc1097388",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/industry-research/templates/模板-企业战略视角.md",
+      "bytes": 9627,
+      "sha256": "f5dcdae935888f5a9bee93f3bc66e886bdc90cb36401a564048b49562bd817b1",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/industry-research/templates/模板-投资视角.md",
+      "bytes": 5048,
+      "sha256": "88937e5e0a0dc2f8e3f92f1ca6f86b6ebbed5e26d6cf97779922f33a3de51a00",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/industry-research/templates/模板-数字化视角.md",
+      "bytes": 10738,
+      "sha256": "4ddc5f72b231e3c5915d05fe16f69f0c1d8c699d91553a4dafb0343faff7f5a7",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/industry-research/templates/模板-营销视角.md",
+      "bytes": 9105,
+      "sha256": "562409badcc47a17c9537f6910b3debb2da955bca54797a80c0ce42e633271fc",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-html/SKILL.md",
+      "bytes": 13074,
+      "sha256": "c1736c2a9ef36dc6f546dbf5dc16b9fc504c0cb2c3092371bbe91963857253fd",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-html/assets/visual-baselines.json",
+      "bytes": 2868,
+      "sha256": "be6dcca80bf13322eb7c4e364d03dfe051c0fe615b31601f95c863f386c87226",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-html/references/print-artifacts.md",
+      "bytes": 2398,
+      "sha256": "155b0bb5557f668fb71e8f0051b5e76a39f5739569078c02dbc84ef939bf5370",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-html/scripts/artifact_contract.py",
+      "bytes": 14764,
+      "sha256": "7069caab2ba80fe30a51d46ea552da317c5a26f3836c2ab2fc0ff8415c9536f3",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-html/scripts/artifact_html.py",
+      "bytes": 4110,
+      "sha256": "3d1cd4e63ea1f1faccb00dd1944ebac9d57a699a0ac7d4bfb817c26c0493900c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-html/scripts/check_print_html.py",
+      "bytes": 11096,
+      "sha256": "7f143387acc2e8ca989c9f8d7e2ad24b4889ef312fe7ceb76b87ee7516c8bc90",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-html/tests/test_print_layout_contract.py",
+      "bytes": 2991,
+      "sha256": "290d4e3c59ae3365bd990fb0509e7d36ce302c07613cb5166c903178c935d594",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-pdf/LICENSE.txt",
+      "bytes": 1497,
+      "sha256": "6f8bd7f4d8ec5cb52b7a59ccb9e8c14c2a4ba529cb5adfc5e0bc676892b8ca79",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-pdf/SKILL.md",
+      "bytes": 7845,
+      "sha256": "47f8fe36d709692d280eddc1909d978b0a7969f1b8d0e98b7af436a8dcc50e83",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-pdf/forms.md",
+      "bytes": 12335,
+      "sha256": "217b78de60ecc64897f2dd6bd45e01682b7595764cb4ab59a644adc963329541",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-pdf/reference.md",
+      "bytes": 17303,
+      "sha256": "16fbf406156feb08e2951403c03b1bfd76be5f2bc6bed1eed0d70c25954ab562",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-pdf/scripts/check_bounding_boxes.py",
+      "bytes": 2839,
+      "sha256": "da8ef6c5dac036b39636b1e9b89600f87791190873d21adbf518023deea49a0a",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-pdf/scripts/check_fillable_fields.py",
+      "bytes": 279,
+      "sha256": "6575c07d6c687483013f5bcf429264d63639d4690279fb235cb01859c257a6aa",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-pdf/scripts/convert_pdf_to_images.py",
+      "bytes": 1041,
+      "sha256": "489abb23e89417d58b344c19a4cd6f846b6a79a1d453aa9349cc295339846838",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-pdf/scripts/create_validation_image.py",
+      "bytes": 1295,
+      "sha256": "7086c2951718080c74034ebbec31f2be136645a968674f0053e484138e7d94c8",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-pdf/scripts/extract_form_field_info.py",
+      "bytes": 4422,
+      "sha256": "1fd07e40d6ce7417df142e397da2036449b50a0d22e86ccb555cda3f145afb9a",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-pdf/scripts/extract_form_structure.py",
+      "bytes": 4060,
+      "sha256": "e81c6f43e3c253c8f5edaf277bbcdec70e1b5e133b675c6dbd35471438a5f550",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-pdf/scripts/fill_fillable_fields.py",
+      "bytes": 3917,
+      "sha256": "6691ee0fd6944a333e81c588bb53f07aa8a838ca6e1116ce7861677f348f2b52",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-pdf/scripts/fill_pdf_form_with_annotations.py",
+      "bytes": 3342,
+      "sha256": "a91969ba615747a32222aa3627cf0d4af70ad021bed440baac3707daab34a08f",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-pdf/scripts/md2pdf.py",
+      "bytes": 26612,
+      "sha256": "4977427d8784393ced917c62b7894bfe81e98757e9f0f6ad0cdc2fe0ec9b0af8",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/SKILL.md",
+      "bytes": 5035,
+      "sha256": "10023b8b08398d308d49286243779f8d9507f2626c7a30567af49da7b8e066fb",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/references/canvas-formats.md",
+      "bytes": 2975,
+      "sha256": "8b972e0c4298b174797a57dd187dd5819a76471e821560e1010a2b40ab39c47b",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/references/component-fit-contract.md",
+      "bytes": 6645,
+      "sha256": "c47454732f76575c3fa9199150bc619ec7fc07bd5ca3ec94f28353377616a415",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/references/executor-base.md",
+      "bytes": 17160,
+      "sha256": "090c5973d6b9548cc66feecd50750b27f178644c64eff9fb4e861db85eaad1d9",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/references/executor-consultant-top.md",
+      "bytes": 10668,
+      "sha256": "e430d7ab35571fa7f48cc5bddf13dc37655dc94d19935ccfde7f12b71cdeb4ef",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/references/executor-consultant.md",
+      "bytes": 7442,
+      "sha256": "b8f718a183dfa3015603b0dec8740e91135983452e145e34a61caa288f6951a7",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/references/executor-general.md",
+      "bytes": 6497,
+      "sha256": "7c77aa051d0d0b48e48123f4490d9ddfddf14cb6267ee18541cf2d696c8e2240",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/references/image-generator.md",
+      "bytes": 21905,
+      "sha256": "c11eb6458a879a46b876285a31fffdb05773dffbd1861dd20211330924344b22",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/references/image-layout-spec.md",
+      "bytes": 8931,
+      "sha256": "d57cfefc0f9c128472563fd411fe00344308edcfbfcb363722dfc21f43dee6cf",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/references/layout-quality-standards.md",
+      "bytes": 10529,
+      "sha256": "b06e5b0ec6352274696857fdbfd236b17ed8601e024c774e645adde27ce1a26f",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/references/layout-semantics.md",
+      "bytes": 8577,
+      "sha256": "e2c5b7ddee0e9c754bfceca0caaf078db0605ed08f87b6ae140be3e74dd13177",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/references/pptx-editing.md",
+      "bytes": 7215,
+      "sha256": "f758f5282b18ac4a4e6e8e3cfbfadbe19e993acf957088b7451384bb0e1d2d48",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/references/pptxgenjs.md",
+      "bytes": 13904,
+      "sha256": "fd1828b858ad2706bfe26c04aec5b720e80b42c4587c366150afdd74d287f6a5",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/references/shared-standards.md",
+      "bytes": 26505,
+      "sha256": "f3433ee5d2d87a3e6de969a0b65d10f6ca7ef4e424efecfa1428dcd7da2bd638",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/references/svg-image-embedding.md",
+      "bytes": 6574,
+      "sha256": "ebdb6e9edc6e9044f1485f4e25cb2eb76bc92c0ae34104f4ff2e77e9eba24253",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/references/template-compatibility.md",
+      "bytes": 4639,
+      "sha256": "f407f221e7471bad72caafff44d0fb93c1c85cc4fd419aec7cd1f97185e1bf7c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/references/template-designer.md",
+      "bytes": 11580,
+      "sha256": "19dbb125836ce13d9bf4b2e73e927f5c4408c8143cf47fc3164ecae8e3dad1b8",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/references/visual-qa.md",
+      "bytes": 9394,
+      "sha256": "e344192ff798a8df54e091cd139f6e75572b1f60296681bd0cf309848b1b83e9",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/README.md",
+      "bytes": 3747,
+      "sha256": "2951df6fd2d6ce9f9e5287f43d332428b806ceae64a34967a70939c38d1fe6f4",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/add_slide.py",
+      "bytes": 7067,
+      "sha256": "292819ba0a651987fab483bc385eded34ad02009deffa7fb0d6e9f767bc3dad8",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/analyze_images.py",
+      "bytes": 13530,
+      "sha256": "f261d0616cfdf686b8e9981f97f73f401cce5565448f11f8f35c282b68c35fab",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/assets/bg_48.png",
+      "bytes": 1677,
+      "sha256": "4afc99afe0ef108d67acc45bf4dc5da867ddb793bebc89c9243bb121ce7f0f57",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/assets/bg_96.png",
+      "bytes": 8165,
+      "sha256": "3e26f2233a12a5829acac174d8df1f3db40e07fef04ecdd0e035732154077911",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/batch_validate.py",
+      "bytes": 10728,
+      "sha256": "59e4dadf1819a76327c928508d485315ba41e46742f2f9555cd8d65d32710bb1",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/clean.py",
+      "bytes": 9869,
+      "sha256": "5583cdea6af94c54a691e53d908bc1e9f5388a412a00516468a79df4b9cb4e4b",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/config.py",
+      "bytes": 17949,
+      "sha256": "24d6dddbd0f19743cb4e109d10c038d4f3a4fdce7107adc23449907153d2dab8",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/delivery_export.py",
+      "bytes": 639,
+      "sha256": "380470e468dd4ed0f73d3caaebb3395a232f62cdafdd5ce7babf7a4026a9968e",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/delivery_gate.py",
+      "bytes": 14405,
+      "sha256": "30676fa75a655c2bcf415a947bac4cadfe840102c869cc0286ee66423ae801dc",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/docs/image.md",
+      "bytes": 3314,
+      "sha256": "ce99e6d843f5ad5dfb7a7d697d177bd9df1e1de0d96505f43babf374fb01f378",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/docs/project.md",
+      "bytes": 3770,
+      "sha256": "35c3ea49e41f09dbce3c81b83862a394f52ec0db5ffa6f6a58acbfa921174460",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/docs/svg-pipeline.md",
+      "bytes": 5872,
+      "sha256": "4ff5c4c00c55ea84d1c529dc36b7cb059a8b9d40b05a77a531d1f1b13701584c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/docs/troubleshooting.md",
+      "bytes": 1667,
+      "sha256": "102ce8c43d405ea3a597a2d394a936b0087cbc468645247215aef9a660ffd3ff",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/error_helper.py",
+      "bytes": 16551,
+      "sha256": "7d15e83b58b3d0030fbbcb2b20b39e75ac5cb4c7539e402101c05a91ed572c54",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/finalize_svg.py",
+      "bytes": 15077,
+      "sha256": "68753f62dcd683376c236f921f13dc14c54c7d676740251327133658f1ba1392",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/gemini_watermark_remover.py",
+      "bytes": 7055,
+      "sha256": "1e617cc8603558acefaba804336d330f1944e3317fb87607b560c0f8bd191567",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/generate_examples_index.py",
+      "bytes": 8549,
+      "sha256": "7512fdad053987f5e72939c7a6bda7da0882b9115a02fb6576f968b5b4666e06",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/image_backends/__init__.py",
+      "bytes": 58,
+      "sha256": "5722ff21d26e0dcfb9f3199986b33d21b24a83f2e28d67be5247a127a240147e",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/image_backends/backend_bfl.py",
+      "bytes": 5961,
+      "sha256": "4ce10a154ba60bdbf2b729d46cac48acef0d4b536b5240800e025e179521e7a5",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/image_backends/backend_common.py",
+      "bytes": 7608,
+      "sha256": "03caedab52b74a3b912d2e5830caa7fa0a50791a212b9f5b1ee07590bb8e68b2",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/image_backends/backend_fal.py",
+      "bytes": 4325,
+      "sha256": "01aca8d3233ee0c4e5f7ddfecb510e0817db65bd6d521277da1615f8b9cc46b6",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/image_backends/backend_gemini.py",
+      "bytes": 9032,
+      "sha256": "df0772e6837bce79a9e83a55ab361ec37af8306de8b3d2aca12693f7b172282c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/image_backends/backend_ideogram.py",
+      "bytes": 5027,
+      "sha256": "b2fc9a8c80a82eee93608b9b8db1cc4be511d70e1fadedb7ea1275b7d8df78ce",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/image_backends/backend_minimax.py",
+      "bytes": 6574,
+      "sha256": "eb2bbddf263d4ea00c7dd63d5ef6c299f5207d78554da4095ffdc83a48d38711",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/image_backends/backend_openai.py",
+      "bytes": 8348,
+      "sha256": "3a8f4c4952f16af5aa394d51c3cc3400063b09534508a7e0ce1f39e0f1a6de1f",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/image_backends/backend_qwen.py",
+      "bytes": 6530,
+      "sha256": "b0fc1fa9d7aa2bdb8c0f8acf35ee8ec541a6aa835f2a022f5133a289f3cc8fc1",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/image_backends/backend_replicate.py",
+      "bytes": 6079,
+      "sha256": "760a90544bb4ceb6159ba7eb3c04a91622638734edd0c1fcd7eec7c2feb13f35",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/image_backends/backend_siliconflow.py",
+      "bytes": 5898,
+      "sha256": "e633c61593e455e25a14a4486a8890985819f20629d939600b960e952f7e8f7a",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/image_backends/backend_stability.py",
+      "bytes": 5032,
+      "sha256": "84e89240e22ac0c16da910e50293f02272d27577dd6b20b424515e9df7b07f01",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/image_backends/backend_volcengine.py",
+      "bytes": 6191,
+      "sha256": "5c7994313910c7ddc09febaad359e4fc5b50a2458150b3dd1c54e143c43826f7",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/image_backends/backend_zhipu.py",
+      "bytes": 6099,
+      "sha256": "8ab371dd5803bc45a5cb09f8065f2acfe79b11e21bebad51873f58c8be853d8c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/image_gen.py",
+      "bytes": 14320,
+      "sha256": "8f9703c4a60530428749a70aa096a88f0a9ebec986b348f0f164d9c00bb8a73d",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/layout_lint.py",
+      "bytes": 85277,
+      "sha256": "558128725520905664a7fbed581425cdfd726e28554a31c90506878c4d0d12d4",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/layout_lint_selftest.py",
+      "bytes": 16062,
+      "sha256": "3826debdccc5b1fc528fa1a4711affc79f28396f0dcaf5fd83c569222c802acb",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/helpers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/helpers/merge_runs.py",
+      "bytes": 5766,
+      "sha256": "800fbae8d3c2466b31c2327a3bc9866630d9a00e4c082404dc8b45cb5ec11d31",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/helpers/simplify_redlines.py",
+      "bytes": 5951,
+      "sha256": "9afbcb65ebb8f54a51f3b1e7d25cc3f2ccf3930558b95ece2b1d49c38ba66121",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/pack.py",
+      "bytes": 5150,
+      "sha256": "30249b3081e44b1d55a8e17644273a2db9e4fd04faf1b1d123c21e0a80c0b27a",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+      "bytes": 76483,
+      "sha256": "4de4390a26e7e44e682ed98b39872cce2620f807f5b0de421567a43f74526388",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+      "bytes": 7102,
+      "sha256": "71a6e04d3dbb21e4b705da8bb9a3c71e4295a389c15c09bd255f216de238097b",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+      "bytes": 52387,
+      "sha256": "809f77f658f71e10f5cfbf99e25c895a23a4e62c81210b59a2fe8c7fb24849d2",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+      "bytes": 635,
+      "sha256": "06555ced1e626ebcd9bb4a495b78d9596555f945b09161dea6c4cd4d8874a0ba",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+      "bytes": 155120,
+      "sha256": "6978ba7e889070b0c3cb5b546b23e5a6c3516134afc53b87a21f482ca33f3858",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+      "bytes": 1254,
+      "sha256": "17581a2683f0ecbfd4c64656f1dff7236a4563127b5d056da750a9fd61e26f67",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+      "bytes": 9047,
+      "sha256": "aabcbb126609a518a78b007c1e6ab76e1016f136964f3afb3a5eda51584e983d",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+      "bytes": 15082,
+      "sha256": "2dbfd4719505bf39b568005994a433997cbeac59cebc9d4867d564c94e9ba03a",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd",
+      "bytes": 85288,
+      "sha256": "39c6396b7b1f096885c3ceba5dab30e3ee14291c45a1d6fa6038ec4db69d88d0",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd",
+      "bytes": 1297,
+      "sha256": "57567431dcaf5dae08c5f7ae1eeb2c9a4d2d762a912cd09758f620469d226947",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+      "bytes": 7472,
+      "sha256": "6ec3425c89d6bf6eec5dd0d82c0ed0fb606064b6d4692a696323ee86814de0e4",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+      "bytes": 6556,
+      "sha256": "d90722af8f1439ae6b82d57858ee0b0720e320eb309cf30371666338aa66d106",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+      "bytes": 1273,
+      "sha256": "1624b1ee04781508421fd5d8a7a8fd054196be5e1e122736c7ed350161bf4b89",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd",
+      "bytes": 898,
+      "sha256": "4048c35b8949bab9f8ac58c2fcd0b534c5626fbe1d2bc88522a3724a0514d091",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+      "bytes": 2667,
+      "sha256": "7f112630ff0a2bf450fb80ccc7d891fb2bfd70866c4913590d3a91f43744d4ec",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+      "bytes": 3563,
+      "sha256": "2dd1b7ce7cf5be453fd2db72b6d6072259ede8193db7518c72439fa26fd7ad72",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+      "bytes": 7702,
+      "sha256": "ec24c8039acb44422b65c2d99af82d4f21007d17bc33c87d36549904a29702d8",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+      "bytes": 23895,
+      "sha256": "f812dffca0bb66db6e2ec2e01dd19258636b2a5a3a0bb949a2e7295665e0ce61",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd",
+      "bytes": 1392,
+      "sha256": "2a6b823a7c6da33bedb8ea9be74199db8a907530ecf9d3b31f31f92c4539a4c2",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+      "bytes": 246716,
+      "sha256": "495debc8fa967b77ed37799747b049832f2c95b2ecdb9f19ddcd68f8c9f96ab9",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+      "bytes": 26718,
+      "sha256": "335e9ecd40bb594ec4b916ac8c7b9eead4e16fe1b79f9d4105fdb1c43b66bb1c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+      "bytes": 25788,
+      "sha256": "86c9ac8549d84af107daac8f6b3b0b9ed1113eae22be8fef4c5f2b606f23ae36",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd",
+      "bytes": 547,
+      "sha256": "db28df195a3a1da2c749162c4e5736c94fc4e3d5e20d767d5ff68a37fdd46fd5",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd",
+      "bytes": 5820,
+      "sha256": "2f7c6b2a8a9d7a7e0dfa32ff3f13856275d83d0bbe968c7fc9954d0f665e7588",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
+      "bytes": 4106,
+      "sha256": "f5e69bc0280a2aae659766f782d2af47738c6c97ffabb0b10a871489f60280bc",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+      "bytes": 175013,
+      "sha256": "a5db454991de6c9d52db8d2dda43d2f27f4cfa2e62c012d6bf202deef90659ce",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd",
+      "bytes": 4762,
+      "sha256": "70a3c67959f9ad2333016328716101bf8b476e682f29830cc9ee8da63dca7cc2",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+      "bytes": 2005,
+      "sha256": "49ec1c03440a9b5590e69acdf92b200fe133697de0b05f43a129fb94d1885026",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+      "bytes": 2565,
+      "sha256": "69688ea15f82a870053b9a60c79359063dbcfeec9cdabafabad51a53934bc35b",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
+      "bytes": 2905,
+      "sha256": "ee7e7e1b9a1340536e25e87c8650a2b90a43b0e67d02d6746cd430048b3c1439",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
+      "bytes": 1377,
+      "sha256": "607ffb6879cf5d5d765bfdfb2548f3f427ea964ddee6d08a15f0dc781749866d",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/mce/mc.xsd",
+      "bytes": 3202,
+      "sha256": "fc3d4398375c68a8aa0d608dad9003a3e5cc566f3d16a443f92fca3799ed2df3",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/microsoft/wml-2010.xsd",
+      "bytes": 27109,
+      "sha256": "60580c222b22548a4c306438a631ae2355db889ff59847cfcfd47943445a7132",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/microsoft/wml-2012.xsd",
+      "bytes": 3812,
+      "sha256": "85e17de88d4c1af45a571732eb862024cd7897e380efa5825bcfdbe57db21a64",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/microsoft/wml-2018.xsd",
+      "bytes": 915,
+      "sha256": "b8bf0d8670a8ba8ea2dd441e7f22a81be7dfca520ca93306e99e4403c234a3b2",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/microsoft/wml-cex-2018.xsd",
+      "bytes": 1798,
+      "sha256": "6731624fcb1b0df9ab0533bc8fa2d8caa09d419b2280285bdda6c9e94d874f7d",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/microsoft/wml-cid-2016.xsd",
+      "bytes": 1015,
+      "sha256": "73dde8f5752d4047975fe2948d2ea99d26c1dab981a9739e77624a666090272a",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+      "bytes": 604,
+      "sha256": "441556f2bfff0b49a3a4bae82cac5188aaee5419ddfa288dc0a58ce271f2237d",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/schemas/microsoft/wml-symex-2015.xsd",
+      "bytes": 753,
+      "sha256": "1973a7ede01d55d351c50422ff451a1ad1f8f52cc792178f14b62f75c123e01f",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/soffice.py",
+      "bytes": 5484,
+      "sha256": "f4ebbe4b638904d099eac915ada405b1031d1d7c5a80ecd5d733580d4eee1359",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/unpack.py",
+      "bytes": 4184,
+      "sha256": "58d072df4d73051d692250573da8d4810e97d6bea090ad3de3aaf947187fac06",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/validate.py",
+      "bytes": 3779,
+      "sha256": "da437d934b8dfeb02accbce2fc5406240f5020fc207ce5284f8372b9f2132510",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/validators/__init__.py",
+      "bytes": 351,
+      "sha256": "09a53b0969b042794ce29e5ee2487db365d57f7e95d691b145f5c60cb98144df",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/validators/base.py",
+      "bytes": 33499,
+      "sha256": "0ebb1cb1c5a72fd099d3696d5a4a66d78cb8c20d3b562568ae8ca7b9669ad14e",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/validators/docx.py",
+      "bytes": 16822,
+      "sha256": "07021f1a3c03846768f743990c91653b260118f506baa19ec9ae460c5b1d1d94",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/validators/pptx.py",
+      "bytes": 10099,
+      "sha256": "be17ae849b3d25d90183823ac0731bdf82638352b2808311e9c1a7e293f3567c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/office/validators/redlining.py",
+      "bytes": 9165,
+      "sha256": "521a9cf8c7ea3214294f90831c3d2acfe78682f1072e0ab30daa66c2c39358c1",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/path_utils.py",
+      "bytes": 10244,
+      "sha256": "0796b6b0a8185e84252ee3f77967fc2d629f00ca190e8a2a794a409377251bfd",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/pptx_animations.py",
+      "bytes": 8537,
+      "sha256": "2b1ab50bda5fb13e4a340aa9dc2f5f5189ad7340c48434cf34afcd1f50d5c19e",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/pptx_delivery_audit.py",
+      "bytes": 11861,
+      "sha256": "a6d0863a2ac5a815d3b86976c6c78522c3f64f3d5a4173d73815dbd04d03225b",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/pptx_layout_lint.py",
+      "bytes": 42209,
+      "sha256": "07910b57518b0d5d9386855f351bebf54585fdfe17003e08734a607381189fb1",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/pptx_layout_lint_selftest.py",
+      "bytes": 6175,
+      "sha256": "b1983c3e0a9757e20bd5805829316a73c95a9e65ffbb797c190340897d0c3d96",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/pptx_template_import.py",
+      "bytes": 15659,
+      "sha256": "49e108bae93feb8752dd1b97cff1510009e6f3c357ff5824762ef1f4696e764e",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/project_archive.py",
+      "bytes": 9936,
+      "sha256": "7f646449fab504ba17e978a6557945417720f453fe90755713c609c2316b352f",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/project_manager.py",
+      "bytes": 8202,
+      "sha256": "becc6311bcfc1d72560492db4632b51f5983b7f3b5c41c08e9b509a9a99b42b8",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/project_utils.py",
+      "bytes": 17492,
+      "sha256": "ae1060a9fb59c1098c6520c929e2853d32c04ac8440bea24692c0d349212a4ef",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/rotate_images.py",
+      "bytes": 21560,
+      "sha256": "e9f6b310ca63b9e2ebd0ad360352e8adc2c0541b60c0aabb66733c62e84f1a8a",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/run_ppt_delivery.py",
+      "bytes": 10970,
+      "sha256": "c1134e0ff4a8916cada9711da88f6a42fff56611cf12e37d3c6f2af40d37b212",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/session_storage.py",
+      "bytes": 1551,
+      "sha256": "01370f1d5a5378cbfdfe8002394f61af324f20fe39001781968b1cf894ffc3d0",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_finalize/__init__.py",
+      "bytes": 89,
+      "sha256": "695ba0589bed85e5770fb8a223ecc9d06a06a8cc9c2df226f1f7032e574c467d",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_finalize/crop_images.py",
+      "bytes": 12093,
+      "sha256": "e4ea687071bae9be71e7da31d4395daef91ee81b149cad06092b22f3f6a56e1c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_finalize/embed_icons.py",
+      "bytes": 11263,
+      "sha256": "988e2a4129bf1bb7c3fccde636ea2785a421f5fe33fb338db732c1d7818adbcb",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_finalize/embed_images.py",
+      "bytes": 9926,
+      "sha256": "bbd20971c98494fcc8af27685b057c522baa92edea07a9c9dd07efa9998236ac",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_finalize/fix_image_aspect.py",
+      "bytes": 14036,
+      "sha256": "6488a3071ea737ebef13ab3b47d382ae0097288e6f56f81cf5dd24e45731a460",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_finalize/flatten_tspan.py",
+      "bytes": 16698,
+      "sha256": "4896834bd799a2453aeb46f5c7958bb5288a36f7d914e843d0d15ad7e11247ff",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_finalize/svg_rect_to_path.py",
+      "bytes": 11035,
+      "sha256": "32868c674e09c0d4a6f0f5478e4846157b5d6b45b8888ce634ac6890bea4752a",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_position_calculator.py",
+      "bytes": 56297,
+      "sha256": "977495ff2ed57b65b8e4594104973c8bbcd3ec0c443c43afaae244cc4ca4c716",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_preflight.py",
+      "bytes": 4026,
+      "sha256": "f1d54015e1f44f24d9457ae112c82e892b9abb155212445dd7b0a3888cd24512",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_quality_checker.py",
+      "bytes": 23580,
+      "sha256": "c212bf2cfcfc747f11654427b38ccd231ba6ebd172860073b0ea7d0d8f2d749c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_to_pptx/__init__.py",
+      "bytes": 482,
+      "sha256": "06353780c9a8290be0d0c46686cb138568e9f57f3af2afe95b6a9a2e5a694447",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_to_pptx/drawingml_context.py",
+      "bytes": 3922,
+      "sha256": "134355802f9fc41635af450b64dcff10d8ee443ecc09e38d671fe3e44b53523f",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_to_pptx/drawingml_converter.py",
+      "bytes": 10667,
+      "sha256": "5fc8a5ed4a347b626c27442861abc431855ad0ae22ffe8eec7ddb7a57fda1938",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_to_pptx/drawingml_elements.py",
+      "bytes": 40509,
+      "sha256": "0e164132a2b765dc663e35676217035aa6e9421e3acc848dd89413ebb80f1eda",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_to_pptx/drawingml_paths.py",
+      "bytes": 14230,
+      "sha256": "4ccbc3267b21599e618f74d7fb3f8575abd7e1e419385d85e20f231905280fec",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_to_pptx/drawingml_styles.py",
+      "bytes": 18046,
+      "sha256": "802a1394b1169d7ca3be385c9f5291cd8ad85460c144daf05b1b52d9b9f22cc6",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_to_pptx/drawingml_utils.py",
+      "bytes": 11118,
+      "sha256": "018977f720caeb4aae7bb87032eb9732ea10dde7b8a87bb52dcb19feb0a645e5",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_to_pptx/pptx_builder.py",
+      "bytes": 24312,
+      "sha256": "0dd0507a9f85643e898d77324cb436bc01656777f3e1b57357eb41aa02097495",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_to_pptx/pptx_cli.py",
+      "bytes": 10912,
+      "sha256": "988e8e1b2081f39b08de8d7ef0403dbaeb096c59729d57ddfcf3021f3195bbdf",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_to_pptx/pptx_dimensions.py",
+      "bytes": 4336,
+      "sha256": "add30b49142d007167a1e69a427cf887861f7dcaee4062e950bb31d0cf8859c1",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_to_pptx/pptx_discovery.py",
+      "bytes": 3215,
+      "sha256": "ff3cf90da7d2a4307878e99100b0d384e238d634ab196e487f3f019548f0187c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_to_pptx/pptx_media.py",
+      "bytes": 2504,
+      "sha256": "021801427f837ed375fd978dc92555861dcf4c6c51aea7d3dd23ee289286c0b1",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_to_pptx/pptx_notes.py",
+      "bytes": 4782,
+      "sha256": "b43b4c9a096d8161b639ad584ca73d1afc68a96443e0b2f31f99e9ca6b3c7228",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_to_pptx/pptx_slide_xml.py",
+      "bytes": 4872,
+      "sha256": "09af1d939184d69b6fe5e9f4459235a616b2b0332bd230fc256b904eef63036e",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_to_pptx/svg_sanitize.py",
+      "bytes": 3076,
+      "sha256": "c163fd010f1cf8949c850a8439a8418da5d9a2e4d8fa2c31a6afcc94ceb8d393",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/svg_to_pptx.py",
+      "bytes": 545,
+      "sha256": "678ecf0bda98f3bfd6041661fbbb9a4cc0997d54850f7d79ac91e1b35990d390",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/template_component_contract.py",
+      "bytes": 17073,
+      "sha256": "5ce0243a2aeabd61fc202af97401899c88c143b973cbf66317c00519c9f08bd2",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/template_contract_migrate.py",
+      "bytes": 29828,
+      "sha256": "aeba24049ab45942fa28b3dd7977d3afc41963b69dcae41e8404cb47da34b085",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/template_import/__init__.py",
+      "bytes": 53,
+      "sha256": "57d2d35001c1de09f8e739864901d7359688c04413a82be85bc6410579a0a02a",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/template_import/externalize_images.py",
+      "bytes": 7896,
+      "sha256": "503e5f3cb0f6384484b23f3ef6e3e1af48da4050fe090b7e1f315d4560a56667",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/template_import/manifest.py",
+      "bytes": 18594,
+      "sha256": "9b4c727cb146609abb481d04c7de9d220b5d8ed8f5751e90cc50dec74d1e1845",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/template_import/optimize_reference.py",
+      "bytes": 10638,
+      "sha256": "15da533acc815fd20cf578aa8addb3e856a36036912daa93eaac87243607f4a9",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/template_lint.py",
+      "bytes": 11333,
+      "sha256": "4dd11a172297d24be758bad3eb252aae67f51a7cf892972b21f1751382e92548",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/thumbnail.py",
+      "bytes": 12777,
+      "sha256": "73de0da6a777ec3590d2125fb0aac4f5e30b11b07d86905111f44632e3db15f7",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/total_md_split.py",
+      "bytes": 11712,
+      "sha256": "41bb5e5a42f9233cede7dc6de6c7f2c29cded7bdd5e3469ec627dcb8373a94d6",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/update_repo.py",
+      "bytes": 4425,
+      "sha256": "78ad9d2cd39e512f7375383ad8cb7451c89b78238bda1f63fd28ca6e1dd81809",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/visual_qa_gate.py",
+      "bytes": 11152,
+      "sha256": "c0e67a2fc23b82f412a832d9265cfa8915f0b081ba13b02dec48869fe6e4963c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/scripts/visual_qa_gate_selftest.py",
+      "bytes": 3095,
+      "sha256": "a5bf74a6e2f1099a3a155155b060563f23b2a414c6950167aedb8a632fea8d77",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-ppt/workflows/create-template.md",
+      "bytes": 12137,
+      "sha256": "a89276c493b8ae4fc74bfdea26c8633cc40d8905c445f4c184d71fe82ca034c2",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/SKILL.md",
+      "bytes": 17473,
+      "sha256": "0cb9750f25ed249f4825812318405959c9d7f30f8699a5bbae95f3f000c26364",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/assets/report_meta.example.json",
+      "bytes": 613,
+      "sha256": "dbebb3732b56db4cd6950a09527f0fc0eed10b2595a74331721e68e944af1914",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/assets/report_themes.json",
+      "bytes": 5696,
+      "sha256": "a277bd67cfaabbed14e01b7a1b0cc4c95628f0d7d6505850fd2e5054a5dd877c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/generate/README.md",
+      "bytes": 1991,
+      "sha256": "bbdcf751b635cb74a0de7bcf047fe90837bbe4f28384a1154a2afe64faa0ec4a",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/generate/__init__.py",
+      "bytes": 739,
+      "sha256": "340d83d3b9c715d85e6860c80ae90679fbd6fd51ed40347d73585dcca9032465",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/generate/_dispatch.py",
+      "bytes": 4552,
+      "sha256": "bb0b386102cabf4d1fc9de1d6943226ce98d71e36ab2b5329b2cc998eb25c193",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/generate/_layout.py",
+      "bytes": 7127,
+      "sha256": "58fc52aa34a917001527691f3c255c83a8a2e6a1d9f6ea9a45a5cee09461c39a",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/generate/_styles.py",
+      "bytes": 9969,
+      "sha256": "c10ab99444ea3985dcc9375792e0a366817d11327e914ecba25b3881365afb43",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/generate/bidding.py",
+      "bytes": 3124,
+      "sha256": "8794d7756ee775fd1da391c8c91e62da32f95ccf25f19c9975a50b678e2fc775",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/generate/litigation.py",
+      "bytes": 2826,
+      "sha256": "95e3aef8e0de75c78f7557b9194bb432656eab3ca1537bce6f3a7fc1ada75325",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/generate/patent.py",
+      "bytes": 2624,
+      "sha256": "69a09618fee33bb98b5efa36ec80c411b09ebf1c3dd2b95f022ba52abfdd1ceb",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/meta.json",
+      "bytes": 54,
+      "sha256": "f906c146edc9ef5c8be4d2b7fe098d73b475b3e2ddaf475fb1ab27c55d5dc591",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/references/legacy-word-operations.md",
+      "bytes": 7624,
+      "sha256": "b2f5142acf866bcf37179e0d421628e7a84f52c15f2fda02a1cfa99a6f38febb",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/references/report-spec.md",
+      "bytes": 10992,
+      "sha256": "688aa932ad18f0735c0b14ab4c0a6f5f9593bcec1968a3944cef0e95690993fd",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/references/word-editing.md",
+      "bytes": 2937,
+      "sha256": "f608e04d673352835c982e8b2b37807021fbf95f644d026f6c815d3d5ac31dac",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/references/word-quality-standard.md",
+      "bytes": 11578,
+      "sha256": "f7805e90432cde1141de374b550e799bff01208c9165624828fa808cc50cea2c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/__init__.py",
+      "bytes": 2,
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/accept_changes.py",
+      "bytes": 4186,
+      "sha256": "4996798dfae55153079fd03b7c3b2fd7e9f4466a10c8101e7592d72d68b059fb",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/audit_docx.py",
+      "bytes": 37599,
+      "sha256": "105049c41d8b861ec25b3df8bc4f51628359384d6d31edc7b3a48d467c917dcb",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/chart_attestation.py",
+      "bytes": 3442,
+      "sha256": "d7242612fefa674baad5d72125aa6fe2f252489ad44784b2166531edd137a2c4",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/chart_safety.py",
+      "bytes": 11231,
+      "sha256": "499709f0dc86c54f85d4a49c252a9031c0aa0c0b2b15d3d46ca9d6ef073f2c7b",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/comment.py",
+      "bytes": 11012,
+      "sha256": "502f1e41d811a2912fa5c1e3869516168a1436c856ada5f4d8898d506d8aecdd",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/deliver_report.py",
+      "bytes": 8741,
+      "sha256": "fbb8aec23736efd11b7cfb6b52cac640f01328a2e53fbc28d849daf1afb744af",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/helpers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/helpers/merge_runs.py",
+      "bytes": 5766,
+      "sha256": "800fbae8d3c2466b31c2327a3bc9866630d9a00e4c082404dc8b45cb5ec11d31",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/helpers/simplify_redlines.py",
+      "bytes": 5951,
+      "sha256": "3b46bbab18670d3508f2f65d8b20a118c7f9b242029bb6473f252628310ef319",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/pack.py",
+      "bytes": 5150,
+      "sha256": "b0ddf210e035f27f98b225a7fdf65cd3262fb2b62822f34e4a349aef78f4887a",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+      "bytes": 76483,
+      "sha256": "4de4390a26e7e44e682ed98b39872cce2620f807f5b0de421567a43f74526388",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+      "bytes": 7102,
+      "sha256": "71a6e04d3dbb21e4b705da8bb9a3c71e4295a389c15c09bd255f216de238097b",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+      "bytes": 52387,
+      "sha256": "809f77f658f71e10f5cfbf99e25c895a23a4e62c81210b59a2fe8c7fb24849d2",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+      "bytes": 635,
+      "sha256": "06555ced1e626ebcd9bb4a495b78d9596555f945b09161dea6c4cd4d8874a0ba",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+      "bytes": 155120,
+      "sha256": "6978ba7e889070b0c3cb5b546b23e5a6c3516134afc53b87a21f482ca33f3858",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+      "bytes": 1254,
+      "sha256": "17581a2683f0ecbfd4c64656f1dff7236a4563127b5d056da750a9fd61e26f67",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+      "bytes": 9047,
+      "sha256": "aabcbb126609a518a78b007c1e6ab76e1016f136964f3afb3a5eda51584e983d",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+      "bytes": 15082,
+      "sha256": "2dbfd4719505bf39b568005994a433997cbeac59cebc9d4867d564c94e9ba03a",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd",
+      "bytes": 85288,
+      "sha256": "39c6396b7b1f096885c3ceba5dab30e3ee14291c45a1d6fa6038ec4db69d88d0",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd",
+      "bytes": 1297,
+      "sha256": "57567431dcaf5dae08c5f7ae1eeb2c9a4d2d762a912cd09758f620469d226947",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+      "bytes": 7472,
+      "sha256": "6ec3425c89d6bf6eec5dd0d82c0ed0fb606064b6d4692a696323ee86814de0e4",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+      "bytes": 6556,
+      "sha256": "d90722af8f1439ae6b82d57858ee0b0720e320eb309cf30371666338aa66d106",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+      "bytes": 1273,
+      "sha256": "1624b1ee04781508421fd5d8a7a8fd054196be5e1e122736c7ed350161bf4b89",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd",
+      "bytes": 898,
+      "sha256": "4048c35b8949bab9f8ac58c2fcd0b534c5626fbe1d2bc88522a3724a0514d091",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+      "bytes": 2667,
+      "sha256": "7f112630ff0a2bf450fb80ccc7d891fb2bfd70866c4913590d3a91f43744d4ec",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+      "bytes": 3563,
+      "sha256": "2dd1b7ce7cf5be453fd2db72b6d6072259ede8193db7518c72439fa26fd7ad72",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+      "bytes": 7702,
+      "sha256": "ec24c8039acb44422b65c2d99af82d4f21007d17bc33c87d36549904a29702d8",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+      "bytes": 23895,
+      "sha256": "f812dffca0bb66db6e2ec2e01dd19258636b2a5a3a0bb949a2e7295665e0ce61",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd",
+      "bytes": 1392,
+      "sha256": "2a6b823a7c6da33bedb8ea9be74199db8a907530ecf9d3b31f31f92c4539a4c2",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+      "bytes": 246715,
+      "sha256": "d4d9fbb7504308c1677552dbb874059769b9f18f13b65f96363a1853cadfc23a",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+      "bytes": 26718,
+      "sha256": "335e9ecd40bb594ec4b916ac8c7b9eead4e16fe1b79f9d4105fdb1c43b66bb1c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+      "bytes": 25788,
+      "sha256": "86c9ac8549d84af107daac8f6b3b0b9ed1113eae22be8fef4c5f2b606f23ae36",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd",
+      "bytes": 547,
+      "sha256": "db28df195a3a1da2c749162c4e5736c94fc4e3d5e20d767d5ff68a37fdd46fd5",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd",
+      "bytes": 5820,
+      "sha256": "2f7c6b2a8a9d7a7e0dfa32ff3f13856275d83d0bbe968c7fc9954d0f665e7588",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
+      "bytes": 4106,
+      "sha256": "f5e69bc0280a2aae659766f782d2af47738c6c97ffabb0b10a871489f60280bc",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+      "bytes": 175013,
+      "sha256": "a5db454991de6c9d52db8d2dda43d2f27f4cfa2e62c012d6bf202deef90659ce",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd",
+      "bytes": 4754,
+      "sha256": "8406c31daa853d0c762349d3b4d3c6ba646991950071acb2c320cb04273541d8",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+      "bytes": 2005,
+      "sha256": "49ec1c03440a9b5590e69acdf92b200fe133697de0b05f43a129fb94d1885026",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+      "bytes": 2565,
+      "sha256": "69688ea15f82a870053b9a60c79359063dbcfeec9cdabafabad51a53934bc35b",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
+      "bytes": 2905,
+      "sha256": "ee7e7e1b9a1340536e25e87c8650a2b90a43b0e67d02d6746cd430048b3c1439",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
+      "bytes": 1377,
+      "sha256": "607ffb6879cf5d5d765bfdfb2548f3f427ea964ddee6d08a15f0dc781749866d",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/mce/mc.xsd",
+      "bytes": 3202,
+      "sha256": "fc3d4398375c68a8aa0d608dad9003a3e5cc566f3d16a443f92fca3799ed2df3",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/microsoft/wml-2010.xsd",
+      "bytes": 27109,
+      "sha256": "60580c222b22548a4c306438a631ae2355db889ff59847cfcfd47943445a7132",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/microsoft/wml-2012.xsd",
+      "bytes": 3812,
+      "sha256": "85e17de88d4c1af45a571732eb862024cd7897e380efa5825bcfdbe57db21a64",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/microsoft/wml-2018.xsd",
+      "bytes": 915,
+      "sha256": "b8bf0d8670a8ba8ea2dd441e7f22a81be7dfca520ca93306e99e4403c234a3b2",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/microsoft/wml-cex-2018.xsd",
+      "bytes": 1798,
+      "sha256": "6731624fcb1b0df9ab0533bc8fa2d8caa09d419b2280285bdda6c9e94d874f7d",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/microsoft/wml-cid-2016.xsd",
+      "bytes": 1015,
+      "sha256": "73dde8f5752d4047975fe2948d2ea99d26c1dab981a9739e77624a666090272a",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+      "bytes": 604,
+      "sha256": "441556f2bfff0b49a3a4bae82cac5188aaee5419ddfa288dc0a58ce271f2237d",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/schemas/microsoft/wml-symex-2015.xsd",
+      "bytes": 753,
+      "sha256": "1973a7ede01d55d351c50422ff451a1ad1f8f52cc792178f14b62f75c123e01f",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/soffice.py",
+      "bytes": 5484,
+      "sha256": "f4ebbe4b638904d099eac915ada405b1031d1d7c5a80ecd5d733580d4eee1359",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/unpack.py",
+      "bytes": 4184,
+      "sha256": "58d072df4d73051d692250573da8d4810e97d6bea090ad3de3aaf947187fac06",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/validate.py",
+      "bytes": 4656,
+      "sha256": "52861dd3fa0ade9c3dd4e0b67603113e150e575a4930ddc60308767548439553",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/validators/__init__.py",
+      "bytes": 351,
+      "sha256": "09a53b0969b042794ce29e5ee2487db365d57f7e95d691b145f5c60cb98144df",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/validators/base.py",
+      "bytes": 33659,
+      "sha256": "a76d069f0da8fb0c642e249a6c816118dcc17a2707410a519bd84f79698ac6db",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/validators/docx.py",
+      "bytes": 16817,
+      "sha256": "01e341562660d932dfe6706c1de189907c0a683a2f12166b3dee927a7c48f25f",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/validators/pptx.py",
+      "bytes": 10099,
+      "sha256": "be17ae849b3d25d90183823ac0731bdf82638352b2808311e9c1a7e293f3567c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/validators/redlining.py",
+      "bytes": 9165,
+      "sha256": "16f678b022bd860e2416c734538fba9644115887761161381b78eeca8ade6df3",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/office/validators/safe_minidom.py",
+      "bytes": 720,
+      "sha256": "6decc5de97bad996dad3bfea1b04eeb0d0f132c32a39da2d098a1f6d3461e922",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/render_docx.py",
+      "bytes": 17531,
+      "sha256": "76eef01321dee215eb2ce1ce5d84dc384fb73d7240cdfc3f90bb8fe09913db4f",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/render_report.py",
+      "bytes": 95300,
+      "sha256": "6be9f06d70cdf2b7627e5bf5cbe2f1e382010971bfdb472c816d5d1d154e1a5c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/table_layout.py",
+      "bytes": 4634,
+      "sha256": "a98ac0cdde33f2e7ad36f62b4a28d4d94cb61b645625f2186ac68fbd358df3dc",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/templates/comments.xml",
+      "bytes": 2606,
+      "sha256": "c89bad9ffa3b3fc843d10b1542b54ede87b5c3f3bbf8a12b791ea35f6bac3f73",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/templates/commentsExtended.xml",
+      "bytes": 2614,
+      "sha256": "1e630582dbb214661b00588d3937722588405374b6d444cc1f0601506c402a3b",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/templates/commentsExtensible.xml",
+      "bytes": 2710,
+      "sha256": "0bd252f89a34dcbfec414a88fba101b77726ed7c87fdc96a76dc9b54304bb4a7",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/templates/commentsIds.xml",
+      "bytes": 2622,
+      "sha256": "84cdf36ba354077a87c8ac5448d68ada3737d747e1a8a7b6e38c060049975a47",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/templates/people.xml",
+      "bytes": 118,
+      "sha256": "3d3273c725e85f7dce810103055072d6c1577c7e51d88b2f7794b647e7a9cc37",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/verify_report.py",
+      "bytes": 9956,
+      "sha256": "7aa438e7b86e29a172e7fb9b02e7a1e190fb2e2774a566daeed41a310756321d",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-word/scripts/word_to_pdf.py",
+      "bytes": 7617,
+      "sha256": "87aa75da495d757bb545116b6870732640fb6d59376c5ba3b7def324c1228b3c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/moss-xlsx/SKILL.md",
+      "bytes": 3794,
+      "sha256": "67dbae49b50731b794820bcc72c4058e8ea79b11693fa3be3f8508f43dff649c",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    },
+    {
+      "path": "skills/web-deep-research/SKILL.md",
+      "bytes": 8787,
+      "sha256": "99921c51f9f337c65fc99e8eefd74e15b07c73f0b06ec45660396cfb2256ba25",
+      "decision": "Original archive retained; no upstream executable/template/SDK copied. Method and metadata considered; Office shim and restricted PDF code excluded."
+    }
+  ],
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 361,
+      "sha256": "839f52b9b755a572adec029933e4b813f68814b412009e6e105ce36826d46548"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 3152,
+      "sha256": "c1eefbedccda57738223656f7132bb76351c797851226398249d217fe6c1be2e"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 1716,
+      "sha256": "589d70dfa301180b4931138c125f0598f4452dc407d442adb7b3b004ff8fe6b8"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 752,
+      "sha256": "360d0f8769e4fc8823e8faa7917726c1beda3cd0e3e8349ef57a324b4a599b38"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 1754,
+      "sha256": "3794e4706f5fa2520187fd8de35722b402b621c1788d33b3b2fd3a639b45e713"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 338,
+      "sha256": "e282610172874dfb54debed7d1d2468fe54ad5ec227f02f6be1d6e85463ba90b"
+    },
+    {
+      "path": "examples/input.json",
+      "bytes": 13185,
+      "sha256": "93ed4bf92a5b1400449989242a1636993e41a2a6043d2438467f0e537cbee027"
+    },
+    {
+      "path": "references/connector-boundary.md",
+      "bytes": 1147,
+      "sha256": "5b30cc1f08a7561fa6bf757019b8554c7df8ac635825d6bb968bbe5b7476948a"
+    },
+    {
+      "path": "references/delivery.md",
+      "bytes": 2502,
+      "sha256": "15b6c20f8f8fb988e8b633de7b2e372a243f4673644caeb1ce3107b6b273367f"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 327,
+      "sha256": "314f78ee457908d4bacc272b77a8a621d17ec250c189466f07389093b41306a7"
+    },
+    {
+      "path": "references/input-protocol.md",
+      "bytes": 2056,
+      "sha256": "31c4a5ab56a661485166281e95ecd1630b36ac44e4f35520b01c267f4c5f9833"
+    },
+    {
+      "path": "references/research-method.md",
+      "bytes": 2224,
+      "sha256": "d21c3611030a1f1e03cc8d353a792ba0ffe6bfff206c2c03e6cea77c577b539f"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 1223,
+      "sha256": "f14d460f499584ac1fa3a0f1d5591b4cdee66ca443f753d0dfc9ffbd299813d9"
+    },
+    {
+      "path": "scripts/artifacts.py",
+      "bytes": 6345,
+      "sha256": "6390acbfc7a9ac5b6e7de8a78818b5ca86d47ab8f9b86e0c60a18a4f4d6a6dc7"
+    },
+    {
+      "path": "scripts/common.py",
+      "bytes": 3035,
+      "sha256": "a89ff992083ad5265b3757f40ff47dde2530dea259fe7c83c73415114b1a86c5"
+    },
+    {
+      "path": "scripts/delivery.py",
+      "bytes": 12110,
+      "sha256": "dfc6c97010d225e521b29ccdaefea26cf46308195edefcf39b22f0696b361617"
+    },
+    {
+      "path": "scripts/office.py",
+      "bytes": 10048,
+      "sha256": "77404b5a86f3a35c61bcd480e2e70b9553b53bdd4f503a6e4ba613ae3c361c3f"
+    },
+    {
+      "path": "scripts/preview.py",
+      "bytes": 4015,
+      "sha256": "a52d04312ac96e5f31b72b2c22123e4270b732513de4e5100c06c9eaf7815893"
+    },
+    {
+      "path": "scripts/research.py",
+      "bytes": 13837,
+      "sha256": "bc69ebcff2e9109707307288a4b2456a815161d4bb5b36c95636d860add3420d"
+    },
+    {
+      "path": "templates/yijie-tokens.css",
+      "bytes": 10635,
+      "sha256": "f3bf335730cbbaa2213b0b7c5b55ba60c1761e46a6561fd37605cd0d61a65911"
+    }
+  ],
+  "decisions": {
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "source_files_modified": false,
+    "network_scripts": false,
+    "credential_copy": false,
+    "upstream_office_shim": false,
+    "source_pdf_component_copied": false,
+    "pdf_dependency": "Explicit existing normal soffice; normal system-font configuration; no installation/runtime interception",
+    "real_validation": "Local independent numeric and ordinary format regressions; actual App acceptance pending; user confirmed no account; online NOT RUN"
+  }
+}

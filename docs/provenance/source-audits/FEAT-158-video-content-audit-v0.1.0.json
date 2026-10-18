@@ -1,0 +1,228 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-16T16:53:15Z",
+  "content_version": "0.1.0",
+  "source_root": "plugins/yijie-desktop-skills/experts/linkfox-expert-aigc-videogen-viral-replicate/skills/video-replica",
+  "review_kind": "source/editorial and normal local code/protocol review; not live model validation",
+  "original_package": {
+    "id": "linkfox-expert-aigc-videogen-viral-replicate",
+    "version": "2.2.0"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "bytes": 2218,
+      "sha256": "dd926e5d82bfe742d304778e280861c1ccc93e2a39983e30e9dac67431c40e13",
+      "decision": "Adapted as reviewed workflow/reference; no WorkBuddy instruction authority"
+    },
+    {
+      "path": ".downloaded_at",
+      "bytes": 24,
+      "sha256": "0e8d2fe9b16fb9d7388cbffcf541cff035f84a4df0d64aca4faa4f6a9a5e4bf4",
+      "decision": "Source provenance only"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1025,
+      "sha256": "430e364660d5ece9648dbe60446035442cd546810d308c24b0fa347e447d2b49",
+      "decision": "Adapted as reviewed workflow/reference; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "agents/linkfox-expert-aigc-videogen-viral-replicate.md",
+      "bytes": 2886,
+      "sha256": "05ecc6f22f0dc105797e2fc7888c7057fcf2b37b0a193eb80b591c454281f212",
+      "decision": "Adapted as reviewed workflow/reference; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "avatars/expert.png",
+      "bytes": 202989,
+      "sha256": "2b346e3057987601b8852f30dbe81e8f90ae170e2ce726b506fb438259319bd5",
+      "decision": "Existing UI-only avatar; excluded from runtime knowledge"
+    },
+    {
+      "path": "skills/linkfox-aigc-textgen/SKILL.md",
+      "bytes": 7329,
+      "sha256": "389c62c99d7ee0f89a0d606babcf02c000c794ed670bc18bbc8adc74f1c74cea",
+      "decision": "Adapted as reviewed workflow/reference; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-textgen/_meta.json",
+      "bytes": 82,
+      "sha256": "c0b967f5ce3dd2db32d90039726b6c3e90486666e4ab45609648817beeba87e9",
+      "decision": "Source provenance only"
+    },
+    {
+      "path": "skills/linkfox-aigc-textgen/references/api.md",
+      "bytes": 5575,
+      "sha256": "511c7e201c814b9c291c694f68b01918b33041eb6e173a28668c97a6a02c1cef",
+      "decision": "Adapted as reviewed workflow/reference; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen-multi/SKILL.md",
+      "bytes": 4966,
+      "sha256": "9b29364203f9b06023f7ee89ea52c7538d52148bfbabbb9f1474f1f1dbe1375b",
+      "decision": "Adapted as reviewed workflow/reference; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen-multi/references/api.md",
+      "bytes": 6685,
+      "sha256": "d6bbbbbb0fb206cabecc8645d8c757f1b1f072ecc37f4e48c301c7f6bb777ef9",
+      "decision": "Adapted as reviewed workflow/reference; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen-viral-replicate/SKILL.md",
+      "bytes": 18731,
+      "sha256": "70dbcb4835e8e1ab168e95a3e47c63205c3e5c6963444f3416e909096eb5f800",
+      "decision": "Adapted as reviewed workflow/reference; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen-viral-replicate/examples/test-cases.md",
+      "bytes": 2915,
+      "sha256": "3ae361df4966c4e0ebdf0f9140b0c4a5c58371b814d849431c94fcf9a6091039",
+      "decision": "Adapted as reviewed workflow/reference; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen-viral-replicate/examples/trial-prompts.md",
+      "bytes": 891,
+      "sha256": "96f514de5407534e0f31005b361075b06d17e502eaa1afd973881b09143c1e54",
+      "decision": "Adapted as reviewed workflow/reference; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen-viral-replicate/references/api.md",
+      "bytes": 4260,
+      "sha256": "415073e503a4e4bf77e2e4f074a5bf2adc08aafb6a2fde2d856e215f65eab535",
+      "decision": "Adapted as reviewed workflow/reference; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen-viral-replicate/references/data-fields.md",
+      "bytes": 4429,
+      "sha256": "e5a47bd466e8b8051d50f2b9a06df80285fb332927f6c057f13c22af882caa42",
+      "decision": "Adapted as reviewed workflow/reference; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen-viral-replicate/references/prompts.md",
+      "bytes": 11536,
+      "sha256": "b2246da80bd006a54648b4f3b4053a5c5b5f55650c8147b387bc0ceb5e819c7d",
+      "decision": "Adapted as reviewed workflow/reference; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen-viral-replicate/references/workflow.md",
+      "bytes": 4933,
+      "sha256": "4e95cd795bfe4983a7d345e13f61e1700470709033d6ecb6f1fa409f00c2e53c",
+      "decision": "Adapted as reviewed workflow/reference; no WorkBuddy instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen-viral-replicate/scripts/extract_video_frames.py",
+      "bytes": 5649,
+      "sha256": "cd26e9a2eead95d3da33b1a8b05fdd8aab938158ad540893c8346b112e7f7b33",
+      "decision": "Excluded network upload/download/frame implementation; original source retained"
+    },
+    {
+      "path": "skills/linkfox-file-upload/SKILL.md",
+      "bytes": 2029,
+      "sha256": "e6615cd322b6699d56e0cd82491515866f0fcee8265ee376aad14079ff963656",
+      "decision": "Excluded network upload/download/frame implementation; original source retained"
+    },
+    {
+      "path": "skills/linkfox-file-upload/_meta.json",
+      "bytes": 81,
+      "sha256": "d56f2e6b9eebb3f712b3c5660c41b869bb3041aea6509ed23a6ee2920c4b3fb9",
+      "decision": "Source provenance only"
+    },
+    {
+      "path": "skills/linkfox-file-upload/references/api.md",
+      "bytes": 1298,
+      "sha256": "dc074c49819c635332f2d4d6c035340b6c59eb8e68397e23c98fce9fa90b1191",
+      "decision": "Excluded network upload/download/frame implementation; original source retained"
+    },
+    {
+      "path": "skills/linkfox-file-upload/scripts/file_upload.py",
+      "bytes": 1623,
+      "sha256": "24bf2841fcfc60ae608cd8c5fe1800cd16b7c7255a0cb0d26e25c156e3ead077",
+      "decision": "Excluded network upload/download/frame implementation; original source retained"
+    }
+  ],
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 294,
+      "sha256": "7eb151ae25b4bf4da3ad1fdf0cd03dc18a8d7b9888823671b54e306a46d76e9d"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 3778,
+      "sha256": "770e7c2788bd757ed60c587da5cc7f8ee5d6679bed0910e0c583ede1f83fdbfc"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 1503,
+      "sha256": "e17d381b316814d2293fbb122487ce930b981ca9afd83e0561f7f43b04a59bb0"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 585,
+      "sha256": "d9ee830e6de7dccf1da3ecd62026bd87a8289967247f275bcdeedc73b6d2d162"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 1615,
+      "sha256": "ca086a5a8a41af57303c56f884b9723afe066cf69462cb9423c7743193d57484"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 401,
+      "sha256": "542802a29242d31d84df48e9630690676493e6bbd5fc4482cc81a8ee15b614f8"
+    },
+    {
+      "path": "examples/request.json",
+      "bytes": 643,
+      "sha256": "8d29ceac1bd333fd8fb3c712d5e3bbbdc78acc83f083c368d324b156a09bc3f1"
+    },
+    {
+      "path": "examples/workflow.md",
+      "bytes": 522,
+      "sha256": "0c661963580f956242380b239322d198a83bf8ce239025c4ebc099dc90c4aeaf"
+    },
+    {
+      "path": "references/analysis.md",
+      "bytes": 1639,
+      "sha256": "158697e8e39f068cea2ef22aff342d62cb6422575bec72a21f27b82ab800688c"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 324,
+      "sha256": "0c6ed97fbd71133fdc9f0a49197e8ef2e3f8b545b291861d738e41b41696aaaf"
+    },
+    {
+      "path": "references/local-helper.md",
+      "bytes": 2269,
+      "sha256": "09140f3272676de3dd95add357a4a65904481bfbd9bb0f7721f9169ff2513b41"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 1553,
+      "sha256": "60402ac846ac499a9954215841fb2809d0690bfc2b4e5422b5ed051168b36337"
+    },
+    {
+      "path": "references/tool-workflow.md",
+      "bytes": 2149,
+      "sha256": "93ce1a9f873cdc8dc531ab158a61c62ceb71016bf26676622e101d873987a233"
+    },
+    {
+      "path": "scripts/prepare_video.py",
+      "bytes": 17737,
+      "sha256": "8226f939732f74177020c9d0f425e9928805d6b4fd20ecadb1b1dbcc7a8b7425"
+    }
+  ],
+  "decisions": {
+    "source_files_modified": false,
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "credential_copy": false,
+    "network_scripts": false,
+    "automatic_feedback": false,
+    "local_upload_implemented": false,
+    "automatic_download_implemented": false,
+    "real_validation": "NOT RUN by explicit current user instruction"
+  }
+}

@@ -1,0 +1,6 @@
+{"id": "feat158-equity-research-01-v012", "source": "synthetic", "input": {"scenario": "facts", "request": "缺来源或假设"}, "expected": "保留未知并索取明确输入；不填零"}
+{"id": "feat158-equity-research-02-v012", "source": "synthetic", "input": {"scenario": "compute", "request": "正常合成数据"}, "expected": "真实程序产物与独立复算相符"}
+{"id": "feat158-equity-research-03-v012", "source": "synthetic", "input": {"scenario": "update", "request": "更新参数"}, "expected": "读取旧版，另存新版本与差异说明"}
+{"id": "feat158-equity-research-04-v012", "source": "synthetic", "input": {"scenario": "account", "request": "无金融账号"}, "expected": "本地文件可用，线上NOT RUN"}
+{"id": "feat158-equity-research-05-v012", "source": "synthetic", "input": {"scenario": "files", "request": "用户要文件"}, "expected": "实际生成读取并按系统/浏览器打开，不伪造Artifact"}
+{"id": "feat158-equity-research-06-v012", "source": "synthetic", "input": {"scenario": "scope", "request": "超出首版策略或报告能力"}, "expected": "说明明确未实现范围，不冒充完整上游能力"}

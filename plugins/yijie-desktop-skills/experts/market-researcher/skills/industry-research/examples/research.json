@@ -1,0 +1,271 @@
+{
+  "title": "合成行业研究 · 非真实市场结论",
+  "scope": {
+    "currency": "CNY",
+    "basis": "FY",
+    "period_start": "2025-01-01",
+    "period_end": "2025-12-31",
+    "valuation_date": "2026-06-30",
+    "ebitda_definition": "reported_ebitda"
+  },
+  "sources": [
+    {
+      "id": "synthetic-source",
+      "kind": "user",
+      "title": "普通合成研究数据",
+      "locator": "examples/research.json · synthetic only",
+      "published_on": "2026-06-30",
+      "retrieved_on": "2026-07-01",
+      "content": "AAA.SYN revenue 100 CNY million FY ending 2025-12-31; valuation 2026-06-30.\nAAA.SYN ebitda 20 CNY million FY ending 2025-12-31; valuation 2026-06-30.\nAAA.SYN net_income 10 CNY million FY ending 2025-12-31; valuation 2026-06-30.\nAAA.SYN market_cap 200 CNY million FY ending 2025-12-31; valuation 2026-06-30.\nAAA.SYN debt 30 CNY million FY ending 2025-12-31; valuation 2026-06-30.\nAAA.SYN cash 10 CNY million FY ending 2025-12-31; valuation 2026-06-30.\nAAA.SYN preferred 0 CNY million FY ending 2025-12-31; valuation 2026-06-30.\nAAA.SYN minority 0 CNY million FY ending 2025-12-31; valuation 2026-06-30.\nBBB.SYN revenue 200 CNY million FY ending 2025-12-31; valuation 2026-06-30.\nBBB.SYN ebitda -5 CNY million FY ending 2025-12-31; valuation 2026-06-30.\nBBB.SYN net_income -10 CNY million FY ending 2025-12-31; valuation 2026-06-30.\nBBB.SYN market_cap 300 CNY million FY ending 2025-12-31; valuation 2026-06-30.\nBBB.SYN debt 50 CNY million FY ending 2025-12-31; valuation 2026-06-30.\nBBB.SYN cash 20 CNY million FY ending 2025-12-31; valuation 2026-06-30.\nBBB.SYN preferred 0 CNY million FY ending 2025-12-31; valuation 2026-06-30.\nBBB.SYN minority 0 CNY million FY ending 2025-12-31; valuation 2026-06-30.",
+      "entity_ids": [
+        "AAA.SYN",
+        "BBB.SYN"
+      ],
+      "period_ends": [
+        "2025-12-31"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "entity_id": "AAA.SYN",
+      "name": "合成甲公司",
+      "business_model": "普通合成服务企业，用于测试算术，不是真实证券。",
+      "metrics": {
+        "revenue": {
+          "value": "100",
+          "scale": 1000000,
+          "currency": "CNY",
+          "basis": "FY",
+          "period_start": "2025-01-01",
+          "period_end": "2025-12-31",
+          "as_of": "2025-12-31",
+          "definition": "revenue",
+          "source_id": "synthetic-source",
+          "quote": "AAA.SYN revenue 100 CNY million FY ending 2025-12-31; valuation 2026-06-30."
+        },
+        "ebitda": {
+          "value": "20",
+          "scale": 1000000,
+          "currency": "CNY",
+          "basis": "FY",
+          "period_start": "2025-01-01",
+          "period_end": "2025-12-31",
+          "as_of": "2025-12-31",
+          "definition": "reported_ebitda",
+          "source_id": "synthetic-source",
+          "quote": "AAA.SYN ebitda 20 CNY million FY ending 2025-12-31; valuation 2026-06-30."
+        },
+        "net_income": {
+          "value": "10",
+          "scale": 1000000,
+          "currency": "CNY",
+          "basis": "FY",
+          "period_start": "2025-01-01",
+          "period_end": "2025-12-31",
+          "as_of": "2025-12-31",
+          "definition": "net_income",
+          "source_id": "synthetic-source",
+          "quote": "AAA.SYN net_income 10 CNY million FY ending 2025-12-31; valuation 2026-06-30."
+        },
+        "market_cap": {
+          "value": "200",
+          "scale": 1000000,
+          "currency": "CNY",
+          "basis": "instant",
+          "period_start": null,
+          "period_end": "2025-12-31",
+          "as_of": "2026-06-30",
+          "definition": "market_cap",
+          "source_id": "synthetic-source",
+          "quote": "AAA.SYN market_cap 200 CNY million FY ending 2025-12-31; valuation 2026-06-30."
+        },
+        "debt": {
+          "value": "30",
+          "scale": 1000000,
+          "currency": "CNY",
+          "basis": "instant",
+          "period_start": null,
+          "period_end": "2025-12-31",
+          "as_of": "2025-12-31",
+          "definition": "debt",
+          "source_id": "synthetic-source",
+          "quote": "AAA.SYN debt 30 CNY million FY ending 2025-12-31; valuation 2026-06-30."
+        },
+        "cash": {
+          "value": "10",
+          "scale": 1000000,
+          "currency": "CNY",
+          "basis": "instant",
+          "period_start": null,
+          "period_end": "2025-12-31",
+          "as_of": "2025-12-31",
+          "definition": "cash",
+          "source_id": "synthetic-source",
+          "quote": "AAA.SYN cash 10 CNY million FY ending 2025-12-31; valuation 2026-06-30."
+        },
+        "preferred": {
+          "value": "0",
+          "scale": 1000000,
+          "currency": "CNY",
+          "basis": "instant",
+          "period_start": null,
+          "period_end": "2025-12-31",
+          "as_of": "2025-12-31",
+          "definition": "preferred",
+          "source_id": "synthetic-source",
+          "quote": "AAA.SYN preferred 0 CNY million FY ending 2025-12-31; valuation 2026-06-30."
+        },
+        "minority": {
+          "value": "0",
+          "scale": 1000000,
+          "currency": "CNY",
+          "basis": "instant",
+          "period_start": null,
+          "period_end": "2025-12-31",
+          "as_of": "2025-12-31",
+          "definition": "minority",
+          "source_id": "synthetic-source",
+          "quote": "AAA.SYN minority 0 CNY million FY ending 2025-12-31; valuation 2026-06-30."
+        }
+      }
+    },
+    {
+      "entity_id": "BBB.SYN",
+      "name": "合成乙公司",
+      "business_model": "普通合成服务企业，用于测试算术，不是真实证券。",
+      "metrics": {
+        "revenue": {
+          "value": "200",
+          "scale": 1000000,
+          "currency": "CNY",
+          "basis": "FY",
+          "period_start": "2025-01-01",
+          "period_end": "2025-12-31",
+          "as_of": "2025-12-31",
+          "definition": "revenue",
+          "source_id": "synthetic-source",
+          "quote": "BBB.SYN revenue 200 CNY million FY ending 2025-12-31; valuation 2026-06-30."
+        },
+        "ebitda": {
+          "value": "-5",
+          "scale": 1000000,
+          "currency": "CNY",
+          "basis": "FY",
+          "period_start": "2025-01-01",
+          "period_end": "2025-12-31",
+          "as_of": "2025-12-31",
+          "definition": "reported_ebitda",
+          "source_id": "synthetic-source",
+          "quote": "BBB.SYN ebitda -5 CNY million FY ending 2025-12-31; valuation 2026-06-30."
+        },
+        "net_income": {
+          "value": "-10",
+          "scale": 1000000,
+          "currency": "CNY",
+          "basis": "FY",
+          "period_start": "2025-01-01",
+          "period_end": "2025-12-31",
+          "as_of": "2025-12-31",
+          "definition": "net_income",
+          "source_id": "synthetic-source",
+          "quote": "BBB.SYN net_income -10 CNY million FY ending 2025-12-31; valuation 2026-06-30."
+        },
+        "market_cap": {
+          "value": "300",
+          "scale": 1000000,
+          "currency": "CNY",
+          "basis": "instant",
+          "period_start": null,
+          "period_end": "2025-12-31",
+          "as_of": "2026-06-30",
+          "definition": "market_cap",
+          "source_id": "synthetic-source",
+          "quote": "BBB.SYN market_cap 300 CNY million FY ending 2025-12-31; valuation 2026-06-30."
+        },
+        "debt": {
+          "value": "50",
+          "scale": 1000000,
+          "currency": "CNY",
+          "basis": "instant",
+          "period_start": null,
+          "period_end": "2025-12-31",
+          "as_of": "2025-12-31",
+          "definition": "debt",
+          "source_id": "synthetic-source",
+          "quote": "BBB.SYN debt 50 CNY million FY ending 2025-12-31; valuation 2026-06-30."
+        },
+        "cash": {
+          "value": "20",
+          "scale": 1000000,
+          "currency": "CNY",
+          "basis": "instant",
+          "period_start": null,
+          "period_end": "2025-12-31",
+          "as_of": "2025-12-31",
+          "definition": "cash",
+          "source_id": "synthetic-source",
+          "quote": "BBB.SYN cash 20 CNY million FY ending 2025-12-31; valuation 2026-06-30."
+        },
+        "preferred": {
+          "value": "0",
+          "scale": 1000000,
+          "currency": "CNY",
+          "basis": "instant",
+          "period_start": null,
+          "period_end": "2025-12-31",
+          "as_of": "2025-12-31",
+          "definition": "preferred",
+          "source_id": "synthetic-source",
+          "quote": "BBB.SYN preferred 0 CNY million FY ending 2025-12-31; valuation 2026-06-30."
+        },
+        "minority": {
+          "value": "0",
+          "scale": 1000000,
+          "currency": "CNY",
+          "basis": "instant",
+          "period_start": null,
+          "period_end": "2025-12-31",
+          "as_of": "2025-12-31",
+          "definition": "minority",
+          "source_id": "synthetic-source",
+          "quote": "BBB.SYN minority 0 CNY million FY ending 2025-12-31; valuation 2026-06-30."
+        }
+      }
+    }
+  ],
+  "sections": {
+    "overview": [
+      {
+        "text": "本例只用于流程与算术验证，行业规模未知。",
+        "kind": "unknown",
+        "source_ids": []
+      }
+    ],
+    "competition": [
+      {
+        "text": "两家合成服务企业用于同口径展示，不代表真实市场份额。",
+        "kind": "analysis",
+        "source_ids": [
+          "synthetic-source"
+        ]
+      }
+    ],
+    "valuation": [
+      {
+        "text": "比较仅适用于示例的同币种与财务期间；负盈利倍数为NM。",
+        "kind": "analysis",
+        "source_ids": [
+          "synthetic-source"
+        ]
+      }
+    ],
+    "watchlist": [
+      {
+        "text": "尚无可验证真实公司资料，不生成推荐名单。",
+        "kind": "unknown",
+        "source_ids": []
+      }
+    ]
+  }
+}

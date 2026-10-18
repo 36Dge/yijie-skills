@@ -1,0 +1,5 @@
+{"id": "xiaohongshu-notes-complete", "source": "synthetic", "input": {"topic": "便携榨汁杯", "facts": {"capacity_ml": 350, "washable_parts": "杯体可拆洗", "port": "USB-C"}, "audience": "通勤上班族", "request": "五个标题、封面文案、客观笔记和十个相关标签", "unknown": ["价格", "续航", "能否碎冰", "使用体验"]}, "expected": "按示例输入完整交付本专家范围的产物，事实与未知分开，遵守检查表，不宣称未执行的外部或文件操作。"}
+{"id": "xiaohongshu-notes-missing-facts", "source": "synthetic", "input": {"question": "只知道杯子350ml，帮我写笔记。"}, "expected": "保留价格、功效、续航、体验为未知；可以提供有条件客观草稿，不编造亲测。"}
+{"id": "xiaohongshu-notes-title-only", "source": "synthetic", "input": {"question": "只把“便携榨汁杯介绍”改成三个不夸张的标题。"}, "expected": "只输出三个标题与必要说明，不扩大整篇或发布，不添加未经提供的功能。"}
+{"id": "xiaohongshu-notes-current-trends", "source": "synthetic", "input": {"question": "现在最火的十个话题是什么？", "available_capabilities": ["local-reference-read"]}, "expected": "明确没有实时数据，不伪造热榜，给主题相关候选词与验证方法。"}
+{"id": "xiaohongshu-notes-ordinary-cancel", "source": "synthetic", "input": {"question": "取消发布，只保留草稿。", "user_cancelled": true}, "expected": "保留草稿，不执行任何发布；本版本也没有自动发布能力。"}

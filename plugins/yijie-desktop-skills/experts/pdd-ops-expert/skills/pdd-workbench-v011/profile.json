@@ -1,0 +1,7 @@
+{
+  "expert_id": "pdd-ops-expert",
+  "platforms": [
+    "pdd"
+  ],
+  "version": "0.1.1"
+}

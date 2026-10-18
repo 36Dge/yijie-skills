@@ -1,0 +1,2 @@
+# 普通合成流程
+request.json的example.com地址仅测试字段，不联网。prepare生成两个分析草稿；逐次实际调用及原任务查询后，保存原MCP回执（stage=query_reference/query_product，原操作ID、taskId、制作单摘要）。compose生成替换请求；其实际成功回执用于video命令，输出待批准视频请求。create_video只表示创建；query_video PROCESSING等待显式继续，SUCCESS且实际单条video才返回链接。本地例子不构成真实任务结果。

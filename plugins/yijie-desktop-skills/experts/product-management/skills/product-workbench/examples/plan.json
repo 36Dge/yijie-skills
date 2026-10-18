@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "title": "合成清单导出项目",
+  "documents": [
+    {
+      "kind": "prd",
+      "sections": [
+        {
+          "heading": "问题与范围",
+          "body": "根据S1梳理本阶段目标；实际方案需结合用户资料填写。"
+        }
+      ],
+      "source_ids": [
+        "S1",
+        "U1"
+      ],
+      "quotes": [],
+      "open_questions": "竞品乙价格未知；样本不足以推断全部用户。"
+    },
+    {
+      "kind": "roadmap",
+      "sections": [
+        {
+          "heading": "Now/Next/Later",
+          "body": "根据S1梳理本阶段目标；实际方案需结合用户资料填写。"
+        }
+      ],
+      "source_ids": [
+        "S1",
+        "U1"
+      ],
+      "quotes": [],
+      "open_questions": "竞品乙价格未知；样本不足以推断全部用户。"
+    },
+    {
+      "kind": "stakeholder",
+      "sections": [
+        {
+          "heading": "进展与风险",
+          "body": "根据S1梳理本阶段目标；实际方案需结合用户资料填写。"
+        }
+      ],
+      "source_ids": [
+        "S1",
+        "U1"
+      ],
+      "quotes": [],
+      "open_questions": "竞品乙价格未知；样本不足以推断全部用户。"
+    },
+    {
+      "kind": "research",
+      "sections": [
+        {
+          "heading": "证据与发现",
+          "body": "根据S1梳理本阶段目标；实际方案需结合用户资料填写。"
+        }
+      ],
+      "source_ids": [
+        "S1",
+        "U1"
+      ],
+      "quotes": [
+        {
+          "source_id": "U1",
+          "text": "每周都要手工复制清单。"
+        }
+      ],
+      "open_questions": "竞品乙价格未知；样本不足以推断全部用户。"
+    },
+    {
+      "kind": "competitive",
+      "sections": [
+        {
+          "heading": "比较与未知",
+          "body": "根据S1梳理本阶段目标；实际方案需结合用户资料填写。"
+        }
+      ],
+      "source_ids": [
+        "S1",
+        "U1"
+      ],
+      "quotes": [],
+      "open_questions": "竞品乙价格未知；样本不足以推断全部用户。"
+    },
+    {
+      "kind": "metrics",
+      "sections": [
+        {
+          "heading": "指标口径",
+          "body": "根据S1梳理本阶段目标；实际方案需结合用户资料填写。"
+        }
+      ],
+      "source_ids": [
+        "S1",
+        "U1"
+      ],
+      "quotes": [],
+      "open_questions": "竞品乙价格未知；样本不足以推断全部用户。"
+    }
+  ],
+  "rice": {
+    "reach_period": "2026Q4",
+    "effort_unit": "人月",
+    "items": [
+      {
+        "id": "export",
+        "name": "清单导出",
+        "reach_period": "2026Q4",
+        "effort_unit": "人月",
+        "reach": 100,
+        "impact": 2,
+        "confidence": "0.8",
+        "effort": 2,
+        "source_ids": [
+          "S1"
+        ]
+      },
+      {
+        "id": "unknown",
+        "name": "自动归档",
+        "reach_period": "2026Q4",
+        "effort_unit": "人月",
+        "reach": null,
+        "impact": 1,
+        "confidence": "0.5",
+        "effort": 1,
+        "source_ids": [
+          "S1"
+        ]
+      }
+    ]
+  }
+}

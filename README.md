@@ -62,3 +62,21 @@ renderer任意路径或manifest自证。它标记 `release=false`，不是已发
 本地安装不授予外部调用或额外文件权限。
 
 本次源码与知识正文公开 Git 推送已由用户明确授权；范围、不可变 Contracts 来源与仍保留的本地产品边界见 [FEAT-158 Git 交付记录](docs/provenance/FEAT-158-git-publication.md)。
+
+## FEAT-158 第一组三位专家本机接入
+
+2026-10-16 新候选 bundle `0.5.0` 在原 38 普通包和未改动的
+`jd-ops-expert@0.1.3` 之外，追加小红书、漫剧、跨境运营三个独立 `0.1.0`
+专家资源，共 42 个归档。每位仍只有一个私有 SKILL 入口，沿现有安装、版本与会话选择机制；
+普通 `pnpm package` 的 38 项 v2 输出保持不变。
+
+```bash
+node scripts/package-desktop-skills.mjs --source plugins/yijie-desktop-skills/experts/bundle-source.json --output dist/skills-experts-first-three-v010
+```
+
+漫剧含经审阅的 Python 3.10+ 标准库校验器，任务文件写出/校验只使用当前会话已有权限；
+只读资源安装不授予执行权限。跨境运营完整离线策划不依赖轻流，轻流协作仍走现有资格与审批。
+三位均不自动发布、启用外部服务或生成媒体成片。来源与边界见
+[内容审校](docs/provenance/FEAT-158-first-three-v0.1.0-content-review.md) 和
+[本机授权](docs/provenance/FEAT-158-first-three-local-use-authorization-v0.1.0.md)。
+这些新增内容没有公开分发或 Git 提交/推送授权；前段历史授权仅适用于当时范围。

@@ -1,0 +1,613 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-16T18:07:40Z",
+  "content_version": "0.1.0",
+  "source_root": "plugins/yijie-desktop-skills/experts/market-researcher/skills/industry-research",
+  "review_kind": "editorial/code review; not live account/model financial verification",
+  "original_package": {
+    "id": "market-researcher",
+    "version": "0.1.0"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "bytes": 2576,
+      "sha256": "61689f6347a26374477cd75c7c709a256fbde69bb46c6c072f6f576a12befc2c",
+      "decision": "Methodology re-authored; source material is not instruction authority"
+    },
+    {
+      "path": ".downloaded_at",
+      "bytes": 24,
+      "sha256": "2c8423109c3b0c38599823100fa15b0648ae7dc3767cb47b6805b1cfd90ea451",
+      "decision": "Methodology re-authored; source material is not instruction authority"
+    },
+    {
+      "path": "agents/market-researcher.md",
+      "bytes": 6142,
+      "sha256": "c5487ce4b84a06162c376988ad4ef99d3d1f0173f6bc58a3e57d313df531f042",
+      "decision": "Methodology re-authored; source material is not instruction authority"
+    },
+    {
+      "path": "avatars/expert.png",
+      "bytes": 288195,
+      "sha256": "1aac98a693e03d47cc69e28e18b21e9beb3bdf8c3a68a0f2158a1c15cf354733",
+      "decision": "Retain existing local UI avatar only"
+    },
+    {
+      "path": "skills/competitive-analysis/SKILL.md",
+      "bytes": 11478,
+      "sha256": "65c6e2a68ba67660076e1f5b7d3602f71b3e97d3cdc1f2a6b03c12c05c24f1f9",
+      "decision": "Methodology re-authored; source material is not instruction authority"
+    },
+    {
+      "path": "skills/competitive-analysis/references/frameworks.md",
+      "bytes": 492,
+      "sha256": "93b3f437c8da7a48e8a77603bd4eb47aba5880e40afdc1d77b8e590bd02c61b7",
+      "decision": "Methodology re-authored; source material is not instruction authority"
+    },
+    {
+      "path": "skills/competitive-analysis/references/schemas.md",
+      "bytes": 1790,
+      "sha256": "4bc65ebead267d789a0824342d7e59ac7ff133e873f3c32675bf351d472c9e6d",
+      "decision": "Methodology re-authored; source material is not instruction authority"
+    },
+    {
+      "path": "skills/comps-analysis/SKILL.md",
+      "bytes": 31234,
+      "sha256": "d588295ff9c2c6f885145e9239a3ee588f4f5f92d783eef63860e89115ec858d",
+      "decision": "Methodology re-authored; source material is not instruction authority"
+    },
+    {
+      "path": "skills/idea-generation/SKILL.md",
+      "bytes": 3825,
+      "sha256": "83a3dec62c4b7c1809987a5a97fc87a99703bcbf9d77368b06ebe72d178b73fa",
+      "decision": "Methodology re-authored; source material is not instruction authority"
+    },
+    {
+      "path": "skills/neodata-financial-search/SKILL.md",
+      "bytes": 13455,
+      "sha256": "4e90e158218f35d35bf9ef35a1cdf0d27c2cc8b5f9e0037b961be96e9a162b9b",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/neodata-financial-search/reference.md",
+      "bytes": 16691,
+      "sha256": "2f0fda037efcd01f1ffdbacf9e13ab2c5162a5036cb63bd967cba7513ec08bc2",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/neodata-financial-search/scripts/query.py",
+      "bytes": 7726,
+      "sha256": "446abb040c39513422adf52ee897cd4f0d6f7e35e651dc9bf5d96c348b37eb3b",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/neodata-financial-search/scripts/query.sh",
+      "bytes": 4176,
+      "sha256": "a1d4ffcfdfe49cf9d2a686a0e4dac66ff10e8c76b10cf2d9a596a33f60ec892e",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/LICENSE.txt",
+      "bytes": 1467,
+      "sha256": "79f6d8f5b427252fa3b1c11ecdbdb6bf610b944f7530b4de78f770f38741cfaa",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/SKILL.md",
+      "bytes": 9189,
+      "sha256": "79b7ba625172e02c12cb3541d91b0fcb8cc4eafc7c6d26998c5b9c9a9e0e619c",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/editing.md",
+      "bytes": 6885,
+      "sha256": "6cb47c3ab17e60b7de37e83131c409ef5a90a01bfb54e999905a9c9f7dd88e68",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/pptxgenjs.md",
+      "bytes": 12819,
+      "sha256": "9539534d92b7170813b735a448750df3580390da2da6c52a02b687ed53ecba86",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/add_slide.py",
+      "bytes": 6872,
+      "sha256": "04233ba3932c6b8611677347891616456e243cc09b7f9769408b8c83d9acfe64",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/clean.py",
+      "bytes": 9583,
+      "sha256": "3e3966a17f488a1ddc7145f0b7ec9f25595afa1f3a427ab05e610f1a328feea9",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/helpers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/helpers/merge_runs.py",
+      "bytes": 5567,
+      "sha256": "7c40ed838b88639c51f9ffdcfd564b568f26832b78fe44008c0e01b742669ca7",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/helpers/simplify_redlines.py",
+      "bytes": 5760,
+      "sha256": "bd90bb2164576554a4418a8bdbb799add5f2a48fa54c0e554911901c2f955446",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/pack.py",
+      "bytes": 5003,
+      "sha256": "94c79b6ddf1a8acc2202353bab5093c9994b602208e8260e028a1236817d3681",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+      "bytes": 74984,
+      "sha256": "41b93bd8857cc68b1e43be2806a872d736a9bdd6566900062d8fdb57d7bbb354",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+      "bytes": 6956,
+      "sha256": "3fd0586f2637b98bb9886f0e0b67d89e1cc987c2d158cc7deb5f5b9890ced412",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+      "bytes": 51302,
+      "sha256": "29b254ee0d10414a8504b5a08149c7baec35a60d5ff607d6b3f492aa36815f40",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+      "bytes": 624,
+      "sha256": "5cb76dabd8b97d1e9308a1700b90c20139be4d50792d21a7f09789f5cccd6026",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+      "bytes": 152039,
+      "sha256": "5375417f0f5394b8dd1a7035b9679151f19a6b65df309dec10cfb4a420cb00e9",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+      "bytes": 1231,
+      "sha256": "5d389d42befbebd91945d620242347caecd3367f9a3a7cf8d97949507ae1f53c",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+      "bytes": 8862,
+      "sha256": "b4532b6d258832953fbb3ee4c711f4fe25d3faf46a10644b2505f17010d01e88",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+      "bytes": 14795,
+      "sha256": "bdad416b096b61d37b71603b2c949484f9070c830bdaeba93bf35e15c8900614",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd",
+      "bytes": 83612,
+      "sha256": "d173c3e5d61e42e2e3a97226c632fd2ab7cc481fc4e492365b87024ab546daff",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd",
+      "bytes": 1269,
+      "sha256": "3c6709101c6aaa82888df5d8795c33f9e857196790eb320d9194e64be2b6bdd8",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+      "bytes": 7328,
+      "sha256": "0b364451dc36a48dd6dae0f3b6ada05fd9b71e5208211f8ee5537d7e51a587e2",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+      "bytes": 6382,
+      "sha256": "e2abacbb9a55ce1365f8961bc1b1395bbc811e512b111000d8c333f98458dece",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+      "bytes": 1248,
+      "sha256": "0ef4bb354ff44b923564c4ddbdda5987919d220225129ec94614a618ceafc281",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd",
+      "bytes": 880,
+      "sha256": "0d103b99a4a8652f8871552a69d42d2a3760ac6a5e3ef02d979c4273257ff6a4",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+      "bytes": 2608,
+      "sha256": "9c085407751b9061c1f996f6c39ce58451be22a8d334f09175f0e89e42736285",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+      "bytes": 3507,
+      "sha256": "bc92e36ccd233722d4c5869bec71ddc7b12e2df56059942cce5a39065cc9c368",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+      "bytes": 7507,
+      "sha256": "7b5b7413e2c895b1e148e82e292a117d53c7ec65b0696c992edca57b61b4a74b",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+      "bytes": 23313,
+      "sha256": "3213ef1631606250f5010b42cad7ef716f7c59426367798e33c374c0ec391d3a",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd",
+      "bytes": 1367,
+      "sha256": "12264f3c03d738311cd9237d212f1c07479e70f0cbe1ae725d29b36539aef637",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+      "bytes": 242277,
+      "sha256": "beffeed56945c22a77440122c8bdc426f3fcbe7f3b12ea0976c770d1f8d54578",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+      "bytes": 26148,
+      "sha256": "f5ee623b08b6a66935e5aced2f5d8ad0fc71bf9e8e833cd490150c0fa94b8763",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+      "bytes": 25279,
+      "sha256": "585bedc1313b40888dcc544cb74cd939a105ee674f3b1d3aa1cc6d34f70ff155",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd",
+      "bytes": 535,
+      "sha256": "133c9f64a5c5d573b78d0a474122b22506d8eadb5e063f67cdbbb8fa2f161d0e",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd",
+      "bytes": 5712,
+      "sha256": "6bdeb169c3717eb01108853bd9fc5a3750fb1fa5b82abbdd854d49855a40f519",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
+      "bytes": 4010,
+      "sha256": "475dcae1e7d1ea46232db6f8481040c15e53a52a3c256831d3df204212b0e831",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+      "bytes": 171367,
+      "sha256": "c2dd9f61f892deae6acd8d20771ea79b12018af25f3bf8d06639c8542d218cfd",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd",
+      "bytes": 4646,
+      "sha256": "a539aa2fb154fa50e0f5cc97e6ad7cbc66f8ec3e3746f61ec6a8b0d5d15ecdf2",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+      "bytes": 1963,
+      "sha256": "9e0b7209fc69ab11987900404540969976000c5ebe4d4f58c43dc3842886bf3a",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+      "bytes": 2515,
+      "sha256": "451958454e8588dfc7cd945981ada142ca06ff3307937f5700df059c2b307fa8",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
+      "bytes": 2856,
+      "sha256": "6de111e11403f7cd49027400755bae0ea1cabef2815f09bd40a24f0017613b24",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
+      "bytes": 1344,
+      "sha256": "f565adfef5a502044abc3a9153e157edc25af78304d335994afb958874b15e26",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/mce/mc.xsd",
+      "bytes": 3127,
+      "sha256": "3a37e461ecf5a8670fdec34029703401f8728ab9c96ec1739a6ae58d55212413",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/microsoft/wml-2010.xsd",
+      "bytes": 26549,
+      "sha256": "568b26ee156cb9549aa439ca2158965f77b7c1602b7e0316f40ac6cf586e35f2",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/microsoft/wml-2012.xsd",
+      "bytes": 3745,
+      "sha256": "0fa75578a000439a7988ba0c59fdc69f774bbd416cbacc14d07125b3f686cb74",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/microsoft/wml-2018.xsd",
+      "bytes": 901,
+      "sha256": "be0ff793a22dd31384650c3a4da14c2fa8062751c2e97b0e5ee852bda13c60ad",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/microsoft/wml-cex-2018.xsd",
+      "bytes": 1778,
+      "sha256": "fddc2b880cabb9005aebbc7e783e53c19fec1c03df7d0e2f2076a33a0fdfd081",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/microsoft/wml-cid-2016.xsd",
+      "bytes": 1002,
+      "sha256": "127ca209fa73d7cb708449cb355c871867948a96e4a74f7bf5811ef62d17991d",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+      "bytes": 600,
+      "sha256": "842e7163409c8d74f4d7088a8bc99500d80bc75332681a0980055b08f374a604",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/schemas/microsoft/wml-symex-2015.xsd",
+      "bytes": 745,
+      "sha256": "16f6f8072249f431370723c2cd8974672e0d9c897e00e97dd918079df934871b",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/soffice.py",
+      "bytes": 5301,
+      "sha256": "a3e21840e29e32f947d5286028931b96eaf2dee63f75d883b8eb19c943c80aa0",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/unpack.py",
+      "bytes": 4052,
+      "sha256": "83f69cecc87910183654c06345837244402e8a99edbf3bdddc1cf72f11304b62",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/validate.py",
+      "bytes": 3680,
+      "sha256": "0aa1f5e0816c2bf879ce74bf3fbeb6228c7e95ee024ecd6824b7287166757c6f",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/validators/__init__.py",
+      "bytes": 336,
+      "sha256": "83e0f035c5abea238d3f2c3968afbd511ed022b527b7c9cb60a9434cc34ff987",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/validators/base.py",
+      "bytes": 32651,
+      "sha256": "d6358b67252df4dbfe4fa6647423a765960c949346ef6a8c4eb8722bb1108d25",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/validators/docx.py",
+      "bytes": 16376,
+      "sha256": "0ef04ce86b2e6b6a1cb088c0276fd0bd5b770d96fdfe7a6cc73d005feb3f0345",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/validators/pptx.py",
+      "bytes": 9824,
+      "sha256": "f937961e62a5fa0d002b8dc51a4c4e2cd8fcd59fe65853fa54edaca3fe99eccc",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/office/validators/redlining.py",
+      "bytes": 8924,
+      "sha256": "83cd0a75ee3898301488ff03585c0f7a3d5ca9a2c39175bc9cbc5e7f71459684",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/pptx-author/scripts/thumbnail.py",
+      "bytes": 8785,
+      "sha256": "e959ecd4f19735161218bc44d0648a46da17874323fb3e19c2e9cb50cefe6ce7",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/sector-overview/SKILL.md",
+      "bytes": 3428,
+      "sha256": "8d7f1b6487c68187ef7cb69af1d5c6a33c332fe44ec902ff1adf4410849086f8",
+      "decision": "Methodology re-authored; source material is not instruction authority"
+    },
+    {
+      "path": "skills/westock/SKILL-westock-data.md",
+      "bytes": 12883,
+      "sha256": "018c3dd65249f9d2633d5fe779807b86fb0a0bd869a074bee72848fcd4a76e1b",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/westock/SKILL-westock-tool.md",
+      "bytes": 8935,
+      "sha256": "f1e0cacd4237e3652d888b0eb8f4fd42ee87e28f4a2b06b025cc7efae1ed355c",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/westock/SKILL.md",
+      "bytes": 2566,
+      "sha256": "bc22349b503424b0456770331070433787e82d0be3b4b177e27d428ca1b64f0e",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/westock/references/data-ai-guide.md",
+      "bytes": 9428,
+      "sha256": "5e2108df3ff84da1da89b42141c99e64441ce938577f4b503bc509586743f7f4",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/westock/references/data-scenarios-guide.md",
+      "bytes": 11592,
+      "sha256": "9368362f948b2553c70b44b619e091ed6d37c275d53a58e2e3f643772f3a14fe",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/westock/references/tool-ai-guide.md",
+      "bytes": 7870,
+      "sha256": "7d10e6376aed84b2d4db6fe82a116b8ebc8b5335cf9fc85ed6090405e7c3bb04",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/westock/references/tool-fields-guide.md",
+      "bytes": 20859,
+      "sha256": "de41db94a64c296ca1232185fcdc01f077757f7071b2e311c9de9e3107dc38bb",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/westock/scripts/data-index.js",
+      "bytes": 2796938,
+      "sha256": "36f5bc513b5750f4343ba764b35ca9a2d39ae4d1cb9ed8b91044d1783366e1bf",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/westock/scripts/data-vendor.js",
+      "bytes": 1175747,
+      "sha256": "2c70754e2b5edbf459498a22c8a409172e651e5d36398fa3cf9ddf8d661fc44a",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/westock/scripts/tool-index.js",
+      "bytes": 1404839,
+      "sha256": "2fa28e15e9c69dbc2a6d9dee3993231e15ad50a15ba7505dc86990fc9980baa5",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    },
+    {
+      "path": "skills/westock/scripts/tool-vendor.js",
+      "bytes": 1175747,
+      "sha256": "2c70754e2b5edbf459498a22c8a409172e651e5d36398fa3cf9ddf8d661fc44a",
+      "decision": "Excluded implementation/credentials/vendor/template; replaced by existing connectors and own local artifacts, not equivalent coverage"
+    }
+  ],
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 313,
+      "sha256": "a0d3da30660304f85471d39d8546e171dbcc936f8f6a68b148eaad168c5ca2bb"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 4447,
+      "sha256": "6073fe8f467dcc276835351705753f1716f4254350be97257ef99a7366b9dcee"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 1544,
+      "sha256": "e93c7ea9d85704f8a90d9c78dbcc3c8018ab35a68d6d0b573926928c5655c01c"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 610,
+      "sha256": "a2e49ad8cf0b725da6a3ee092b53309330aabc661ba2afba3dd86486a5e56290"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 2026,
+      "sha256": "98fea0d373c405ab56cea3af1d4161f65ebb350dcf4fb65626f4b53c884b8cdd"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 402,
+      "sha256": "cefa66303d3c9007255bb66516c72e188581ba4e597cb13d56bb2d49266e79ec"
+    },
+    {
+      "path": "examples/research.json",
+      "bytes": 9923,
+      "sha256": "018ae547daf6e417b31353b154e207b17a4984877c0e8f69d140ceec3df3df3d"
+    },
+    {
+      "path": "examples/search.json",
+      "bytes": 91,
+      "sha256": "e9cd78756a6c5039964655323c067f808b7c427f72ba388c7c2d8cb08a69918b"
+    },
+    {
+      "path": "references/artifacts.md",
+      "bytes": 1157,
+      "sha256": "13ade2bdab5df1f95254bbac70dfea316a62c9c9b200fd949f7a40b09e023f2f"
+    },
+    {
+      "path": "references/data-and-search.md",
+      "bytes": 1936,
+      "sha256": "54374cfd830ce5dd744f89f11692084fbee25f920f6d61272a33345c56624d90"
+    },
+    {
+      "path": "references/evidence-and-comps.md",
+      "bytes": 2254,
+      "sha256": "cb8c620a5d43e5a104763d25d3ca4bd330f04e7216c48dea61dff78879b61ad1"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 367,
+      "sha256": "ba810aba58deac141a3f97462407bd0359aab9bdedca8a3fb2b2070c13c08d5a"
+    },
+    {
+      "path": "references/local-helper.md",
+      "bytes": 1570,
+      "sha256": "628688751455d6238cef14c6f8fab655f9b08942c4c4149e13027b1d0a575e1e"
+    },
+    {
+      "path": "references/research-method.md",
+      "bytes": 1168,
+      "sha256": "5220be8da90b2b9be354b97399a8af4697690260c9c321e01eb6967042e0859f"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 1110,
+      "sha256": "1e9fa94273b6da64dda3127abbc7a8d3feb27ac34a7dafd39d8a3c3dff8443a1"
+    },
+    {
+      "path": "scripts/artifacts.py",
+      "bytes": 7690,
+      "sha256": "2dbda94e22155101acd3e2137cf1094f0bd54d7d30480b51b448787dc354bc15"
+    },
+    {
+      "path": "scripts/research.py",
+      "bytes": 22639,
+      "sha256": "5fa458bb1a988629dbad3c8de4cefb55349092b280e31938bf107da579ee4333"
+    }
+  ],
+  "decisions": {
+    "source_files_modified": false,
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "credential_copy": false,
+    "network_scripts": false,
+    "office_vendor_imported": false,
+    "real_validation": "NOT RUN by user instruction"
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-16T08:22:06Z",
+  "content_version": "0.1.0",
+  "source_root": "plugins/yijie-desktop-skills/experts/agentgrid-comic-storyboard-director/skills/comic-storyboard",
+  "review_kind": "static-source-and-editorial-review-plus-normal-local-script-checks",
+  "original_package": {
+    "id": "agentgrid-comic-storyboard-director",
+    "version": "1.0.0",
+    "export_relative_root": "漫剧编剧与分镜师/原始资源",
+    "author": "AgentGrid"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "sha256": "dfb00ad8066e77cd2b557f98f992cc3867081c87104c27214f65be1e2fb2ef7e",
+      "bytes": 2299,
+      "decision": "identity and scope mapped to existing v3 metadata; host registration not imported",
+      "adapted_targets": [
+        "bundle-source.json (parent)"
+      ]
+    },
+    {
+      "path": ".downloaded_at",
+      "sha256": "d73456ac726c51d509f2329a5c88eec8e52ccb96ec4e18b71445a1af4e46e42e",
+      "bytes": 24,
+      "decision": "reviewed source context or installation marker; not included in runtime package",
+      "adapted_targets": [
+        "NOTICE.md",
+        "references/source-notes.md"
+      ]
+    },
+    {
+      "path": "README.md",
+      "sha256": "55b0a70a86dd821cdd50a8dd3b359a0e8de22cebe0d109c5a22812773c81a57f",
+      "bytes": 1126,
+      "decision": "reviewed source context or installation marker; not included in runtime package",
+      "adapted_targets": [
+        "NOTICE.md",
+        "references/source-notes.md"
+      ]
+    },
+    {
+      "path": "agents/comic-storyboard-director.md",
+      "sha256": "d8c0dca79e6fbb34e0969e5d5b766cab6e5cce29cc526c3ba2a1d9dffe92585a",
+      "bytes": 4260,
+      "decision": "adapted to short ROLE without host settings or automatic authorizations",
+      "adapted_targets": [
+        "ROLE.md",
+        "SKILL.md"
+      ]
+    },
+    {
+      "path": "avatars/expert.jpg",
+      "sha256": "814abc3d23e6968a97022d4a6087189a15b4bbdc29ec53cd5018d927a54db3b5",
+      "bytes": 77138,
+      "decision": "UI resource only; not included in executable resource package",
+      "adapted_targets": []
+    },
+    {
+      "path": "skills/comic-story-design/SKILL.md",
+      "sha256": "eca575f7044f9eb1e348bc5dcdb979400edbeda907aebd6fbfac14d25d012e46",
+      "bytes": 1306,
+      "decision": "converted to private reference; no nested SKILL registration",
+      "adapted_targets": [
+        "references/story-design.md"
+      ]
+    },
+    {
+      "path": "skills/comic-story-design/references/story-contract.md",
+      "sha256": "810397d7aa82652b7ec0a27eba4558e0485856ec24594174412aa656a46d0f55",
+      "bytes": 747,
+      "decision": "converted to private reference; no nested SKILL registration",
+      "adapted_targets": [
+        "references/story-design.md"
+      ]
+    },
+    {
+      "path": "skills/storyboard-continuity/SKILL.md",
+      "sha256": "8d7eace36b9c9817a018961124c8e3f6fad1b47fd4f92eefba74e68c88665d80",
+      "bytes": 1318,
+      "decision": "converted to private reference; no nested SKILL registration",
+      "adapted_targets": [
+        "references/continuity.md",
+        "references/storyboard-schema.md"
+      ]
+    },
+    {
+      "path": "skills/storyboard-continuity/references/storyboard-schema.md",
+      "sha256": "1f5a7a41eb9a942d208ad140c7ae072ce182d9df24ce534b4906d08efada741e",
+      "bytes": 816,
+      "decision": "converted to private reference; no nested SKILL registration",
+      "adapted_targets": [
+        "references/storyboard-schema.md"
+      ]
+    },
+    {
+      "path": "skills/storyboard-continuity/scripts/validate_storyboard.py",
+      "sha256": "157761ba808415e50b0c82e3e46030517f19c5f55095903cefa1c4525b55916b",
+      "bytes": 6175,
+      "decision": "adapted standard-library validation with finite numbers, required fields, null duration, baseline and new output protection",
+      "adapted_targets": [
+        "scripts/validate_storyboard.py"
+      ]
+    }
+  ],
+  "decisions": {
+    "source_files_modified": false,
+    "third_party_avatar_in_archive": false,
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "automatic_external_calls": false,
+    "model_eval": "tracked separately by root implementation verification; not asserted by content audit",
+    "scripts_in_archive": true,
+    "ordinary_skills_changed": false,
+    "jd_expert_changed": false
+  },
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 663,
+      "sha256": "4e464e4b7bd9e1502cd358567e4bf322a9df8f6e22258a5c4256a1fdf9a596c4"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 2750,
+      "sha256": "022080a8287863d0057f575bc45983877fe3b6b5726b9e10a1cd0fc5ea0acf44"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 2923,
+      "sha256": "8e7eb6c08b59679c734898e8fcb72dd893f2776783e5321b017d862609eeca6c"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 393,
+      "sha256": "3a3d6af2956220cda9f951ee9e9cb9ff2835b1f4e3e5d80743ee1705ddf8930e"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 1622,
+      "sha256": "971ec923da1578cc12e7f3a8eeb477f4928cf079ba37b717c84ad46176f61c5b"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 1063,
+      "sha256": "18d22e10abf534bf73f614b475885acf30535d95a7bbbbc47c81259fbf822ea6"
+    },
+    {
+      "path": "examples/input-001.json",
+      "bytes": 214,
+      "sha256": "0cca06b8407254fa5bbed7abbaed5215c4195430ab5efff7b85ed326197c6013"
+    },
+    {
+      "path": "examples/output-001.md",
+      "bytes": 695,
+      "sha256": "5775cb80f4670d64f85698f6174e52d332fb388d8b1d433d11e0edf6e2a97b0f"
+    },
+    {
+      "path": "examples/storyboard-001.json",
+      "bytes": 1564,
+      "sha256": "6bf8e1669be2dace41a85c39e434e3a4f6e4b15fd3ab7a8c3ef09d1a439bab60"
+    },
+    {
+      "path": "references/continuity.md",
+      "bytes": 1884,
+      "sha256": "37324bc372984745a463ad37338cdcf28a65e6b305baf7735308c5dcfde9170f"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 510,
+      "sha256": "862170fb9a771c9176f51b6000b100ccfd2d87ded71645e778fc50df2d0e2a66"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 744,
+      "sha256": "220ab92a979ed5ba121fd7c87bb30153567132d208e2171c27b0f9ee54534227"
+    },
+    {
+      "path": "references/story-design.md",
+      "bytes": 1486,
+      "sha256": "84748eea4f7bf1ad43ce7cc1fabd9cdbe80bf4245a8eba25d2566cb6e4d1ed36"
+    },
+    {
+      "path": "references/storyboard-schema.md",
+      "bytes": 2198,
+      "sha256": "b56f1b4237c3aa91003a729686d4690bcf80b228de7c6a225316f676fbc06ce8"
+    },
+    {
+      "path": "scripts/validate_storyboard.py",
+      "bytes": 9952,
+      "sha256": "07b36b3f1434c07b293c4b4b0a6a701938467095fef23caa87c2f1b793b86f4b"
+    }
+  ]
+}

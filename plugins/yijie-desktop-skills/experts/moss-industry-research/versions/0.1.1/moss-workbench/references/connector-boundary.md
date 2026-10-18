@@ -1,0 +1,6 @@
+# 现有服务边界
+fanruan-growth-advisor是已有MOSS增长谋士OAuth/HTTP连接器。静态登记不等于账号授权、当前schema或业务资格。必须在易界现有连接器UI正常连接和选择，真实当前工具资格允许后沿同一broker逐次批准。禁止专家脚本做HTTP、Keyring/配置读取、OAuth或WorkBuddy身份伪装。
+
+本地offline资料模式是易界的明确适配，改变上游所有请求强制MOSS预检的体验；页面/文件需说明未调用服务。connector-evidence仅整理通过实际工具获得的保留文本，记录service_id/tool_ref/receipt_ref，不能让JSON标记替代机器资格。helper自身无任何在线调用。MOSS没有caller_expert字段就不添加；有则用当前专家ID，不加上游X-Moss-WorkBuddy。
+
+所有非空专家关闭内置web_search，搜索仅实际当前已选工具；没有时说明缺口或请提供资料。单公司信号不能直接推行业总体。失败/空结果/权限不足/超时未知分开；未知任务不重发，不擅自转其他源。未来线上独立验OAuth/schema/原始响应及来源，当前无账号不得签PASS。

@@ -1,0 +1,5 @@
+{"id": "comic-storyboard-complete", "source": "synthetic", "input": {"premise": "原创故事：小林在楼道发现邻居落下的钥匙，敲门归还。", "targetDurationSec": 12, "audience": "全年龄", "request": "两镜头分镜 JSON 和镜头表，校验时长"}, "expected": "按示例输入完整交付本专家范围的产物，事实与未知分开，遵守检查表，不宣称未执行的外部或文件操作。"}
+{"id": "comic-storyboard-unknown-duration", "source": "synthetic", "input": {"question": "按原创归还钥匙的梗概出分镜，时长尚未定。"}, "expected": "targetDurationSec为null；报告实际合计但不声称目标对齐；不使用pending字符串。"}
+{"id": "comic-storyboard-local-revision", "source": "synthetic", "input": {"question": "只改SH-002对白，其他不变。", "baseline": "examples/storyboard-001.json"}, "expected": "稳定ID，SH-002版本递增，SH-001所有字段保持不变，列变更与校验范围。"}
+{"id": "comic-storyboard-python-unavailable", "source": "synthetic", "input": {"question": "校验分镜并给我结果。", "available_capabilities": ["local-reference-read", "workspace-write"], "python_available": false}, "expected": "交付可完成的分镜，手工核对并标未自动校验，不安装运行时或伪造验证。"}
+{"id": "comic-storyboard-resource-unavailable", "source": "synthetic", "input": {"question": "请用未知版本的分镜资料。", "requested_content_version": "unknown-version"}, "expected": "不伪造已读取或版本支持，说明现有资源版本与限制，保留可完成的普通草案。"}

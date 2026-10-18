@@ -1,0 +1,179 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-17T08:30:00Z",
+  "content_version": "0.1.0",
+  "source_root": "plugins/yijie-desktop-skills/experts/data-analyst-pro/skills/data-workbench",
+  "review_kind": "Local adaptation and code review; live model/browser evidence tracked separately",
+  "original_package": {
+    "id": "data-analyst-pro",
+    "version": "1.0.0"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "bytes": 2254,
+      "sha256": "1ff0afae73a1907d8eb118d84f71bc42937d111df5ef6fb791e7ffa129fda372",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": ".downloaded_at",
+      "bytes": 24,
+      "sha256": "7aaf824f0cde744ca6afb0c9e51f31b3dea2fb542df5ef74ebc1338e548d3dbf",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1645,
+      "sha256": "640032cf7c3fce4f09ce18a33aac5a5878919b298dc7cdea1d4c13d0276023cb",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "agents/data-analyst-pro.md",
+      "bytes": 2895,
+      "sha256": "7c1debd6c9940cb9d0d9ef15ba077bc7f108e621c80fc0b1947dfdfa8b0c4cbc",
+      "decision": "Reviewed as source material; rewritten into one Yijie entry, conflicting tool/identity requirements excluded"
+    },
+    {
+      "path": "avatars/data-analyst-pro.png",
+      "bytes": 241733,
+      "sha256": "867cce417a2b0232dce32086f5209e7926b4e1fdc0bf330cc36796ed4498f677",
+      "decision": "Local presentation image copied separately to Desktop; no redistribution claim"
+    }
+  ],
+  "decisions": {
+    "source_files_modified": false,
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "credential_copy": false,
+    "network_scripts": false,
+    "new_runtime_dependency": false
+  },
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 441,
+      "sha256": "ecc1e1c5429a381657bc0c42108905544082c1566a011f837d945cce25943b4c",
+      "review": "Reviewed explicit inputs, actual files, existing permission boundary and truthful validation status"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 2470,
+      "sha256": "cc86509bd4f6289f60ea8677cc5e813b2547d99aabbae14309c22a7d8ac4ca78",
+      "review": "Reviewed explicit inputs, actual files, existing permission boundary and truthful validation status"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 2040,
+      "sha256": "b62a68a21625a17c35b644c341c527ddda148e653cbe805a75b1e624244b1fd8",
+      "review": "Reviewed explicit inputs, actual files, existing permission boundary and truthful validation status"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 549,
+      "sha256": "81ee7ad75a8bb928165363add9b56f023a9a0dc1b3f117c2ad62748ec733aaa8",
+      "review": "Reviewed explicit inputs, actual files, existing permission boundary and truthful validation status"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 1168,
+      "sha256": "8634e28839df1b8bb4ab14fb293f3d8e46a4dfe7ff71a7d446c29b48548be495",
+      "review": "Reviewed explicit inputs, actual files, existing permission boundary and truthful validation status"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 509,
+      "sha256": "187c5ab114545a3f4a785c07836a1b92ed11f8ffe4f53db2a3023707f4a83144",
+      "review": "Reviewed explicit inputs, actual files, existing permission boundary and truthful validation status"
+    },
+    {
+      "path": "examples/input.json",
+      "bytes": 1132,
+      "sha256": "3bd0a9e2d15dc57226c4076f245cb7eb0e2abe48a3fe9a44cd1f63972e3829af",
+      "review": "Reviewed explicit inputs, actual files, existing permission boundary and truthful validation status"
+    },
+    {
+      "path": "examples/sample.csv",
+      "bytes": 163,
+      "sha256": "268f1e41a4ff2bdf8d083060a2cfe7a19b98804f6c35dbe77efb47001e9dff47",
+      "review": "Reviewed explicit inputs, actual files, existing permission boundary and truthful validation status"
+    },
+    {
+      "path": "profile.json",
+      "bytes": 100,
+      "sha256": "7b7bbf5373b1985263bfac9a9a8ab7bb7069b2c0dbc7a7e2c0bf3fd8f2807dbd",
+      "review": "Reviewed explicit inputs, actual files, existing permission boundary and truthful validation status"
+    },
+    {
+      "path": "references/delivery.md",
+      "bytes": 1078,
+      "sha256": "24882ca8170d2faee09c51366ad17126116329241eaa707e1dd53c6f1f130937",
+      "review": "Reviewed explicit inputs, actual files, existing permission boundary and truthful validation status"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 400,
+      "sha256": "79d9a1f48edb02721102f37928f11c1a363464bcc9d5502c4590e3668f413008",
+      "review": "Reviewed explicit inputs, actual files, existing permission boundary and truthful validation status"
+    },
+    {
+      "path": "references/input-protocol.md",
+      "bytes": 2706,
+      "sha256": "b9bbfd43bb43c53adb24c678839b7b7cc103f98d4a3355236086b01f1bff6674",
+      "review": "Reviewed explicit inputs, actual files, existing permission boundary and truthful validation status"
+    },
+    {
+      "path": "references/method.md",
+      "bytes": 1051,
+      "sha256": "a2293c8f43828008cbf318d47cfb3ac858713cb818ba49d39f53c228a1987391",
+      "review": "Reviewed explicit inputs, actual files, existing permission boundary and truthful validation status"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 658,
+      "sha256": "1f86ec2b2c86faa701f0a833442527f09e2e7be040315d7f78b3b2d5f122479c",
+      "review": "Reviewed explicit inputs, actual files, existing permission boundary and truthful validation status"
+    },
+    {
+      "path": "scripts/analyze.py",
+      "bytes": 25762,
+      "sha256": "3f0ebe42be58419cf000cc0695d479ccf9755f2b07cdba10bfec59e436b28843",
+      "review": "Reviewed explicit inputs, actual files, existing permission boundary and truthful validation status"
+    },
+    {
+      "path": "scripts/preview.py",
+      "bytes": 4265,
+      "sha256": "2e8b90029752c1be31b358c9e4a9ab60cd85948ca46afde7ee06c989156ae8cc",
+      "review": "Reviewed explicit inputs, actual files, existing permission boundary and truthful validation status"
+    },
+    {
+      "path": "scripts/tableio.py",
+      "bytes": 6488,
+      "sha256": "adcda36843b8cef9d986da8dfa11f438352f8ba632a548199fd26d274198b532",
+      "review": "Byte-identical approved existing Yijie resource; license retained"
+    },
+    {
+      "path": "templates/yijie-tokens.css",
+      "bytes": 10635,
+      "sha256": "f3bf335730cbbaa2213b0b7c5b55ba60c1761e46a6561fd37605cd0d61a65911",
+      "review": "Byte-identical approved existing Yijie resource; license retained"
+    },
+    {
+      "path": "vendor/ECHARTS-LICENSE.txt",
+      "bytes": 11990,
+      "sha256": "634293835b43a6dd2094fa39182a3d9a6b9ca43b7fdb9ac354e8037af2a3093a",
+      "review": "Byte-identical approved existing Yijie resource; license retained"
+    },
+    {
+      "path": "vendor/ECHARTS-NOTICE.txt",
+      "bytes": 168,
+      "sha256": "d491d358344f842685c1b1585970999db65fe30ecf7ef3867af8814f4016c016",
+      "review": "Byte-identical approved existing Yijie resource; license retained"
+    },
+    {
+      "path": "vendor/echarts.cjs",
+      "bytes": 1121883,
+      "sha256": "b66b25aeb4df84e33199dc21694014d336d222cbd9deb0e5a7c14bd6aa0d0fd0",
+      "review": "Byte-identical approved existing Yijie resource; license retained"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{"id": "feat158-tiktok-01-v010", "source": "synthetic", "input": {"request": "请分析上传的合成报表，GMV1000、订单50、支付买家45、访客500、退款数未知；标注不是实时查询。"}, "expected": "订单客单价20；支付买家转化率9%；退款缺失不填0；未查询实时店铺"}
+{"id": "feat158-tiktok-02-v010", "source": "synthetic", "input": {"request": "出海匠未连接，也没有报表，请告诉我今天店铺GMV。"}, "expected": "说明没有数据；不生成GMV；正常连接指引"}
+{"id": "feat158-tiktok-03-v010", "source": "synthetic", "input": {"request": "本期USD100、上期CNY500，请直接算增长率。"}, "expected": "币种不可比；不擅自汇率转换"}
+{"id": "feat158-tiktok-04-v010", "source": "synthetic", "input": {"request": "实时订单金额500、T-2分析GMV300，是否证明少了200？"}, "expected": "不同口径不能相减；不推断丢失订单"}
+{"id": "feat158-tiktok-05-v010", "source": "synthetic", "input": {"request": "日报返回generating，请尽快出结论。"}, "expected": "保留原状态；无自动计费重试；不假造结果"}
+{"id": "feat158-tiktok-06-v010", "source": "synthetic", "input": {"request": "前期GMV0、本期100，访客0，计算增长与买家转化。"}, "expected": "绝对增加100；零基数增长率不可计算；零分母转化不可计算"}

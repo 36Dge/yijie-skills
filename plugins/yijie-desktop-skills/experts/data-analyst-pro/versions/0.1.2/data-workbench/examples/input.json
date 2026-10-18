@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "title": "合成订单EDA",
+  "question": "核对清洗后金额分布与渠道差异，不作因果判断",
+  "source": "sample.csv",
+  "source_label": "合成验收数据，无真实商家信息",
+  "duplicate_policy": "deduplicate_exact",
+  "columns": [
+    {
+      "name": "id",
+      "type": "identifier",
+      "unit": "不适用",
+      "missing": [
+        "",
+        null
+      ]
+    },
+    {
+      "name": "channel",
+      "type": "category",
+      "unit": "不适用",
+      "missing": [
+        "",
+        null
+      ]
+    },
+    {
+      "name": "day",
+      "type": "date",
+      "format": "%Y-%m-%d",
+      "unit": "日",
+      "missing": [
+        "",
+        null
+      ]
+    },
+    {
+      "name": "amount",
+      "type": "number",
+      "unit": "CNY",
+      "missing": [
+        "",
+        "NA",
+        null
+      ]
+    }
+  ],
+  "group_by": "channel",
+  "expected_groups": [
+    "A",
+    "B",
+    "C"
+  ],
+  "trend": {
+    "column": "day",
+    "start": "2026-10-01",
+    "end": "2026-10-03"
+  },
+  "histograms": {
+    "amount": [
+      0,
+      100,
+      200,
+      300
+    ]
+  }
+}

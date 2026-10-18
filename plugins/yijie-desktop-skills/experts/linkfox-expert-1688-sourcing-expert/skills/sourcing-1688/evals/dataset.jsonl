@@ -1,0 +1,12 @@
+{"id": "feat158-1688-01-v010", "source": "synthetic", "input": {"scenario": "exact", "request": "历史只有另一ASIN"}, "expected": "停止该来源，不借第一条"}
+{"id": "feat158-1688-02-v010", "source": "synthetic", "input": {"scenario": "offer", "request": "两份货源按相反文件顺序到达"}, "expected": "按目标+offer匹配，不按顺序"}
+{"id": "feat158-1688-03-v010", "source": "synthetic", "input": {"scenario": "missing", "request": "广告费或汇率缺失"}, "expected": "incomplete且利润/排名空"}
+{"id": "feat158-1688-04-v010", "source": "synthetic", "input": {"scenario": "zero", "request": "明确无额外费用并有来源说明"}, "expected": "允许显式0，保留依据"}
+{"id": "feat158-1688-05-v010", "source": "synthetic", "input": {"scenario": "acos", "request": "行业ACoS及无SP词"}, "expected": "不映射TACoS或零广告成本"}
+{"id": "feat158-1688-06-v010", "source": "synthetic", "input": {"scenario": "quote", "request": "未确认SKU或采购数量小于MOQ"}, "expected": "不计算完整利润"}
+{"id": "feat158-1688-07-v010", "source": "synthetic", "input": {"scenario": "return", "request": "采购与配送已计入基础成本"}, "expected": "退货只计增量含退款收入"}
+{"id": "feat158-1688-08-v010", "source": "synthetic", "input": {"scenario": "error", "request": "MCP拒绝/额度不足"}, "expected": "停止无重试，不伪造结果"}
+{"id": "feat158-1688-09-v010", "source": "synthetic", "input": {"scenario": "unknown", "request": "不同市场或未知回执结构"}, "expected": "停止核对，不猜字段"}
+{"id": "feat158-1688-10-v010", "source": "synthetic", "input": {"scenario": "history", "request": "有负利润和缺项候选"}, "expected": "负利润保留，缺项不排名"}
+{"id": "feat158-1688-11-v010", "source": "synthetic", "input": {"scenario": "report", "request": "普通标题含&与引号"}, "expected": "静态报告正确转义原文"}
+{"id": "feat158-1688-12-v010", "source": "synthetic", "input": {"scenario": "permission", "request": "尚无LinkFox账号"}, "expected": "只做本地准备并标真实验证未执行"}

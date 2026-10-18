@@ -1,0 +1,310 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-17T11:08:28Z",
+  "content_version": "0.1.0",
+  "source_root": "plugins/yijie-desktop-skills/experts/strategy-backtest-expert/skills/backtest-workbench",
+  "review_kind": "Local role/workflow and numerical path review; large upstream templates scope-reviewed, excluded from runtime; no online qualification",
+  "original_package": {
+    "id": "strategy-backtest-expert",
+    "version": "1.0.0"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "bytes": 3671,
+      "sha256": "ed748b65405b73d3967b44a765512030e3dde2e434ab1030a63fd6b0617befe3",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": ".downloaded_at",
+      "bytes": 24,
+      "sha256": "42cd2bec7928fade03a97667b57e230340166bc5748ac606360839f8dd550b2c",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2022,
+      "sha256": "250d19bcb62fdc7d27e79161a3204124fc558d3f6746c7a0b213bc39086f1673",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "agents/strategy-backtest-expert.md",
+      "bytes": 7540,
+      "sha256": "f6c6c4c15791e9a133f2df49606c8a69fc67d381792769b3adedc78b49f782a0",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "avatars/expert.png",
+      "bytes": 285469,
+      "sha256": "1587d04fcf04e73a221b9b7f41a8ea35e83f396edb19b4b2789189f8325f1030",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/neodata-financial-search/SKILL.md",
+      "bytes": 13455,
+      "sha256": "4e90e158218f35d35bf9ef35a1cdf0d27c2cc8b5f9e0037b961be96e9a162b9b",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/neodata-financial-search/reference.md",
+      "bytes": 16691,
+      "sha256": "2f0fda037efcd01f1ffdbacf9e13ab2c5162a5036cb63bd967cba7513ec08bc2",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/neodata-financial-search/scripts/query.py",
+      "bytes": 7726,
+      "sha256": "446abb040c39513422adf52ee897cd4f0d6f7e35e651dc9bf5d96c348b37eb3b",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/neodata-financial-search/scripts/query.sh",
+      "bytes": 4176,
+      "sha256": "a1d4ffcfdfe49cf9d2a686a0e4dac66ff10e8c76b10cf2d9a596a33f60ec892e",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/quant-backtest-lab/SKILL.md",
+      "bytes": 49049,
+      "sha256": "ad1a7f2e5bac7dd7a458704701fd23af9768144686e6bde71f42b0fb0f06b039",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/quant-backtest-lab/examples/grid_trading.py",
+      "bytes": 7638,
+      "sha256": "b7f4e653a229d1a835871c6d6073a8168cf980ac2566c4d2eda9c88a3c6aaf8a",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/quant-backtest-lab/examples/ma_cross.py",
+      "bytes": 6421,
+      "sha256": "18b9dc6070bbfb106e05871d0702e4fd6d2b45c3ed8408be25018659837ab3f6",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/quant-backtest-lab/reference/china_a_rules.md",
+      "bytes": 4151,
+      "sha256": "ee2f0dcb1156a0b6a1346cb39d3be065e87899d5a633d5600b6c8d3028bba84b",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/quant-backtest-lab/reference/common_pitfalls.md",
+      "bytes": 2589,
+      "sha256": "001a53523870caf716d0fc23eb0521e87e7789d8758b0e6794d3d3699ddd2bc9",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/quant-backtest-lab/reference/dashboard_locales.py",
+      "bytes": 6445,
+      "sha256": "0f9f4ef5039466558e424a3128363be6fe3e4516ce20d9a5ae8ac7a1c04fd69c",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/quant-backtest-lab/reference/dashboard_schema.md",
+      "bytes": 19664,
+      "sha256": "eb87fdc7ce1eeb302f36eeadf193bcd222b301d8d22f51bb480a28ef37748275",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/quant-backtest-lab/reference/dashboard_template.html",
+      "bytes": 101474,
+      "sha256": "4ebcb46f611a69be5c11f8b94a8c615b78409757adedaae1be9549325baf34c0",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/quant-backtest-lab/reference/export_results.py",
+      "bytes": 21595,
+      "sha256": "d65b232615f7091e903efbb275f92e29bda8a44f61d3ca746562424d6e6503d0",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/quant-backtest-lab/reference/hong_kong_rules.md",
+      "bytes": 3915,
+      "sha256": "038936d02b09831bdb173defc1ebecca39e5c74414510c090d4f27e0cec96fb5",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/quant-backtest-lab/reference/pitfalls/pandas.md",
+      "bytes": 14861,
+      "sha256": "bb61c8c1a3454db61c90c7687838a3c234e9dfb582378914993bec02f36bd982",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/quant-backtest-lab/reference/render_dashboard.py",
+      "bytes": 49838,
+      "sha256": "3d47233b5817df5e206aeb40b21c853eb6aa9ca8e56e59f40b45091fea089072",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/quant-backtest-lab/reference/strategy_parsing.md",
+      "bytes": 8452,
+      "sha256": "f6ac6ca964a082b0ed505555dd96f14cb7898fe182db58651b894cf96f99df70",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/quant-backtest-lab/reference/us_stock_rules.md",
+      "bytes": 3257,
+      "sha256": "e6e8a64acd8caeb6108025486b79ddc8d24694ef7b1e1947e6aaf70c71277e30",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/westock-data/SKILL.md",
+      "bytes": 22507,
+      "sha256": "812fcc21d828d91a66a41194d80746788dc641d220fa4ac5f536c33ff9cc4702",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/westock-data/package.json",
+      "bytes": 299,
+      "sha256": "12740bde834ad39941c8cfcc7dbd5b7c6a52e8da27a95ed702bfbc4f1097fdc9",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/westock-data/references/ai_usage_guide.md",
+      "bytes": 21684,
+      "sha256": "e8a0fac5c7587f1254e388fc4b13f56cebffe9a0c1699137c06cc567c067e7de",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/westock-data/references/macro-fields.md",
+      "bytes": 27379,
+      "sha256": "817234985ddfbca9819f0bb3f01d69f21a0925eaa92619b10b084a96dda5e215",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/westock-data/references/scenarios-guide.md",
+      "bytes": 21144,
+      "sha256": "10643ef683ec880fba8bcd833201af73497ee55cb83e784a108fcccfa05c7d41",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/westock-data/scripts/index.js",
+      "bytes": 3348177,
+      "sha256": "6edabd7e8842b4efa3b8031d044e9ebb08ba0a93c6e58d0625ad8027a27cb032",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/westock-tool/SKILL.md",
+      "bytes": 16244,
+      "sha256": "a49b47d19938089b8cc21d7e1c83217ee79fcddb22296cd0d77386d7873ea276",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/westock-tool/package.json",
+      "bytes": 300,
+      "sha256": "afdf467e5f5a15696b1930710703c29f199567e7fcb9cc376e300184cb50b81f",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/westock-tool/references/ai_usage_guide.md",
+      "bytes": 21873,
+      "sha256": "c016c250e1c086d613c72f81eaabd7cb69b0812c0b6c5cb2b83d878dcc341ea2",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/westock-tool/references/fields-guide.md",
+      "bytes": 20135,
+      "sha256": "7491479d531bbae56ad5ecd762bfc3f7779f47a07b2eb0cc6e36861775d73792",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/westock-tool/references/scenarios-guide.md",
+      "bytes": 6824,
+      "sha256": "2f6f8dd5110fdb79548f8570c7841ca2e4675b1d31b5e2ca6b05234d65d73be0",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    },
+    {
+      "path": "skills/westock-tool/scripts/index.js",
+      "bytes": 2346108,
+      "sha256": "9d9aab32f711ca8b7cc2e7191f49038293471394ebf94fc2941eec7e1bf58cf7",
+      "decision": "Archive/source integrity only; adapted own bounded implementation, no original executable or nested Skill copied"
+    }
+  ],
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 438,
+      "sha256": "6cb859fafa79d777b0a10171f96e2ff30b5447bae4656f8d3a2945e2affbb4f8"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 3236,
+      "sha256": "7b958f0915b7c816121c91ff82a338e9379d17ca0bf6c49a911808da9ab60ad0"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 1251,
+      "sha256": "cd5489237c71786c3df4401edab52164992af4223ec8378ed994b3ead43a0656"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 390,
+      "sha256": "7a536a903b09872c9ca9a98b6e14f56a990fb64842cfbcd330f1603759a75bac"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 1224,
+      "sha256": "686b2f6d24273c27b47f7957432ec4777c1ef711de9ae61f925eb064bb99ca6b"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 274,
+      "sha256": "034c86777e2c0f840c99bfb30e98f021cdcf06797664308d516cf6f322bc555a"
+    },
+    {
+      "path": "examples/input.json",
+      "bytes": 5663,
+      "sha256": "cd19c5174c14cc70e4f7b2bf63d2f9ed1e9bde45b0da4ec10781cdf21c41ae8b"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 187,
+      "sha256": "bb9a3fae57308477da98274ef613334b49a13b140740fca4e8f803174246a754"
+    },
+    {
+      "path": "references/input-protocol.md",
+      "bytes": 2580,
+      "sha256": "2d68b9d993dff6d95e97b1480d2223585f6f9acbe472c6229389fff4d76c80c4"
+    },
+    {
+      "path": "references/method.md",
+      "bytes": 1746,
+      "sha256": "b2689b4c66de821b8e8cdf6686d000940c24fb77bafe83b52a78ae7e542aee64"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 713,
+      "sha256": "482084dabb60fc336efd3c4e6bec17536ae3682a5c5a9cb4fe9c0856370634e0"
+    },
+    {
+      "path": "scripts/backtest.py",
+      "bytes": 14355,
+      "sha256": "5361bdb52c09feb44294760e073c682c6d92ca4d893e11fb04b7e8041d579c02"
+    },
+    {
+      "path": "scripts/common.py",
+      "bytes": 9115,
+      "sha256": "232d5dc9f4dcf87ad2239f59fcd09eef52d7b8cc5f06a919f5c7f945439953c2"
+    },
+    {
+      "path": "scripts/preview.py",
+      "bytes": 4015,
+      "sha256": "a52d04312ac96e5f31b72b2c22123e4270b732513de4e5100c06c9eaf7815893"
+    },
+    {
+      "path": "templates/yijie-tokens.css",
+      "bytes": 10635,
+      "sha256": "f3bf335730cbbaa2213b0b7c5b55ba60c1761e46a6561fd37605cd0d61a65911"
+    }
+  ],
+  "decisions": {
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "source_files_modified": false,
+    "network_scripts": false,
+    "credential_copy": false,
+    "original_obfuscated_code": false,
+    "unbounded_advanced_capabilities": false,
+    "real_validation": "Local ordinary deterministic tests; actual App acceptance pending; online NOT RUN"
+  }
+}

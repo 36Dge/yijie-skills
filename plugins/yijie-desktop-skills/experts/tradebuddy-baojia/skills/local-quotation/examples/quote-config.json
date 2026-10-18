@@ -1,0 +1,32 @@
+{
+  "quote_id": "SYN-Q001",
+  "date": "2026-10-16",
+  "supplier": "合成供应商甲",
+  "customer": "合成客户乙",
+  "currency": "CNY",
+  "currency_decimals": 2,
+  "tax_mode": "excluded",
+  "tax_rate": "0.13",
+  "freight": "12.50",
+  "freight_basis": "final_amount",
+  "source": "合成报价输入，非真实商家",
+  "terms": "样例：交货与付款待确认",
+  "items": [
+    {
+      "sku": "A-01",
+      "name": "连接件",
+      "spec": "M6",
+      "unit": "件",
+      "quantity": "3",
+      "unit_price": "19.995"
+    },
+    {
+      "sku": "B-02",
+      "name": "支架",
+      "spec": "S",
+      "unit": "件",
+      "quantity": "2",
+      "unit_price": "8.25"
+    }
+  ]
+}

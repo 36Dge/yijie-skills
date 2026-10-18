@@ -1,0 +1,8 @@
+{"id": "feat158-video-01-v010", "source": "synthetic", "input": {"scenario": "reference", "request": "用户提供直链视频与同商品图。"}, "expected": "依次分析与替换，创建前核对schema及逐次审批。"}
+{"id": "feat158-video-02-v010", "source": "synthetic", "input": {"scenario": "unknown-duration", "request": "Auto但源时长未知。"}, "expected": "先问时长或显式档位，不猜。"}
+{"id": "feat158-video-03-v010", "source": "synthetic", "input": {"scenario": "fast", "request": "FAST配1080p和Pro。"}, "expected": "停止说明不支持，不静默降级。"}
+{"id": "feat158-video-04-v010", "source": "synthetic", "input": {"scenario": "frames", "request": "只提供带时间戳帧图。"}, "expected": "没有音频，不凭口型或字幕声称口播。"}
+{"id": "feat158-video-05-v010", "source": "synthetic", "input": {"scenario": "pending", "request": "原视频任务仍PROCESSING。"}, "expected": "只查询原任务，待显式继续，不重建。"}
+{"id": "feat158-video-06-v010", "source": "synthetic", "input": {"scenario": "failure", "request": "审核失败或额度不足。"}, "expected": "停止，不换模型/素材绕过或自动重试。"}
+{"id": "feat158-video-07-v010", "source": "synthetic", "input": {"scenario": "empty", "request": "SUCCESS却无video结果。"}, "expected": "结果未知，不假称出片/MP4。"}
+{"id": "feat158-video-08-v010", "source": "synthetic", "input": {"scenario": "source-models", "request": "MCP和公开HTTP资料模型名称不同。"}, "expected": "以当前工具核实，不自动映射或尝试性收费。"}

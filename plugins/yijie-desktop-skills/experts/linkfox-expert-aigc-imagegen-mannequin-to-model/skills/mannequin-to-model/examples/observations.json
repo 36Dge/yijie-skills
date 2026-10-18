@@ -1,0 +1,19 @@
+{
+  "stage": "query_image",
+  "source_operation_id": "synthetic-tool-call-4",
+  "expected_task_id": "synthetic-image-1",
+  "mcp_result": {
+    "isError": false,
+    "structuredContent": {
+      "taskId": "synthetic-image-1",
+      "status": "SUCCESS",
+      "resultList": [
+        {
+          "id": "image-1",
+          "url": "https://images.example.com/generated.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
+}

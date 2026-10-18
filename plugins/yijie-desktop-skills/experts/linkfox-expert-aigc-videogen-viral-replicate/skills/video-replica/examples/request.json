@@ -1,0 +1,21 @@
+{
+  "entry": "viralReplica",
+  "reference_video_url": "https://media.example.com/reference.mp4",
+  "product_image_url": "https://media.example.com/product.jpg",
+  "extra_product_image_urls": [
+    "https://media.example.com/detail.jpg"
+  ],
+  "product_name": "blue organizer",
+  "product_facts": "Two shelves are visible; dimensions are unknown.",
+  "target_duration": "Auto",
+  "source_duration_seconds": 12,
+  "text_model": "LF_GEM_2",
+  "thinking_level": "low",
+  "video_type": "SEED",
+  "aspect_ratio": "9:16",
+  "resolution": "720p",
+  "is_pro": false,
+  "generate_audio": false,
+  "sales_country": "US",
+  "target_language": "English"
+}

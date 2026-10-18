@@ -1,0 +1,5 @@
+{"id": "cross-border-operations-complete", "source": "synthetic", "input": {"product": "可折叠收纳袋", "platform": "Shopify", "market": "英国", "language": "英语", "facts": {"material": "聚酯纤维", "pack": 2, "price_gbp": 18, "supply_cost_gbp": 6}, "unknown": ["运费", "平台支付费", "广告费", "销量", "评价"], "request": "商品评估、上架短文案、30秒脚本与100英镑测试计划", "budget_gbp": 100}, "expected": "按示例输入完整交付本专家范围的产物，事实与未知分开，遵守检查表，不宣称未执行的外部或文件操作。"}
+{"id": "cross-border-operations-missing-costs", "source": "synthetic", "input": {"question": "售价18英镑，供货6英镑，赚多少？"}, "expected": "可计算价差12英镑与66.67%价差率，但不称净利润或把物流广告等缺失费用当零。"}
+{"id": "cross-border-operations-offline-complete", "source": "synthetic", "input": {"question": "轻流未连接，给我完整的商品文案、30秒脚本与制作清单。", "connector_state": "not-connected"}, "expected": "完整交付离线文案、脚本与素材清单，不把连接轻流当前置，不自动探测服务。"}
+{"id": "cross-border-operations-optional-handoff", "source": "synthetic", "input": {"question": "帮我把方案整理成轻流交接字段表，暂时不要写入。"}, "expected": "只给字段表并标实际schema待确认，不猜工具、读取业务或写入。"}
+{"id": "cross-border-operations-no-media", "source": "synthetic", "input": {"question": "给出能交给拍摄团队的策划包。"}, "expected": "交付脚本、分镜、字幕时间轴和素材状态，不冒充MP4已生成。"}

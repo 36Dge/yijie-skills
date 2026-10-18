@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "symbol": "SYNTHETIC-ONLY",
+  "currency": "CNY",
+  "timezone": "Asia/Shanghai",
+  "frequency": "daily",
+  "price_adjustment": "raw",
+  "corporate_actions": "none-in-window",
+  "universe_selection": "Explicit synthetic single asset, no historical screening or survivorship claim.",
+  "assumption_rationale": "Ordinary hand-check fixture; dates are a synthetic daily session calendar, not an exchange calendar.",
+  "sources": [
+    {
+      "id": "fixture",
+      "kind": "synthetic",
+      "locator": "example synthetic bars and calendar",
+      "as_of": "2024-01-22",
+      "description": "普通合成价格，不是真实行情。"
+    }
+  ],
+  "price_source_id": "fixture",
+  "calendar_source_id": "fixture",
+  "start": "2024-01-04",
+  "end": "2024-01-22",
+  "initial_cash": 10000,
+  "annual_sessions": 252,
+  "risk_free_annual": 0,
+  "calendar": [
+    "2024-01-01",
+    "2024-01-02",
+    "2024-01-03",
+    "2024-01-04",
+    "2024-01-05",
+    "2024-01-06",
+    "2024-01-07",
+    "2024-01-08",
+    "2024-01-09",
+    "2024-01-10",
+    "2024-01-11",
+    "2024-01-12",
+    "2024-01-13",
+    "2024-01-14",
+    "2024-01-15",
+    "2024-01-16",
+    "2024-01-17",
+    "2024-01-18",
+    "2024-01-19",
+    "2024-01-20",
+    "2024-01-21",
+    "2024-01-22"
+  ],
+  "bars": [
+    {
+      "date": "2024-01-01",
+      "open": 10,
+      "close": 10.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-02",
+      "open": 10,
+      "close": 10.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-03",
+      "open": 10,
+      "close": 10.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-04",
+      "open": 10,
+      "close": 10.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-05",
+      "open": 11,
+      "close": 11.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-06",
+      "open": 12,
+      "close": 12.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-07",
+      "open": 11,
+      "close": 11.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-08",
+      "open": 10,
+      "close": 10.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-09",
+      "open": 9,
+      "close": 9.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-10",
+      "open": 10,
+      "close": 10.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-11",
+      "open": 11,
+      "close": 11.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-12",
+      "open": 12,
+      "close": 12.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-13",
+      "open": 13,
+      "close": 13.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-14",
+      "open": 12,
+      "close": 12.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-15",
+      "open": 11,
+      "close": 11.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-16",
+      "open": 10,
+      "close": 10.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-17",
+      "open": 11,
+      "close": 11.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-18",
+      "open": 12,
+      "close": 12.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-19",
+      "open": 13,
+      "close": 13.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-20",
+      "open": 14,
+      "close": 14.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-21",
+      "open": 13,
+      "close": 13.5,
+      "buyable": true,
+      "sellable": true
+    },
+    {
+      "date": "2024-01-22",
+      "open": 12,
+      "close": 12.5,
+      "buyable": true,
+      "sellable": true
+    }
+  ],
+  "execution": {
+    "signal_timing": "close",
+    "fill_timing": "next-session-open",
+    "unfilled_policy": "cancel",
+    "end_position": "mark-to-close",
+    "lot_size": 100,
+    "minimum_holding_sessions": 1,
+    "allocation": "0.5",
+    "buy_commission": "0.001",
+    "sell_commission": "0.001",
+    "sell_tax": "0.001",
+    "slippage": "0.001",
+    "minimum_commission": 1
+  },
+  "strategy": {
+    "type": "close_signals",
+    "source_id": "fixture",
+    "signals": [
+      {
+        "date": "2024-01-02",
+        "known_at_close": "2024-01-02",
+        "action": "buy"
+      },
+      {
+        "date": "2024-01-04",
+        "known_at_close": "2024-01-04",
+        "action": "buy"
+      },
+      {
+        "date": "2024-01-06",
+        "known_at_close": "2024-01-06",
+        "action": "sell"
+      },
+      {
+        "date": "2024-01-08",
+        "known_at_close": "2024-01-08",
+        "action": "buy"
+      },
+      {
+        "date": "2024-01-10",
+        "known_at_close": "2024-01-10",
+        "action": "sell"
+      },
+      {
+        "date": "2024-01-12",
+        "known_at_close": "2024-01-12",
+        "action": "buy"
+      },
+      {
+        "date": "2024-01-14",
+        "known_at_close": "2024-01-14",
+        "action": "sell"
+      },
+      {
+        "date": "2024-01-16",
+        "known_at_close": "2024-01-16",
+        "action": "buy"
+      },
+      {
+        "date": "2024-01-18",
+        "known_at_close": "2024-01-18",
+        "action": "sell"
+      },
+      {
+        "date": "2024-01-21",
+        "known_at_close": "2024-01-21",
+        "action": "buy"
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+import assert from "node:assert/strict";
+import { execFile } from "node:child_process";
+import { mkdtemp, readFile, writeFile, rm, access } from "node:fs/promises";
+import os from "node:os";
+import path from "node:path";
+import test from "node:test";
+import { promisify } from "node:util";
+const exec = promisify(execFile);
+const quote = path.resolve("plugins/yijie-desktop-skills/experts/tradebuddy-baojia/skills/local-quotation");
+const report = path.resolve("plugins/yijie-desktop-skills/experts/report-viz-expert/versions/0.1.1/local-data-report");
+const json = async p => JSON.parse(await readFile(p, "utf8"));
+async function workspace(run) {
+  const cwd = await mkdtemp(path.join(os.tmpdir(), "yijie-local-experts-"));
+  try { await run(cwd); } finally { await rm(cwd, { recursive: true, force: true }); }
+}
+const quoteRun = (cwd, args) => exec("python3", ["-B", path.join(quote, "scripts/quotation.py"), ...args], { cwd });
+const reportRun = (cwd, args) => exec(process.execPath, [path.join(report, "scripts/build_report.cjs"), ...args], { cwd });
+test("quotation computes decimal line tax and actual workbook formulas; revises ledger without changing history", async () => workspace(async cwd => {
+  const config = await json(path.join(quote, "examples/quote-config.json"));
+  const first = path.join(cwd, "first.json"); await writeFile(first, JSON.stringify(config));
+  await quoteRun(cwd, ["--config", first, "--output-dir", "v1"]);
+  const calc = await json(path.join(cwd, "v1/calculation.json"));
+  assert.deepEqual(calc.totals, { net: "76.49", tax: "9.95", gross: "86.44", freight: "12.50", grand_total: "98.94" });
+  const old = await readFile(path.join(cwd, "v1/ledger.xlsx"));
+  config.quote_id = "SYN-Q002"; config.tax_mode = "included";
+  config.items = [{ ...config.items[0], quantity: "2.5", unit_price: "11.30" }];
+  await writeFile(path.join(cwd, "second.json"), JSON.stringify(config));
+  await quoteRun(cwd, ["--config", "second.json", "--ledger", "v1/ledger.xlsx", "--compare-sku", "A-01", "--output-dir", "v2"]);
+  const second = await json(path.join(cwd, "v2/calculation.json"));
+  assert.deepEqual(second.totals, { net: "25.00", tax: "3.25", gross: "28.25", freight: "12.50", grand_total: "40.75" });
+  const comparison = await json(path.join(cwd, "v2/comparison.json"));
+  assert.equal(comparison.matches, 2); assert.equal(comparison.groups.length, 2);
+  assert.deepEqual(await readFile(path.join(cwd, "v1/ledger.xlsx")), old);
+  // Inspect normal generated workbook XML using a separate reader; no executable fixtures.
+  const result = await exec("python3", ["-B", "-c", "import zipfile,xml.etree.ElementTree as E,json,sys; z=zipfile.ZipFile(sys.argv[1]); r=E.fromstring(z.read('xl/worksheets/sheet1.xml')); ns={'m':'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}; print(json.dumps({c.attrib['r']:[c.findtext('m:f',None,ns),c.findtext('m:v',None,ns)] for c in r.findall('.//m:c',ns) if c.find('m:f',ns) is not None}))", path.join(cwd, "v2/quotation.xlsx")]);
+  const cells = JSON.parse(result.stdout);
+  assert.deepEqual(cells.H2, ["ROUND(ROUND(E2*G2,2)/(1+F2),2)", "25.00"]);
+  assert.deepEqual(cells.J5, ["J3+J4", "40.75"]);
+}));
+test("quotation reads ordinary XLSX item input; missing price rejects before output and zero remains explicit", async () => workspace(async cwd => {
+  const config = await json(path.join(quote, "examples/quote-config.json"));
+  delete config.items[0].unit_price;
+  await writeFile(path.join(cwd, "missing.json"), JSON.stringify(config));
+  await assert.rejects(quoteRun(cwd, ["--config", "missing.json", "--output-dir", "missing"]), e => e.code === 2 && e.stderr.includes("unknown is not zero"));
+  await assert.rejects(access(path.join(cwd, "missing")));
+  const modulePath = path.join(quote, "scripts/quotation.py");
+  const setup = "import importlib.util,sys; from decimal import Decimal; s=importlib.util.spec_from_file_location('q',sys.argv[1]);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.write_xlsx(sys.argv[2],[('Items',[['sku','name','spec','unit','quantity','unit_price'],['001','样品','S','件',Decimal('1.25'),Decimal('0')]])])";
+  await exec("python3", ["-B", "-c", setup, modulePath, path.join(cwd, "items.xlsx")]);
+  delete config.items;
+  await writeFile(path.join(cwd, "config.json"), JSON.stringify(config));
+  await quoteRun(cwd, ["--config", "config.json", "--items", "items.xlsx", "--sheet", "Items", "--compare-sku", "absent", "--output-dir", "complete"]);
+  const result = await json(path.join(cwd, "complete/calculation.json"));
+  assert.equal(result.lines[0].sku, "001"); assert.equal(result.lines[0].quantity, "1.25");
+  assert.equal(result.totals.grand_total, "12.50");
+  assert.equal((await json(path.join(cwd, "complete/comparison.json"))).matches, 0);
+  await assert.rejects(quoteRun(cwd, ["--config", "config.json", "--items", "items.xlsx", "--output-dir", "complete"]), e => e.code === 2);
+}));
+test("report renders offline ECharts SVG/HTML and preserves every field, exact decimal totals and missing vs zero", async () => workspace(async cwd => {
+  await reportRun(cwd, ["--config", path.join(report, "examples/report-config.json"), "--data", path.join(report, "examples/data.csv"), "--output-dir", "report"]);
+  const result = await json(path.join(cwd, "report/validation.json"));
+  assert.equal(result.input_rows, 3); assert.equal(result.chart_pages, 1);
+  assert.deepEqual(result.statistics, [{ name: "渠道甲", known: 3, missing: 0, sum: "220.3", min: "0", max: "120.2" }, { name: "渠道乙", known: 2, missing: 1, sum: "170", min: "80", max: "90" }]);
+  const data = await json(path.join(cwd, "report/data.json"));
+  assert.equal(data[1]["渠道乙"], ""); assert.equal(data[2]["渠道甲"], "0"); assert.equal(data[2]["备注"], "真实零");
+  const html = await readFile(path.join(cwd, "report/report.html"), "utf8");
+  assert.equal([...html.matchAll(/data-row="\d+"/g)].length, 3);
+  assert.doesNotMatch(html, /<script[^>]+src=/i);
+  assert.ok(html.includes("connect-src 'none'"));
+  const svg = await readFile(path.join(cwd, "report/chart-1.svg"), "utf8");
+  assert.match(svg, /<svg/); assert.match(svg, /120.2/); assert.match(svg, /渠道甲/);
+  await exec("python3", ["-B", "-c", "import xml.etree.ElementTree as E,sys;E.parse(sys.argv[1])", path.join(cwd, "report/chart-1.svg")]);
+  const before = await readFile(path.join(cwd, "report/report.html"));
+  await assert.rejects(reportRun(cwd, ["--config", path.join(report, "examples/report-config.json"), "--data", path.join(report, "examples/data.csv"), "--output-dir", "report"]), e => e.code === 2);
+  assert.deepEqual(await readFile(path.join(cwd, "report/report.html")), before);
+}));
+test("report ordinary configuration mistakes reject; long data renders every page without top-N loss", async () => workspace(async cwd => {
+  const config = await json(path.join(report, "examples/report-config.json"));
+  config.series = ["未提供的列"];
+  await writeFile(path.join(cwd, "config.json"), JSON.stringify(config));
+  await assert.rejects(reportRun(cwd, ["--config", "config.json", "--data", path.join(report, "examples/data.csv"), "--output-dir", "absent"]), e => e.code === 2 && e.stderr.includes("series column absent"));
+  await assert.rejects(access(path.join(cwd, "absent")));
+  config.series = ["渠道甲", "渠道乙"];
+  const data = Array.from({ length: 65 }, (_, i) => ({ 月份: `期间${i + 1}`, 渠道甲: "0.1", 渠道乙: i % 2 ? null : "-0.2", 备注: "合成" }));
+  await writeFile(path.join(cwd, "config.json"), JSON.stringify(config)); await writeFile(path.join(cwd, "data.json"), JSON.stringify(data));
+  await reportRun(cwd, ["--config", "config.json", "--data", "data.json", "--output-dir", "complete"]);
+  const result = await json(path.join(cwd, "complete/validation.json"));
+  assert.equal(result.chart_pages, 3); assert.equal(result.input_rows, 65); assert.equal(result.statistics[0].sum, "6.5");
+  assert.equal(result.statistics[1].sum, "-6.6"); assert.equal(result.statistics[1].missing, 32);
+  assert.deepEqual(await json(path.join(cwd, "complete/data.json")), data);
+}));

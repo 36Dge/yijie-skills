@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "platform": "taobao",
+  "store": "合成验收店铺",
+  "currency": "CNY",
+  "window": {
+    "start": "2026-10-01",
+    "end": "2026-10-02"
+  },
+  "datasets": [
+    {
+      "id": "ads",
+      "path": "ads.csv",
+      "platform": "taobao",
+      "store": "合成验收店铺",
+      "kind": "ads",
+      "basis": "按日点击归因，示例同口径",
+      "grain": "day_entity",
+      "source": "合成示例，非真实经营",
+      "header_row": 1,
+      "columns": {
+        "date": {
+          "header": "日期"
+        },
+        "id": {
+          "header": "计划"
+        },
+        "spend": {
+          "header": "消耗",
+          "unit": "CNY"
+        },
+        "ad_gmv": {
+          "header": "归因成交额",
+          "unit": "CNY"
+        },
+        "impressions": {
+          "header": "曝光",
+          "unit": "count"
+        },
+        "clicks": {
+          "header": "点击",
+          "unit": "count"
+        }
+      }
+    }
+  ],
+  "gross_margin": {
+    "value": "40",
+    "unit": "percent",
+    "mode": "scenario",
+    "basis": "按日点击归因，示例同口径",
+    "source": "合成40%情景，不是真实成本"
+  }
+}

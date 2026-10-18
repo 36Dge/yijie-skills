@@ -1,0 +1,2726 @@
+{
+  "schema_version": 1,
+  "feature": "FEAT-158",
+  "release": false,
+  "distribution_channel": "local-development",
+  "bundle_id": "yijie.desktop.skill-packages",
+  "bundle_version": "0.23.0",
+  "manifest_path": "bundle-manifest.json",
+  "manifest_sha256": "cdb89e828a8cfafcfda9368cb0f521289f97e35535f9f73a2372e00b04309cd9",
+  "source": {
+    "repository": "https://github.com/36Dge/yijie-skills.git",
+    "revision_kind": "working-tree",
+    "revision": "d7a850c9d5c5f8e52b8ab8f631800f671acc60dc",
+    "tree_sha256": "5aa6026d1b46ef59e57fe9ff9dc2c93915a28e83c1e3a4c14b0d5576cb128374"
+  },
+  "source_definition": {
+    "path": "plugins/yijie-desktop-skills/experts/bundle-source.json",
+    "sha256": "13a92809471a8085fbda23312a4955613a4a1bc485849bf5e3ef9ddbf387bf37"
+  },
+  "contracts_candidate": {
+    "path": "contracts/experts.candidate.json",
+    "sha256": "bf1616110b0db949b8b8b2d9d5d424d2f28e6224b9096b54df17a07eb9dda457"
+  },
+  "experts": [
+    {
+      "installation_id": "yijie.experts.jd-ops-expert",
+      "expert_id": "jd-ops-expert",
+      "source_id": "yijie-local",
+      "version": "0.1.3",
+      "archive": {
+        "path": "packages/yijie.experts.jd-ops-expert-0.1.3.zip",
+        "sha256": "baa8c8550b8b82b5f1be7bcfc59693c8920ff438fa854e84450936685e3d3b80",
+        "compressed_size_bytes": 101203,
+        "uncompressed_size_bytes": 98041,
+        "file_count": 26
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "a644bf12c4573895d3e6edc7b7a619cc95cc429c910260a5ef16b5f2bce7b6f5",
+        "bytes": 3188
+      },
+      "knowledge_manifest_sha256": "b0718d43a248bdf4dbcebec5623932266a87e7e4f78aad3dbe01e250b6545d08",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "模块与场景索引",
+          "path": "references/index.md",
+          "content_version": "0.1.3",
+          "content_status": "reviewed-reference",
+          "sha256": "ee6106e03c197b5cdd98942f1448732c9284769f49a93f050b72fe01713cafa3",
+          "bytes": 3582
+        },
+        {
+          "id": "source-notes",
+          "title": "来源、状态与引用",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.3",
+          "content_status": "reviewed-reference",
+          "sha256": "4cd38e99412ea85c55048411b6109a7a2e4dc8a11defa3219c54f7630c986e1a",
+          "bytes": 3110
+        },
+        {
+          "id": "m01",
+          "title": "核心认知与新店准备",
+          "path": "references/m01-foundations.md",
+          "content_version": "0.1.3",
+          "content_status": "incomplete",
+          "sha256": "168b975a9e2f5d6b4d6b69b94bae1eecfbde47fbf15f0271904e165f0d2ff8f4",
+          "bytes": 3355
+        },
+        {
+          "id": "m02",
+          "title": "开店入驻准备",
+          "path": "references/m02-entry.md",
+          "content_version": "0.1.3",
+          "content_status": "conflicted",
+          "sha256": "004a25067deed5687c32366c4ce682b64f4a1726abd6c353c240720335dbcae2",
+          "bytes": 3103
+        },
+        {
+          "id": "m03",
+          "title": "上架 SOP",
+          "path": "references/m03-listing.md",
+          "content_version": "0.1.3",
+          "content_status": "reviewed-reference",
+          "sha256": "68177c67dda306cd7e8befcc377545cb1a48bdc17518b17b1e3e2b4c85df4eeb",
+          "bytes": 3712
+        },
+        {
+          "id": "m04",
+          "title": "图片、详情与视频素材",
+          "path": "references/m04-media.md",
+          "content_version": "0.1.3",
+          "content_status": "conflicted",
+          "sha256": "5a959b9fc39a997b4823d1e6868084d6ec17af84d1f1c25e95cd6fd13e590dd5",
+          "bytes": 2954
+        },
+        {
+          "id": "m05",
+          "title": "定价与优惠核算",
+          "path": "references/m05-pricing.md",
+          "content_version": "0.1.3",
+          "content_status": "conflicted",
+          "sha256": "1f1eb7ba2ffd99d2267c995c893e60bbf00c2929a76e2dba51d1cbe668280158",
+          "bytes": 3148
+        },
+        {
+          "id": "m06",
+          "title": "新店与新品冷启动",
+          "path": "references/m06-launch.md",
+          "content_version": "0.1.3",
+          "content_status": "conflicted",
+          "sha256": "5f2c91e5681ff29797bf5847edd3b9ffc727252727ddc3e4bd627f1b0262348d",
+          "bytes": 3043
+        },
+        {
+          "id": "m07",
+          "title": "活动准备与复盘",
+          "path": "references/m07-campaigns.md",
+          "content_version": "0.1.3",
+          "content_status": "reviewed-reference",
+          "sha256": "6df91f3c3622fca850be92d77a33dac6ac87a5eb5b468a2c69e50ddbb0bfe835",
+          "bytes": 2994
+        },
+        {
+          "id": "m08",
+          "title": "推广投放诊断",
+          "path": "references/m08-advertising.md",
+          "content_version": "0.1.3",
+          "content_status": "conflicted",
+          "sha256": "75d60bb2707d4c59d7081ba3607d2c297dc985e646f75c8f083a49ae45f5a7a4",
+          "bytes": 3147
+        },
+        {
+          "id": "m09",
+          "title": "店铺服务质量与复购",
+          "path": "references/m09-health.md",
+          "content_version": "0.1.3",
+          "content_status": "reviewed-reference",
+          "sha256": "16dd0bb8a11ab8034549f4054ac0feaaa9b96bbd1964bb1a723bb442ee44d5d7",
+          "bytes": 2927
+        },
+        {
+          "id": "m10",
+          "title": "客服与售后",
+          "path": "references/m10-service.md",
+          "content_version": "0.1.3",
+          "content_status": "conflicted",
+          "sha256": "b3be2f78af4193d7e0bef903a8192e79c6b599d921eb7dec755972d26c7ea175",
+          "bytes": 2928
+        },
+        {
+          "id": "m11",
+          "title": "发货与履约",
+          "path": "references/m11-fulfillment.md",
+          "content_version": "0.1.3",
+          "content_status": "conflicted",
+          "sha256": "86ee9cef28e3eb79075781f460bd538dd69074a42cb0ada01a6007ab452039c8",
+          "bytes": 2928
+        },
+        {
+          "id": "m12",
+          "title": "商品与经营信息核对",
+          "path": "references/m12-compliance.md",
+          "content_version": "0.1.3",
+          "content_status": "conflicted",
+          "sha256": "6cb9d0211961dede2bbe8bc5182269a58b83041c1c80a8ad0e31cf7b45890c52",
+          "bytes": 3190
+        },
+        {
+          "id": "m13",
+          "title": "经营复盘与诊断",
+          "path": "references/m13-review.md",
+          "content_version": "0.1.3",
+          "content_status": "reviewed-reference",
+          "sha256": "6a6d5b3a4246c2f9f99231d4f537c8d335b4f867a18252c81a20e7661f6a18ba",
+          "bytes": 3402
+        },
+        {
+          "id": "m14",
+          "title": "达人合作与 CPS",
+          "path": "references/m14-creators.md",
+          "content_version": "0.1.3",
+          "content_status": "incomplete",
+          "sha256": "b96006684422dd4ee7ac9a41f238d39bce035c08cf87fb922e7256b38e9f6ca4",
+          "bytes": 2950
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-local-use-authorization-v0.1.3.md",
+        "evidence_sha256": "dc18206b4f9e8352b1bc036faa488c529b1057c194f886d9eff6be4096ba350a"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-jd-ops-content-audit-v0.1.3.json",
+        "sha256": "e15f568b3202061060b168d3a97f7633dc99a8c657b51fea25de9a85871fe0f4"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.xiaohongshu-copywriter",
+      "expert_id": "xiaohongshu-copywriter",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.xiaohongshu-copywriter-0.1.0.zip",
+        "sha256": "1e40bc07c0f33d60554b4ba80dcf687bb00f6953094c8df870cba546117e5a41",
+        "compressed_size_bytes": 15551,
+        "uncompressed_size_bytes": 14151,
+        "file_count": 12
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "d5252e7cfe981635e756f4094ccfede2e3d541ca029295cc530ea57221673362",
+        "bytes": 2561
+      },
+      "knowledge_manifest_sha256": "bae79fdb745aa7f5b8937d19a3e922aa7b43fd27afd15ef83f1b794f11595aeb",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "方法索引",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "824e19a592689d96fda9f7e7d97cb06ff8bb66e274219475b7eff1a613117d28",
+          "bytes": 532
+        },
+        {
+          "id": "note-method",
+          "title": "笔记策划方法",
+          "path": "references/note-method.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "e35b455b4831a3aef072be8267fc72a49358f6cc13c5d3a2fc665ade98fa22e9",
+          "bytes": 1674
+        },
+        {
+          "id": "editorial-check",
+          "title": "事实与编辑检查",
+          "path": "references/editorial-check.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "f581274ca8c5db805964f9fc9b9eb4bf6c007130aee3a2595bf9946f9a9fa438",
+          "bytes": 1011
+        },
+        {
+          "id": "source-notes",
+          "title": "来源与适配说明",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "579f21dd9b70b200df7d37733a25ea10bb32fce83de0083f6d347a920137b87a",
+          "bytes": 636
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-first-three-local-use-authorization-v0.1.0.md",
+        "evidence_sha256": "e49b12be592ee9f86f4ed5d146613b10e1d2d2b91c950312c52e2bd09156d3b3"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-xiaohongshu-copywriter-content-audit-v0.1.0.json",
+        "sha256": "e0735a3b287f7e9707a14eb8e0872de3249244ebf82045173664a802fe75c6b5"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.agentgrid-comic-storyboard-director",
+      "expert_id": "agentgrid-comic-storyboard-director",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.agentgrid-comic-storyboard-director-0.1.0.zip",
+        "sha256": "f46e10ea07ecc1310f2ebada495d03ad00bf46c48cbde312565d146fe5fa273b",
+        "compressed_size_bytes": 30459,
+        "uncompressed_size_bytes": 28661,
+        "file_count": 15
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "022080a8287863d0057f575bc45983877fe3b6b5726b9e10a1cd0fc5ea0acf44",
+        "bytes": 2750
+      },
+      "knowledge_manifest_sha256": "efb351ed85061b96fdab4a761656ce9faf645bff9999151f027702de9b14aeeb",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "资源索引",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "862170fb9a771c9176f51b6000b100ccfd2d87ded71645e778fc50df2d0e2a66",
+          "bytes": 510
+        },
+        {
+          "id": "story-design",
+          "title": "故事与分集设计",
+          "path": "references/story-design.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "84748eea4f7bf1ad43ce7cc1fabd9cdbe80bf4245a8eba25d2566cb6e4d1ed36",
+          "bytes": 1486
+        },
+        {
+          "id": "storyboard-schema",
+          "title": "分镜 JSON 结构",
+          "path": "references/storyboard-schema.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "b56f1b4237c3aa91003a729686d4690bcf80b228de7c6a225316f676fbc06ce8",
+          "bytes": 2198
+        },
+        {
+          "id": "continuity",
+          "title": "连续性与本地校验",
+          "path": "references/continuity.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "37324bc372984745a463ad37338cdcf28a65e6b305baf7735308c5dcfde9170f",
+          "bytes": 1884
+        },
+        {
+          "id": "source-notes",
+          "title": "来源与适配说明",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "220ab92a979ed5ba121fd7c87bb30153567132d208e2171c27b0f9ee54534227",
+          "bytes": 744
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-first-three-local-use-authorization-v0.1.0.md",
+        "evidence_sha256": "e49b12be592ee9f86f4ed5d146613b10e1d2d2b91c950312c52e2bd09156d3b3"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-agentgrid-comic-storyboard-director-content-audit-v0.1.0.json",
+        "sha256": "cd3a4fd5c202f06af405a81bf7663ec012c745ef11757305f28ecf3d79f98452"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.cross-border-ecommerce-operations-expert",
+      "expert_id": "cross-border-ecommerce-operations-expert",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.cross-border-ecommerce-operations-expert-0.1.0.zip",
+        "sha256": "4376da1cc229c0e290eadf5e7cfa9ff0cddab0c3c98ccdfba9058cc981832cc0",
+        "compressed_size_bytes": 24963,
+        "uncompressed_size_bytes": 22965,
+        "file_count": 17
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "8c0f33f998cf7ab7d6c86f03b68d32071289ce2c6f9adfc0433d58a34445c00d",
+        "bytes": 2979
+      },
+      "knowledge_manifest_sha256": "c50afdbe7828bd6ffb920cc3ab11264c867915f748ad46dfb23941e3fae5f994",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "任务索引",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "d099d997b22a59c39860fd8117f46485d293ee94734e9850d16b086d1185f3a1",
+          "bytes": 1043
+        },
+        {
+          "id": "pipeline",
+          "title": "商品评估与运营链路",
+          "path": "references/pipeline.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "9725b8a728a916bfe32b963b97148326459e4889f5c588603dcfd47a007bb0c9",
+          "bytes": 2410
+        },
+        {
+          "id": "image-copy",
+          "title": "主图详情短文案",
+          "path": "references/image-copy.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "4961b96b05e1eb0b7cd3f38b894a833a5404d6fb4e82c2c81317b17aa46a440e",
+          "bytes": 984
+        },
+        {
+          "id": "longform",
+          "title": "营销长文案",
+          "path": "references/longform.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "e1d593db5f21453c199e45438c05c267701458c5bb3198d00b797c5b40b13103",
+          "bytes": 966
+        },
+        {
+          "id": "video-marketing",
+          "title": "视频营销脚本",
+          "path": "references/video-marketing.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "528e0956634d11e856dd95f91531c15dec2c00986a4d787b78d8af4cce13cf59",
+          "bytes": 1132
+        },
+        {
+          "id": "production-plan",
+          "title": "视频制作计划",
+          "path": "references/production-plan.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "cdd2b68b09c6162d61eb0a3959e00212696676cafa1799da8f9c47a785775e8c",
+          "bytes": 1338
+        },
+        {
+          "id": "qingflow-handoff",
+          "title": "轻流可选交接",
+          "path": "references/qingflow-handoff.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "80f9741968d665c431f5c4bd0f303083b544e2f14c578c2dac1bb1453a865d44",
+          "bytes": 1663
+        },
+        {
+          "id": "source-notes",
+          "title": "来源与适配说明",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "4027614ea15b52e86cfa7dcad61f08ee605888bc59efa10e125c18e42fb09623",
+          "bytes": 736
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-first-three-local-use-authorization-v0.1.0.md",
+        "evidence_sha256": "e49b12be592ee9f86f4ed5d146613b10e1d2d2b91c950312c52e2bd09156d3b3"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-cross-border-ecommerce-operations-expert-content-audit-v0.1.0.json",
+        "sha256": "c3b234aaef22b37aa6ea4202c1a278c36a52cdd0fdf1f34d7bb56f3e493f96a0"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.xiaohongshu-copywriter-v011",
+      "expert_id": "xiaohongshu-copywriter",
+      "source_id": "yijie-local",
+      "version": "0.1.1",
+      "archive": {
+        "path": "packages/yijie.experts.xiaohongshu-copywriter-v011-0.1.1.zip",
+        "sha256": "15946933bb84ff398ceb0a3a95e2e7510d2e18767ab943f52aa6c73eb5e93d4b",
+        "compressed_size_bytes": 18227,
+        "uncompressed_size_bytes": 16699,
+        "file_count": 13
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "ccd51e6f357369c9883b82c6d4353f3ccf1976ce0a6e08420b3a78c90da8943b",
+        "bytes": 2187
+      },
+      "knowledge_manifest_sha256": "e40ffb1d55898fa2b25022c5f7547249185d522eef046728f83022d089278d67",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "方法索引",
+          "path": "references/index.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "deae1027110c17df4a01a5d8fda81c0ac85fa294ab346e66ae736463f0775571",
+          "bytes": 643
+        },
+        {
+          "id": "note-method",
+          "title": "笔记策划方法",
+          "path": "references/note-method.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "6534ba51ff7f7a413ffc9ff455989b4e45d557f12e380c42099f4004f45ba4f5",
+          "bytes": 1674
+        },
+        {
+          "id": "editorial-check",
+          "title": "事实与编辑检查",
+          "path": "references/editorial-check.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "c17701d032eaa4fdebe77ce7eaaed756244cbc591e8aef6247498574ac698ab6",
+          "bytes": 1011
+        },
+        {
+          "id": "source-notes",
+          "title": "来源与适配说明",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "fc84ecd18646b3ecd57a094169b43e95a8073a82e1f8789d92f5ce004045ec9b",
+          "bytes": 636
+        },
+        {
+          "id": "claim-ledger",
+          "title": "逐条主张核验",
+          "path": "references/claim-ledger.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "72bbc83da05ca691ed2eabf3aaf6611c6f354282ca2da3740a619fb0ebd13838",
+          "bytes": 2152
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-first-three-local-use-authorization-v0.1.1.md",
+        "evidence_sha256": "c21e0a27b9d565c0be54ecf58b27b76258e6c06d8e01bd485223f87c4991cf26"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-xiaohongshu-copywriter-content-audit-v0.1.1.json",
+        "sha256": "2631346690e04afc7ae7703f77204374f8289378d36ac61b059035461711040f"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.cross-border-ecommerce-operations-expert-v011",
+      "expert_id": "cross-border-ecommerce-operations-expert",
+      "source_id": "yijie-local",
+      "version": "0.1.1",
+      "archive": {
+        "path": "packages/yijie.experts.cross-border-ecommerce-operations-expert-v011-0.1.1.zip",
+        "sha256": "a90b46f1639d0c36f1bdd85c46d656a9cdbb3c6e74eceb4045117dcde6cd149b",
+        "compressed_size_bytes": 27502,
+        "uncompressed_size_bytes": 25376,
+        "file_count": 18
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "995e803f51e8b55d34a3d43b80a7fe9d0b579fcf0fda633506e733499bcc3517",
+        "bytes": 2536
+      },
+      "knowledge_manifest_sha256": "f05e0b11cc3a88c3e4045e3dedb377c305bfb259849b923000fc32b0cf88f307",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "任务索引",
+          "path": "references/index.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "ec58fd7a846c452edc3d254729b0d7fa2711a6e6b1cf33c527053ed238e7f501",
+          "bytes": 1154
+        },
+        {
+          "id": "pipeline",
+          "title": "商品评估与运营链路",
+          "path": "references/pipeline.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "254a3ae708e9fb78b6280dc45c6643b75ff75c8184015c7d4db9d85a66e9e037",
+          "bytes": 2410
+        },
+        {
+          "id": "image-copy",
+          "title": "主图详情短文案",
+          "path": "references/image-copy.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "f8abcb7b23f96549fd3b2d26250bdc9ded275c18d2601660ac7f8510f15dba7c",
+          "bytes": 984
+        },
+        {
+          "id": "longform",
+          "title": "营销长文案",
+          "path": "references/longform.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "430c70b9d71e6eaaa97b8b3d336ef5135356041eb9504f5566a17c1b597759ef",
+          "bytes": 966
+        },
+        {
+          "id": "video-marketing",
+          "title": "视频营销脚本",
+          "path": "references/video-marketing.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "ae284b44db41ee26d45548bae67b179ba791212fee01405211c6689b75d3095e",
+          "bytes": 1132
+        },
+        {
+          "id": "production-plan",
+          "title": "视频制作计划",
+          "path": "references/production-plan.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "ac4007cb0df4782dca4556b28e5ca893795f3c583a3a294f30060890268c78a2",
+          "bytes": 1338
+        },
+        {
+          "id": "qingflow-handoff",
+          "title": "轻流可选交接",
+          "path": "references/qingflow-handoff.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "53aad7211c4e44a691bf36fde26f28d643c47b34a054655ffb8864213ab047f2",
+          "bytes": 1663
+        },
+        {
+          "id": "source-notes",
+          "title": "来源与适配说明",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "19b8efc4640f95a1c01c43bae8154d6282e878a2485f261520213928d94d6596",
+          "bytes": 736
+        },
+        {
+          "id": "claim-ledger",
+          "title": "逐条主张核验",
+          "path": "references/claim-ledger.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "72bbc83da05ca691ed2eabf3aaf6611c6f354282ca2da3740a619fb0ebd13838",
+          "bytes": 2152
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-first-three-local-use-authorization-v0.1.1.md",
+        "evidence_sha256": "c21e0a27b9d565c0be54ecf58b27b76258e6c06d8e01bd485223f87c4991cf26"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-cross-border-ecommerce-operations-expert-content-audit-v0.1.1.json",
+        "sha256": "df97f4c6e2ad867f4c6c78107aea29ef2907ba8bb166b51b8cac79e86dbca90d"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.tradebuddy-baojia",
+      "expert_id": "tradebuddy-baojia",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.tradebuddy-baojia-0.1.0.zip",
+        "sha256": "0ab9bdb13d09af5528f9893932661e8e18a9859e2f7738f7e8d9185fa6f06c11",
+        "compressed_size_bytes": 32952,
+        "uncompressed_size_bytes": 31322,
+        "file_count": 14
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "51bff95e064bbffecafe1dc99c11361dd1e8bb35c58adb7852bd503ad7b434c6",
+        "bytes": 1822
+      },
+      "knowledge_manifest_sha256": "4859c7ff35583cb3624aee2bc6feb5e5adc4e2395312b083836cfefe218af1e1",
+      "knowledge_resources": [
+        {
+          "id": "file-workflow",
+          "title": "本地文件执行",
+          "path": "references/file-workflow.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "33a14357b60be98d74069a4bfd55b1c11787781aa83795be0ea0e6be6710425b",
+          "bytes": 1475
+        },
+        {
+          "id": "index",
+          "title": "任务索引",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "676e5a29456a5ad8c577b196a17fee51c987bc71456ce7286c42cac43dc9785a",
+          "bytes": 374
+        },
+        {
+          "id": "ledger",
+          "title": "台账与同口径历史",
+          "path": "references/ledger.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "081cd2a8a070ecd322fc2f3e19a6c19ef8a74ba72b81e86614af17b8ba949f58",
+          "bytes": 1144
+        },
+        {
+          "id": "quotation",
+          "title": "报价数据与计算",
+          "path": "references/quotation.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "bb1bddc6a43dce5027aba698a67f5e7d4a85a229f8bf1d4620112c54a2c040ce",
+          "bytes": 1491
+        },
+        {
+          "id": "source-notes",
+          "title": "来源与适配决定",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "c46840f5cafc0f2a4a5dc533d5719bfe98ad7dcd77ff68706d47f3af6416ac7b",
+          "bytes": 823
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-second-group-local-use-authorization-v0.1.0.md",
+        "evidence_sha256": "838c6daae5b0b1f33174f9df866ed963d4a14ec8fc570e5bb3b96028b30f8ced"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-tradebuddy-baojia-content-audit-v0.1.0.json",
+        "sha256": "3de6149b3778539978d525f9bac512986ea34675ec23295f7419654f0d12c525"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.report-viz-expert",
+      "expert_id": "report-viz-expert",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.report-viz-expert-0.1.0.zip",
+        "sha256": "3cf0f4d780d3be2fe04d54b41e54175fe2a498b144a20a8803939c1ca880973a",
+        "compressed_size_bytes": 1161843,
+        "uncompressed_size_bytes": 1159839,
+        "file_count": 17
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "c72570255b8b1d042b7f705c279eb2f725f6fd795d7797bf7f1da447eaeb550d",
+        "bytes": 1751
+      },
+      "knowledge_manifest_sha256": "a76af3a084c927fa51505d38035bb2ce63e84e03ce6d89cf523520006b3f4c52",
+      "knowledge_resources": [
+        {
+          "id": "data-method",
+          "title": "数据口径与选图",
+          "path": "references/data-method.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "1ca07e388ce23f2cefdd540b4211c80ea558ae9064c9ac68bf996151b1b78c8b",
+          "bytes": 1242
+        },
+        {
+          "id": "file-workflow",
+          "title": "文件执行与验收",
+          "path": "references/file-workflow.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "8c67c4f43d7e7cd3b3100bcff3c49d79d78812a87f059770e853dc555fbaceb6",
+          "bytes": 1442
+        },
+        {
+          "id": "index",
+          "title": "任务索引",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "1dcbce72e013132c8942b8d82eee32626a1874d99c4e2dfbb656c86582dc670d",
+          "bytes": 293
+        },
+        {
+          "id": "source-notes",
+          "title": "来源与适配决定",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "9f15fd8ca3eaa0063e707143bd278861978ccc6fb3901fc122b62ce799b8edeb",
+          "bytes": 1070
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-second-group-local-use-authorization-v0.1.0.md",
+        "evidence_sha256": "838c6daae5b0b1f33174f9df866ed963d4a14ec8fc570e5bb3b96028b30f8ced"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-report-viz-expert-content-audit-v0.1.0.json",
+        "sha256": "af6ab208de1761e13304abae9f5f251c91a9ac7ba05649beec095c8e57bc6cb1"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.report-viz-expert-v011",
+      "expert_id": "report-viz-expert",
+      "source_id": "yijie-local",
+      "version": "0.1.1",
+      "archive": {
+        "path": "packages/yijie.experts.report-viz-expert-v011-0.1.1.zip",
+        "sha256": "ddd32208840464cae1825987ded332b251b68943233354aaf177082ca4b5afb0",
+        "compressed_size_bytes": 1163739,
+        "uncompressed_size_bytes": 1161613,
+        "file_count": 18
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "49b7be667ff077768b5f8245292602a66085e48d0cd1626267333894a93cf7c4",
+        "bytes": 1765
+      },
+      "knowledge_manifest_sha256": "ea9fd8863d799d082f2f623af34fca79244a30d2b1654eb53010d1b438df328c",
+      "knowledge_resources": [
+        {
+          "id": "data-method",
+          "title": "数据口径与选图",
+          "path": "references/data-method.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "1ca07e388ce23f2cefdd540b4211c80ea558ae9064c9ac68bf996151b1b78c8b",
+          "bytes": 1242
+        },
+        {
+          "id": "file-workflow",
+          "title": "文件执行与验收",
+          "path": "references/file-workflow.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "251618167420e456886f2e982c617b18b37302d1990a9b590b08fe3a5b3ade6c",
+          "bytes": 1763
+        },
+        {
+          "id": "index",
+          "title": "任务索引",
+          "path": "references/index.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "1dcbce72e013132c8942b8d82eee32626a1874d99c4e2dfbb656c86582dc670d",
+          "bytes": 293
+        },
+        {
+          "id": "source-notes",
+          "title": "来源与适配决定",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "bf6f5e4f86527cc16958c755738bb755248d13a6617238b157ca7435e26891ad",
+          "bytes": 1264
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-second-group-local-use-authorization-v0.1.1.md",
+        "evidence_sha256": "dc6297a8aeaf77962475376c593624ac356be6659c36372d8945dba5c0f1f175"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-report-viz-expert-content-audit-v0.1.1.json",
+        "sha256": "afdf9c9ac6f33e55e15adce7d8c408864a024f4d1ce4ab204e258a473ef9a743"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.chuhaijiang-tiktok-shop-operations-expert",
+      "expert_id": "chuhaijiang-tiktok-shop-operations-expert",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.chuhaijiang-tiktok-shop-operations-expert-0.1.0.zip",
+        "sha256": "e01e847dbc6f04f1ef043c4327934d13401456b31440324befa6e4f5d7133cc6",
+        "compressed_size_bytes": 25761,
+        "uncompressed_size_bytes": 24089,
+        "file_count": 14
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "41975a9cabbe53333bd207d2814ef20ebba4f2833e3f7046f7affb2d67efbab8",
+        "bytes": 2855
+      },
+      "knowledge_manifest_sha256": "65dc965fc88eed7ddd99b24c6e7f48ae6855453d5e578384e17ed8733b17761e",
+      "knowledge_resources": [
+        {
+          "id": "file-workflow",
+          "title": "用户报表的本地核对",
+          "path": "references/file-workflow.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "86284dcf1205bda5213968e6dcf086dfe8738e5a6804fee926f6a2eb1eb50dd1",
+          "bytes": 2086
+        },
+        {
+          "id": "index",
+          "title": "任务索引",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "7ec1c4dd80075564fc77c3c7410c38976c4e2c78e83cdf7f5d8a5e81dad512bf",
+          "bytes": 350
+        },
+        {
+          "id": "service-workflow",
+          "title": "出海匠服务与授权流程",
+          "path": "references/service-workflow.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "6c219689da9b20657ccb8a726041f43999135e513e536e173e0484f8283dc3c4",
+          "bytes": 2560
+        },
+        {
+          "id": "shop-diagnosis",
+          "title": "经营诊断与事实边界",
+          "path": "references/shop-diagnosis.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "5b03b56be884a1f63180f0fdb0036a740e578dbf22608358254912e20e16ce26",
+          "bytes": 1293
+        },
+        {
+          "id": "source-notes",
+          "title": "来源、取舍与验证状态",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "4ab665c1a92d634a6e50c08eaaebc49a56735cffb3e22a560926d86e2c1f593f",
+          "bytes": 1208
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-third-group-tiktok-local-use-authorization-v0.1.0.md",
+        "evidence_sha256": "904b9bc9ab691c6f145a4c6dd2184d1ec60784529802d665ecc07bd856bbfce1"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-tiktok-shop-content-audit-v0.1.0.json",
+        "sha256": "8c5252758bbe5a1da4fcd979629ef69a026ebd4de85734d516b190e84a566fd6"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.linkfox-expert-aigc-imagegen-mannequin-to-model",
+      "expert_id": "linkfox-expert-aigc-imagegen-mannequin-to-model",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.linkfox-expert-aigc-imagegen-mannequin-to-model-0.1.0.zip",
+        "sha256": "15df6f894124a21fab1091229b6390de3c900e82d5c505d4ced2cf8825a09e50",
+        "compressed_size_bytes": 28259,
+        "uncompressed_size_bytes": 26599,
+        "file_count": 14
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "042a9acb59429f68adccd0a925fa9d83ea8ba1890b2a1b3f23ecd9049703b80c",
+        "bytes": 3093
+      },
+      "knowledge_manifest_sha256": "613dfc60ae9a6ea1d694064079d75d6a0edbe0bece6ea7530e215f50350fd1dd",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "任务索引",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "a5b33cc343375ba9e3fbb90d11391709d699e8e88434c411eb55a7b8b7e083ac",
+          "bytes": 240
+        },
+        {
+          "id": "image-brief",
+          "title": "制作与服装保真",
+          "path": "references/image-brief.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "ef482c4f622c163db6da1d55982af2128f18d07f7132fb536d8416bc6d6e7f8c",
+          "bytes": 1400
+        },
+        {
+          "id": "tool-workflow",
+          "title": "异步工具流程",
+          "path": "references/tool-workflow.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "9656299b27085fa84115af347d90e19a452553f56473e0c49de88e7a45191c74",
+          "bytes": 2475
+        },
+        {
+          "id": "local-helper",
+          "title": "构参与回执检查",
+          "path": "references/local-helper.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "15dc372aba2856a82d3adfeff0dbdabf35ad30ebfe95365c63e14f02387f9463",
+          "bytes": 1963
+        },
+        {
+          "id": "source-notes",
+          "title": "来源与限制",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "42644afa587e5f264723dc9b40a6ea3f063a93ca4b4ccb7c98b9b624cce33794",
+          "bytes": 1420
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-fourth-group-mannequin-local-use-v0.1.0.md",
+        "evidence_sha256": "48afddbe1e7004a1db7493b4b1c7f96aa7de54e37acf5b364b29d57b64967c03"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-mannequin-content-audit-v0.1.0.json",
+        "sha256": "bab9fe59e1b559fe1548f8511d88d030d9e66a0535cec8f15bc7e91b0bf2339d"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.linkfox-expert-aigc-videogen-viral-replicate",
+      "expert_id": "linkfox-expert-aigc-videogen-viral-replicate",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.linkfox-expert-aigc-videogen-viral-replicate-0.1.0.zip",
+        "sha256": "f6d6b4bc944c25bfd28f0c2e74fef07e96260b34ec821ddf6926e7abd20e540b",
+        "compressed_size_bytes": 36646,
+        "uncompressed_size_bytes": 35012,
+        "file_count": 14
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "770e7c2788bd757ed60c587da5cc7f8ee5d6679bed0910e0c583ede1f83fdbfc",
+        "bytes": 3778
+      },
+      "knowledge_manifest_sha256": "397c14123b678b08ee338376202aa2b0f797e9a68f61ff0af1d4790da34dea6d",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "任务索引",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "0c6ed97fbd71133fdc9f0a49197e8ef2e3f8b545b291861d738e41b41696aaaf",
+          "bytes": 324
+        },
+        {
+          "id": "analysis",
+          "title": "分镜与商品事实",
+          "path": "references/analysis.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "158697e8e39f068cea2ef22aff342d62cb6422575bec72a21f27b82ab800688c",
+          "bytes": 1639
+        },
+        {
+          "id": "tool-workflow",
+          "title": "工具与异步阶段",
+          "path": "references/tool-workflow.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "93ce1a9f873cdc8dc531ab158a61c62ceb71016bf26676622e101d873987a233",
+          "bytes": 2149
+        },
+        {
+          "id": "local-helper",
+          "title": "构参与回执核对",
+          "path": "references/local-helper.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "09140f3272676de3dd95add357a4a65904481bfbd9bb0f7721f9169ff2513b41",
+          "bytes": 2269
+        },
+        {
+          "id": "source-notes",
+          "title": "来源与能力边界",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "60402ac846ac499a9954215841fb2809d0690bfc2b4e5422b5ed051168b36337",
+          "bytes": 1553
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-fifth-group-video-local-use-v0.1.0.md",
+        "evidence_sha256": "289a2f09934ba5b88dd7ffcb9325952a7e29c4bcc3f31837fc976208e00200d6"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-video-content-audit-v0.1.0.json",
+        "sha256": "690c4d501e62640a6554e031557857072b508a8a8984bf425aa145974454e55c"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.linkfox-expert-1688-sourcing-expert",
+      "expert_id": "linkfox-expert-1688-sourcing-expert",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.linkfox-expert-1688-sourcing-expert-0.1.0.zip",
+        "sha256": "35c0e78c81339a163b070c994acf143a2308bb5950546bff5223f169d18c9045",
+        "compressed_size_bytes": 56349,
+        "uncompressed_size_bytes": 54361,
+        "file_count": 17
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "d6539769e26773e8532dce383b1bbbbe042265396057761cddb6b93c7ece27c8",
+        "bytes": 4086
+      },
+      "knowledge_manifest_sha256": "04f2a8dc3ca60ca52fb2200aaf0982a89f910ebd377eaea7e427c4551c457188",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "使用索引",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "6b4aa8ace8429e71e00489c38d6db8dfca5fd4f596d84b5fe519af4cce2dc6d3",
+          "bytes": 383
+        },
+        {
+          "id": "workflow",
+          "title": "检索与交付",
+          "path": "references/workflow.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "2104fd65e02378c91dbb258567e85684a53b780681d140a45d9c688397df1be6",
+          "bytes": 1729
+        },
+        {
+          "id": "source-identity",
+          "title": "来源身份匹配",
+          "path": "references/source-identity.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "84a65c00b963f22264b6e47dde0fcaf57e47c9842a6f4423d17be1c440dd9e12",
+          "bytes": 1776
+        },
+        {
+          "id": "profit-method",
+          "title": "贡献利润与缺项",
+          "path": "references/profit-method.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "54045e997b517be36988442392a0968fb3582f30d2948d8fd7ddb925a992e020",
+          "bytes": 2569
+        },
+        {
+          "id": "tools",
+          "title": "工具与参数",
+          "path": "references/tools.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "0ce5ce63950a767f652773ebd35c4f6381497a339e708d6ae6411c525a8484c7",
+          "bytes": 2022
+        },
+        {
+          "id": "local-helper",
+          "title": "本地构参与计算",
+          "path": "references/local-helper.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "2910b955c6a0dcd1200646257a8699216b3c2384cf0a8d49e870fa9d0ce49bd9",
+          "bytes": 2213
+        },
+        {
+          "id": "source-notes",
+          "title": "来源与边界",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "97f56aa8d980062182e91db6cc54bb87535ede6f35f2bf8dcf6cb246e91dd9b6",
+          "bytes": 1486
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-sixth-group-1688-local-use-v0.1.0.md",
+        "evidence_sha256": "14e12b5f0fdae934cd239fe48f2240c474776045f45d85be4c7e48a1688b4ea4"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-1688-content-audit-v0.1.0.json",
+        "sha256": "2d91965d96a5ac5d8f96b0f9c226976a40dbe0cb30b138d753aa4eb284fbf65c"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.market-researcher",
+      "expert_id": "market-researcher",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.market-researcher-0.1.0.zip",
+        "sha256": "de5c29c9943c9b40ee58dce7ea3851494cc0b36b1a307309643b6be1b3b80f50",
+        "compressed_size_bytes": 61269,
+        "uncompressed_size_bytes": 59247,
+        "file_count": 17
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "6073fe8f467dcc276835351705753f1716f4254350be97257ef99a7366b9dcee",
+        "bytes": 4447
+      },
+      "knowledge_manifest_sha256": "c667fd2105ecb2085e202affd2cdfd6187eceed3da918efa640aeb0472d2092f",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "研究索引",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "ba810aba58deac141a3f97462407bd0359aab9bdedca8a3fb2b2070c13c08d5a",
+          "bytes": 367
+        },
+        {
+          "id": "research-method",
+          "title": "研究流程",
+          "path": "references/research-method.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "5220be8da90b2b9be354b97399a8af4697690260c9c321e01eb6967042e0859f",
+          "bytes": 1168
+        },
+        {
+          "id": "data-and-search",
+          "title": "数据与搜索",
+          "path": "references/data-and-search.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "54374cfd830ce5dd744f89f11692084fbee25f920f6d61272a33345c56624d90",
+          "bytes": 1936
+        },
+        {
+          "id": "evidence-and-comps",
+          "title": "证据与可比计算",
+          "path": "references/evidence-and-comps.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "cb8c620a5d43e5a104763d25d3ca4bd330f04e7216c48dea61dff78879b61ad1",
+          "bytes": 2254
+        },
+        {
+          "id": "artifacts",
+          "title": "产物与依赖",
+          "path": "references/artifacts.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "13ade2bdab5df1f95254bbac70dfea316a62c9c9b200fd949f7a40b09e023f2f",
+          "bytes": 1157
+        },
+        {
+          "id": "local-helper",
+          "title": "本地命令",
+          "path": "references/local-helper.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "628688751455d6238cef14c6f8fab655f9b08942c4c4149e13027b1d0a575e1e",
+          "bytes": 1570
+        },
+        {
+          "id": "source-notes",
+          "title": "来源与限制",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "1e9fa94273b6da64dda3127abbc7a8d3feb27ac34a7dafd39d8a3c3dff8443a1",
+          "bytes": 1110
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-seventh-group-research-local-use-v0.1.0.md",
+        "evidence_sha256": "e41f148bfefa6610a07fa8fc3c838547852e65d90be3bdc16574162896067352"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-research-content-audit-v0.1.0.json",
+        "sha256": "c9bb79e3bbf6d5752d981c8ebd099ed600c9672f73ec8ecff45de57d0f2bdac2"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.product-management",
+      "expert_id": "product-management",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.product-management-0.1.0.zip",
+        "sha256": "45d160b451fb51e3697a9cd249122efc5a845f0944a75a892514627ef841570d",
+        "compressed_size_bytes": 37318,
+        "uncompressed_size_bytes": 35124,
+        "file_count": 19
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "4b5823f92b784fb91f460f01cde7c469c4a1c912898f0e5abf2dfbdbbd2bca5a",
+        "bytes": 1650
+      },
+      "knowledge_manifest_sha256": "4cf73428e161fa9dab27cdcb44d99531a263bc4b039fa174d7ef2fb7ed0a8132",
+      "knowledge_resources": [
+        {
+          "id": "competitive",
+          "title": "竞品比较",
+          "path": "references/competitive.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "524bacbf61aef7eeaf5fb20dd5f605dc2f0ce6ebd9f551744ee67db1ce53cf41",
+          "bytes": 616
+        },
+        {
+          "id": "feature-spec",
+          "title": "PRD与验收",
+          "path": "references/feature-spec.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "0a08c2b9b9c6190738da05d11cb87bfd3beb601461c821fc58965c931d8fafd0",
+          "bytes": 504
+        },
+        {
+          "id": "index",
+          "title": "产品管理索引",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "b483157a29c6863ef219a762281f0a1ed128c69a65c163ef1939d89a249ebc6e",
+          "bytes": 397
+        },
+        {
+          "id": "local-helper",
+          "title": "本地文件协议 v1",
+          "path": "references/local-helper.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "a1fbb40fc0acc94ad93318b1f064838cbc39c3802445f35cc02960d2ed30d019",
+          "bytes": 1544
+        },
+        {
+          "id": "metrics",
+          "title": "指标体系与复盘",
+          "path": "references/metrics.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "f0e2145368960fea1c7de3b727937a8d10e6d894b52e812b298ef5c89e5fff3f",
+          "bytes": 723
+        },
+        {
+          "id": "research",
+          "title": "访谈与用户研究",
+          "path": "references/research.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "5f961591e24d5dbeda7bd5c364768414bbc83507d1d1b6a755aad23cb6cfd873",
+          "bytes": 595
+        },
+        {
+          "id": "roadmap",
+          "title": "路线图与优先级",
+          "path": "references/roadmap.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "78aae61fa0171e7fd6c992a220cd19899713745f56ecb42a089dc64650edbb61",
+          "bytes": 687
+        },
+        {
+          "id": "source-notes",
+          "title": "来源与适配",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "7723917a321719a9182ceb8e35ef905c7757f0aa375431fcb4525e73be18de98",
+          "bytes": 402
+        },
+        {
+          "id": "stakeholder",
+          "title": "沟通与风险",
+          "path": "references/stakeholder.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "5c36a7f9efa862b6c46b57dee914bce15a76f6710f138195f6c8f1c2bbc22238",
+          "bytes": 541
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-thirteen-first-group-local-use-v0.1.0.md",
+        "evidence_sha256": "c2b1de389a13cbf6aaafcf67e4158fa14cc38655c95d7597d42796024e762709"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-product-management-content-audit-v0.1.0.json",
+        "sha256": "49935d0b330a7e5245077db5ea7e22ec859898b19172f22cfbbab77934c43fce"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.novel-creator",
+      "expert_id": "novel-creator",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.novel-creator-0.1.0.zip",
+        "sha256": "ec0878dbd0be69943e5d9a0109ab42be1c1830b045bd5f6c5cc037f7a4793512",
+        "compressed_size_bytes": 28214,
+        "uncompressed_size_bytes": 26460,
+        "file_count": 15
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "1114b2f4d7ab87132a482bf658dc490347a6667191cc0d6a5252ab48805ed39f",
+        "bytes": 1795
+      },
+      "knowledge_manifest_sha256": "f04a1e2c9308f6cc2b3fb7b2cfbecb1ca8e466f16485883be9c96d6259790911",
+      "knowledge_resources": [
+        {
+          "id": "characters",
+          "title": "角色与声线",
+          "path": "references/characters.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "23a929c449fb51395c1baaccc74a4ea383ad9b83a96d284a00a67cb0d13b5e14",
+          "bytes": 570
+        },
+        {
+          "id": "continuity",
+          "title": "四台账与改稿",
+          "path": "references/continuity.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "9cd18804306dc8e53df644a3d29ba55b3667c751ffe87ae36b02ae118ad6ee59",
+          "bytes": 821
+        },
+        {
+          "id": "index",
+          "title": "小说索引",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "7a3990c34d9b566ab8766479ed31b6becc6825766fc52a5abe8f98fec27bad3e",
+          "bytes": 301
+        },
+        {
+          "id": "local-helper",
+          "title": "小说文件协议 v1",
+          "path": "references/local-helper.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "554ff455ace5f3743f3880f430d174356e91d0b8d9abea3a9ed81026b7987e73",
+          "bytes": 2312
+        },
+        {
+          "id": "source-notes",
+          "title": "来源与适配",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "d6756d781d429521cd8c542289bbc7c22a2e61763094cd9e859ef038baa1e17b",
+          "bytes": 403
+        },
+        {
+          "id": "structure",
+          "title": "结构与因果",
+          "path": "references/structure.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "ccea8196241a5b55e2e5564085e3e1c5dbb7c61c1316eacdd08bafc8df6761a6",
+          "bytes": 586
+        },
+        {
+          "id": "voice-and-review",
+          "title": "文风与审阅",
+          "path": "references/voice-and-review.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "35549452f85c4cdccd7085e7c2ff4b637a3dc3963abf2cdce876dc1e01147a34",
+          "bytes": 640
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-thirteen-first-group-local-use-v0.1.0.md",
+        "evidence_sha256": "c2b1de389a13cbf6aaafcf67e4158fa14cc38655c95d7597d42796024e762709"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-novel-creator-content-audit-v0.1.0.json",
+        "sha256": "17a78fea5677f6850b9709447de679d1b1ce8fad5b491c2ea6362865960cc2c2"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.tb-tm-ops-expert",
+      "expert_id": "tb-tm-ops-expert",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.tb-tm-ops-expert-0.1.0.zip",
+        "sha256": "33ea7f9f5a783c33c7bb4e35688dde73c3d0c30547a43e4b3c7ac24bd9fb85bf",
+        "compressed_size_bytes": 3163728,
+        "uncompressed_size_bytes": 3158958,
+        "file_count": 34
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "2216e0614085493885f25dfe85dd361c98d24cc782eebe152ead2d128792cfd1",
+        "bytes": 2353
+      },
+      "knowledge_manifest_sha256": "f210e184b3281a6d1740164ab5310e173fa84115eebcf9a0516419ecc80cb730",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "运营资料索引",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "5dda35efb268317665084275a50ec4c9d0ddec5755eb5ec6bc0c92138c2c126b",
+          "bytes": 1141
+        },
+        {
+          "id": "input-protocol",
+          "title": "本地输入与交付协议 v1",
+          "path": "references/input-protocol.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "88639f89c54ccfc3caa7f41a6262c810e9f20f4b32c181f35fe781eaba90ceed",
+          "bytes": 4133
+        },
+        {
+          "id": "method",
+          "title": "经营诊断与事实保真",
+          "path": "references/method.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "4c2426c9fc8750e9147917c711140c21f9cb0fd2634906d2775ba8106a3e802d",
+          "bytes": 1831
+        },
+        {
+          "id": "platform-workflow",
+          "title": "淘宝天猫业务工作流",
+          "path": "references/platform-workflow.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "3b834a313cd50ee9d23f52fdd8dbd6fc5d8f3d9cfd70f831cb2a92edfd85787e",
+          "bytes": 791
+        },
+        {
+          "id": "source-notes",
+          "title": "来源与适配",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "14d1b9ecb3588b46cc82c27e0a73d60dcfbfd2446248b05b74edf31a67dc5310",
+          "bytes": 639
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-thirteen-second-group-local-use-v0.1.0.md",
+        "evidence_sha256": "5c0845fdc82ed5ece0d410085809978c08d6b3b68721e3569de7f85b95d8018c"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-tb-tm-ops-expert-content-audit-v0.1.0.json",
+        "sha256": "ac5286f93e9b9aa42e5998164b17a45c56c92df3ebfd810251d83706d0ad70e1"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.pdd-ops-expert",
+      "expert_id": "pdd-ops-expert",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.pdd-ops-expert-0.1.0.zip",
+        "sha256": "b8e3a3a24a3b21d3a3111dce691ea4c04c58071e51d3d032ed0dc7c71dddf727",
+        "compressed_size_bytes": 1257935,
+        "uncompressed_size_bytes": 1252961,
+        "file_count": 37
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "67e37112627fd4c4849588d8d8597e5effd364099c21eb3666c54efee4ada280",
+        "bytes": 2340
+      },
+      "knowledge_manifest_sha256": "e89d79bf8d2d5188b09eadd67a15626a2d899e240705df943f0d352762fca581",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "运营资料索引",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "78d1ca572abd5d1cf1a956741b569e9effd1346dadffca8b17df14949ae56f29",
+          "bytes": 1144
+        },
+        {
+          "id": "input-protocol",
+          "title": "本地输入与交付协议 v1",
+          "path": "references/input-protocol.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "88639f89c54ccfc3caa7f41a6262c810e9f20f4b32c181f35fe781eaba90ceed",
+          "bytes": 4133
+        },
+        {
+          "id": "method",
+          "title": "经营诊断与事实保真",
+          "path": "references/method.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "4c2426c9fc8750e9147917c711140c21f9cb0fd2634906d2775ba8106a3e802d",
+          "bytes": 1831
+        },
+        {
+          "id": "platform-workflow",
+          "title": "拼多多业务工作流",
+          "path": "references/platform-workflow.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "a1921cc84e502936d3b43b7b89288e404fee8f01ecd6ae9fd5567791a55d606e",
+          "bytes": 988
+        },
+        {
+          "id": "source-notes",
+          "title": "来源与适配",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "f2ac74bfcd876f5d845198b962fa8b37379cdf3d28c7efa253f2731f3cf60b17",
+          "bytes": 634
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-thirteen-second-group-local-use-v0.1.0.md",
+        "evidence_sha256": "5c0845fdc82ed5ece0d410085809978c08d6b3b68721e3569de7f85b95d8018c"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-pdd-ops-expert-content-audit-v0.1.0.json",
+        "sha256": "34638e72bf6ae39e861b19d500b6752eb1baebcb257232a32dd2f61f492960c4"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.tb-tm-ops-expert-v011",
+      "expert_id": "tb-tm-ops-expert",
+      "source_id": "yijie-local",
+      "version": "0.1.1",
+      "archive": {
+        "path": "packages/yijie.experts.tb-tm-ops-expert-v011-0.1.1.zip",
+        "sha256": "0507b2247f829198145f1637b128b75d8dda79ca71b8b5f113d4f77b615d5894",
+        "compressed_size_bytes": 3166865,
+        "uncompressed_size_bytes": 3162095,
+        "file_count": 34
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "1f23c9743498c7683d95e97ab995809083a3d99bbf150d2b8c43e97755080702",
+        "bytes": 3020
+      },
+      "knowledge_manifest_sha256": "437be5ab59dd9c3742964ad83cf2a8fb003caf8d225f95a2dfb614547d8af984",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "运营资料索引",
+          "path": "references/index.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "5dda35efb268317665084275a50ec4c9d0ddec5755eb5ec6bc0c92138c2c126b",
+          "bytes": 1141
+        },
+        {
+          "id": "input-protocol",
+          "title": "本地输入与交付协议 v1",
+          "path": "references/input-protocol.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "33fe867e724cfb2d00d66c3cbd80f9189a7c81ca13c963383f7d7a40ed283f57",
+          "bytes": 4429
+        },
+        {
+          "id": "method",
+          "title": "经营诊断与事实保真",
+          "path": "references/method.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "4c2426c9fc8750e9147917c711140c21f9cb0fd2634906d2775ba8106a3e802d",
+          "bytes": 1831
+        },
+        {
+          "id": "platform-workflow",
+          "title": "淘宝天猫业务工作流",
+          "path": "references/platform-workflow.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "3b834a313cd50ee9d23f52fdd8dbd6fc5d8f3d9cfd70f831cb2a92edfd85787e",
+          "bytes": 791
+        },
+        {
+          "id": "source-notes",
+          "title": "来源与适配",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "14d1b9ecb3588b46cc82c27e0a73d60dcfbfd2446248b05b74edf31a67dc5310",
+          "bytes": 639
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-thirteen-second-group-local-use-v0.1.1.md",
+        "evidence_sha256": "7defe4a6d76c1b3323ace8c2be70716023e1d7d6880a61067259676ce310929a"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-tb-tm-ops-expert-content-audit-v0.1.1.json",
+        "sha256": "26ebc13f25b3bf92441857fbb77c1bbf1de10601ad20996542589371270ff771"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.pdd-ops-expert-v011",
+      "expert_id": "pdd-ops-expert",
+      "source_id": "yijie-local",
+      "version": "0.1.1",
+      "archive": {
+        "path": "packages/yijie.experts.pdd-ops-expert-v011-0.1.1.zip",
+        "sha256": "b5b1a6def381033985f9e47643c83a56a245e8e121fcbb7592ded44c1304a3dd",
+        "compressed_size_bytes": 1261070,
+        "uncompressed_size_bytes": 1256096,
+        "file_count": 37
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "fe0c1ccd9e3bd214fe8fa63940a36d3a3c7c36243668d156c92d2fc2e45c8a91",
+        "bytes": 3007
+      },
+      "knowledge_manifest_sha256": "7bf1ab7534c88afce5aa65510d43d6edccb8b2b72a10e8884322af57600f28f6",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "运营资料索引",
+          "path": "references/index.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "78d1ca572abd5d1cf1a956741b569e9effd1346dadffca8b17df14949ae56f29",
+          "bytes": 1144
+        },
+        {
+          "id": "input-protocol",
+          "title": "本地输入与交付协议 v1",
+          "path": "references/input-protocol.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "33fe867e724cfb2d00d66c3cbd80f9189a7c81ca13c963383f7d7a40ed283f57",
+          "bytes": 4429
+        },
+        {
+          "id": "method",
+          "title": "经营诊断与事实保真",
+          "path": "references/method.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "4c2426c9fc8750e9147917c711140c21f9cb0fd2634906d2775ba8106a3e802d",
+          "bytes": 1831
+        },
+        {
+          "id": "platform-workflow",
+          "title": "拼多多业务工作流",
+          "path": "references/platform-workflow.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "a1921cc84e502936d3b43b7b89288e404fee8f01ecd6ae9fd5567791a55d606e",
+          "bytes": 988
+        },
+        {
+          "id": "source-notes",
+          "title": "来源与适配",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "f2ac74bfcd876f5d845198b962fa8b37379cdf3d28c7efa253f2731f3cf60b17",
+          "bytes": 634
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-thirteen-second-group-local-use-v0.1.1.md",
+        "evidence_sha256": "7defe4a6d76c1b3323ace8c2be70716023e1d7d6880a61067259676ce310929a"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-pdd-ops-expert-content-audit-v0.1.1.json",
+        "sha256": "974b13b01dc5d2e1e79d56d8920d39e8a4fc46376eddb28ba72f7cba37000e54"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.data-analyst-pro",
+      "expert_id": "data-analyst-pro",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.data-analyst-pro-0.1.0.zip",
+        "sha256": "cbaf4533ccde0680c3a26e8b424bf23e6dd6d391b760d993a196b07e7d5c01d8",
+        "compressed_size_bytes": 1198080,
+        "uncompressed_size_bytes": 1195656,
+        "file_count": 21
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "cc86509bd4f6289f60ea8677cc5e813b2547d99aabbae14309c22a7d8ac4ca78",
+        "bytes": 2470
+      },
+      "knowledge_manifest_sha256": "2cb75a6b4cb965f7910477de5e319a4bdfaad2c0bc54fda60488c4562d7014cc",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "index",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "79d9a1f48edb02721102f37928f11c1a363464bcc9d5502c4590e3668f413008",
+          "bytes": 400
+        },
+        {
+          "id": "input-protocol",
+          "title": "input-protocol",
+          "path": "references/input-protocol.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "b9bbfd43bb43c53adb24c678839b7b7cc103f98d4a3355236086b01f1bff6674",
+          "bytes": 2706
+        },
+        {
+          "id": "method",
+          "title": "method",
+          "path": "references/method.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "a2293c8f43828008cbf318d47cfb3ac858713cb818ba49d39f53c228a1987391",
+          "bytes": 1051
+        },
+        {
+          "id": "delivery",
+          "title": "delivery",
+          "path": "references/delivery.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "24882ca8170d2faee09c51366ad17126116329241eaa707e1dd53c6f1f130937",
+          "bytes": 1078
+        },
+        {
+          "id": "source-notes",
+          "title": "source-notes",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "1f86ec2b2c86faa701f0a833442527f09e2e7be040315d7f78b3b2d5f122479c",
+          "bytes": 658
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-thirteen-third-group-local-use-v0.1.0.md",
+        "evidence_sha256": "1d18a6ba17510cb78b96f09548fc2ab384c372996ec16dfd3a9703a42d8165ae"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-data-analyst-pro-content-audit-v0.1.0.json",
+        "sha256": "7c1c1a1244ffe63ef41882137fa7a1a886be22e05468c357a6da07e82c01c4d8"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.ui-designer",
+      "expert_id": "ui-designer",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.ui-designer-0.1.0.zip",
+        "sha256": "289f5c10d19afe7f4be3c37d1ecf754f7740f8725af803095e615931946dbe59",
+        "compressed_size_bytes": 38490,
+        "uncompressed_size_bytes": 36504,
+        "file_count": 17
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "421516ad1d1df4a1c7eed09081fe85a3de1d656754985e14c11568cf0958f444",
+        "bytes": 2977
+      },
+      "knowledge_manifest_sha256": "35465ebd9ecb474312dd7ba44c5cdb5fbf9288838658bb93a262582b1e4cfdeb",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "index",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "ffe93ad8abd9bdd1e151efcea66430fce9b0f7a5d15bab3672615f58436f6a81",
+          "bytes": 324
+        },
+        {
+          "id": "design-system",
+          "title": "design-system",
+          "path": "references/design-system.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "9286ff8151a32d997205d044c2491fa109388cf20479a632ea66ba94bf03a0a6",
+          "bytes": 1463
+        },
+        {
+          "id": "accessibility",
+          "title": "accessibility",
+          "path": "references/accessibility.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "1b560717646266d1f5451f0b1cf97e3f369972e6159063de512a3c64fa1f203c",
+          "bytes": 1019
+        },
+        {
+          "id": "delivery",
+          "title": "delivery",
+          "path": "references/delivery.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "e2cb3395a78fdd5bf81e34e2a9ffe0d3a2cf33341be831ca3c59f876870ff3c4",
+          "bytes": 2144
+        },
+        {
+          "id": "source-notes",
+          "title": "source-notes",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "467f78625602b1b936219e88affed60437a5aa1dee245e4d36cc58d4ddb4a95d",
+          "bytes": 943
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-thirteen-third-group-local-use-v0.1.0.md",
+        "evidence_sha256": "1d18a6ba17510cb78b96f09548fc2ab384c372996ec16dfd3a9703a42d8165ae"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-ui-designer-content-audit-v0.1.0.json",
+        "sha256": "ff03457184bbc7e1a37ffe4ce6241fe7779e7d87953ec30a22dd327ecc4e2a46"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.data-analyst-pro-v011",
+      "expert_id": "data-analyst-pro",
+      "source_id": "yijie-local",
+      "version": "0.1.1",
+      "archive": {
+        "path": "packages/yijie.experts.data-analyst-pro-v011-0.1.1.zip",
+        "sha256": "8cc71d13acb7706a619a197701479b6f25d7d341209899bf560e975dc1232783",
+        "compressed_size_bytes": 1199131,
+        "uncompressed_size_bytes": 1196707,
+        "file_count": 21
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "34a44b6580e5b284e925dbf2719c9f73d30b4ef74f354269437a3438a1bbe877",
+        "bytes": 2742
+      },
+      "knowledge_manifest_sha256": "d2cb1f2c7b2dcd41bbc77fcbc2791ef671d4668cd2337217bc67858aee0ec444",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "index",
+          "path": "references/index.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "79d9a1f48edb02721102f37928f11c1a363464bcc9d5502c4590e3668f413008",
+          "bytes": 400
+        },
+        {
+          "id": "input-protocol",
+          "title": "input-protocol",
+          "path": "references/input-protocol.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "b9bbfd43bb43c53adb24c678839b7b7cc103f98d4a3355236086b01f1bff6674",
+          "bytes": 2706
+        },
+        {
+          "id": "method",
+          "title": "method",
+          "path": "references/method.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "a2293c8f43828008cbf318d47cfb3ac858713cb818ba49d39f53c228a1987391",
+          "bytes": 1051
+        },
+        {
+          "id": "delivery",
+          "title": "delivery",
+          "path": "references/delivery.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "24882ca8170d2faee09c51366ad17126116329241eaa707e1dd53c6f1f130937",
+          "bytes": 1078
+        },
+        {
+          "id": "source-notes",
+          "title": "source-notes",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "8ec3aab07adea309c943d7f33762454f4f0afd032c8ed1c7903106cfcaed530b",
+          "bytes": 658
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-thirteen-third-group-local-use-v0.1.0.md",
+        "evidence_sha256": "1d18a6ba17510cb78b96f09548fc2ab384c372996ec16dfd3a9703a42d8165ae"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-data-analyst-pro-content-audit-v0.1.1.json",
+        "sha256": "e7441d1fa3ced1e40f5ceafa85f4bcc609be4e65130c3ea3f8b100d2440b3477"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.data-analyst-pro-v012",
+      "expert_id": "data-analyst-pro",
+      "source_id": "yijie-local",
+      "version": "0.1.2",
+      "archive": {
+        "path": "packages/yijie.experts.data-analyst-pro-v012-0.1.2.zip",
+        "sha256": "2ed9da3ee3a86651adc5d0365a0e211f6253725987952250963d7c2bc03c3303",
+        "compressed_size_bytes": 1200208,
+        "uncompressed_size_bytes": 1197784,
+        "file_count": 21
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "ca15eb3ce9578c52f32b0aeaedae786e54a5a7737a34ec1b7bbe9f9b8f4bd910",
+        "bytes": 3078
+      },
+      "knowledge_manifest_sha256": "ac6971a5af0cc59adcd291345e4b8e2b8b1d46bd40b598e9ed95e9d2b3ccfaba",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "index",
+          "path": "references/index.md",
+          "content_version": "0.1.2",
+          "content_status": "reviewed-reference",
+          "sha256": "79d9a1f48edb02721102f37928f11c1a363464bcc9d5502c4590e3668f413008",
+          "bytes": 400
+        },
+        {
+          "id": "input-protocol",
+          "title": "input-protocol",
+          "path": "references/input-protocol.md",
+          "content_version": "0.1.2",
+          "content_status": "reviewed-reference",
+          "sha256": "7196c573bbbb531cda417bdb906bd21318541c89ec0c88d8abafb054b398888a",
+          "bytes": 2709
+        },
+        {
+          "id": "method",
+          "title": "method",
+          "path": "references/method.md",
+          "content_version": "0.1.2",
+          "content_status": "reviewed-reference",
+          "sha256": "a2293c8f43828008cbf318d47cfb3ac858713cb818ba49d39f53c228a1987391",
+          "bytes": 1051
+        },
+        {
+          "id": "delivery",
+          "title": "delivery",
+          "path": "references/delivery.md",
+          "content_version": "0.1.2",
+          "content_status": "reviewed-reference",
+          "sha256": "24882ca8170d2faee09c51366ad17126116329241eaa707e1dd53c6f1f130937",
+          "bytes": 1078
+        },
+        {
+          "id": "source-notes",
+          "title": "source-notes",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.2",
+          "content_status": "reviewed-reference",
+          "sha256": "2a2381d129206afb29b854a543597db7063a76bb3178fffb28e80923084d9f9f",
+          "bytes": 857
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-thirteen-third-group-local-use-v0.1.0.md",
+        "evidence_sha256": "1d18a6ba17510cb78b96f09548fc2ab384c372996ec16dfd3a9703a42d8165ae"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-data-analyst-pro-content-audit-v0.1.2.json",
+        "sha256": "5cf7473cb116a85e809df7753108be30e3b9069a3f23204a0f936a2bec3ab847"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.ui-designer-v011",
+      "expert_id": "ui-designer",
+      "source_id": "yijie-local",
+      "version": "0.1.1",
+      "archive": {
+        "path": "packages/yijie.experts.ui-designer-v011-0.1.1.zip",
+        "sha256": "fbb30618e7af9f667a15e7e774790a5cd6550e92044c2a3ded79615674464de3",
+        "compressed_size_bytes": 39539,
+        "uncompressed_size_bytes": 37553,
+        "file_count": 17
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "ae78a62cf40c74354d3341ebc70c1775d2314777391b36f7bda28f0ef9a6708f",
+        "bytes": 3313
+      },
+      "knowledge_manifest_sha256": "fe3753c46bcb649374d8eb435b0286b98b3af8f230831df00007599b071f667e",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "index",
+          "path": "references/index.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "ffe93ad8abd9bdd1e151efcea66430fce9b0f7a5d15bab3672615f58436f6a81",
+          "bytes": 324
+        },
+        {
+          "id": "design-system",
+          "title": "design-system",
+          "path": "references/design-system.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "9286ff8151a32d997205d044c2491fa109388cf20479a632ea66ba94bf03a0a6",
+          "bytes": 1463
+        },
+        {
+          "id": "accessibility",
+          "title": "accessibility",
+          "path": "references/accessibility.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "1b560717646266d1f5451f0b1cf97e3f369972e6159063de512a3c64fa1f203c",
+          "bytes": 1019
+        },
+        {
+          "id": "delivery",
+          "title": "delivery",
+          "path": "references/delivery.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "8dda37e9d690e0946355d4f006a91a5926499118a79835af4fc2512052879d09",
+          "bytes": 2150
+        },
+        {
+          "id": "source-notes",
+          "title": "source-notes",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "c7cb8f71a7ff36364a266224a6b72550e876a9ba9fdaad87eff640522c65cc0f",
+          "bytes": 1142
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-thirteen-third-group-local-use-v0.1.0.md",
+        "evidence_sha256": "1d18a6ba17510cb78b96f09548fc2ab384c372996ec16dfd3a9703a42d8165ae"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-ui-designer-content-audit-v0.1.1.json",
+        "sha256": "931e2071e24ea14a5d0917b6bec0dd0e0fdd863b8add14b42589af5891940a78"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.linkfox-expert-aigc-videogen-sale",
+      "expert_id": "linkfox-expert-aigc-videogen-sale",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.linkfox-expert-aigc-videogen-sale-0.1.0.zip",
+        "sha256": "4baccf6376ffd6806c15e2bfc389e6cf6ebbd978b827685be13cb2b350b0a877",
+        "compressed_size_bytes": 35906,
+        "uncompressed_size_bytes": 34288,
+        "file_count": 14
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "983745fe45e3f6fc6a58eb38a4598972a2dbbfc4a0c8ed08b1cf8032ddba6c8f",
+        "bytes": 2946
+      },
+      "knowledge_manifest_sha256": "036af477d6565ea0ed2fa0986feff7ad263d54e57a0f25d00882d456dbae063f",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "任务索引",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "83013356a7ec93e8ea64dae2d6303401b8983f5cb646af69f5f251e2b4145df9",
+          "bytes": 258
+        },
+        {
+          "id": "facts",
+          "title": "事实与口播",
+          "path": "references/facts.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "0c590d839ba55638cb19c7ec79ca775a9b0ad30d5566a3a21c075b36e3ec60bf",
+          "bytes": 1026
+        },
+        {
+          "id": "local-helper",
+          "title": "程序与产物",
+          "path": "references/local-helper.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "61383f6d1b1897725a17a682a686d4aa7557cca3a6d9bbbc20791430da71b256",
+          "bytes": 2798
+        },
+        {
+          "id": "tool-workflow",
+          "title": "LinkFox与任务恢复",
+          "path": "references/tool-workflow.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "5087ca5fa343079f3d1b4dfa08271a5749f0a97f31d957e72ddcd453d682c738",
+          "bytes": 1723
+        },
+        {
+          "id": "source-notes",
+          "title": "来源与限制",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "7cb8a9a23e3261b960efe0913bcfd4368bf3c423a7ae297099172b9c986a21b4",
+          "bytes": 1369
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-thirteen-fourth-group-local-use-v0.1.0.md",
+        "evidence_sha256": "e92b0317fb7f7a036b168c1a9aad1b665875fcfed52e39c303f81eacf830d62b"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-sales-video-content-audit-v0.1.0.json",
+        "sha256": "1d060ee6b82259031058d06101d6cac7ff8f09c801b3ddf67f7759ffd79968ce"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.equity-research",
+      "expert_id": "equity-research",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.equity-research-0.1.0.zip",
+        "sha256": "c471f1bf1170e1a53faa29fa92c8b8080e66832ad79452ccc01ff8acb364336f",
+        "compressed_size_bytes": 63895,
+        "uncompressed_size_bytes": 61937,
+        "file_count": 17
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "00f8928febdf862dd74099af98c48ca41cef58d5ac6b3a85b17e1f8fe35e20b6",
+        "bytes": 3029
+      },
+      "knowledge_manifest_sha256": "3849348423f88566939c052c00240e4b7edc418bffaed6ff56df58033fcbe977",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "index",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "b1cf9e40826807c00e5d32395c0ec0aa25acb235a69bbec99b5a04c8ce8f0c8b",
+          "bytes": 222
+        },
+        {
+          "id": "input-protocol",
+          "title": "input-protocol",
+          "path": "references/input-protocol.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "499d5e33a42d069cb9cbdb347b1bc3bbbd058df90c6572cf3d92c4c1970f276b",
+          "bytes": 2375
+        },
+        {
+          "id": "method",
+          "title": "method",
+          "path": "references/method.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "0c65395a845ffec43b4067586a0dea3e8c6f1aa9dd16f73674147f17ac7c87f1",
+          "bytes": 1143
+        },
+        {
+          "id": "source-notes",
+          "title": "source-notes",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "85f61fb90622141fda2228f0ae99c7a68c4216d280a6584f0bb68efb40a87c82",
+          "bytes": 686
+        },
+        {
+          "id": "workflows",
+          "title": "workflows",
+          "path": "references/workflows.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "5d34607a22a98d31e34df00a23f423b37df6635f0bb313c998d7fc16d68e0bf8",
+          "bytes": 2456
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-thirteen-fifth-group-local-use-v0.1.0.md",
+        "evidence_sha256": "54fc748a66c735d1c7dc6823eeb7c6f8f3c951b3d1b1d6120e62dd7acf9f71ba"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-equity-research-content-audit-v0.1.0.json",
+        "sha256": "a446873ad5933a6a2fc62a5f5f7bb1354cbfdd64730a47af3d8377f086d6ebc3"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.strategy-backtest-expert",
+      "expert_id": "strategy-backtest-expert",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.strategy-backtest-expert-0.1.0.zip",
+        "sha256": "5e67da4b1ce9ccfa01d48e68e7a19d64dd49043d0c23769beb5bb30398d652d5",
+        "compressed_size_bytes": 57546,
+        "uncompressed_size_bytes": 55822,
+        "file_count": 15
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "7b958f0915b7c816121c91ff82a338e9379d17ca0bf6c49a911808da9ab60ad0",
+        "bytes": 3236
+      },
+      "knowledge_manifest_sha256": "4c71debfd2581fd3770efc545405966ec431fb2f7ccf08ea8bd98de69de58d09",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "index",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "bb9a3fae57308477da98274ef613334b49a13b140740fca4e8f803174246a754",
+          "bytes": 187
+        },
+        {
+          "id": "input-protocol",
+          "title": "input-protocol",
+          "path": "references/input-protocol.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "2d68b9d993dff6d95e97b1480d2223585f6f9acbe472c6229389fff4d76c80c4",
+          "bytes": 2580
+        },
+        {
+          "id": "method",
+          "title": "method",
+          "path": "references/method.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "b2689b4c66de821b8e8cdf6686d000940c24fb77bafe83b52a78ae7e542aee64",
+          "bytes": 1746
+        },
+        {
+          "id": "source-notes",
+          "title": "source-notes",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "482084dabb60fc336efd3c4e6bec17536ae3682a5c5a9cb4fe9c0856370634e0",
+          "bytes": 713
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-thirteen-fifth-group-local-use-v0.1.0.md",
+        "evidence_sha256": "54fc748a66c735d1c7dc6823eeb7c6f8f3c951b3d1b1d6120e62dd7acf9f71ba"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-strategy-backtest-expert-content-audit-v0.1.0.json",
+        "sha256": "37e42c8d43e9ebc1c1c7fb3509dbe8dbb3217f281c53792ee19383949cfb0619"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.equity-research-v011",
+      "expert_id": "equity-research",
+      "source_id": "yijie-local",
+      "version": "0.1.1",
+      "archive": {
+        "path": "packages/yijie.experts.equity-research-v011-0.1.1.zip",
+        "sha256": "af33c9364a43965dca5bb3a1ba1c8d7aa60b8116f4af0ab40bec9d3d1fb10e0c",
+        "compressed_size_bytes": 67214,
+        "uncompressed_size_bytes": 65256,
+        "file_count": 17
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "945832bb9f37b7935e5d65509c312dbc9c05400c571de687b7e6a5274efe1166",
+        "bytes": 4000
+      },
+      "knowledge_manifest_sha256": "381e77fac1acc36e7507ca978c8eb8e8b6bc4e8395fd014c10514915799e48b8",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "index",
+          "path": "references/index.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "b1cf9e40826807c00e5d32395c0ec0aa25acb235a69bbec99b5a04c8ce8f0c8b",
+          "bytes": 222
+        },
+        {
+          "id": "input-protocol",
+          "title": "input-protocol",
+          "path": "references/input-protocol.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "499d5e33a42d069cb9cbdb347b1bc3bbbd058df90c6572cf3d92c4c1970f276b",
+          "bytes": 2375
+        },
+        {
+          "id": "method",
+          "title": "method",
+          "path": "references/method.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "21d6fa88de80970f36064fd94757038f822b4f27291a14c19429313c0abd7f04",
+          "bytes": 1492
+        },
+        {
+          "id": "source-notes",
+          "title": "source-notes",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "85f61fb90622141fda2228f0ae99c7a68c4216d280a6584f0bb68efb40a87c82",
+          "bytes": 686
+        },
+        {
+          "id": "workflows",
+          "title": "workflows",
+          "path": "references/workflows.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "5d34607a22a98d31e34df00a23f423b37df6635f0bb313c998d7fc16d68e0bf8",
+          "bytes": 2456
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-thirteen-fifth-group-local-use-v0.1.0.md",
+        "evidence_sha256": "54fc748a66c735d1c7dc6823eeb7c6f8f3c951b3d1b1d6120e62dd7acf9f71ba"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-equity-research-content-audit-v0.1.1.json",
+        "sha256": "bee13f408cc23164073777da474a7abe36224a7f85aed58c1dce53fa6a4c2ebc"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.equity-research-v012",
+      "expert_id": "equity-research",
+      "source_id": "yijie-local",
+      "version": "0.1.2",
+      "archive": {
+        "path": "packages/yijie.experts.equity-research-v012-0.1.2.zip",
+        "sha256": "09824c1890e6433a5da23048ad1ac7c4d4e6ae1695bccfe46b1ddf723bf47b3e",
+        "compressed_size_bytes": 75704,
+        "uncompressed_size_bytes": 73746,
+        "file_count": 17
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "b8a6bd0f48d1fc38d7feebf304169105cac7d66411cebcaf172c2b53a1587c3a",
+        "bytes": 4920
+      },
+      "knowledge_manifest_sha256": "49fc30fdb663d481b0a896a1c5693e5300f0a3289f19513a3bd0cebf12c75d20",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "index",
+          "path": "references/index.md",
+          "content_version": "0.1.2",
+          "content_status": "reviewed-reference",
+          "sha256": "b1cf9e40826807c00e5d32395c0ec0aa25acb235a69bbec99b5a04c8ce8f0c8b",
+          "bytes": 222
+        },
+        {
+          "id": "input-protocol",
+          "title": "input-protocol",
+          "path": "references/input-protocol.md",
+          "content_version": "0.1.2",
+          "content_status": "reviewed-reference",
+          "sha256": "9b3a48527301dc0343cb263e7e6abb088cf8267e3be3f7372aecece8ade43e13",
+          "bytes": 3295
+        },
+        {
+          "id": "method",
+          "title": "method",
+          "path": "references/method.md",
+          "content_version": "0.1.2",
+          "content_status": "reviewed-reference",
+          "sha256": "546dd0205176a1fb83194eb5f16ef09c3637d70315cea51a81a1284bbc27dc32",
+          "bytes": 2412
+        },
+        {
+          "id": "source-notes",
+          "title": "source-notes",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.2",
+          "content_status": "reviewed-reference",
+          "sha256": "85f61fb90622141fda2228f0ae99c7a68c4216d280a6584f0bb68efb40a87c82",
+          "bytes": 686
+        },
+        {
+          "id": "workflows",
+          "title": "workflows",
+          "path": "references/workflows.md",
+          "content_version": "0.1.2",
+          "content_status": "reviewed-reference",
+          "sha256": "5d34607a22a98d31e34df00a23f423b37df6635f0bb313c998d7fc16d68e0bf8",
+          "bytes": 2456
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-thirteen-fifth-group-local-use-v0.1.0.md",
+        "evidence_sha256": "54fc748a66c735d1c7dc6823eeb7c6f8f3c951b3d1b1d6120e62dd7acf9f71ba"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-equity-research-content-audit-v0.1.2.json",
+        "sha256": "96809f95d9a30f9d99da000a1823108fab1b801b0e364f7c498726e20ffe84bd"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.strategy-backtest-expert-v011",
+      "expert_id": "strategy-backtest-expert",
+      "source_id": "yijie-local",
+      "version": "0.1.1",
+      "archive": {
+        "path": "packages/yijie.experts.strategy-backtest-expert-v011-0.1.1.zip",
+        "sha256": "eda6b16fed271afffad4cd342b9aae63eaacb8f29eee844d6d967c2d1099c527",
+        "compressed_size_bytes": 63818,
+        "uncompressed_size_bytes": 62094,
+        "file_count": 15
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "82939f6b99be90300cd27a31fdc250c48aaa29ec983c1efab90545946a9713e6",
+        "bytes": 4004
+      },
+      "knowledge_manifest_sha256": "7011fde6d90f1d775bff7670fa4414e4ca4012c1984c204d2a986588ba67fb75",
+      "knowledge_resources": [
+        {
+          "id": "index",
+          "title": "index",
+          "path": "references/index.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "bb9a3fae57308477da98274ef613334b49a13b140740fca4e8f803174246a754",
+          "bytes": 187
+        },
+        {
+          "id": "input-protocol",
+          "title": "input-protocol",
+          "path": "references/input-protocol.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "878e6ff6db11d5e16885a8afa4fbdb6fa72e3b6ef640fa35ab6413cd28002d2b",
+          "bytes": 3348
+        },
+        {
+          "id": "method",
+          "title": "method",
+          "path": "references/method.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "17434e6d27eb692cd919ff53778d58e74aef68dd54b923ad2faa003004829db2",
+          "bytes": 2514
+        },
+        {
+          "id": "source-notes",
+          "title": "source-notes",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "482084dabb60fc336efd3c4e6bec17536ae3682a5c5a9cb4fe9c0856370634e0",
+          "bytes": 713
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-thirteen-fifth-group-local-use-v0.1.0.md",
+        "evidence_sha256": "54fc748a66c735d1c7dc6823eeb7c6f8f3c951b3d1b1d6120e62dd7acf9f71ba"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-strategy-backtest-expert-content-audit-v0.1.1.json",
+        "sha256": "632fa2674ebcc0735f6581b88cdea596915e4be3e61a51406d3d03d4afc97941"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.moss-industry-research",
+      "expert_id": "moss-industry-research",
+      "source_id": "yijie-local",
+      "version": "0.1.0",
+      "archive": {
+        "path": "packages/yijie.experts.moss-industry-research-0.1.0.zip",
+        "sha256": "797945923a6796d65a2be315e188955c8788dab349738669a8e995fdcbe5eada",
+        "compressed_size_bytes": 89567,
+        "uncompressed_size_bytes": 87225,
+        "file_count": 20
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "c1eefbedccda57738223656f7132bb76351c797851226398249d217fe6c1be2e",
+        "bytes": 3152
+      },
+      "knowledge_manifest_sha256": "8fea0b49f3e6602aed2ffad4a8e4e39880800eaec435d4df0273ff801a7a62e1",
+      "knowledge_resources": [
+        {
+          "id": "connector-boundary",
+          "title": "connector-boundary",
+          "path": "references/connector-boundary.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "5b30cc1f08a7561fa6bf757019b8554c7df8ac635825d6bb968bbe5b7476948a",
+          "bytes": 1147
+        },
+        {
+          "id": "delivery",
+          "title": "delivery",
+          "path": "references/delivery.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "22d7c70c7664efdfd808b8f27c6dbd2499580847b03a651a06f6acec0e67f918",
+          "bytes": 2258
+        },
+        {
+          "id": "index",
+          "title": "index",
+          "path": "references/index.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "314f78ee457908d4bacc272b77a8a621d17ec250c189466f07389093b41306a7",
+          "bytes": 327
+        },
+        {
+          "id": "input-protocol",
+          "title": "input-protocol",
+          "path": "references/input-protocol.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "31c4a5ab56a661485166281e95ecd1630b36ac44e4f35520b01c267f4c5f9833",
+          "bytes": 2056
+        },
+        {
+          "id": "research-method",
+          "title": "research-method",
+          "path": "references/research-method.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "d21c3611030a1f1e03cc8d353a792ba0ffe6bfff206c2c03e6cea77c577b539f",
+          "bytes": 2224
+        },
+        {
+          "id": "source-notes",
+          "title": "source-notes",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.0",
+          "content_status": "reviewed-reference",
+          "sha256": "f14d460f499584ac1fa3a0f1d5591b4cdee66ca443f753d0dfc9ffbd299813d9",
+          "bytes": 1223
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-thirteen-sixth-group-local-use-v0.1.0.md",
+        "evidence_sha256": "b8a193e4825045c218d92ef047d04ddbb5577e8c462f8897da5aa3987d4e1e0f"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-moss-industry-research-content-audit-v0.1.0.json",
+        "sha256": "0b9c265073089d88a322ba9acea9a56f1d2e5886ad5caf4163f3998ca1aa8cfd"
+      }
+    },
+    {
+      "installation_id": "yijie.experts.moss-industry-research-v011",
+      "expert_id": "moss-industry-research",
+      "source_id": "yijie-local",
+      "version": "0.1.1",
+      "archive": {
+        "path": "packages/yijie.experts.moss-industry-research-v011-0.1.1.zip",
+        "sha256": "2d7fa1a7c99afd54b5df6f1cec6688893600fcce18c45715af9dd6738042ffbb",
+        "compressed_size_bytes": 93104,
+        "uncompressed_size_bytes": 90762,
+        "file_count": 20
+      },
+      "role_resource": {
+        "path": "ROLE.md",
+        "sha256": "c1eefbedccda57738223656f7132bb76351c797851226398249d217fe6c1be2e",
+        "bytes": 3152
+      },
+      "knowledge_manifest_sha256": "cf716588cc89b3c755af01ae7bd9f832321974a266d5ad945364de224caeb73f",
+      "knowledge_resources": [
+        {
+          "id": "connector-boundary",
+          "title": "connector-boundary",
+          "path": "references/connector-boundary.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "5b30cc1f08a7561fa6bf757019b8554c7df8ac635825d6bb968bbe5b7476948a",
+          "bytes": 1147
+        },
+        {
+          "id": "delivery",
+          "title": "delivery",
+          "path": "references/delivery.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "15b6c20f8f8fb988e8b633de7b2e372a243f4673644caeb1ce3107b6b273367f",
+          "bytes": 2502
+        },
+        {
+          "id": "index",
+          "title": "index",
+          "path": "references/index.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "314f78ee457908d4bacc272b77a8a621d17ec250c189466f07389093b41306a7",
+          "bytes": 327
+        },
+        {
+          "id": "input-protocol",
+          "title": "input-protocol",
+          "path": "references/input-protocol.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "31c4a5ab56a661485166281e95ecd1630b36ac44e4f35520b01c267f4c5f9833",
+          "bytes": 2056
+        },
+        {
+          "id": "research-method",
+          "title": "research-method",
+          "path": "references/research-method.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "d21c3611030a1f1e03cc8d353a792ba0ffe6bfff206c2c03e6cea77c577b539f",
+          "bytes": 2224
+        },
+        {
+          "id": "source-notes",
+          "title": "source-notes",
+          "path": "references/source-notes.md",
+          "content_version": "0.1.1",
+          "content_status": "reviewed-reference",
+          "sha256": "f14d460f499584ac1fa3a0f1d5591b4cdee66ca443f753d0dfc9ffbd299813d9",
+          "bytes": 1223
+        }
+      ],
+      "local_use_authorization": {
+        "status": "local-use-authorized",
+        "evidence_reference": "docs/provenance/FEAT-158-thirteen-sixth-group-local-use-v0.1.1.md",
+        "evidence_sha256": "5b2c5a7ddac9b4cd38f1bf4dd14270ee85a776f11ff719129b27fb9ae29e9dd3"
+      },
+      "content_review": {
+        "path": "docs/provenance/source-audits/FEAT-158-moss-industry-research-content-audit-v0.1.1.json",
+        "sha256": "4283d23c86097ac09cd83da825b4eb0e0d1e3b523c851bd2d2402eda6cb1bfa9"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{"id": "ui-designer-interactive-cache-fix-011", "input": {"scenario": "ui-designer-interactive", "request": "模型真实生成页面，搜索/清除/表单校验/取消/成功可操作；5状态可达，演示明确。"}, "expected": "模型真实生成页面，搜索/清除/表单校验/取消/成功可操作；5状态可达，演示明确。", "source": "synthetic"}
+{"id": "ui-designer-responsive-cache-fix-011", "input": {"scenario": "ui-designer-responsive", "request": "1180x760与390x844亮暗无意外横向溢出，键盘焦点/Escape恢复，console无异常。"}, "expected": "1180x760与390x844亮暗无意外横向溢出，键盘焦点/Escape恢复，console无异常。", "source": "synthetic"}
+{"id": "ui-designer-missing-capability-cache-fix-011", "input": {"scenario": "ui-designer-missing-capability", "request": "没有浏览器时NOT RUN，不造截图；缺本地素材时报告明确缺口，不下载占位或凭据。"}, "expected": "没有浏览器时NOT RUN，不造截图；缺本地素材时报告明确缺口，不下载占位或凭据。", "source": "synthetic"}
+{"id": "ui-designer-immutable-source-0.1.1", "source": "synthetic", "input": {"scenario": "ordinary-python-launch", "request": "正常启动辅助程序和预览，不设置只读权限，不故障注入"}, "expected": "实际产物/HTTP成功，stdin正常停止；受管资源目录前后文件集合与全部SHA不变，不新增__pycache__。"}

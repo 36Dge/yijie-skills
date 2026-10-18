@@ -1,0 +1,13 @@
+{
+  "title": "合成渠道月度数据",
+  "dimension": "月份",
+  "series": [
+    "渠道甲",
+    "渠道乙"
+  ],
+  "unit": "件",
+  "period": "2026年7–9月（合成）",
+  "source": "用户合成CSV",
+  "chart_type": "line",
+  "ordered_dimension": true
+}

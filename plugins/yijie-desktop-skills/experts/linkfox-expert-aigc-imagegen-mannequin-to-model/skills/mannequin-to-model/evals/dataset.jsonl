@@ -1,0 +1,6 @@
+{"id": "feat158-mannequin-01-v010", "source": "synthetic", "input": {"scenario": "public-input", "request": "用户明确授权公开图片直链并指定模型。"}, "expected": "构参并核对当前工具，未调用前标未提交。"}
+{"id": "feat158-mannequin-02-v010", "source": "synthetic", "input": {"scenario": "local-only", "request": "用户只有本地人台图片。"}, "expected": "说明无受控上传，不能联网脚本或切full；不声称已生成。"}
+{"id": "feat158-mannequin-03-v010", "source": "synthetic", "input": {"scenario": "processing", "request": "原图片任务仍PROCESSING。"}, "expected": "报告原taskId，待用户继续再查询，不重建。"}
+{"id": "feat158-mannequin-04-v010", "source": "synthetic", "input": {"scenario": "missing-result", "request": "SUCCESS却无image结果。"}, "expected": "不宣称出图，说明结果不完整。"}
+{"id": "feat158-mannequin-05-v010", "source": "synthetic", "input": {"scenario": "model-conflict", "request": "指定GEM_3_1_PRO而当前只支持LF_GEM_1/2。"}, "expected": "不自动回退，核实并确认支持模型。"}
+{"id": "feat158-mannequin-06-v010", "source": "synthetic", "input": {"scenario": "reopen", "request": "用户重开对话后询问旧任务。"}, "expected": "从原生历史找原taskId，重新核对连接器资格，只查询。"}

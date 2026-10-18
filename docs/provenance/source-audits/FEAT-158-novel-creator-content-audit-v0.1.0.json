@@ -1,0 +1,183 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-17T02:29:13Z",
+  "content_version": "0.1.0",
+  "source_root": "plugins/yijie-desktop-skills/experts/novel-creator/skills/story-workbench",
+  "review_kind": "source adaptation, executable local helper and normal input review; live model evidence recorded separately",
+  "original_package": {
+    "id": "novel-creator",
+    "version": "1.0.0"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "type": "file",
+      "bytes": 2483,
+      "sha256": "0ded2988f54757537d76ae33987063c07b5a9d12e08643a17a3d1944020a2bad",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": ".downloaded_at",
+      "type": "file",
+      "bytes": 24,
+      "sha256": "5e4ed4c8e883dd8ddd3dff08aa52a621f218bd6e2e9b88f497e96fcd94e5aa25",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": "README.md",
+      "type": "file",
+      "bytes": 1697,
+      "sha256": "a72a63c8e6d2201f14a18a7d36de9729a08929dbf96e814193f2b26dc6137157",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": "agents/novel-creator.md",
+      "type": "file",
+      "bytes": 18374,
+      "sha256": "00a64751220b1704369a6275850e9aa982f7e914857358c11979acc7b321f6e4",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": "avatars/NovelCreator.png",
+      "type": "file",
+      "bytes": 419948,
+      "sha256": "472b72e154a6c895b0ec5b990e20a6e0fbea7776201bfab2a2899b6c72399297",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": "references/character-design-framework.md",
+      "type": "file",
+      "bytes": 13855,
+      "sha256": "ee8f15d675959b056029958434bb4d9e1af3ef3f74108691d0ba72a0429f2eaa",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": "references/novel-humanizer-rules.md",
+      "type": "file",
+      "bytes": 12103,
+      "sha256": "bf1cd28b2d6cfd7f4aa96fd92d99bca17c187a0b1141749c9e5ded3e53f03adb",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": "references/story-structure-methodology.md",
+      "type": "file",
+      "bytes": 16674,
+      "sha256": "77cba23db914344b29751cefe2a373beff901ca4f5a6ae6cf2c49addd3c07a0f",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": "references/writing-quality-rubric.md",
+      "type": "file",
+      "bytes": 11570,
+      "sha256": "e50b5b3d120751e587ba1400f8ec6a3a0d3ae35a335ca9cdda4d78e2da5a1a41",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": "skills/novel-creator/SKILL.md",
+      "type": "file",
+      "bytes": 8689,
+      "sha256": "9e404a823662b0f866636c22c1e268a325daf664ac15f16e1343e540fc9e382e",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    }
+  ],
+  "decisions": {
+    "source_files_modified": false,
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "credential_copy": false,
+    "network_scripts": false,
+    "new_runtime_dependency": false
+  },
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 321,
+      "sha256": "0547215a33396e7e0d13f56d18b71db7af4283ed03d29713abbef37633e119c9",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 1795,
+      "sha256": "1114b2f4d7ab87132a482bf658dc490347a6667191cc0d6a5252ab48805ed39f",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 1593,
+      "sha256": "927f319bd107d4f64654e48c6cfe1a140eb367546ad8958286fef68bd4c99cea",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 384,
+      "sha256": "2db340b5a03471aa73324632a4db835ee402835aec391b030dd983f37a83ed41",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 1347,
+      "sha256": "19b013ff6923278cc505865b4ba1f9e505356ed02e1a64305f6ddb3be540ea36",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 368,
+      "sha256": "4f0e18d1a7bda73067b6886357f6f3fdb4a864e3348e929330794b385775b3ce",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "examples/story.json",
+      "bytes": 2029,
+      "sha256": "1e362067d84da2e13e1d4cec0fe0bcd2d11d8a149b7085639391df9efbee58b5",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "references/characters.md",
+      "bytes": 570,
+      "sha256": "23a929c449fb51395c1baaccc74a4ea383ad9b83a96d284a00a67cb0d13b5e14",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "references/continuity.md",
+      "bytes": 821,
+      "sha256": "9cd18804306dc8e53df644a3d29ba55b3667c751ffe87ae36b02ae118ad6ee59",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 301,
+      "sha256": "7a3990c34d9b566ab8766479ed31b6becc6825766fc52a5abe8f98fec27bad3e",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "references/local-helper.md",
+      "bytes": 2312,
+      "sha256": "554ff455ace5f3743f3880f430d174356e91d0b8d9abea3a9ed81026b7987e73",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 403,
+      "sha256": "d6756d781d429521cd8c542289bbc7c22a2e61763094cd9e859ef038baa1e17b",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "references/structure.md",
+      "bytes": 586,
+      "sha256": "ccea8196241a5b55e2e5564085e3e1c5dbb7c61c1316eacdd08bafc8df6761a6",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "references/voice-and-review.md",
+      "bytes": 640,
+      "sha256": "35549452f85c4cdccd7085e7c2ff4b637a3dc3963abf2cdce876dc1e01147a34",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "scripts/story.py",
+      "bytes": 12990,
+      "sha256": "7ce89491a85dcaa8cf1bf0d7bd9e17b34a969290f73c02599fa6592a51747ebf",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    }
+  ]
+}

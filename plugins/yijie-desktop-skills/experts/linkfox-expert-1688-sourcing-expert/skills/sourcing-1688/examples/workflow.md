@@ -1,0 +1,3 @@
+# 普通合成流程
+query.json准备单目标Keepa请求，实际调用须当前LinkFox和逐次审批；observations是测试数据，不可当真调用回执。
+scenario.json包含独立目标与供货商来源、明确报价和17项输入；运行calculate生成本地报告，贡献利润应为10.56 USD。删除advertising_usd时应显示incomplete且不排名。把历史ASIN换成另一个普通商品应报告来源不匹配，不使用该商品价格。

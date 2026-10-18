@@ -1,0 +1,989 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-17T08:51:19Z",
+  "content_version": "0.1.1",
+  "source_root": "plugins/yijie-desktop-skills/experts/ui-designer/versions/0.1.1/ui-workbench",
+  "review_kind": "Real approved local preview import cache repair: immutable resource tree and normal start/stop verified",
+  "original_package": {
+    "id": "ui-designer",
+    "version": "1.0.2"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "bytes": 1928,
+      "sha256": "bafbcc9f8025fc3267f643952cbe7c6ac998b7290eb72639e3ac74f8a7c1ed8c",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": ".downloaded_at",
+      "bytes": 24,
+      "sha256": "1f7694aa556fa88d1700620f77101e4c6e71d7a100840f6e7dd0fafd1d44912e",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1528,
+      "sha256": "5a3e380d4184be115da8a92ca0f586e06e068b0c2f6c41a65b0d334d8710978b",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "agents/ui-designer.md",
+      "bytes": 16466,
+      "sha256": "2de26f5b2304347558f431f2978373d078cb453e68dbe799153cf6a09efc1849",
+      "decision": "Reviewed as source material; rewritten into one Yijie entry, conflicting tool/identity requirements excluded"
+    },
+    {
+      "path": "avatars/expert.png",
+      "bytes": 291079,
+      "sha256": "86399b938def53e15c84d7c3e3e7542248c2d834862511b6e2e78ed62b332014",
+      "decision": "Local presentation image copied separately to Desktop; no redistribution claim"
+    },
+    {
+      "path": "license/CrimsonPro-OFL.LICENSE",
+      "bytes": 4487,
+      "sha256": "fd2bc485bc16b876b09f97ab0a218092c0c78f533be0d7750aca9e9df9e3ab7b",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "license/InstrumentSans-OFL.LICENSE",
+      "bytes": 4496,
+      "sha256": "6c98bea402c5bfed70c42c0d6fcc6a31ea793979537d1becf4a5dae65a26a34f",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "license/JetBrainsMono-OFL.LICENSE",
+      "bytes": 4492,
+      "sha256": "4d9694c4844a13ea377458c3f98c90d2bf83d3c214612dcae2b7808406520708",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "license/Outfit-OFL.LICENSE",
+      "bytes": 4482,
+      "sha256": "8fc6af31312082959cc8297b30e04d94ff457faecc9fb0aeeb8906bf448f20e6",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "license/agency-agents.LICENSE",
+      "bytes": 1095,
+      "sha256": "f0337ea6dd49c76cd510cd566f365604dc239f99e6abeca358bdcda162f2d3c9",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "license/anthropics-skills-Apache-2.0.LICENSE",
+      "bytes": 11550,
+      "sha256": "e8039a133816a571902ca58711aca49214c228547c60a9b1130b29627e3371f3",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "license/browser-use.LICENSE",
+      "bytes": 1094,
+      "sha256": "deea8d15ed2046a28d19e7a3bf9a9de7fc2d9e6c48ed45b2df0065d5e13b5bd1",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/browser-use/SKILL.md",
+      "bytes": 11162,
+      "sha256": "3825095cfa5f3806c0e9640953a1f66fa8e3fb18da1bd42f7ea43173ce7ca5aa",
+      "decision": "Reviewed as source material; rewritten into one Yijie entry, conflicting tool/identity requirements excluded"
+    },
+    {
+      "path": "skills/browser-use/references/cdp-python.md",
+      "bytes": 3697,
+      "sha256": "0342c8e81756b531e901aa5fb1f0fe8860b7ff753117eb59fba17619208f5607",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/browser-use/references/multi-session.md",
+      "bytes": 2938,
+      "sha256": "583c0931d03b81be6b010df2f14d5016a05fdd779b435dd9a39fefcd63690420",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/SKILL.md",
+      "bytes": 21500,
+      "sha256": "8fd8691db9028819325e219bdf911ce49dd06093281ff171d62d47e4bc94ef37",
+      "decision": "Reviewed as source material; rewritten into one Yijie entry, conflicting tool/identity requirements excluded"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/ArsenalSC-OFL.txt",
+      "bytes": 4466,
+      "sha256": "7a87a0c469fedc802e3acef550db9a728f621275984b46c6c51e731d7212520a",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/ArsenalSC-Regular.ttf",
+      "bytes": 165848,
+      "sha256": "65e6f89df58f68fd905b3add34a79dd6106aa3b3044df0dad9676fff53d504b9",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/BigShoulders-Bold.ttf",
+      "bytes": 94528,
+      "sha256": "b43bcd198b9fdf717dd42aa61a34dba32e01aceaeae659d689afd0ca52c37ea2",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/BigShoulders-OFL.txt",
+      "bytes": 4490,
+      "sha256": "9ce6294be745093338c51e62d7efaddbf32b90ac9a7ffde8a12ce92e0413fe25",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/BigShoulders-Regular.ttf",
+      "bytes": 94396,
+      "sha256": "18a879fc71978a4447150705caf880a9da3860083c259fd29e6dc03057b6842a",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Boldonse-OFL.txt",
+      "bytes": 4483,
+      "sha256": "f5fe122e06e26a0277b07d6f6d171a60156aef5fe138281538498cee767b6bd4",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Boldonse-Regular.ttf",
+      "bytes": 77168,
+      "sha256": "cc2e540604565c0f90a7d8d46194a2f42fc9c45512cd2e39bf03b50eb68c35a4",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/BricolageGrotesque-Bold.ttf",
+      "bytes": 90952,
+      "sha256": "a737b146fe0d77ffe8a86e3cd16700dd431d3b1e420d4fd80e142cd68a1cb50d",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/BricolageGrotesque-OFL.txt",
+      "bytes": 4496,
+      "sha256": "a093964b3ca71526ae129d0d5f39bc9dba905ae5ebeb72d741bb0d4ed2d5d5b0",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/BricolageGrotesque-Regular.ttf",
+      "bytes": 90920,
+      "sha256": "972a6d098c9867ae131d0ea99e221e63976b11a19d4b931c2c7ace525674e4f6",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/CrimsonPro-Bold.ttf",
+      "bytes": 107352,
+      "sha256": "48f191e38355c8db100eb3ce157c20f9302a3b9a37b44a660f77ecfce3986609",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/CrimsonPro-Italic.ttf",
+      "bytes": 108828,
+      "sha256": "52318db3526b644e6efa60be0b3ca5a50e40fbe8bd026c261e0aa206f0772267",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/CrimsonPro-OFL.txt",
+      "bytes": 4487,
+      "sha256": "fd2bc485bc16b876b09f97ab0a218092c0c78f533be0d7750aca9e9df9e3ab7b",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/CrimsonPro-Regular.ttf",
+      "bytes": 106696,
+      "sha256": "48fad08cb1917a7b2f2c6fe5135d6c07743a6663cf7631ec4481108aaf081422",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/DMMono-OFL.txt",
+      "bytes": 4485,
+      "sha256": "0f2c192cfa63e591f680392d1792ff06e52a76ef81f70841ccb0b36c11b61826",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/DMMono-Regular.ttf",
+      "bytes": 48852,
+      "sha256": "f98ada968dc3b6b2c08d3f5caaf266977df0bfe0929372b93df5a06cf2ace450",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/EricaOne-OFL.txt",
+      "bytes": 4504,
+      "sha256": "cb7900ec9382f84f51ec5c79b6cddd9c17892bc3a2e90bfb74d6d710bdabf5fd",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/EricaOne-Regular.ttf",
+      "bytes": 24872,
+      "sha256": "db1d89e80e33a8a01beaaac7a85df582857d24a43f1e181461aa7ff5d701476a",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/GeistMono-Bold.ttf",
+      "bytes": 78304,
+      "sha256": "75c0828d5c1ee44b9ef9f4df577bf41595ec362e2ea3f1e558590c9e92c7949d",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/GeistMono-OFL.txt",
+      "bytes": 4481,
+      "sha256": "0acca17d633ecc7180aa12d8a60a95889d87a439cb83884597ff278046743dcb",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/GeistMono-Regular.ttf",
+      "bytes": 78232,
+      "sha256": "a55c1b51cda4afeab9e471e7947b85a20f7c8831d7e6b1470c1b7fbdc0f0f15e",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Gloock-OFL.txt",
+      "bytes": 4474,
+      "sha256": "e5a3c37f36d4484c7818fad6953828f74168cc1218421c913006c84fd4d14c14",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Gloock-Regular.ttf",
+      "bytes": 95156,
+      "sha256": "e86b4ce66dbd3f1f83eee8db99ec96e0da1128c3f53df0e9b3b7472025dfe960",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/IBMPlexMono-Bold.ttf",
+      "bytes": 136008,
+      "sha256": "dbd2a2fb024579438d6400a84e57579bfd2dbe67c306c8fd9fde92a61e4f2eea",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/IBMPlexMono-OFL.txt",
+      "bytes": 4456,
+      "sha256": "0fc74640fdcd67c036e1fced58d7e4478897a333cd92b981115a3e324337577f",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/IBMPlexMono-Regular.ttf",
+      "bytes": 133796,
+      "sha256": "ab08018ccd276b79fb2c636bb95b9c543598f9d50505fe92506fcb4dae7810cd",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/IBMPlexSerif-Bold.ttf",
+      "bytes": 161000,
+      "sha256": "b8d294e9b5c5a0940f167c3ced0f7ef2e3f57082ca3ff096ef30e86e26c1c159",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/IBMPlexSerif-BoldItalic.ttf",
+      "bytes": 169840,
+      "sha256": "da64b75f4284f53e7b5c71fa190a35b8bf3494fe19f1804c81c3a53340bca570",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/IBMPlexSerif-Italic.ttf",
+      "bytes": 170004,
+      "sha256": "b11f1048745e715a55c9d837b3f10226ca3d78867b7db7251ddad8f98dcf0f38",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/IBMPlexSerif-Regular.ttf",
+      "bytes": 160380,
+      "sha256": "77cd233a2af8dc6b1022faea3bb3b01f3c75af68bcf530cb6aeb15982ff3dbb7",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/InstrumentSans-Bold.ttf",
+      "bytes": 68084,
+      "sha256": "444f85bf1c4b0e1ce1ca624f6be54bcd832207714ccaf4ea99ee531341683bdf",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/InstrumentSans-BoldItalic.ttf",
+      "bytes": 70004,
+      "sha256": "3762f6cef95d6039489ad5ba5787d4c30f17a1ad01e9ac3c816ed69692722a68",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/InstrumentSans-Italic.ttf",
+      "bytes": 69900,
+      "sha256": "78e85858e371b2cb4e18f617c10f0f937c0e12a0887ffee98555b24ed305b3a7",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/InstrumentSans-OFL.txt",
+      "bytes": 4496,
+      "sha256": "6c98bea402c5bfed70c42c0d6fcc6a31ea793979537d1becf4a5dae65a26a34f",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/InstrumentSans-Regular.ttf",
+      "bytes": 68028,
+      "sha256": "a22cb26e48fd79bcb01bf2fc92d36785474dce36d9c544ab0a8868c2657c4a87",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/InstrumentSerif-Italic.ttf",
+      "bytes": 70868,
+      "sha256": "9c86e4d5a47b50224a2463a9eca8535835257c8e85c470c2c6b454b1af6f046e",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/InstrumentSerif-Regular.ttf",
+      "bytes": 69312,
+      "sha256": "56ac3be03ac3ba283196b3e77850ab2ffcf56cfb6fd3212c5620109a972f8c99",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Italiana-OFL.txt",
+      "bytes": 4487,
+      "sha256": "3edefd97c07108eb7151fa6ed58fc7ce79bb697fc1fc50a1da25398d54cdf588",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Italiana-Regular.ttf",
+      "bytes": 27184,
+      "sha256": "15c4dd6ab8cf4a29ba8826f65edcbe2f6c266c557d34d081f25072dfd5605fd2",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/JetBrainsMono-Bold.ttf",
+      "bytes": 114828,
+      "sha256": "a2349098b9e45419e7bf0e2958d6c4937a049dded37387b08be725be4c7615f3",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/JetBrainsMono-OFL.txt",
+      "bytes": 4492,
+      "sha256": "4d9694c4844a13ea377458c3f98c90d2bf83d3c214612dcae2b7808406520708",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/JetBrainsMono-Regular.ttf",
+      "bytes": 114904,
+      "sha256": "b6b1ff4ddefe36d7f2a6174e1d001cab374e594519ee9049af028d577b64c5f5",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Jura-Light.ttf",
+      "bytes": 154308,
+      "sha256": "c891a381df056b2c4dfe85841e911bf45da0890fa21a7b2692cbe5ea1f505e1e",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Jura-Medium.ttf",
+      "bytes": 154488,
+      "sha256": "c72965cb732a92872643819fd1734128238583cc36b116313859137a51d3368a",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Jura-OFL.txt",
+      "bytes": 4473,
+      "sha256": "707f27f18ff5c786e2b41f44873201b34c3a3694ca6ea4aa24cbb52cbd46fbc2",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/LibreBaskerville-OFL.txt",
+      "bytes": 4542,
+      "sha256": "3624eddd4c8f8a908130a417ae7cd089c9da69899c4e0ca1a5217d0a6fae16fd",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/LibreBaskerville-Regular.ttf",
+      "bytes": 147584,
+      "sha256": "2101302538d9e88adb679031c04623e4578b5745e89566284fd2c508d79acae0",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Lora-Bold.ttf",
+      "bytes": 133828,
+      "sha256": "7d74015e950c2fb66519c7295b8155621d22200ae2ca2a4c6b43ce3c490cac87",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Lora-BoldItalic.ttf",
+      "bytes": 140332,
+      "sha256": "152f87e71f5ddb60d5c57ecd9132807c947e65c42977193c9164e7c5a6690081",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Lora-Italic.ttf",
+      "bytes": 139328,
+      "sha256": "be627e595184e8afe521f08da0607eee613f1997d423bc8dadc5798995581377",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Lora-OFL.txt",
+      "bytes": 4516,
+      "sha256": "41cf75bf229a1435b7df209ac7419622516eff7e8cab79260fb0fb9b1cc8ced2",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Lora-Regular.ttf",
+      "bytes": 133888,
+      "sha256": "7ed00e7c9cdf16ab7e2fd2361fe45d4f0b61263cd60aae398b27b7ee08108827",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/NationalPark-Bold.ttf",
+      "bytes": 79208,
+      "sha256": "69ac4c301c4a7233c6e602d12a92c54d7967b575f4449951c45ce773f7acff53",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/NationalPark-OFL.txt",
+      "bytes": 4492,
+      "sha256": "29618a33c9871519e77e75f7db9df6ba894b9f2208d97975ba419d3f6e46d9f7",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/NationalPark-Regular.ttf",
+      "bytes": 76424,
+      "sha256": "a477338b7e18308d476650dfe31235ef86a883572665e56ffb5fb80f82009b58",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/NothingYouCouldDo-OFL.txt",
+      "bytes": 4456,
+      "sha256": "179d94a7a42ce98cc0ef2bfad604b77e9b0a9cc03e6a9ae8844844e3028d04b2",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/NothingYouCouldDo-Regular.ttf",
+      "bytes": 32020,
+      "sha256": "d866f985896d3280f4fce72db7e17302c24a0c1fdb0699b6b5ed3af14f944d57",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Outfit-Bold.ttf",
+      "bytes": 55392,
+      "sha256": "6654b93d21301ec61887d3cedd6c11d9df1b1dfb63f9cf45ac7995f6e2235ab1",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Outfit-OFL.txt",
+      "bytes": 4482,
+      "sha256": "8fc6af31312082959cc8297b30e04d94ff457faecc9fb0aeeb8906bf448f20e6",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Outfit-Regular.ttf",
+      "bytes": 54912,
+      "sha256": "f24945365147c9e783e91d8649959b59be6b00c9ee4ecd2f6b33afbb2dd871fe",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/PixelifySans-Medium.ttf",
+      "bytes": 51072,
+      "sha256": "38397504f71c122b03d234ea6f55118e3d5bdbddffd82bedddbd7755d3b3be82",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/PixelifySans-OFL.txt",
+      "bytes": 4488,
+      "sha256": "34b5d28aebcb26adae3e1fb74842b5c6a3915fb721036ea2b3444f18954331dd",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/PoiretOne-OFL.txt",
+      "bytes": 4459,
+      "sha256": "26f2bc9434e40e75d2378fd9a8125c16f5ee1d0e7bbdf14daabd7109f7d87a6d",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/PoiretOne-Regular.ttf",
+      "bytes": 45244,
+      "sha256": "9cf265b139648b36b6c0afdfeb0bf27f7e66db9a16094bc40f644d8da05bc318",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/RedHatMono-Bold.ttf",
+      "bytes": 34420,
+      "sha256": "7ef48353f4be5ddb90f000f6fad48f2b62b3e8c27d9818d8d45ff46c201065e0",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/RedHatMono-OFL.txt",
+      "bytes": 4487,
+      "sha256": "3f7ee3287416a0a1b2f90f4230306098268efa63504fa12d6436acd994a69b68",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/RedHatMono-Regular.ttf",
+      "bytes": 34488,
+      "sha256": "452fe826871b37539f5212b20c87cf30f82f58dd2741f1c96edd1dcbdc0db6b4",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Silkscreen-OFL.txt",
+      "bytes": 4487,
+      "sha256": "b841352f14bfc3e79b872ede3c05aa49ba816218a53cb2a07c6624ccf38a2ea1",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Silkscreen-Regular.ttf",
+      "bytes": 31960,
+      "sha256": "49567408600809e25147e9225ac4f37f410e2df45a750696c45027531fb65f1b",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/SmoochSans-Medium.ttf",
+      "bytes": 59704,
+      "sha256": "dd76e6e77cce82f827a8654cd906e9ce58f3aaf78adda63c4a7f655b8ecb41f0",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/SmoochSans-OFL.txt",
+      "bytes": 4489,
+      "sha256": "ed57f8cd1429e35d68ad4b3edb44b142e2245467a2f537bf05044ee015447438",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Tektur-Medium.ttf",
+      "bytes": 76248,
+      "sha256": "52bbe8c9b057b3d2da4eeace31a524b1ea26a1375ae34319cf6900ccc57a4c82",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Tektur-OFL.txt",
+      "bytes": 4478,
+      "sha256": "360ef927fe156e4c7d8d7b1900375594f7db95fc3e04c1f0ce8cbbc55bc76eb8",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/Tektur-Regular.ttf",
+      "bytes": 75604,
+      "sha256": "162e1b36c4718c5b051b36c971ad7e50d341944f35618f480422ebbe72988f98",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/WorkSans-Bold.ttf",
+      "bytes": 191304,
+      "sha256": "240d125fc9f8561363dc1ea3f513501253bd70942f41468f48f0b0cafb0c82e2",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/WorkSans-BoldItalic.ttf",
+      "bytes": 175772,
+      "sha256": "a5b2cad813df0aaa7d16621f2e93b5117c25e9bc788bc9a3ad218e9d6348ce34",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/WorkSans-Italic.ttf",
+      "bytes": 174280,
+      "sha256": "6b7f7002e0b0c8b261fe878658ef5551e3e59d9f6b609b04efb90dde1e2c1ada",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/WorkSans-OFL.txt",
+      "bytes": 4490,
+      "sha256": "4f8cbaf2a5494148a8064db9b5eb7c23a0f9098683244803b11c0eec857b81a9",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/WorkSans-Regular.ttf",
+      "bytes": 188916,
+      "sha256": "e67985a843df0d3cdee51a3d0f329eb1774a344ad9ff0c9ab923751f1577e2a4",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/YoungSerif-OFL.txt",
+      "bytes": 4491,
+      "sha256": "0f15fb928a39deedb71e9198dbeece4403f827561b0cdbcff450aacbcf772212",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/canvas-fonts/YoungSerif-Regular.ttf",
+      "bytes": 105136,
+      "sha256": "f8dc08f77abad753a00670af70756a8ace938e5c3f0b770f4f4c2071c4bd8fc6",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/references/asset-prompt-guide.md",
+      "bytes": 2063,
+      "sha256": "7bd57f8870bfa2fd1db3c5e30cbde44230f0f0afb600d9ca97af9c4da761408a",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/references/env-setup.md",
+      "bytes": 682,
+      "sha256": "907068e75960e7864737b3b6e5f1c4730540c4c83aa5e07af594d88eacdd59e9",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/references/minimax-cli-reference.md",
+      "bytes": 5299,
+      "sha256": "7f06b1d25da2594247bb492f2bcfc9b618f7b246cb3e9bea45cc184952de61ae",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/references/minimax-image-guide.md",
+      "bytes": 1978,
+      "sha256": "b1435accad10388dccd4ff124dd879dbf25353b03aad1af466c46b0e12c78e5f",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/references/minimax-music-guide.md",
+      "bytes": 6860,
+      "sha256": "199e8464c8e5f0f74c3fc378320424b30f24d35dd1aed324af12d2a5413974cc",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/references/minimax-tts-guide.md",
+      "bytes": 2270,
+      "sha256": "a190e1dc70ab3de7d197675117a760d641264fee2a11de15ea85f82360d51cec",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/references/minimax-video-guide.md",
+      "bytes": 2836,
+      "sha256": "8ea9fa5e4fa6b01978b21ed8b74c10a843ccc908437a2bae91717a30c1f0fa44",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/references/minimax-voice-catalog.md",
+      "bytes": 48180,
+      "sha256": "6353fd5b456e27b62052d144b0191656c9202d2800ab02d75d02e8ff12bfb8bd",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/references/motion-recipes.md",
+      "bytes": 10709,
+      "sha256": "fc7bdc38dda929657edae765b5e3c0bfb839079e710b71f4f23adbbea28bbd10",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/references/troubleshooting.md",
+      "bytes": 1874,
+      "sha256": "9b65f5ca298710276791276bdddd17f8243ad43ffaf31357a0cc581fcb27d41e",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/scripts/minimax_image.py",
+      "bytes": 4611,
+      "sha256": "5d70cfffdd4cf60b0f6fbb89d0f4f5d4f51e9dc3d422511892d626eb01333d19",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/scripts/minimax_music.py",
+      "bytes": 5608,
+      "sha256": "8d3d325340323d56995891371795d882e6edfb150ba11878658fb2542954a393",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/scripts/minimax_tts.py",
+      "bytes": 4122,
+      "sha256": "3f23934b5ee198592796c8fa25e0826aae49364f3588905a6aa617e8fc27b48b",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/scripts/minimax_video.py",
+      "bytes": 6349,
+      "sha256": "1898acb92b77f137379108c674d13f11a476a343932c0740eff65e49c5438722",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/templates/generator_template.js",
+      "bytes": 8044,
+      "sha256": "f88b244cdd3c16f2cbb149a7fa9c8ad95be0e78b395fb27b2ffbedb492fa19be",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/frontend-dev/templates/viewer.html",
+      "bytes": 21312,
+      "sha256": "a0dc10125fd0e345456bf82251d86cba1b71a6484a56a57e112492e81df0efb1",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/SKILL.md",
+      "bytes": 10595,
+      "sha256": "d94a1ff4864c9cfa9e4157d92785ec78d3539fcfe9a9ee9960559d6793000c95",
+      "decision": "Reviewed as source material; rewritten into one Yijie entry, conflicting tool/identity requirements excluded"
+    },
+    {
+      "path": "skills/impeccable/references/adapt.md",
+      "bytes": 7323,
+      "sha256": "f4ab423baf3049efbcf2e9608e063b76a72d6d171957069f2243e71405c6fa7b",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/animate.md",
+      "bytes": 7881,
+      "sha256": "a8c9e6cfa917cdb9452a064faa51a991b5cc87c75114ef0ca69be130a0e550f0",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/arrange.md",
+      "bytes": 7561,
+      "sha256": "0c1c76701010c65b5eca0880c4ae56337f8e0986e5c415325fd41a9d625a9a10",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/audit.md",
+      "bytes": 7770,
+      "sha256": "d7755edf04cd2fd4c919f96fa24673db150947753581e6eaf09ec657df56d1dc",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/bolder.md",
+      "bytes": 6892,
+      "sha256": "93966c154fda41a91c817fc31893094b4a655e09647641c9f31b87c945203800",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/clarify.md",
+      "bytes": 6976,
+      "sha256": "c9a35470cf93e26b4a0abcb997b03cf24c456a4f52a714b6cb1e877beccb5a26",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/cognitive-load.md",
+      "bytes": 5099,
+      "sha256": "8b771eeaa38b43b72fbb25be01f853f1e2a29142853f25d6dea111e14f5fee51",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/color-and-contrast.md",
+      "bytes": 5593,
+      "sha256": "21a6155b23438e8893a73a1ada07f40fb6a3920a5d6589cbc8fc0657fb3453e7",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/colorize.md",
+      "bytes": 7065,
+      "sha256": "feb916cff0ad4ea7a75ea1833752115b6334c5625fcd9d488f784b4f2c379826",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/critique.md",
+      "bytes": 11363,
+      "sha256": "e9a586098f3f76ae0fccdd27ea0d240f3cfcf5cb2d256d24cc4d7437ec3d8820",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/delight.md",
+      "bytes": 10359,
+      "sha256": "0fad6583da9db5f3efcdec5a0641202ae353c47d4a532eb80de5bf16d27920de",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/distill.md",
+      "bytes": 6402,
+      "sha256": "ba42fbfb8a88ff44f2fe0ee4d3c6084239210862a9b397ee73c19fd025e3a943",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/extract.md",
+      "bytes": 3992,
+      "sha256": "b7339b701dc101cef23e750c7e03ddd343919f87411fb03ff0b32090d94a9eba",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/harden.md",
+      "bytes": 9363,
+      "sha256": "978cad71e9e0442ed04af617fd2cb29c43c00e6d33c1fd169a7165799ae56a1a",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/heuristics-scoring.md",
+      "bytes": 9328,
+      "sha256": "9bfa7f91e39223e299feb27f591490c7ec92615e46a89dc83369cb7648e71601",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/interaction-design.md",
+      "bytes": 7455,
+      "sha256": "66190499293fa5af2b5cd33f15cebe7a24ba46cfafeeecc546956cf2e9f2dd51",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/motion-design.md",
+      "bytes": 5023,
+      "sha256": "a8a38faa0de7b70c39839b41a77618397f9e8a51a1d38b1e4e07a29cfee72777",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/normalize.md",
+      "bytes": 4267,
+      "sha256": "9946e3659c62e3957f3b8cd3ca4deb05566525275d3d0746a15216f105a399a6",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/onboard.md",
+      "bytes": 8608,
+      "sha256": "cb4477594f7f24fabd8dedbc83e6718561325f03f7fda8eb4326c247b999ca51",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/optimize.md",
+      "bytes": 8004,
+      "sha256": "19bc776180b611f5bb7463d6fcac91a249f81ed67c97b28766f1e4747362b187",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/overdrive.md",
+      "bytes": 9909,
+      "sha256": "eef18351ba35b5fee5f9603e84569e5c4a55d9593fdd0af9d51cee926aaa5d2c",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/personas.md",
+      "bytes": 7510,
+      "sha256": "4930f78712bda452534dbef69a3d1c452940a611811be64c2e19d3f7153953cd",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/polish.md",
+      "bytes": 8340,
+      "sha256": "6b8a4c2e059794b07bff116ba0bc56272df33db2d2c8a1461b2683341b645fff",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/quieter.md",
+      "bytes": 5277,
+      "sha256": "86bc4aefeab4f5e4ec384a46b639c8e9c502c7e3c28fd3127346fd67b4c766f1",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/responsive-design.md",
+      "bytes": 3758,
+      "sha256": "efd7bc16e03427b631e7ef71258eecc16b3867e7529197de3ecb5efd699d8d3d",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/spatial-design.md",
+      "bytes": 3808,
+      "sha256": "e0ec8f2f193da3d883abc7744b785d09540fcf193d00093333e88838ef411f19",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/teach-impeccable.md",
+      "bytes": 2900,
+      "sha256": "a65883e2905a4a8197e7d28a368453edc9984f3fa695074aa6e912f229b3b043",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/typeset.md",
+      "bytes": 5924,
+      "sha256": "808e3524f54dc611981586bbc0e2bbf4d0bbb67ca4a3f12aa8e45d825b511e5d",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/typography.md",
+      "bytes": 6273,
+      "sha256": "85a990e0c0e78ed439d4379b7fb9224f62670bcbce8d83bc99bbaaad91abda6f",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "skills/impeccable/references/ux-writing.md",
+      "bytes": 4602,
+      "sha256": "a6b399da1bf9696ce864c4c43b4978402a0fdde7416fbfe4f6db46f36821fe92",
+      "decision": "Preserved original archive only; not packaged or executed"
+    }
+  ],
+  "decisions": {
+    "source_files_modified": false,
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "credential_copy": false,
+    "network_scripts": false,
+    "new_runtime_dependency": false
+  },
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 436,
+      "sha256": "1dd1bc93168531e89516c98a25570550dfe8a1a7b06837a1f5f67fc9fcec835e",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 3313,
+      "sha256": "ae78a62cf40c74354d3341ebc70c1775d2314777391b36f7bda28f0ef9a6708f",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 2140,
+      "sha256": "6d2d2736d9ba6d7af467b946068d603ccd4a035530c454bf41096ec113731419",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 549,
+      "sha256": "81ee7ad75a8bb928165363add9b56f023a9a0dc1b3f117c2ad62748ec733aaa8",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 1445,
+      "sha256": "0604cfff46e02fbf36734041c0affc3dcf401bc9411558f1a5ca194bea129ad7",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 509,
+      "sha256": "187c5ab114545a3f4a785c07836a1b92ed11f8ffe4f53db2a3023707f4a83144",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "examples/brief.md",
+      "bytes": 432,
+      "sha256": "c8d7b8205a1dac113be97cc403fb6dd505d3cb559cfa5a569d15639d9826aeae",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "examples/project-schema.md",
+      "bytes": 416,
+      "sha256": "443c20ddb8ebf3ef71d9d3422ee67c91aa704ca62fb35b5cd26f14b57508235a",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "profile.json",
+      "bytes": 88,
+      "sha256": "a731c110f0e9713cbe26508f4283a54e0bb4da9c27b4cbbacbba7e4d3e78395f",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "references/accessibility.md",
+      "bytes": 1019,
+      "sha256": "1b560717646266d1f5451f0b1cf97e3f369972e6159063de512a3c64fa1f203c",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "references/delivery.md",
+      "bytes": 2150,
+      "sha256": "8dda37e9d690e0946355d4f006a91a5926499118a79835af4fc2512052879d09",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "references/design-system.md",
+      "bytes": 1463,
+      "sha256": "9286ff8151a32d997205d044c2491fa109388cf20479a632ea66ba94bf03a0a6",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 324,
+      "sha256": "ffe93ad8abd9bdd1e151efcea66430fce9b0f7a5d15bab3672615f58436f6a81",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 1142,
+      "sha256": "c7cb8f71a7ff36364a266224a6b72550e876a9ba9fdaad87eff640522c65cc0f",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "scripts/preview.py",
+      "bytes": 3583,
+      "sha256": "40be3e7be37fe33b050c0839e3d41c8713f296b92a44fcacba833ef9c4a64cb5",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "scripts/validate_project.py",
+      "bytes": 7909,
+      "sha256": "33f0fa6da6357a2c9458033e2c87800a6e8c9f0e3b03d27cd34af411fad109fa",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "templates/yijie-tokens.css",
+      "bytes": 10635,
+      "sha256": "f3bf335730cbbaa2213b0b7c5b55ba60c1761e46a6561fd37605cd0d61a65911",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    }
+  ]
+}

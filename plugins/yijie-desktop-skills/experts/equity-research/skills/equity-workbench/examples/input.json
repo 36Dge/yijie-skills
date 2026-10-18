@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "company": "合成研究公司（非真实证券）",
+  "currency": "CNY",
+  "amount_scale": 1000000,
+  "as_of": "2024-12-31",
+  "period_basis": "annual",
+  "discount_timing": "year-end",
+  "sources": [
+    {
+      "id": "financials",
+      "kind": "synthetic",
+      "locator": "example supplied annual records",
+      "as_of": "2024-12-31",
+      "description": "普通合成财务记录，仅用于复算验收。"
+    },
+    {
+      "id": "scenario",
+      "kind": "synthetic",
+      "locator": "explicit user scenario",
+      "as_of": "2024-12-31",
+      "description": "明确情景，非预测事实。"
+    }
+  ],
+  "history": [
+    {
+      "period_start": "2023-01-01",
+      "period_end": "2023-12-31",
+      "source_id": "financials",
+      "assets": 200,
+      "liabilities": 80,
+      "equity": 120,
+      "cash_begin": 20,
+      "cash_end": 40,
+      "cfo": 35,
+      "cfi": -20,
+      "cff": 5,
+      "fx": 0,
+      "revenue": 200,
+      "ebit": 40,
+      "net_income": 30,
+      "noncash_adjustments": 10,
+      "change_working_capital": 5
+    },
+    {
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "source_id": "financials",
+      "assets": 220,
+      "liabilities": 80,
+      "equity": 140,
+      "cash_begin": 40,
+      "cash_end": 70,
+      "cfo": 45,
+      "cfi": -20,
+      "cff": 5,
+      "fx": 0,
+      "revenue": 230,
+      "ebit": 50,
+      "net_income": 40,
+      "noncash_adjustments": 10,
+      "change_working_capital": 5
+    }
+  ],
+  "assumptions": {
+    "source_id": "scenario",
+    "rationale": "合成独立算例：50%权益和50%债权市值权重，税前债务成本5%，一次税盾。",
+    "cost_equity": "0.10",
+    "debt_cost_pretax": "0.05",
+    "tax_rate": "0.25",
+    "equity_weight": "0.5",
+    "debt_weight": "0.5",
+    "terminal_growth": "0.02",
+    "net_debt": 10,
+    "diluted_shares": 10000000
+  },
+  "forecast": [
+    {
+      "year": 1,
+      "source_id": "scenario",
+      "ebit": 55,
+      "da": 10,
+      "capex": 12,
+      "delta_wc": 3
+    },
+    {
+      "year": 2,
+      "source_id": "scenario",
+      "ebit": 60,
+      "da": 10,
+      "capex": 12,
+      "delta_wc": 3
+    },
+    {
+      "year": 3,
+      "source_id": "scenario",
+      "ebit": 65,
+      "da": 10,
+      "capex": 12,
+      "delta_wc": 3
+    }
+  ],
+  "sensitivity": {
+    "wacc": [
+      "0.06",
+      "0.06875",
+      "0.08"
+    ],
+    "growth": [
+      "0.01",
+      "0.02",
+      "0.03"
+    ]
+  },
+  "comps": [
+    {
+      "name": "合成可比A",
+      "source_id": "financials",
+      "currency": "CNY",
+      "amount_scale": 1000000,
+      "as_of": "2024-12-31",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "market_cap": 200,
+      "net_debt": 10,
+      "ebitda": 25,
+      "net_income": 20
+    },
+    {
+      "name": "合成亏损B",
+      "source_id": "financials",
+      "currency": "CNY",
+      "amount_scale": 1000000,
+      "as_of": "2024-12-31",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "market_cap": 100,
+      "net_debt": 5,
+      "ebitda": -10,
+      "net_income": -15
+    }
+  ]
+}

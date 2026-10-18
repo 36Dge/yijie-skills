@@ -1,0 +1,11 @@
+{
+  "garment_url": "https://images.example.com/garment.png",
+  "model_url": "https://images.example.com/model.png",
+  "background_url": "https://images.example.com/background.png",
+  "customer_keywords": "Full body studio photograph, neutral standing pose.",
+  "text_model": "LF_GEM_2",
+  "thinking_level": "medium",
+  "image_provider": "BANANA_PRO",
+  "aspect_ratio": "1:1",
+  "resolution": "2K"
+}

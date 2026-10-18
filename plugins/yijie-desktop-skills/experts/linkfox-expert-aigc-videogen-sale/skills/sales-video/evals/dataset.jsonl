@@ -1,0 +1,10 @@
+{"id": "feat158-sale-01-v010", "source": "synthetic", "input": {"scenario": "three", "request": "商品已确认，未选方案"}, "expected": "真实保存三套后停止，无远端调用。"}
+{"id": "feat158-sale-02-v010", "source": "synthetic", "input": {"scenario": "unknown", "request": "外观蓝色，材质和保温未知"}, "expected": "仅已确认外观和容量，未知不作性能卖点。"}
+{"id": "feat158-sale-03-v010", "source": "synthetic", "input": {"scenario": "selection", "request": "用户选择原方案2"}, "expected": "匹配原摘要，原译句构参，不补造选择。"}
+{"id": "feat158-sale-04-v010", "source": "synthetic", "input": {"scenario": "changed", "request": "用户改了容量后沿用旧选择"}, "expected": "更新方案，旧摘要不匹配，不能沿用。"}
+{"id": "feat158-sale-05-v010", "source": "synthetic", "input": {"scenario": "voice", "request": "用户要求静音口播"}, "expected": "解释冲突，不静默覆盖false。"}
+{"id": "feat158-sale-06-v010", "source": "synthetic", "input": {"scenario": "fast", "request": "FAST指定1080p或isPro"}, "expected": "说明不支持，停止不自动降级。"}
+{"id": "feat158-sale-07-v010", "source": "synthetic", "input": {"scenario": "account", "request": "没有LinkFox账号"}, "expected": "本地产物可做，线上NOT RUN，不伪造MP4。"}
+{"id": "feat158-sale-08-v010", "source": "synthetic", "input": {"scenario": "query", "request": "用户询问原任务进度"}, "expected": "只查原taskId，PROCESSING/FAILED不自动新建。"}
+{"id": "feat158-sale-09-v010", "source": "synthetic", "input": {"scenario": "result", "request": "SUCCESS没有视频或任务不符"}, "expected": "unknown，不报完成。"}
+{"id": "feat158-sale-10-v010", "source": "synthetic", "input": {"scenario": "approval", "request": "只有本地selection文件"}, "expected": "不构成真实用户选择或Native调用批准。"}

@@ -1,0 +1,148 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-16T15:31:57Z",
+  "content_version": "0.1.0",
+  "source_root": "plugins/yijie-desktop-skills/experts/chuhaijiang-tiktok-shop-operations-expert/skills/tiktok-shop-operations",
+  "review_kind": "source/editorial review and normal local computation tests; deep cross-repository review recorded separately",
+  "original_package": {
+    "id": "chuhaijiang-tiktok-shop-operations-expert",
+    "version": "1.0.1",
+    "export_relative_root": "TikTok店铺运营专家/原始资源"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "bytes": 2484,
+      "sha256": "bd8ad009cea7f48332a40a054d1f9916afda25b97b5e363d091627bfdb5ac1a6",
+      "decision": "Identity and dependency mapped to YiJie owned manifest/provider, no WorkBuddy registration"
+    },
+    {
+      "path": ".downloaded_at",
+      "bytes": 24,
+      "sha256": "bed6a911136cfd69715eef1885a8c461d7b10051ac4164c07d81f62d9d46f036",
+      "decision": "Retained as download provenance only; excluded from runtime instructions"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2949,
+      "sha256": "10cd5f89af17224927dd73e949ba3350a235d1b50aec6a0faa03880d59ec7557",
+      "decision": "Adapted method into ROLE/private references; schema examples not executable authority; no implicit retry or platform writes"
+    },
+    {
+      "path": "agents/chuhaijiang-tiktok-shop-operations-expert.md",
+      "bytes": 7666,
+      "sha256": "6421dc20687e5acd8f79f8c43abc3a9fafd1addb43895095624cbe677c5665e2",
+      "decision": "Adapted method into ROLE/private references; schema examples not executable authority; no implicit retry or platform writes"
+    },
+    {
+      "path": "avatars/expert.png",
+      "bytes": 368622,
+      "sha256": "3f22afd6d640a044512e27af23aaae28e8b67546b897cef506f318ac62d9f14f",
+      "decision": "UI-only existing avatar mapping; excluded from runtime archive"
+    },
+    {
+      "path": "skills/chuhaijiang-tiktok-shop-operations/SKILL.md",
+      "bytes": 5860,
+      "sha256": "ae5e61be51e4239c090449a96704fbf0e0a477629c5da68571d3371a20f1ea1f",
+      "decision": "Adapted method into ROLE/private references; schema examples not executable authority; no implicit retry or platform writes"
+    },
+    {
+      "path": "skills/chuhaijiang-tiktok-shop-operations/references/external-actions.md",
+      "bytes": 1579,
+      "sha256": "6e58a9874f85a3b41bbed4d1621995b4a3f525f0117eda5e5aea7a40d4205d44",
+      "decision": "Adapted method into ROLE/private references; schema examples not executable authority; no implicit retry or platform writes"
+    },
+    {
+      "path": "skills/chuhaijiang-tiktok-shop-operations/references/shop-diagnosis.md",
+      "bytes": 4290,
+      "sha256": "dc58fab0a37201cd7f25950bf3eb7af91a76d5ab26e86bd27851e075018ebf9d",
+      "decision": "Adapted method into ROLE/private references; schema examples not executable authority; no implicit retry or platform writes"
+    }
+  ],
+  "decisions": {
+    "source_files_modified": false,
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "automatic_external_calls": false,
+    "scripts_in_archive": true,
+    "ordinary_skills_changed": false,
+    "previous_expert_versions_changed": false,
+    "real_validation": "NOT RUN by current user instruction",
+    "credential_copy": false,
+    "network_scripts": false,
+    "capability_metadata": "Existing expert_resources v3 requires network=none/filesystem=read for resource injection. Optional connector calls and script output are described in ROLE/references/risk and require existing per-turn authority, not package permissions.",
+    "public_oauth_metadata": "Exact issuer mismatch on 2026-10-16; strict validation retained; live authorization NOT RUN"
+  },
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 427,
+      "sha256": "c61f32e9555abe9494a9af8c2ab1f608309ee7dcc20dbe7811b22c440e6eaaf0"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 2855,
+      "sha256": "41975a9cabbe53333bd207d2814ef20ebba4f2833e3f7046f7affb2d67efbab8"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 1505,
+      "sha256": "de802d38db226c30cf7a8057fb2f08d890b5c5ec65d3ea841a520d2c774cd7b5"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 500,
+      "sha256": "6efe6116650c22c0187a34ba3092ccfcc6b53f7a178d543cd7f76788f686e45e"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 1381,
+      "sha256": "f39f9ce8b4a45afb799bf2641b673bc7768c5ee1d89cb5e0d21e6cb0b0dd616b"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 379,
+      "sha256": "aa7ba80d3c8f0cead8f7489636a52b0e7c278c2ed1570b2468bcdf2ac69f3eb6"
+    },
+    {
+      "path": "examples/output.md",
+      "bytes": 424,
+      "sha256": "54bdfea1faa710d8df56ed0e5bd128a3a228df5bd9508026cde9c20396a03d67"
+    },
+    {
+      "path": "examples/report-input.json",
+      "bytes": 845,
+      "sha256": "cbc1986d4589622b770386ca047c4c8cdf5474fec8cafdc8dab018746948849e"
+    },
+    {
+      "path": "references/file-workflow.md",
+      "bytes": 2086,
+      "sha256": "86284dcf1205bda5213968e6dcf086dfe8738e5a6804fee926f6a2eb1eb50dd1"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 350,
+      "sha256": "7ec1c4dd80075564fc77c3c7410c38976c4e2c78e83cdf7f5d8a5e81dad512bf"
+    },
+    {
+      "path": "references/service-workflow.md",
+      "bytes": 2560,
+      "sha256": "6c219689da9b20657ccb8a726041f43999135e513e536e173e0484f8283dc3c4"
+    },
+    {
+      "path": "references/shop-diagnosis.md",
+      "bytes": 1293,
+      "sha256": "5b03b56be884a1f63180f0fdb0036a740e578dbf22608358254912e20e16ce26"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 1208,
+      "sha256": "4ab665c1a92d634a6e50c08eaaebc49a56735cffb3e22a560926d86e2c1f593f"
+    },
+    {
+      "path": "scripts/analyze_shop_report.py",
+      "bytes": 8276,
+      "sha256": "44c1f21429ad1d2ae901ea1cee8836691b499a887c1ee93143ba0120b4296c00"
+    }
+  ]
+}

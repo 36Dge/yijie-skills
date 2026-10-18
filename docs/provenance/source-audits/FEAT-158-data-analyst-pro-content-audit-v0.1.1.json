@@ -1,0 +1,179 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-17T08:37:15.616508Z",
+  "content_version": "0.1.1",
+  "source_root": "plugins/yijie-desktop-skills/experts/data-analyst-pro/versions/0.1.1/data-workbench",
+  "review_kind": "Real browser 390px overflow repair: wrap source identifiers, preserve calculation and all old resources",
+  "original_package": {
+    "id": "data-analyst-pro",
+    "version": "1.0.0"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "bytes": 2254,
+      "sha256": "1ff0afae73a1907d8eb118d84f71bc42937d111df5ef6fb791e7ffa129fda372",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": ".downloaded_at",
+      "bytes": 24,
+      "sha256": "7aaf824f0cde744ca6afb0c9e51f31b3dea2fb542df5ef74ebc1338e548d3dbf",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1645,
+      "sha256": "640032cf7c3fce4f09ce18a33aac5a5878919b298dc7cdea1d4c13d0276023cb",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "agents/data-analyst-pro.md",
+      "bytes": 2895,
+      "sha256": "7c1debd6c9940cb9d0d9ef15ba077bc7f108e621c80fc0b1947dfdfa8b0c4cbc",
+      "decision": "Reviewed as source material; rewritten into one Yijie entry, conflicting tool/identity requirements excluded"
+    },
+    {
+      "path": "avatars/data-analyst-pro.png",
+      "bytes": 241733,
+      "sha256": "867cce417a2b0232dce32086f5209e7926b4e1fdc0bf330cc36796ed4498f677",
+      "decision": "Local presentation image copied separately to Desktop; no redistribution claim"
+    }
+  ],
+  "decisions": {
+    "source_files_modified": false,
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "credential_copy": false,
+    "network_scripts": false,
+    "new_runtime_dependency": false
+  },
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 441,
+      "sha256": "74c6686b878f34a41ab2f864af1c80bd372ec9abd8d4950d1c06e23597ed810e",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 2742,
+      "sha256": "34a44b6580e5b284e925dbf2719c9f73d30b4ef74f354269437a3438a1bbe877",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 2045,
+      "sha256": "5ea18de2ee562264bfc4838c0b2a5c57453c6753b06520252674e00417644cf9",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 639,
+      "sha256": "03544eff8999bab10331680dd908d75799774c9b48c8014e2a82347672c8b474",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 1829,
+      "sha256": "9ac82d40dd8e735c8345e33d92cd05bb4f0f584136cfa5241c3db7a2d58b40ec",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 509,
+      "sha256": "187c5ab114545a3f4a785c07836a1b92ed11f8ffe4f53db2a3023707f4a83144",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "examples/input.json",
+      "bytes": 1132,
+      "sha256": "3bd0a9e2d15dc57226c4076f245cb7eb0e2abe48a3fe9a44cd1f63972e3829af",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "examples/sample.csv",
+      "bytes": 163,
+      "sha256": "268f1e41a4ff2bdf8d083060a2cfe7a19b98804f6c35dbe77efb47001e9dff47",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "profile.json",
+      "bytes": 100,
+      "sha256": "ab05b0c4a5682738e12446758528e67070b2375a9b9279bc134d817064b1c2cd",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "references/delivery.md",
+      "bytes": 1078,
+      "sha256": "24882ca8170d2faee09c51366ad17126116329241eaa707e1dd53c6f1f130937",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 400,
+      "sha256": "79d9a1f48edb02721102f37928f11c1a363464bcc9d5502c4590e3668f413008",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "references/input-protocol.md",
+      "bytes": 2706,
+      "sha256": "b9bbfd43bb43c53adb24c678839b7b7cc103f98d4a3355236086b01f1bff6674",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "references/method.md",
+      "bytes": 1051,
+      "sha256": "a2293c8f43828008cbf318d47cfb3ac858713cb818ba49d39f53c228a1987391",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 658,
+      "sha256": "8ec3aab07adea309c943d7f33762454f4f0afd032c8ed1c7903106cfcaed530b",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "scripts/analyze.py",
+      "bytes": 25785,
+      "sha256": "6a4f63ad03f427ab54f9ade38f5f275bf127deb152090da2dcc023da907da0aa",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "scripts/preview.py",
+      "bytes": 4265,
+      "sha256": "2e8b90029752c1be31b358c9e4a9ab60cd85948ca46afde7ee06c989156ae8cc",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "scripts/tableio.py",
+      "bytes": 6488,
+      "sha256": "adcda36843b8cef9d986da8dfa11f438352f8ba632a548199fd26d274198b532",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "templates/yijie-tokens.css",
+      "bytes": 10635,
+      "sha256": "f3bf335730cbbaa2213b0b7c5b55ba60c1761e46a6561fd37605cd0d61a65911",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "vendor/ECHARTS-LICENSE.txt",
+      "bytes": 11990,
+      "sha256": "634293835b43a6dd2094fa39182a3d9a6b9ca43b7fdb9ac354e8037af2a3093a",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "vendor/ECHARTS-NOTICE.txt",
+      "bytes": 168,
+      "sha256": "d491d358344f842685c1b1585970999db65fe30ecf7ef3867af8814f4016c016",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    },
+    {
+      "path": "vendor/echarts.cjs",
+      "bytes": 1121883,
+      "sha256": "b66b25aeb4df84e33199dc21694014d336d222cbd9deb0e5a7c14bd6aa0d0fd0",
+      "review": "Reviewed 0.1.1 source paragraph wrapping; prior exact calculations and permissions retained"
+    }
+  ]
+}

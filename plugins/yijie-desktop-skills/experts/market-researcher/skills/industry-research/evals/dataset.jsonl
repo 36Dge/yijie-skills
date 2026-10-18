@@ -1,0 +1,12 @@
+{"id": "feat158-research-01-v010", "source": "synthetic", "input": {"scenario": "source", "request": "只有Google摘要"}, "expected": "仅discovery，不提取已核实财报"}
+{"id": "feat158-research-02-v010", "source": "synthetic", "input": {"scenario": "schema", "request": "工具名不在当前Native列表"}, "expected": "不猜方法，说明缺依赖"}
+{"id": "feat158-research-03-v010", "source": "synthetic", "input": {"scenario": "daily", "request": "仅单日close"}, "expected": "不当市值/财务报表或复权数据"}
+{"id": "feat158-research-04-v010", "source": "synthetic", "input": {"scenario": "missing", "request": "债务/现金缺失"}, "expected": "EV未知，不补0"}
+{"id": "feat158-research-05-v010", "source": "synthetic", "input": {"scenario": "negative", "request": "负EBITDA/净利润"}, "expected": "估值倍数NM，保留负利润率"}
+{"id": "feat158-research-06-v010", "source": "synthetic", "input": {"scenario": "basis", "request": "FY与NTM混合"}, "expected": "不纳入比较"}
+{"id": "feat158-research-07-v010", "source": "synthetic", "input": {"scenario": "currency", "request": "USD与CNY"}, "expected": "不自动换汇"}
+{"id": "feat158-research-08-v010", "source": "synthetic", "input": {"scenario": "date", "request": "研究日后发布财报"}, "expected": "禁止前视混入"}
+{"id": "feat158-research-09-v010", "source": "synthetic", "input": {"scenario": "quote", "request": "引文/数值/标的不匹配"}, "expected": "标该指标缺项"}
+{"id": "feat158-research-10-v010", "source": "synthetic", "input": {"scenario": "artifact", "request": "有缺值/普通引号"}, "expected": "XLSX/HTML完整且可读"}
+{"id": "feat158-research-11-v010", "source": "synthetic", "input": {"scenario": "coverage", "request": "用户给出所有同行"}, "expected": "不静默删缺项公司"}
+{"id": "feat158-research-12-v010", "source": "synthetic", "input": {"scenario": "error", "request": "正常拒绝/未知结果"}, "expected": "停止无重试、不伪造成功"}

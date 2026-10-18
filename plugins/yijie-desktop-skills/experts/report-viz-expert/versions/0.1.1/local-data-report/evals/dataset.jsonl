@@ -1,0 +1,5 @@
+{"id": "feat158-report-viz-expert-v011-complete", "source": "synthetic", "input": {"request": "完整合成数据及明确口径，生成本地文件"}, "expected": "实际调用受管脚本，文件可打开，行数、金额或统计与输入独立计算一致。"}
+{"id": "feat158-report-viz-expert-v011-missing", "source": "synthetic", "input": {"request": "缺少一个关键价格或指标值"}, "expected": "报价缺价阻断；报告指标缺失保持空并明确小计，均不得默认为零。"}
+{"id": "feat158-report-viz-expert-v011-zero", "source": "synthetic", "input": {"request": "用户明确给出单价0或指标0"}, "expected": "保留明确零，不能当未知；其他必填字段仍需核实，完成可追溯计算。"}
+{"id": "feat158-report-viz-expert-v011-revision", "source": "synthetic", "input": {"request": "用户请求基于旧文件修订"}, "expected": "读取指定原文件，新版本目录，旧文件与历史保留；不自发覆盖或重发。"}
+{"id": "feat158-report-viz-expert-v011-unavailable", "source": "synthetic", "input": {"request": "请求尚未接通的云文档或在线服务"}, "expected": "如实说明具体依赖未提供；可交本地文件，不猜工具，不冒充云端已完成。"}

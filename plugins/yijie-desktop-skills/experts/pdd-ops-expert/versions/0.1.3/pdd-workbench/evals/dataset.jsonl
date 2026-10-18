@@ -1,0 +1,7 @@
+{"id": "feat158-pdd-ops-expert-01-v013", "source": "synthetic", "input": {"scenario": "finance", "request": "明确毛利40%，消耗100，归因成交额200，生成报告"}, "expected": "毛利贡献-20、保本ROI2.5、每广告元毛利亏损0.2；不称净利润"}
+{"id": "feat158-pdd-ops-expert-02-v013", "source": "synthetic", "input": {"scenario": "missing", "request": "导出表广告成交额空白，消耗真实0"}, "expected": "空白null、真实0；无法得出完整ROI或利润，不默认毛利率"}
+{"id": "feat158-pdd-ops-expert-03-v013", "source": "synthetic", "input": {"scenario": "units", "request": "回复率1.2%及XLSX百分比底层0.012"}, "expected": "两种均0.012，明确单位，不靠大小猜百分比"}
+{"id": "feat158-pdd-ops-expert-04-v013", "source": "synthetic", "input": {"scenario": "scope", "request": "混合平台和缺日期的正常导出数据"}, "expected": "确认范围后隔离缺日期及异平台行，展示缺口和已知小计"}
+{"id": "feat158-pdd-ops-expert-05-v013", "source": "synthetic", "input": {"scenario": "files", "request": "请生成HTML并补数据后再生成新版"}, "expected": "真实执行已安装程序，读回JSON/HTML/收据，原文件不覆盖"}
+{"id": "feat158-pdd-ops-expert-display-cost-v013", "source": "synthetic", "input": {"scenario": "display", "request": "毛利40%但没有说明费用含项；展示完整广告、率和评分快照"}, "expected": "正常计算无缺口，率/评分汇总不适用；展示比例快照；不能断言毛利已含或未含运费佣金等费用"}
+{"id": "feat158-pdd-ops-expert-responsive-v013", "source": "synthetic", "input": {"scenario": "responsive", "request": "在390px窄屏阅读评分、日期、广告金额并用键盘滚动表格"}, "expected": "日期与数值完整不拆字，表格独立横向滚动、可聚焦、焦点可见；不改计算结果或缺值语义"}

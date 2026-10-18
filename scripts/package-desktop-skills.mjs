@@ -200,6 +200,8 @@ export async function buildDesktopSkillBundle(outputDirectory = DEFAULT_OUTPUT, 
   }
   assertUnique(source.skills.map(({ id }) => id), "Skill id");
   assertUnique(source.skills.map(({ runtime_name: runtimeName }) => runtimeName), "Runtime name");
+  assertUnique(source.skills.filter(({ asset_kind }) => asset_kind === "expert_resources")
+    .map(({ expert, version }) => `${expert.expert_id}@${version}`), "expert version identity");
   const builtSkills = [];
   for (const skill of source.skills) {
     if (skill.catalog_entry_mode === "catalog-only") {

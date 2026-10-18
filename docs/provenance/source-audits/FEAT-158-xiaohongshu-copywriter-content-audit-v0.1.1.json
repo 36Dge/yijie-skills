@@ -1,0 +1,139 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-16T12:00:00Z",
+  "content_version": "0.1.1",
+  "source_root": "plugins/yijie-desktop-skills/experts/xiaohongshu-copywriter/versions/0.1.1/xiaohongshu-notes",
+  "review_kind": "v011 factual-grounding repair; previous failure retained; real eval required",
+  "original_package": {
+    "id": "xiaohongshu-copywriter",
+    "version": "1.0.0",
+    "export_relative_root": "小红书爆款笔记策划/原始资源",
+    "author": "智能体造物局"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "sha256": "77e423ce76750ed37a5e099eadd6c2b49cb92f933943079402b544e1630a1b5a",
+      "bytes": 1814,
+      "decision": "identity and scope mapped to existing v3 metadata; host registration not imported",
+      "adapted_targets": [
+        "bundle-source.json (parent)"
+      ]
+    },
+    {
+      "path": ".downloaded_at",
+      "sha256": "92cbdae8fd181268d3dbd2070b3a982fe13606cb8419585934f9179636eb8abf",
+      "bytes": 24,
+      "decision": "reviewed source context or installation marker; not included in runtime package",
+      "adapted_targets": [
+        "NOTICE.md",
+        "references/source-notes.md"
+      ]
+    },
+    {
+      "path": "README.md",
+      "sha256": "0ccec03cdafa573b0b622982838e093afe841780dc2c106971515b87141370d0",
+      "bytes": 673,
+      "decision": "reviewed source context or installation marker; not included in runtime package",
+      "adapted_targets": [
+        "NOTICE.md",
+        "references/source-notes.md"
+      ]
+    },
+    {
+      "path": "agents/xiaohongshu-note-master.md",
+      "sha256": "accb97e8235a29af6f22c8e097151f8a186f1a9748aab434f59e2618a5ab12d9",
+      "bytes": 1048,
+      "decision": "adapted to short ROLE without host settings or automatic authorizations",
+      "adapted_targets": [
+        "ROLE.md",
+        "SKILL.md"
+      ]
+    },
+    {
+      "path": "avatars/expert.png",
+      "sha256": "73722753e259957d472466dbab0d489a56d7b2549691a2fd342289fd0ce025a4",
+      "bytes": 228006,
+      "decision": "UI resource only; not included in executable resource package",
+      "adapted_targets": []
+    }
+  ],
+  "decisions": {
+    "source_files_modified": false,
+    "third_party_avatar_in_archive": false,
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "automatic_external_calls": false,
+    "model_eval": "tracked separately by root implementation verification; not asserted by content audit",
+    "scripts_in_archive": false,
+    "ordinary_skills_changed": false,
+    "jd_expert_changed": false
+  },
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "sha256": "af048da2c74bb80e6d9cb02585bd7691a8354f3c9a2fcf29c8f3c5f850243ff5",
+      "bytes": 659
+    },
+    {
+      "path": "ROLE.md",
+      "sha256": "ccd51e6f357369c9883b82c6d4353f3ccf1976ce0a6e08420b3a78c90da8943b",
+      "bytes": 2187
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "c87ea9b65f26e48f031c096fd6562629cd771285a41228bef354317b301879d3",
+      "bytes": 2551
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "sha256": "1f5fea62274580cf405560ac280e9f676ee7a9722ec411c51bd8a5d226e8194d",
+      "bytes": 497
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "sha256": "f14b105e52734cc0eae2a802f1563ec4102dc342bdb03918a4be884d7aa69477",
+      "bytes": 2348
+    },
+    {
+      "path": "evals/rubric.md",
+      "sha256": "cfa3aba14286f3c771f97c0ff83a9df7b352d5fd9e1b702cdee2588c7fc95dc5",
+      "bytes": 1218
+    },
+    {
+      "path": "examples/input-001.json",
+      "sha256": "0511914366663da918a3939e3407023599f464132004ea6bffb80afcd7df4504",
+      "bytes": 232
+    },
+    {
+      "path": "examples/output-001.md",
+      "sha256": "1b89817ccd07a1957a02900eed922bbc21314963debd4fd350c500162e8a5af9",
+      "bytes": 891
+    },
+    {
+      "path": "references/claim-ledger.md",
+      "sha256": "72bbc83da05ca691ed2eabf3aaf6611c6f354282ca2da3740a619fb0ebd13838",
+      "bytes": 2152
+    },
+    {
+      "path": "references/editorial-check.md",
+      "sha256": "c17701d032eaa4fdebe77ce7eaaed756244cbc591e8aef6247498574ac698ab6",
+      "bytes": 1011
+    },
+    {
+      "path": "references/index.md",
+      "sha256": "deae1027110c17df4a01a5d8fda81c0ac85fa294ab346e66ae736463f0775571",
+      "bytes": 643
+    },
+    {
+      "path": "references/note-method.md",
+      "sha256": "6534ba51ff7f7a413ffc9ff455989b4e45d557f12e380c42099f4004f45ba4f5",
+      "bytes": 1674
+    },
+    {
+      "path": "references/source-notes.md",
+      "sha256": "fc84ecd18646b3ecd57a094169b43e95a8073a82e1f8789d92f5ce004045ec9b",
+      "bytes": 636
+    }
+  ]
+}

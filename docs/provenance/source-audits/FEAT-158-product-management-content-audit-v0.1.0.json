@@ -1,0 +1,228 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-17T02:29:13Z",
+  "content_version": "0.1.0",
+  "source_root": "plugins/yijie-desktop-skills/experts/product-management/skills/product-workbench",
+  "review_kind": "source adaptation, executable local helper and normal input review; live model evidence recorded separately",
+  "original_package": {
+    "id": "product-management",
+    "version": "1.0.0"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "type": "file",
+      "bytes": 744,
+      "sha256": "312f693d84c83a454eb5571946b1a9e3bc2def9e1231a1ba3c2f4efd1ad7e121",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": ".downloaded_at",
+      "type": "file",
+      "bytes": 24,
+      "sha256": "29c0e4fdf7527c1291aa6f20753dfdeab26e79ff66ce55df0ead7488be8df69a",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": "LICENSE",
+      "type": "file",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": "README.md",
+      "type": "file",
+      "bytes": 10828,
+      "sha256": "8e52e0b3d84a5ed951140c647b7a919b980ed44c7f041a43f51ccaeb328533f5",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": "agents/product-management-expert.md",
+      "type": "file",
+      "bytes": 4015,
+      "sha256": "8f2316c9b23075426b3702dca40c9309873dc5a3439034d47c4bbf1269f284cf",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": "rules/product_management_rules.md",
+      "type": "file",
+      "bytes": 4920,
+      "sha256": "4f0f0861ceea290f3a93d888a1d94c30be0fae1710440fe8e16c684df0312e4e",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": "skills/competitive-analysis/SKILL.md",
+      "type": "file",
+      "bytes": 10540,
+      "sha256": "ac3860cec29139440a9b4e50df430378ecedebfd2f537ce1eaa6d4ce866f73be",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": "skills/feature-spec/SKILL.md",
+      "type": "file",
+      "bytes": 8860,
+      "sha256": "f5d5d24e062b86a354b300440e5cd6a3759e0bc9078e1935b4a5f18da4f4c1f4",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": "skills/metrics-tracking/SKILL.md",
+      "type": "file",
+      "bytes": 13372,
+      "sha256": "5ec7a51caf1368b16195ffb51024d26c7bf6724308d15700879cee247ecb89aa",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": "skills/product-management-workflows/SKILL.md",
+      "type": "file",
+      "bytes": 26026,
+      "sha256": "6e61a324cab9555e1fff9ae96ca6724fd8621366625b41d79f4b19752a6ad8cc",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": "skills/roadmap-management/SKILL.md",
+      "type": "file",
+      "bytes": 8805,
+      "sha256": "4f7355b580f77474ccbbc5a543b35a1f8463445a69553d8249b6b559d606c6fe",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": "skills/stakeholder-comms/SKILL.md",
+      "type": "file",
+      "bytes": 10783,
+      "sha256": "7a46aaa7bb2183ece264cc89504a6f736079b4e8a1014e045ef80a92bc838c2b",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    },
+    {
+      "path": "skills/user-research-synthesis/SKILL.md",
+      "type": "file",
+      "bytes": 11218,
+      "sha256": "968a08f0bf67a5f375d7e4ff29f3270b29d95d2af912b912bc3b87b2d848f50f",
+      "decision": "Methodology re-authored for one private expert; no source commands, identity, authorization or plugin runtime imported"
+    }
+  ],
+  "decisions": {
+    "source_files_modified": false,
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "credential_copy": false,
+    "network_scripts": false,
+    "new_runtime_dependency": false
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 326,
+      "sha256": "eab2621c2382f967fa6f08b9c0ea97ad3530ddd5156bff152d88d3a2dc7056b5",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 1650,
+      "sha256": "4b5823f92b784fb91f460f01cde7c469c4a1c912898f0e5abf2dfbdbbd2bca5a",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 1584,
+      "sha256": "6dfcd768925eb4ae9df9acdc51977e531bddcc7e69c764e9f0c71f7bd3bd3984",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 384,
+      "sha256": "2db340b5a03471aa73324632a4db835ee402835aec391b030dd983f37a83ed41",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 1374,
+      "sha256": "54b531c652c791c10c9a1ce46d608bd2293fc22cb653d03146162d6ebb0b8337",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 368,
+      "sha256": "4f0e18d1a7bda73067b6886357f6f3fdb4a864e3348e929330794b385775b3ce",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "examples/plan.json",
+      "bytes": 3181,
+      "sha256": "f8185f51eb09f956fef004248033859b453e164c9532b48bd0a0118102acbf88",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "examples/sources.json",
+      "bytes": 360,
+      "sha256": "e65b7f56dbe206c7083557a6d3321813d9a2862507d763f74270054191d589df",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "references/competitive.md",
+      "bytes": 616,
+      "sha256": "524bacbf61aef7eeaf5fb20dd5f605dc2f0ce6ebd9f551744ee67db1ce53cf41",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "references/feature-spec.md",
+      "bytes": 504,
+      "sha256": "0a08c2b9b9c6190738da05d11cb87bfd3beb601461c821fc58965c931d8fafd0",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 397,
+      "sha256": "b483157a29c6863ef219a762281f0a1ed128c69a65c163ef1939d89a249ebc6e",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "references/local-helper.md",
+      "bytes": 1544,
+      "sha256": "a1fbb40fc0acc94ad93318b1f064838cbc39c3802445f35cc02960d2ed30d019",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "references/metrics.md",
+      "bytes": 723,
+      "sha256": "f0e2145368960fea1c7de3b727937a8d10e6d894b52e812b298ef5c89e5fff3f",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "references/research.md",
+      "bytes": 595,
+      "sha256": "5f961591e24d5dbeda7bd5c364768414bbc83507d1d1b6a755aad23cb6cfd873",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "references/roadmap.md",
+      "bytes": 687,
+      "sha256": "78aae61fa0171e7fd6c992a220cd19899713745f56ecb42a089dc64650edbb61",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 402,
+      "sha256": "7723917a321719a9182ceb8e35ef905c7757f0aa375431fcb4525e73be18de98",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "references/stakeholder.md",
+      "bytes": 541,
+      "sha256": "5c36a7f9efa862b6c46b57dee914bce15a76f6710f138195f6c8f1c2bbc22238",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    },
+    {
+      "path": "scripts/product.py",
+      "bytes": 8530,
+      "sha256": "6fdd1c18ac40497ef175ee8f2d028a504a00e056db5b7eaa74d062a47455cfc5",
+      "review": "Own adaptation or retained license; local-only; no authority escalation"
+    }
+  ]
+}

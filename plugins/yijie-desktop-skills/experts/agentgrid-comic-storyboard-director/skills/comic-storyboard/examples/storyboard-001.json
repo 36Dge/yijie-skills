@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0",
+  "episodeId": "EP-001",
+  "targetDurationSec": 12,
+  "durationToleranceSec": 0,
+  "registries": {
+    "characters": [
+      "CHAR-001"
+    ],
+    "scenes": [
+      "SC-001"
+    ],
+    "props": [
+      "PROP-001"
+    ]
+  },
+  "shots": [
+    {
+      "shotId": "SH-001",
+      "sceneId": "SC-001",
+      "durationSec": 6,
+      "version": 1,
+      "status": "draft",
+      "characters": [
+        "CHAR-001"
+      ],
+      "props": [
+        "PROP-001"
+      ],
+      "narrativePurpose": "发现归还钥匙的任务",
+      "framing": "中景",
+      "camera": "固定",
+      "action": "小林捡起地上钥匙",
+      "dialogue": "是谁落下的？",
+      "continuityIn": [
+        "钥匙在地上"
+      ],
+      "continuityOut": [
+        "小林手持钥匙"
+      ],
+      "productionPrompt": "楼道中景，固定机位，动作与钥匙位置保持连续"
+    },
+    {
+      "shotId": "SH-002",
+      "sceneId": "SC-001",
+      "durationSec": 6,
+      "version": 1,
+      "status": "draft",
+      "characters": [
+        "CHAR-001"
+      ],
+      "props": [
+        "PROP-001"
+      ],
+      "narrativePurpose": "完成归还行动",
+      "framing": "中景",
+      "camera": "固定",
+      "action": "小林敲门，向门口递出钥匙",
+      "dialogue": "你的钥匙落在门外了。",
+      "continuityIn": [
+        "小林手持钥匙"
+      ],
+      "continuityOut": [
+        "钥匙递向门口"
+      ],
+      "productionPrompt": "楼道中景，固定机位，动作与钥匙位置保持连续"
+    }
+  ]
+}

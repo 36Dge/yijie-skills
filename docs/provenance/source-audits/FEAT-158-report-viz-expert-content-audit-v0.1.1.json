@@ -1,0 +1,218 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-16T14:39:20Z",
+  "content_version": "0.1.1",
+  "source_root": "plugins/yijie-desktop-skills/experts/report-viz-expert/versions/0.1.1/local-data-report",
+  "review_kind": "static-source-editorial-and-normal-file-checks",
+  "original_package": {
+    "id": "report-viz-expert",
+    "version": "1.0.0",
+    "export_relative_root": "数据报告可视化专家/原始资源"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "bytes": 2069,
+      "sha256": "73b2a822fee3bfb948d132630a7270cfc29b67824bba497af4bb65c0fedc1122",
+      "decision": "identity mapped to existing manifest v3; no WorkBuddy registration",
+      "adapted_targets": [
+        "bundle-source.json (parent)"
+      ]
+    },
+    {
+      "path": ".downloaded_at",
+      "bytes": 24,
+      "sha256": "f2425dd0ced59e8ab3b4c79971c0d733f94178a922ce4f161a66dffdb9b6abb3",
+      "decision": "source context preserved in original export; not an executable runtime instruction",
+      "adapted_targets": []
+    },
+    {
+      "path": "README.md",
+      "bytes": 1422,
+      "sha256": "d84beb7eead9bf617c75a61d9cecc585bb080d194e3fe64c77762cbfd3599d62",
+      "decision": "source context preserved in original export; not an executable runtime instruction",
+      "adapted_targets": []
+    },
+    {
+      "path": "agents/viz-architect.md",
+      "bytes": 3628,
+      "sha256": "d7d742530bd04544edd2cf91ab2974869e03c433c17d59588ba2ac7c07372075",
+      "decision": "adapted to ROLE/SKILL with explicit local capability boundaries",
+      "adapted_targets": [
+        "ROLE.md",
+        "SKILL.md"
+      ]
+    },
+    {
+      "path": "avatars/expert.png",
+      "bytes": 122370,
+      "sha256": "c4780d5f63b104793f672ce37e6bb752a106fbf52d21cd5d9477ff9f4bbfcd25",
+      "decision": "existing UI ID-mapped presentation only; excluded from runtime archive",
+      "adapted_targets": []
+    },
+    {
+      "path": "skills/antv-infographic/SKILL.md",
+      "bytes": 3674,
+      "sha256": "9071e92ccb62dc44ca419132090eb0f5e56b07b0b6d9f20aa840074fcc287472",
+      "decision": "methodology adapted to private references; no nested skills/tool permissions or concealed source/error policy",
+      "adapted_targets": [
+        "references/index.md",
+        "references/source-notes.md",
+        "references/file-workflow.md"
+      ]
+    },
+    {
+      "path": "skills/antv-infographic/scripts/build_infographic.mjs",
+      "bytes": 4772,
+      "sha256": "524e1d6429e30e0e643adb5cdac603bfdd64863601e3e9e7e5c5eb99e235d3ac",
+      "decision": "replaced by existing pinned ECharts offline rendering; no CDN, automatic npm install or private export lookup",
+      "adapted_targets": [
+        "scripts/build_report.cjs",
+        "references/file-workflow.md"
+      ]
+    },
+    {
+      "path": "skills/chartjs-report/SKILL.md",
+      "bytes": 4672,
+      "sha256": "462632ce7f1600a20089125a9a4bed967b091139982e396e797e2e6fac0aef1e",
+      "decision": "methodology adapted to private references; no nested skills/tool permissions or concealed source/error policy",
+      "adapted_targets": [
+        "references/index.md",
+        "references/source-notes.md",
+        "references/file-workflow.md"
+      ]
+    },
+    {
+      "path": "skills/chartjs-report/references/skeleton.html",
+      "bytes": 5090,
+      "sha256": "3e211690e1d9e2c8df097763496a2fe5fcf6f066ad25752acb46c0f6a2fbbff4",
+      "decision": "replaced by existing pinned ECharts offline rendering; no CDN, automatic npm install or private export lookup",
+      "adapted_targets": [
+        "scripts/build_report.cjs",
+        "references/file-workflow.md"
+      ]
+    }
+  ],
+  "decisions": {
+    "source_files_modified": false,
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "automatic_external_calls": false,
+    "scripts_in_archive": true,
+    "ordinary_skills_changed": false,
+    "previous_expert_versions_changed": false,
+    "model_eval": "separate live acceptance; not asserted by source review"
+  },
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 489,
+      "sha256": "abeedc898c12584e8b0ede523d91a15d2fdc55f5de432c2a44cd3bc04d6c17a1"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 1765,
+      "sha256": "49b7be667ff077768b5f8245292602a66085e48d0cd1626267333894a93cf7c4"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 2452,
+      "sha256": "7d1e349841b73b3c5c6619f003e7805035b632f62cef2c3bc350bf55eb093e6c"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 512,
+      "sha256": "2a23bb835a41c60c4d85f1581ba4b74fa093c5ff01ca865e009392bf393a2faf"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 1253,
+      "sha256": "0276c4b029b2ae6c7b77c3f970c15e17fffe1131aebb9215467fd2c727c06a14"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 836,
+      "sha256": "bb8355ea1605f919368040cc348e07aef62143383a57a82be3048b3c74e1e710"
+    },
+    {
+      "path": "examples/data.csv",
+      "bytes": 94,
+      "sha256": "c7863f938d2e0b5cb51e9b4fe14e09faabe354d912f6babf7e99a3aa5b1ea32d"
+    },
+    {
+      "path": "examples/output-001.md",
+      "bytes": 331,
+      "sha256": "a01db7a806605c729309299b63ffe46b8c1e42cc134cf2482ca8e0e97a38e85d"
+    },
+    {
+      "path": "examples/report-config.json",
+      "bytes": 263,
+      "sha256": "872d97d54169c75bd0f981d0a136bfbd84ba87062ec40c3fedcf1068e1155e1a"
+    },
+    {
+      "path": "references/data-method.md",
+      "bytes": 1242,
+      "sha256": "1ca07e388ce23f2cefdd540b4211c80ea558ae9064c9ac68bf996151b1b78c8b"
+    },
+    {
+      "path": "references/file-workflow.md",
+      "bytes": 1763,
+      "sha256": "251618167420e456886f2e982c617b18b37302d1990a9b590b08fe3a5b3ade6c"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 293,
+      "sha256": "1dcbce72e013132c8942b8d82eee32626a1874d99c4e2dfbb656c86582dc670d"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 1264,
+      "sha256": "bf6f5e4f86527cc16958c755738bb755248d13a6617238b157ca7435e26891ad"
+    },
+    {
+      "path": "scripts/build_report.cjs",
+      "bytes": 14097,
+      "sha256": "9837f372043d2c7f62b46bb84227b6eb72caac1d4ad83c43567464ffc3e80a64"
+    },
+    {
+      "path": "scripts/validate_svg.py",
+      "bytes": 918,
+      "sha256": "df861ce5be51a3eac3de549a4f9fff902b003360bdf8f5ec3d3691c5639bcc3b"
+    },
+    {
+      "path": "vendor/ECHARTS-LICENSE.txt",
+      "bytes": 11990,
+      "sha256": "634293835b43a6dd2094fa39182a3d9a6b9ca43b7fdb9ac354e8037af2a3093a"
+    },
+    {
+      "path": "vendor/ECHARTS-NOTICE.txt",
+      "bytes": 168,
+      "sha256": "d491d358344f842685c1b1585970999db65fe30ecf7ef3867af8814f4016c016"
+    },
+    {
+      "path": "vendor/echarts.cjs",
+      "bytes": 1121883,
+      "sha256": "b66b25aeb4df84e33199dc21694014d336d222cbd9deb0e5a7c14bd6aa0d0fd0"
+    }
+  ],
+  "rendering_dependency": {
+    "package": "echarts",
+    "version": "6.1.0",
+    "license": "Apache-2.0",
+    "source_repository": "yijie-desktop",
+    "source_lock": "pnpm-lock.yaml",
+    "source_lock_sha256": "89d6147676cc368748047b91bdc50badddf5b73d3be95dac60165e8760f97f1f",
+    "umd_source": "node_modules/echarts/dist/echarts.min.js",
+    "umd_sha256": "b66b25aeb4df84e33199dc21694014d336d222cbd9deb0e5a7c14bd6aa0d0fd0",
+    "dependency_patch": "Desktop Scheduler patch changes lib only, not copied UMD; preserved original distribution bytes",
+    "theme_source": "src/styles/variables.css light chart series tokens",
+    "theme_sha256": "f3bf335730cbbaa2213b0b7c5b55ba60c1761e46a6561fd37605cd0d61a65911",
+    "network_dependencies": []
+  },
+  "repair": {
+    "previous_version": "0.1.0",
+    "cause": "ECharts SVG SSR font-family quotes became unescaped XML attribute syntax",
+    "change": "unquoted CSS family list plus independent pre-write XML parser",
+    "old_version_and_failure_retained": true
+  }
+}

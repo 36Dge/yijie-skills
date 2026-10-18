@@ -40,7 +40,14 @@ test("v3 expert local candidate preserves all 38 ordinary package bytes and emit
     const second = await buildDesktopSkillBundle(secondDir, { sourcePath });
     assert.equal(base.schema_version, 2);
     assert.equal(first.schema_version, 3);
-    assert.equal(first.skills.length, 39);
+    assert.equal(first.skills.length, 75);
+    const retainedBytes = await readFile("docs/provenance/FEAT-158-retained-resources-v0.24.0.json");
+    assert.equal(hash(retainedBytes), "9d41fa9835616a0bb9b4e72b2656a8fdff0fa631faca32ca0c7a97de94a29970");
+    for (const previous of JSON.parse(retainedBytes).skills) {
+      const current = first.skills.find(item => item.id === previous.id && item.version === previous.version);
+      assert.deepEqual(current, previous, "All prior 73 resource versions must remain byte-identical");
+      assert.equal(hash(await readFile(path.join(firstDir, current.archive.path))), previous.archive.sha256);
+    }
     assert.deepEqual(first, second);
     assert.deepEqual(first.skills.filter(({ asset_kind }) => asset_kind !== "expert_resources"), base.skills);
     for (const skill of base.skills) {
@@ -48,6 +55,10 @@ test("v3 expert local candidate preserves all 38 ordinary package bytes and emit
     }
     const expert = first.skills.find(({ asset_kind }) => asset_kind === "expert_resources");
     assert.equal(expert.id, "yijie.experts.jd-ops-expert");
+    // Original expert content is not silently replaced when the catalog grows.
+    assert.equal(expert.version, "0.1.3");
+    assert.equal(expert.archive.sha256, "baa8c8550b8b82b5f1be7bcfc59693c8920ff438fa854e84450936685e3d3b80");
+    assert.equal(expert.expert.role_resource.sha256, "a644bf12c4573895d3e6edc7b7a619cc95cc429c910260a5ef16b5f2bce7b6f5");
     assert.equal(expert.expert.runtime_projection, "expert_only");
     assert.equal(expert.expert.platform, "jd");
     assert.equal(expert.license.redistribution_status, "unverified");
@@ -70,6 +81,7 @@ test("v3 expert local candidate preserves all 38 ordinary package bytes and emit
     const authorityBytes = await readFile(path.join(firstDir, "authority.json"));
     assert.deepEqual(authorityBytes, await readFile(path.join(secondDir, "authority.json")));
     const authority = JSON.parse(authorityBytes);
+    assert.equal(authority.experts.length, 37);
     assert.equal(authority.release, false);
     assert.equal(authority.manifest_sha256, hash(await readFile(path.join(firstDir, "bundle-manifest.json"))));
     assert.deepEqual(authority.source, first.source);
@@ -78,6 +90,29 @@ test("v3 expert local candidate preserves all 38 ordinary package bytes and emit
     assert.equal(record.local_use_authorization.evidence_sha256, hash(await readFile(record.local_use_authorization.evidence_reference)));
     assert.equal(record.content_review.sha256, hash(await readFile(record.content_review.path)));
     assert.equal(authority.contracts_candidate.sha256, hash(await readFile(authority.contracts_candidate.path)));
+    for (const current of first.skills.filter(({ asset_kind }) => asset_kind === "expert_resources")) {
+      const currentArchive = await readFile(path.join(firstDir, current.archive.path));
+      assert.deepEqual(currentArchive, await readFile(path.join(secondDir, current.archive.path)));
+      assert.equal(hash(currentArchive), current.archive.sha256);
+      const currentEntries = archiveEntries(currentArchive);
+      assert.equal([...currentEntries.keys()].filter((name) => name.endsWith("SKILL.md")).length, 1);
+      assert.equal(currentEntries.size, current.archive.file_count);
+      assert.equal(current.expert.runtime_projection, "expert_only");
+      // Native accepts the existing canonical UTC-Z metadata representation.
+      assert.ok(current.provenance.reviewed_at.endsWith("Z"));
+      assert.ok(current.license.reviewed_at.endsWith("Z"));
+      assert.equal(current.capabilities.filesystem, "read");
+      assert.equal(current.capabilities.network, "none");
+      assert.deepEqual(current.capabilities.required_tools, []);
+      for (const resource of [current.expert.role_resource, ...current.expert.knowledge_resources]) {
+        assert.equal(hash(currentEntries.get(resource.path)), resource.sha256);
+        assert.equal(currentEntries.get(resource.path).length, resource.bytes);
+      }
+      const currentAuthority = authority.experts.find(({ expert_id, version }) => expert_id === current.expert.expert_id && version === current.version);
+      assert.ok(currentAuthority);
+      assert.equal(currentAuthority.knowledge_manifest_sha256, knowledgeManifestDigest(current.expert.knowledge_resources));
+      assert.equal(currentAuthority.content_review.sha256, hash(await readFile(currentAuthority.content_review.path)));
+    }
   } finally {
     await rm(temporary, { recursive: true, force: true });
   }

@@ -1,0 +1,179 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-17T08:51:19Z",
+  "content_version": "0.1.2",
+  "source_root": "plugins/yijie-desktop-skills/experts/data-analyst-pro/versions/0.1.2/data-workbench",
+  "review_kind": "Real approved local preview import cache repair: immutable resource tree and normal start/stop verified",
+  "original_package": {
+    "id": "data-analyst-pro",
+    "version": "1.0.0"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "bytes": 2254,
+      "sha256": "1ff0afae73a1907d8eb118d84f71bc42937d111df5ef6fb791e7ffa129fda372",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": ".downloaded_at",
+      "bytes": 24,
+      "sha256": "7aaf824f0cde744ca6afb0c9e51f31b3dea2fb542df5ef74ebc1338e548d3dbf",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1645,
+      "sha256": "640032cf7c3fce4f09ce18a33aac5a5878919b298dc7cdea1d4c13d0276023cb",
+      "decision": "Preserved original archive only; not packaged or executed"
+    },
+    {
+      "path": "agents/data-analyst-pro.md",
+      "bytes": 2895,
+      "sha256": "7c1debd6c9940cb9d0d9ef15ba077bc7f108e621c80fc0b1947dfdfa8b0c4cbc",
+      "decision": "Reviewed as source material; rewritten into one Yijie entry, conflicting tool/identity requirements excluded"
+    },
+    {
+      "path": "avatars/data-analyst-pro.png",
+      "bytes": 241733,
+      "sha256": "867cce417a2b0232dce32086f5209e7926b4e1fdc0bf330cc36796ed4498f677",
+      "decision": "Local presentation image copied separately to Desktop; no redistribution claim"
+    }
+  ],
+  "decisions": {
+    "source_files_modified": false,
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "credential_copy": false,
+    "network_scripts": false,
+    "new_runtime_dependency": false
+  },
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 441,
+      "sha256": "1162f7f07d7ffc15e73fa56800fc86e88aa3c04e302877bba422ef06c74cd8d8",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 3078,
+      "sha256": "ca15eb3ce9578c52f32b0aeaedae786e54a5a7737a34ec1b7bbe9f9b8f4bd910",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 2045,
+      "sha256": "aeb035b478cefaf167ec465f56eea42932592760b8604ca05e2889a8413bf853",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 639,
+      "sha256": "03544eff8999bab10331680dd908d75799774c9b48c8014e2a82347672c8b474",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 2253,
+      "sha256": "99ded5d8fcc08ce730f8865436cfac03a3d2a581e5b1a8054fc6edad1e539481",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 509,
+      "sha256": "187c5ab114545a3f4a785c07836a1b92ed11f8ffe4f53db2a3023707f4a83144",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "examples/input.json",
+      "bytes": 1132,
+      "sha256": "3bd0a9e2d15dc57226c4076f245cb7eb0e2abe48a3fe9a44cd1f63972e3829af",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "examples/sample.csv",
+      "bytes": 163,
+      "sha256": "268f1e41a4ff2bdf8d083060a2cfe7a19b98804f6c35dbe77efb47001e9dff47",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "profile.json",
+      "bytes": 100,
+      "sha256": "f05f962a50eb6d3a548b911081ed820f97fce25ad76d7b1bd0f15cf630af5058",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "references/delivery.md",
+      "bytes": 1078,
+      "sha256": "24882ca8170d2faee09c51366ad17126116329241eaa707e1dd53c6f1f130937",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 400,
+      "sha256": "79d9a1f48edb02721102f37928f11c1a363464bcc9d5502c4590e3668f413008",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "references/input-protocol.md",
+      "bytes": 2709,
+      "sha256": "7196c573bbbb531cda417bdb906bd21318541c89ec0c88d8abafb054b398888a",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "references/method.md",
+      "bytes": 1051,
+      "sha256": "a2293c8f43828008cbf318d47cfb3ac858713cb818ba49d39f53c228a1987391",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 857,
+      "sha256": "2a2381d129206afb29b854a543597db7063a76bb3178fffb28e80923084d9f9f",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "scripts/analyze.py",
+      "bytes": 25900,
+      "sha256": "950e77380dd3b385a83ac692d446663419e62f3784eb154a393802405f99ac2a",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "scripts/preview.py",
+      "bytes": 4265,
+      "sha256": "2e8b90029752c1be31b358c9e4a9ab60cd85948ca46afde7ee06c989156ae8cc",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "scripts/tableio.py",
+      "bytes": 6488,
+      "sha256": "adcda36843b8cef9d986da8dfa11f438352f8ba632a548199fd26d274198b532",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "templates/yijie-tokens.css",
+      "bytes": 10635,
+      "sha256": "f3bf335730cbbaa2213b0b7c5b55ba60c1761e46a6561fd37605cd0d61a65911",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "vendor/ECHARTS-LICENSE.txt",
+      "bytes": 11990,
+      "sha256": "634293835b43a6dd2094fa39182a3d9a6b9ca43b7fdb9ac354e8037af2a3093a",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "vendor/ECHARTS-NOTICE.txt",
+      "bytes": 168,
+      "sha256": "d491d358344f842685c1b1585970999db65fe30ecf7ef3867af8814f4016c016",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    },
+    {
+      "path": "vendor/echarts.cjs",
+      "bytes": 1121883,
+      "sha256": "b66b25aeb4df84e33199dc21694014d336d222cbd9deb0e5a7c14bd6aa0d0fd0",
+      "review": "Versioned immutable-resource repair; no bytecode writes, existing permissions and original resource bytes preserved"
+    }
+  ]
+}

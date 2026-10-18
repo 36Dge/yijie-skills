@@ -1,0 +1,6 @@
+{
+  "premise": "原创故事：小林在楼道发现邻居落下的钥匙，敲门归还。",
+  "targetDurationSec": 12,
+  "audience": "全年龄",
+  "request": "两镜头分镜 JSON 和镜头表，校验时长"
+}

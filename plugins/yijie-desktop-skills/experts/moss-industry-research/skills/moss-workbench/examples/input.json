@@ -1,0 +1,427 @@
+{
+  "schema_version": 1,
+  "research_id": "synthetic-industry-20261017",
+  "revision": "v1",
+  "mode": "offline",
+  "title": "合成工业软件市场研究",
+  "scope": {
+    "industry": "合成工业软件市场",
+    "geography": "虚构地区",
+    "boundary": "年付费企业客户，不含实施服务",
+    "currency": "CNY",
+    "year": 2025,
+    "as_of": "2026-10-17"
+  },
+  "plan": {
+    "decision": "比较有限资源下的进入方向并明确证据缺口",
+    "depth": "deep",
+    "questions": [
+      "市场规模情景是什么",
+      "竞争结构与增长是否可比",
+      "哪些方向有证据支持优先验证"
+    ],
+    "steps": [
+      "核对边界与来源",
+      "复算规模增长和集中度",
+      "比较细分评分并保留缺值",
+      "冻结同一内容并生成指定文件"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "kind": "synthetic",
+      "title": "合成业务资料表",
+      "locator": "user-file:materials.txt",
+      "published_on": "2026-10-01",
+      "retrieved_on": "2026-10-17",
+      "content": "customers：10000 customers，2025。\nspend：1200 CNY/customer/year，2025。\nserviceable：0.4 fraction，2025。\ncapture：0.1 fraction，2025。\ncapture_low：0.05 fraction，2025。\ncapture_high：0.15 fraction，2025。\nbase：10000000 CNY/year，2023。\nend：12100000 CNY/year，2025。\nshare_a：0.4 fraction，2025。\nshare_b：0.3 fraction，2025。\nshare_c：0.2 fraction，2025。\nshare_d：0.1 fraction，2025。\nweight_demand：0.6 fraction，2025。\nweight_cost：0.4 fraction，2025。\na_demand：8 score，2025。\na_cost：3 score，2025。\nb_demand：6 score，2025。\nb_cost：2 score，2025。\nc_demand：尚无数据 score，2025。\nc_cost：2 score，2025。"
+    }
+  ],
+  "facts": [
+    {
+      "id": "customers",
+      "source_id": "S1",
+      "quote": "customers：10000 customers，2025。",
+      "value": "10000",
+      "unit": "customers",
+      "year": 2025,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "observed",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    },
+    {
+      "id": "spend",
+      "source_id": "S1",
+      "quote": "spend：1200 CNY/customer/year，2025。",
+      "value": "1200",
+      "unit": "CNY/customer/year",
+      "year": 2025,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "observed",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    },
+    {
+      "id": "serviceable",
+      "source_id": "S1",
+      "quote": "serviceable：0.4 fraction，2025。",
+      "value": "0.4",
+      "unit": "fraction",
+      "year": 2025,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "assumption",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    },
+    {
+      "id": "capture",
+      "source_id": "S1",
+      "quote": "capture：0.1 fraction，2025。",
+      "value": "0.1",
+      "unit": "fraction",
+      "year": 2025,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "assumption",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    },
+    {
+      "id": "capture_low",
+      "source_id": "S1",
+      "quote": "capture_low：0.05 fraction，2025。",
+      "value": "0.05",
+      "unit": "fraction",
+      "year": 2025,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "assumption",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    },
+    {
+      "id": "capture_high",
+      "source_id": "S1",
+      "quote": "capture_high：0.15 fraction，2025。",
+      "value": "0.15",
+      "unit": "fraction",
+      "year": 2025,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "assumption",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    },
+    {
+      "id": "base",
+      "source_id": "S1",
+      "quote": "base：10000000 CNY/year，2023。",
+      "value": "10000000",
+      "unit": "CNY/year",
+      "year": 2023,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "observed",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    },
+    {
+      "id": "end",
+      "source_id": "S1",
+      "quote": "end：12100000 CNY/year，2025。",
+      "value": "12100000",
+      "unit": "CNY/year",
+      "year": 2025,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "observed",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    },
+    {
+      "id": "share_a",
+      "source_id": "S1",
+      "quote": "share_a：0.4 fraction，2025。",
+      "value": "0.4",
+      "unit": "fraction",
+      "year": 2025,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "observed",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    },
+    {
+      "id": "share_b",
+      "source_id": "S1",
+      "quote": "share_b：0.3 fraction，2025。",
+      "value": "0.3",
+      "unit": "fraction",
+      "year": 2025,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "observed",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    },
+    {
+      "id": "share_c",
+      "source_id": "S1",
+      "quote": "share_c：0.2 fraction，2025。",
+      "value": "0.2",
+      "unit": "fraction",
+      "year": 2025,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "observed",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    },
+    {
+      "id": "share_d",
+      "source_id": "S1",
+      "quote": "share_d：0.1 fraction，2025。",
+      "value": "0.1",
+      "unit": "fraction",
+      "year": 2025,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "observed",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    },
+    {
+      "id": "weight_demand",
+      "source_id": "S1",
+      "quote": "weight_demand：0.6 fraction，2025。",
+      "value": "0.6",
+      "unit": "fraction",
+      "year": 2025,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "assumption",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    },
+    {
+      "id": "weight_cost",
+      "source_id": "S1",
+      "quote": "weight_cost：0.4 fraction，2025。",
+      "value": "0.4",
+      "unit": "fraction",
+      "year": 2025,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "assumption",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    },
+    {
+      "id": "a_demand",
+      "source_id": "S1",
+      "quote": "a_demand：8 score，2025。",
+      "value": "8",
+      "unit": "score",
+      "year": 2025,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "assumption",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    },
+    {
+      "id": "a_cost",
+      "source_id": "S1",
+      "quote": "a_cost：3 score，2025。",
+      "value": "3",
+      "unit": "score",
+      "year": 2025,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "assumption",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    },
+    {
+      "id": "b_demand",
+      "source_id": "S1",
+      "quote": "b_demand：6 score，2025。",
+      "value": "6",
+      "unit": "score",
+      "year": 2025,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "assumption",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    },
+    {
+      "id": "b_cost",
+      "source_id": "S1",
+      "quote": "b_cost：2 score，2025。",
+      "value": "2",
+      "unit": "score",
+      "year": 2025,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "assumption",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    },
+    {
+      "id": "c_demand",
+      "source_id": "S1",
+      "quote": "c_demand：尚无数据 score，2025。",
+      "value": null,
+      "unit": "score",
+      "year": 2025,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "unknown",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    },
+    {
+      "id": "c_cost",
+      "source_id": "S1",
+      "quote": "c_cost：2 score，2025。",
+      "value": "2",
+      "unit": "score",
+      "year": 2025,
+      "geography": "虚构地区",
+      "boundary": "年付费企业客户，不含实施服务",
+      "status": "assumption",
+      "limitation": "普通合成验收资料；不是真实市场数据。"
+    }
+  ],
+  "calculations": [
+    {
+      "id": "size",
+      "type": "market-size",
+      "customers": "customers",
+      "annual_spend": "spend",
+      "serviceable_share": "serviceable",
+      "capture_share": "capture"
+    },
+    {
+      "id": "low",
+      "type": "market-size",
+      "customers": "customers",
+      "annual_spend": "spend",
+      "serviceable_share": "serviceable",
+      "capture_share": "capture_low"
+    },
+    {
+      "id": "high",
+      "type": "market-size",
+      "customers": "customers",
+      "annual_spend": "spend",
+      "serviceable_share": "serviceable",
+      "capture_share": "capture_high"
+    },
+    {
+      "id": "growth",
+      "type": "growth",
+      "base": "base",
+      "end": "end",
+      "base_year": 2023,
+      "end_year": 2025,
+      "unit": "CNY/year"
+    },
+    {
+      "id": "concentration",
+      "type": "concentration",
+      "shares": [
+        "share_a",
+        "share_b",
+        "share_c",
+        "share_d"
+      ],
+      "coverage": "full",
+      "top_n": 2
+    },
+    {
+      "id": "priority",
+      "type": "weighted-score",
+      "criteria": [
+        {
+          "id": "demand",
+          "weight_fact": "weight_demand",
+          "min": "0",
+          "max": "10",
+          "direction": "benefit"
+        },
+        {
+          "id": "cost",
+          "weight_fact": "weight_cost",
+          "min": "0",
+          "max": "10",
+          "direction": "cost"
+        }
+      ],
+      "alternatives": [
+        {
+          "id": "a",
+          "scores": {
+            "demand": "a_demand",
+            "cost": "a_cost"
+          }
+        },
+        {
+          "id": "b",
+          "scores": {
+            "demand": "b_demand",
+            "cost": "b_cost"
+          }
+        },
+        {
+          "id": "c",
+          "scores": {
+            "demand": "c_demand",
+            "cost": "c_cost"
+          }
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "F1",
+      "kind": "assumption",
+      "text": "基准情景 TAM 为 {{calc:size:TAM}} CNY/year，SAM 为 {{calc:size:SAM}} CNY/year，SOM 为 {{calc:size:SOM}} CNY/year。",
+      "fact_ids": [
+        "customers",
+        "spend",
+        "serviceable",
+        "capture"
+      ],
+      "limitations": "服务覆盖与获取率是假设，市场规模口径排除实施服务，不能作为实际收入承诺。",
+      "next_action": "核实客户基数和年度支出，先验证可服务范围。"
+    },
+    {
+      "id": "F2",
+      "kind": "inference",
+      "text": "本资料区间 CAGR 为 {{calc:growth:CAGR}}（小数），与底层规模情景分别保留，不能混为一个统计序列。",
+      "fact_ids": [
+        "base",
+        "end"
+      ],
+      "limitations": "均为合成口径，不代表最新市场趋势。",
+      "next_action": "取得同统计边界的原始年度资料。"
+    },
+    {
+      "id": "F3",
+      "kind": "recommendation",
+      "text": "建议先验证细分方向 a 与 b 的需求和成本，c 因需求评分缺失暂不排序。",
+      "fact_ids": [
+        "weight_demand",
+        "weight_cost",
+        "a_demand",
+        "a_cost",
+        "b_demand",
+        "b_cost",
+        "c_demand",
+        "c_cost"
+      ],
+      "limitations": "权重与评分均由任务假设给定，排序不是客观行业评级。",
+      "next_action": "补齐 c 的证据并对权重进行另版复算。"
+    }
+  ],
+  "gaps": [
+    "没有可用 MOSS 账号，本轮未调用 MOSS 或任何在线搜索。",
+    "实际客户需求、支付意愿和成本需要进一步核实。"
+  ],
+  "formats": [
+    "html",
+    "xlsx",
+    "docx",
+    "pdf",
+    "pptx"
+  ]
+}

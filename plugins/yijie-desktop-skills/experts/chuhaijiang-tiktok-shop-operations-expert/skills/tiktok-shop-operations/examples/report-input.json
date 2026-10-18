@@ -1,0 +1,36 @@
+{
+  "shop_id": "synthetic-shop-1",
+  "source": "用户合成报表；非实时",
+  "current": {
+    "start": "2026-10-08",
+    "end": "2026-10-14",
+    "timezone": "Asia/Shanghai",
+    "currency": "USD",
+    "basis": "settled-orders",
+    "data_available_date": "2026-10-14",
+    "metrics": {
+      "gmv": "1000",
+      "orders": 50,
+      "paying_buyers": 45,
+      "visitors": 500,
+      "refund_orders": null
+    },
+    "refund_basis": "same_order_cohort"
+  },
+  "previous": {
+    "start": "2026-10-01",
+    "end": "2026-10-07",
+    "timezone": "Asia/Shanghai",
+    "currency": "USD",
+    "basis": "settled-orders",
+    "data_available_date": "2026-10-07",
+    "metrics": {
+      "gmv": "800",
+      "orders": 40,
+      "paying_buyers": 35,
+      "visitors": 500,
+      "refund_orders": 1
+    },
+    "refund_basis": "same_order_cohort"
+  }
+}

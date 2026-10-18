@@ -1,0 +1,5 @@
+{"id": "feat158-pdd-ops-expert-01-v010", "source": "synthetic", "input": {"scenario": "finance", "request": "明确毛利40%，消耗100，归因成交额200，生成报告"}, "expected": "毛利贡献-20、保本ROI2.5、每广告元毛利亏损0.2；不称净利润"}
+{"id": "feat158-pdd-ops-expert-02-v010", "source": "synthetic", "input": {"scenario": "missing", "request": "导出表广告成交额空白，消耗真实0"}, "expected": "空白null、真实0；无法得出完整ROI或利润，不默认毛利率"}
+{"id": "feat158-pdd-ops-expert-03-v010", "source": "synthetic", "input": {"scenario": "units", "request": "回复率1.2%及XLSX百分比底层0.012"}, "expected": "两种均0.012，明确单位，不靠大小猜百分比"}
+{"id": "feat158-pdd-ops-expert-04-v010", "source": "synthetic", "input": {"scenario": "scope", "request": "混合平台和缺日期的正常导出数据"}, "expected": "确认范围后隔离缺日期及异平台行，展示缺口和已知小计"}
+{"id": "feat158-pdd-ops-expert-05-v010", "source": "synthetic", "input": {"scenario": "files", "request": "请生成HTML并补数据后再生成新版"}, "expected": "真实执行已安装程序，读回JSON/HTML/收据，原文件不覆盖"}

@@ -1,0 +1,829 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-17T15:43:35.956175Z",
+  "content_version": "0.1.3",
+  "source_root": "plugins/yijie-desktop-skills/experts/tb-tm-ops-expert/versions/0.1.3/taobao-workbench",
+  "review_kind": "Versioned CSS-only compact-table label width repair after real narrow-browser review; all calculation and prior resources preserved",
+  "original_package": {
+    "id": "tb-tm-ops-expert",
+    "version": "1.1.0"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "type": "file",
+      "bytes": 2151,
+      "sha256": "9ee93ff7fd5437b8fce98030ade6c10d91c586a2db395272026a48fe5214579a",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": ".downloaded_at",
+      "type": "file",
+      "bytes": 24,
+      "sha256": "853e8ed3954a108bbd6c3176125324e870a105775f7de97336bdd341fcf19bed",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "README.md",
+      "type": "file",
+      "bytes": 25536,
+      "sha256": "1c98e932da7089d1ef4e7a4f576cd86f62f572c19cd609d85b8efa742c6f629a",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "_交付/tb-tm-ops-expert-1.1.0-expert.zip",
+      "type": "file",
+      "bytes": 1609583,
+      "sha256": "8dc4bd8a91abbec4db45261cef3a730d5ef692e30196348cd6022f7ca07918cf",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "_交付/样例诊断报告-淘宝样例店-收纳家居.html",
+      "type": "file",
+      "bytes": 74857,
+      "sha256": "aeb9ffc5c17babbc6934aa9aa715f30f86ab470244bdf34123e023fb0fe7706b",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "_交付/样例诊断结果.json",
+      "type": "file",
+      "bytes": 72687,
+      "sha256": "559ec96615568b394feceaf2f96d280310bd13eefcc33d9070dca9aca678e57c",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "agents/tb-tm-ops-expert.md",
+      "type": "file",
+      "bytes": 13386,
+      "sha256": "58f02d7e3321a258f9203a5a1e71b43ccca99817567b56de0a96048400f2b10b",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "avatars/expert.png",
+      "type": "file",
+      "bytes": 37469,
+      "sha256": "ee48ead8eb69e79582d7f0e240d28cc81c7dbe908ffde055ab3315ad8c83e046",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "data/export_checklist.md",
+      "type": "file",
+      "bytes": 23653,
+      "sha256": "0afc81920c7ccaaff913b0beb1ce633fa5111ba9f3433801e7609c0960d85971",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "data/files.json",
+      "type": "file",
+      "bytes": 70436,
+      "sha256": "38dd68dc2175e420115ab7d17d20ecaaeb103ed1c24e1466d1010f696b427b06",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "docs/上传前检查清单.md",
+      "type": "file",
+      "bytes": 12172,
+      "sha256": "1aab78de17f2fbccbd02a752d28d1043c4f74e4e777679625e23eb3ad600aedd",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "docs/反蒸馏与分发边界.md",
+      "type": "file",
+      "bytes": 7404,
+      "sha256": "5aacaf0592d8c957f76de897d2afd7743878dd247271b15528bdce7a626913a7",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "docs/快速上手-给运营.md",
+      "type": "file",
+      "bytes": 20132,
+      "sha256": "a9faaf0e6453bb401ba601f9b61b62961a9426378fb1b2a074067e432b48bf50",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "docs/版本说明.md",
+      "type": "file",
+      "bytes": 16150,
+      "sha256": "22b79606b44ae11cf91839a99e9753f64b50eed0589f02cc2a771b5e4e20b6e2",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "docs/诊断引擎说明.md",
+      "type": "file",
+      "bytes": 43759,
+      "sha256": "98c931163ac4ebd9592ca8ab8b70fce6a2d9149e4be08f520493c6cf1d725fde",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "docs/验证说明与验证边界.md",
+      "type": "file",
+      "bytes": 7692,
+      "sha256": "fa84233c21366febe4e7b6daf5b7f08c388c742f7c7849a18ae52987d61dfbbd",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "kb/calibration.md",
+      "type": "file",
+      "bytes": 43168,
+      "sha256": "3c1e69259aee596bd5f906599435912f4eece7380f278686d4dc51e1105a10ad",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "kb/metrics.json",
+      "type": "file",
+      "bytes": 17514,
+      "sha256": "d7bba05caee902aedf1dad0019252e34ff49cf7d9d53d9d1edb1b4e41dd8c5e8",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "references/_manifest.json",
+      "type": "file",
+      "bytes": 2517,
+      "sha256": "204669e2bb8a7b7fadf1ba28f5b105a1415259d3e0159c7612dc5008f6719723",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "references/entry_index.md",
+      "type": "file",
+      "bytes": 72688,
+      "sha256": "ad14445d4ed1e0f7f69de79cd17c7e08e602f7f92f3ec80f2ac166fa0b6997df",
+      "decision": "Dated operational source data retained under references/archive with explicit non-authority wrapper; no current-rule certification"
+    },
+    {
+      "path": "references/上架发布.md",
+      "type": "file",
+      "bytes": 190289,
+      "sha256": "f7c6d2cf623c4c07643796a95002bc15a74724d1b755e5dd3e361a12ae12a018",
+      "decision": "Dated operational source data retained under references/archive with explicit non-authority wrapper; no current-rule certification"
+    },
+    {
+      "path": "references/主图视频与素材.md",
+      "type": "file",
+      "bytes": 165454,
+      "sha256": "3c9613654cbf1221b35e1912dbaa3d6b1cae7a1cb9d0fa9694d959cbb8d5e127",
+      "decision": "Dated operational source data retained under references/archive with explicit non-authority wrapper; no current-rule certification"
+    },
+    {
+      "path": "references/使用说明.md",
+      "type": "file",
+      "bytes": 4934,
+      "sha256": "c578e4b868defe3446ac94a6d89624b10ee1ad8c153bd2b54331fa644d2b5930",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "references/全流程动作表.md",
+      "type": "file",
+      "bytes": 48335,
+      "sha256": "6954b7af125b6df095afd59f128f3e5d6c41a29eddce1ebf2c38020aa36c6b52",
+      "decision": "Dated operational source data retained under references/archive with explicit non-authority wrapper; no current-rule certification"
+    },
+    {
+      "path": "references/全阶段检查表与复盘.md",
+      "type": "file",
+      "bytes": 243952,
+      "sha256": "3c008577ec1a88f821f82689b4dd5341696ce9629c381e73b72a21e20d515e15",
+      "decision": "Dated operational source data retained under references/archive with explicit non-authority wrapper; no current-rule certification"
+    },
+    {
+      "path": "references/发货时效与物流履约.md",
+      "type": "file",
+      "bytes": 172959,
+      "sha256": "896dec3191a8071a221d4891600192dfb399e894a1760099050207101e238f59",
+      "decision": "Dated operational source data retained under references/archive with explicit non-authority wrapper; no current-rule certification"
+    },
+    {
+      "path": "references/合规运营红线.md",
+      "type": "file",
+      "bytes": 187494,
+      "sha256": "06c1301eb9846d2d7e65ea40219b91d11d3541a761a5078dbfb2c650ffe2315a",
+      "decision": "Dated operational source data retained under references/archive with explicit non-authority wrapper; no current-rule certification"
+    },
+    {
+      "path": "references/定价与券体系.md",
+      "type": "file",
+      "bytes": 217865,
+      "sha256": "031bc6d6ff91cfb5f04fc956678c7516e904f24ed83d43067853ddb5f1a18734",
+      "decision": "Dated operational source data retained under references/archive with explicit non-authority wrapper; no current-rule certification"
+    },
+    {
+      "path": "references/客服与售后.md",
+      "type": "file",
+      "bytes": 214235,
+      "sha256": "ef563252aecbb84cc746da341b02f42512b1a7efac7fc07f33b43e86bb60af32",
+      "decision": "Dated operational source data retained under references/archive with explicit non-authority wrapper; no current-rule certification"
+    },
+    {
+      "path": "references/封面.md",
+      "type": "file",
+      "bytes": 2284,
+      "sha256": "39c060ee71130f2faa39e9284d79242a11913f41a7efb3b69999aacdf73bf3c1",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "references/平台规则修正对照.md",
+      "type": "file",
+      "bytes": 151097,
+      "sha256": "49557bc25125686939fffecfc369ad36fa142444f784eee5108e5e3a5cd0fa6a",
+      "decision": "Dated operational source data retained under references/archive with explicit non-authority wrapper; no current-rule certification"
+    },
+    {
+      "path": "references/推广投放（万相台无界版）.md",
+      "type": "file",
+      "bytes": 238492,
+      "sha256": "185eb04d22e5b27214cdce2be4a96029f3b7d7ebf5bc3032b257adec60a8ca33",
+      "decision": "Dated operational source data retained under references/archive with explicit non-authority wrapper; no current-rule certification"
+    },
+    {
+      "path": "references/新品破零与冷启动.md",
+      "type": "file",
+      "bytes": 208534,
+      "sha256": "a4d493274ee85d21134b95ef212d5e321a5b20016c3d49261c6b660fadf91c06",
+      "decision": "Dated operational source data retained under references/archive with explicit non-authority wrapper; no current-rule certification"
+    },
+    {
+      "path": "references/活动提报.md",
+      "type": "file",
+      "bytes": 225184,
+      "sha256": "a711bc54ede4d3bc91fac4eef0c948a839803e00caeb40f8196cc6f3c770d56f",
+      "decision": "Dated operational source data retained under references/archive with explicit non-authority wrapper; no current-rule certification"
+    },
+    {
+      "path": "references/淘宝客·达人·直播·短视频内容营销.md",
+      "type": "file",
+      "bytes": 250157,
+      "sha256": "e6336b71c1937ae8942a7ee948ad52b50617883f3659654282b20a6f618da8b5",
+      "decision": "Dated operational source data retained under references/archive with explicit non-authority wrapper; no current-rule certification"
+    },
+    {
+      "path": "references/真实体验分与DSR.md",
+      "type": "file",
+      "bytes": 196242,
+      "sha256": "2186f6c69315205c41deeb3447d7651ad6f1733540facc4b30159530ddf47af3",
+      "decision": "Dated operational source data retained under references/archive with explicit non-authority wrapper; no current-rule certification"
+    },
+    {
+      "path": "references/运营节奏与红线.md",
+      "type": "file",
+      "bytes": 22780,
+      "sha256": "894dafce9f3c6f0f960d7f221e74e6d41decd4cc962e99afe95ccd33ce2f01fd",
+      "decision": "Dated operational source data retained under references/archive with explicit non-authority wrapper; no current-rule certification"
+    },
+    {
+      "path": "references/运营认知.md",
+      "type": "file",
+      "bytes": 152969,
+      "sha256": "acb1a16dea643b270b88e768e4540d10c38b9f8833bf8eaf37316eaa334bf904",
+      "decision": "Dated operational source data retained under references/archive with explicit non-authority wrapper; no current-rule certification"
+    },
+    {
+      "path": "references/选品与成本核算.md",
+      "type": "file",
+      "bytes": 146483,
+      "sha256": "65f3199590f5fefc665566bba4d839025d9b690083368609a45b06a58b39168b",
+      "decision": "Dated operational source data retained under references/archive with explicit non-authority wrapper; no current-rule certification"
+    },
+    {
+      "path": "scripts/check_anti_distill.mjs",
+      "type": "file",
+      "bytes": 5994,
+      "sha256": "687f116f7f7654385dcc846153f04cc2f51781b5ba8c3044d666889090bc5cdf",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/diag.mjs",
+      "type": "file",
+      "bytes": 10458,
+      "sha256": "9e322bf9dc9267f4cfde258e2aa271719c679c32de81a6306d729bc61361c781",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/final_check.mjs",
+      "type": "file",
+      "bytes": 15979,
+      "sha256": "48086227edde2c21c52cd709d509a495ff6734b58fd0b3de8aa0382e46003d5c",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/fix_table_separators.mjs",
+      "type": "file",
+      "bytes": 3081,
+      "sha256": "f09353d5f7fb75fe3b60005a6254aea97d63a1591eaa6c5c1f9ad3591b3cbf4c",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/gen_avatar.cjs",
+      "type": "file",
+      "bytes": 9884,
+      "sha256": "059767ebf86246a6a4be3b4209b919730f7de02cf67f9dd5ae6b3af9bcd5f7f3",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/gen_sample.mjs",
+      "type": "file",
+      "bytes": 55826,
+      "sha256": "48c2e732a5605e23c47dfeb909a9f110cfe9993df11c84eb2f8858035a19858f",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/lib/analyze.mjs",
+      "type": "file",
+      "bytes": 103821,
+      "sha256": "ab34da604ea2221ceba73f2ed4666f38de07171f3bf85f346bc15e2985125816",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/lib/minimal_read.mjs",
+      "type": "file",
+      "bytes": 9377,
+      "sha256": "5e85a256ad1c9bfe5d6c8026c37c87536d5171c58f1dc9cd3ba0a6d74cb0fa64",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/lib/parse.mjs",
+      "type": "file",
+      "bytes": 18002,
+      "sha256": "126eceecc842fb8cd4e30e4111768a24907f8d4a3a22ab135b192df8866e5a56",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/lib/report.mjs",
+      "type": "file",
+      "bytes": 38645,
+      "sha256": "6eecfd97ba78a36a740034ec471b341014d937814842c1194f26b785e584adbf",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/lib/schema.mjs",
+      "type": "file",
+      "bytes": 15433,
+      "sha256": "bfad96030e25f237211e3c9a04537f9e0222cb3f41acf2a7bb20c860f773c255",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/pack_expert.mjs",
+      "type": "file",
+      "bytes": 5034,
+      "sha256": "9eea86a80cbed7ac922bb7c90eec2cd880bec6cafa3d8c2858f43f9b134064e7",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/qa_report.mjs",
+      "type": "file",
+      "bytes": 5126,
+      "sha256": "b5b9bf4adf4e9710732fc67ea0c51fd554556e93c0eed2c50a7be1975380c2aa",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/readback.mjs",
+      "type": "file",
+      "bytes": 5290,
+      "sha256": "7f58f7a3212008819f788b7b139f424e6912eb80818aa83b8ec46d4f57c09989",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/reconcile_facts.mjs",
+      "type": "file",
+      "bytes": 3523,
+      "sha256": "ed9743318c85faff27783a46c8b4547a81db60b8cd734614f3ddf542403d09ba",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/regression_fixes.mjs",
+      "type": "file",
+      "bytes": 19786,
+      "sha256": "cc4f2b92a37f2338ea2428cb11418b15a4ed36567383459c0af4ed71ae89f368",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/render_glyph.ps1",
+      "type": "file",
+      "bytes": 1771,
+      "sha256": "1df38586e97731f06e49dff970968814642d69d4dec1082650fa882ef978ea3c",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/validate_expert.mjs",
+      "type": "file",
+      "bytes": 12510,
+      "sha256": "95c9bdae5b815d8a7df960e60342cd88d5b7657cec591170a31e77442f54f8fc",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/verify_anchors.mjs",
+      "type": "file",
+      "bytes": 2031,
+      "sha256": "97338fe53724a5b89de308d5f64deb37eaa9ed0128025202a745c75c750c9b8d",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/verify_sample.mjs",
+      "type": "file",
+      "bytes": 28496,
+      "sha256": "4f30205c6651060eee7966ba17ab2558bfaebef9147ce1e48040b8664a049d1c",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/xlsx.mjs",
+      "type": "file",
+      "bytes": 37974,
+      "sha256": "ef05b7014d2a05b30a4fb3df7dd26c24aa3587b8bedf8d58f487d69dfecc25a2",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/xlsx_selftest.mjs",
+      "type": "file",
+      "bytes": 23838,
+      "sha256": "fc54945659a8e2a0cf52614863a6e08f5f81d7e9f5e457721db4de08fee49ea7",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "scripts/xlsx_stress.mjs",
+      "type": "file",
+      "bytes": 9760,
+      "sha256": "0f81f515bcf05c035497a487d23a3ec854fbe8160e12d2a3cdcac6d61846694f",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "skills/tb-tm-ops-kb/SKILL.md",
+      "type": "file",
+      "bytes": 13324,
+      "sha256": "f088670f34ba67166cc076f44c4187853183d8c8052af6e4098075ab90d534d0",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/README.md",
+      "type": "file",
+      "bytes": 13214,
+      "sha256": "caaa2d7088ed56825e526ab045001e642535be18dcb1724b933053091e77db1c",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/_diag_xlsx.json",
+      "type": "file",
+      "bytes": 54952,
+      "sha256": "3d824227815d2c43e1df8ec2516132b5a190e0e4a64842d7dc8e05130a2af247",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/_diag_xlsx.md",
+      "type": "file",
+      "bytes": 11953,
+      "sha256": "68173ec6f881c9dd0781e011756710cd2a3a8114c58a3516900889ff7920bed0",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/_facts.json",
+      "type": "file",
+      "bytes": 1017,
+      "sha256": "beeeae78152f344c3cdc52d66a6f4a1588f898bbe511d6a4cbd640896a76c6c8",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/_readback.txt",
+      "type": "file",
+      "bytes": 8091,
+      "sha256": "7bdf9d53bf75f92c445564e3edef6526ac27551723dd20e6844d4e37192a26a4",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/_verify_report.txt",
+      "type": "file",
+      "bytes": 10235,
+      "sha256": "b14e987493cff8ceb55814aab6ea2b42b92f58e1bde6d643bae8231e71071358",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/assumptions.json",
+      "type": "file",
+      "bytes": 743,
+      "sha256": "a85fdbc620be0a0990a120bf87b8ab5207b0298a85da337d82174030b4cf9175",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/csv/交易概况_分天_20260801_20260831.csv",
+      "type": "file",
+      "bytes": 1774,
+      "sha256": "b3ade3c84b31740adb3f8b4e1d9ecfd23f53aec68a9941dea3307f492260271a",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/csv/体验分明细_20260601_20260831.csv",
+      "type": "file",
+      "bytes": 6318,
+      "sha256": "1a0e221b57f3428c90d79c45f7a7cfdd1cf1a03974c4efce600c7214c19f9423",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/csv/关键词推广报表_20260801_20260831.csv",
+      "type": "file",
+      "bytes": 1100,
+      "sha256": "ed32a86a0f9713d12e7fe7777cdc45c1280044b06babfd3bb3d5425de772a311",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/csv/售后退款明细_20260801_20260831.csv",
+      "type": "file",
+      "bytes": 12108,
+      "sha256": "bd13532108e342c60faff06a0d4a954d16d861681368aa6cb44966da6c910bf2",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/csv/商品效果_20260801_20260831.csv",
+      "type": "file",
+      "bytes": 4396,
+      "sha256": "84a89bb6192841e45c1c5ed835da9bb90d629c31b3b9ce6f69482fafea2bf0d7",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/csv/客服绩效_20260801_20260831.csv",
+      "type": "file",
+      "bytes": 219,
+      "sha256": "4b08dd025a9284ef26193c40512f06987e5915560ed5fb3a9b8ee82ab34b3132",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/csv/流量来源_20260801_20260831.csv",
+      "type": "file",
+      "bytes": 245,
+      "sha256": "f8a3445fc4912c8a194c7be3f37b08d7bbd8f9ec697e08c5c881557921ae2817",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/csv/订单明细_20260801_20260831.csv",
+      "type": "file",
+      "bytes": 338937,
+      "sha256": "47f64d4c1b2282643f543e4e333f8348b0ca77885cfe95742ae5d53f544b9541",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/xlsx/交易概况_分天_20260801_20260831.xlsx",
+      "type": "file",
+      "bytes": 4463,
+      "sha256": "a6e47af45a89a096177a42f88a94d38700636323db112223eb5544dec32e3dc3",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/xlsx/体验分明细_20260601_20260831.xlsx",
+      "type": "file",
+      "bytes": 7157,
+      "sha256": "b5357d0eb062eebf1e1dd33595dd7148894daa6df4d6fb34b8d1dd4c3b13bef3",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/xlsx/关键词推广报表_20260801_20260831.xlsx",
+      "type": "file",
+      "bytes": 3639,
+      "sha256": "9c6f9fb62b6a26076bd77c4a74d5b21b5387a37421e95411b0b986a3d3b4abdd",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/xlsx/售后退款明细_20260801_20260831.xlsx",
+      "type": "file",
+      "bytes": 8077,
+      "sha256": "37e7dc626b0f69b517e6525f8bfe0a63c759b76bfeb6d5eda5888f600087a7ae",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/xlsx/商品效果_20260801_20260831.xlsx",
+      "type": "file",
+      "bytes": 6051,
+      "sha256": "1680a0caa5a0b9a64e56b831d3228944404519d123ff9c7ced4b91c4175b7776",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/xlsx/客服绩效_20260801_20260831.xlsx",
+      "type": "file",
+      "bytes": 2959,
+      "sha256": "eab6b562cd063c16c1a7e355e6518e8907ccbfc2077321c47716ad6974e1bef5",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/xlsx/流量来源_20260801_20260831.xlsx",
+      "type": "file",
+      "bytes": 2999,
+      "sha256": "e7230bb7230f46200a5890713498bcd3b0261b770f6606f9d5a6a86d5c6c4e52",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    },
+    {
+      "path": "示例数据/xlsx/订单明细_20260801_20260831.xlsx",
+      "type": "file",
+      "bytes": 101780,
+      "sha256": "784ec64fe671d193416e4c9cbafdb644624273ce8b8c5f84bad54381450c73bb",
+      "decision": "Reviewed as migration input; not packaged or executed. Source defaults, anti-attribution, scripts and samples are not runtime authority"
+    }
+  ],
+  "decisions": {
+    "source_files_modified": false,
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "credential_copy": false,
+    "network_scripts": false,
+    "new_runtime_dependency": false
+  },
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 357,
+      "sha256": "87d11503f7f5222f182f4e5c93a8144285be242122bed313d25dafebfcc206a8",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 3020,
+      "sha256": "4bb296c9b515ddb394e506df17407cef524c38b914bb08d0219c2eb348bf2d39",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 1639,
+      "sha256": "fbd5e6878967dc7ff26f3cccd603e894cc9659bb5be6fdb8be922211bd603e2f",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 939,
+      "sha256": "858fed8ec06f8efbdb0196e758d4b8e79d2e2d84ec4b48907d8d6adf4e21b361",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 1924,
+      "sha256": "897c323252dd34aa75dde0b4ad23296c5ee568465b923c04dc157f524480abab",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 694,
+      "sha256": "d0e757f40e62acb62d46617e8434ea7d0f27237b60c8e008137826db5e00304d",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "examples/ads.csv",
+      "bytes": 101,
+      "sha256": "4121584e02ba09b668541f377f4dfa56b0c446e19f0c9de5cb3f1b50c00ccdf8",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "examples/manifest.json",
+      "bytes": 1188,
+      "sha256": "fa8d6d3af50b38809702b7ecae1fdf656a7d9b7343e02c0fed7e006357c3afc6",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "profile.json",
+      "bytes": 108,
+      "sha256": "7b01ec68e813e5ca14961fa92d45fd0bb4a3b9c418d37062b8fc56d44349a9e2",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/archive/entry_index.md",
+      "bytes": 72879,
+      "sha256": "a88537b5c9ef6461a2c9ec541fcdaa352ef467c87e452c9f607f14cec44c90be",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/archive/上架发布.md",
+      "bytes": 190480,
+      "sha256": "334e65f11ddbfbfa8ada5a8ad52d49e1aff46286e3c84eff85f761e6f235d46d",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/archive/主图视频与素材.md",
+      "bytes": 165645,
+      "sha256": "0f54f51ccd95aefaef06dfc087468c2f59a637732aab83fc7a267413699b5e5a",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/archive/全流程动作表.md",
+      "bytes": 48526,
+      "sha256": "d7db8b18cd80aa206358d22736ca21e1bc33e89b47170aecb2d7a83aee9c662c",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/archive/全阶段检查表与复盘.md",
+      "bytes": 244143,
+      "sha256": "e47444a72bf1334eb94560420caf4b545dda2108818e7b8806e05f16c13a130a",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/archive/发货时效与物流履约.md",
+      "bytes": 173150,
+      "sha256": "b9b5cca205dbb3354eaff86e6c3e9366e16c96cb04e160c96181846c1d24bd72",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/archive/合规运营红线.md",
+      "bytes": 187685,
+      "sha256": "b94cd1925d6908ca9c00a79ed8fe808334583b535d48b7ccbae4055a11c0cfff",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/archive/定价与券体系.md",
+      "bytes": 218056,
+      "sha256": "4e41d007497a6b98b1fa0d425b7b85dc81115daa201ae3d9d2078ba6850d7771",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/archive/客服与售后.md",
+      "bytes": 214426,
+      "sha256": "8293582a33ef2e62c40907dd167805835c00016d7cf1f7c1f5b8d2f37e125551",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/archive/平台规则修正对照.md",
+      "bytes": 151288,
+      "sha256": "658e0d0e6bd6c5e1b6ef2c2874c596909f49ee0a0965211eafc53d7b20e1c665",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/archive/推广投放（万相台无界版）.md",
+      "bytes": 238683,
+      "sha256": "e2faa8d1c04950b07354adeda385b61329711df90c7171f9d80a86510ffc8940",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/archive/新品破零与冷启动.md",
+      "bytes": 208725,
+      "sha256": "bb864c01d4c09dba6b63b93befb0352add24a7fdd387b8fb57d94c2aeb78903e",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/archive/活动提报.md",
+      "bytes": 225375,
+      "sha256": "a2ad06a4c53fd9b85c35d94e574393ab5d72c95284e1eb3d62bec98a93e685fa",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/archive/淘宝客·达人·直播·短视频内容营销.md",
+      "bytes": 250348,
+      "sha256": "b1829eaad83a2a37b0ef9b488c078d830e7286b8a77d88010351f1fe0b991e0c",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/archive/真实体验分与DSR.md",
+      "bytes": 196433,
+      "sha256": "3f644136699256e231eb2e8a42947f0aa8dd1cc4e9a9cb3b9292b7bc1fc2487b",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/archive/运营节奏与红线.md",
+      "bytes": 22971,
+      "sha256": "44d1956ca50524f309f787206e4ca09ae9d5f81da650d44cff62251676221fa8",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/archive/运营认知.md",
+      "bytes": 153160,
+      "sha256": "7bf52e2d70981eb425c30cd061139f915b5b8fece113a1ec3aa047bd1e5f138a",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/archive/选品与成本核算.md",
+      "bytes": 146674,
+      "sha256": "d372ad0b3de828367ce42ca19df8f74b472234dd70b31527ad882086d00c8e5c",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 1141,
+      "sha256": "5dda35efb268317665084275a50ec4c9d0ddec5755eb5ec6bc0c92138c2c126b",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/input-protocol.md",
+      "bytes": 4429,
+      "sha256": "33fe867e724cfb2d00d66c3cbd80f9189a7c81ca13c963383f7d7a40ed283f57",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/method.md",
+      "bytes": 1831,
+      "sha256": "4c2426c9fc8750e9147917c711140c21f9cb0fd2634906d2775ba8106a3e802d",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/platform-workflow.md",
+      "bytes": 791,
+      "sha256": "3b834a313cd50ee9d23f52fdd8dbd6fc5d8f3d9cfd70f831cb2a92edfd85787e",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 639,
+      "sha256": "14d1b9ecb3588b46cc82c27e0a73d60dcfbfd2446248b05b74edf31a67dc5310",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "scripts/diagnose.py",
+      "bytes": 30374,
+      "sha256": "a9bc4c7ff7591455ed68d3a29d07650ae40c79a43e0c770f1b04a2bc6c0e8229",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    },
+    {
+      "path": "scripts/tableio.py",
+      "bytes": 6488,
+      "sha256": "adcda36843b8cef9d986da8dfa11f438352f8ba632a548199fd26d274198b532",
+      "review": "Previous reviewed content retained; diff only version identity, CSS compact label min-width and review checklist/rubric"
+    }
+  ]
+}

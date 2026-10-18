@@ -1,0 +1,16 @@
+{
+  "topic": "便携榨汁杯",
+  "facts": {
+    "capacity_ml": 350,
+    "washable_parts": "杯体可拆洗",
+    "port": "USB-C"
+  },
+  "audience": "通勤上班族",
+  "request": "五个标题、封面文案、客观笔记和十个相关标签",
+  "unknown": [
+    "价格",
+    "续航",
+    "能否碎冰",
+    "使用体验"
+  ]
+}

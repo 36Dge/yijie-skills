@@ -1,0 +1,204 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-17T09:50:43Z",
+  "content_version": "0.1.0",
+  "source_root": "plugins/yijie-desktop-skills/experts/linkfox-expert-aigc-videogen-sale/skills/sales-video",
+  "review_kind": "Full local source and code review; online/video quality not verified",
+  "original_package": {
+    "id": "linkfox-expert-aigc-videogen-sale",
+    "version": "2.1.0"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "bytes": 2117,
+      "sha256": "46e9c9a4e70555805e65d209ab3c6551e47d51a75b441028405938bdb8c53856",
+      "decision": "Source data only; adapted bounded workflow, no inherited instruction authority"
+    },
+    {
+      "path": ".downloaded_at",
+      "bytes": 24,
+      "sha256": "c3a1c43888f3de50574a817d30bfac3e05354e1c06b9d3c6558041d087427c2a",
+      "decision": "Source data only; adapted bounded workflow, no inherited instruction authority"
+    },
+    {
+      "path": "README.md",
+      "bytes": 960,
+      "sha256": "aabb12f086007b331a4a9e8a29839cc5e181a1f7822242768dd9032e8e23a9b9",
+      "decision": "Source data only; adapted bounded workflow, no inherited instruction authority"
+    },
+    {
+      "path": "agents/linkfox-expert-aigc-videogen-sale.md",
+      "bytes": 2743,
+      "sha256": "c238f9ad9fe881c8c2c973c1b3dcff4c2ec696ffaf725fea5c0de2c7c56a9489",
+      "decision": "Source data only; adapted bounded workflow, no inherited instruction authority"
+    },
+    {
+      "path": "avatars/expert.png",
+      "bytes": 253131,
+      "sha256": "06fd3e8bcbabdea9693ee6261dfdd052b7238177fcf528ac79129b1bd0c1fc91",
+      "decision": "Source data only; adapted bounded workflow, no inherited instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-textgen/SKILL.md",
+      "bytes": 7329,
+      "sha256": "389c62c99d7ee0f89a0d606babcf02c000c794ed670bc18bbc8adc74f1c74cea",
+      "decision": "Source data only; adapted bounded workflow, no inherited instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-textgen/_meta.json",
+      "bytes": 82,
+      "sha256": "c0b967f5ce3dd2db32d90039726b6c3e90486666e4ab45609648817beeba87e9",
+      "decision": "Source data only; adapted bounded workflow, no inherited instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-textgen/references/api.md",
+      "bytes": 5575,
+      "sha256": "511c7e201c814b9c291c694f68b01918b33041eb6e173a28668c97a6a02c1cef",
+      "decision": "Source data only; adapted bounded workflow, no inherited instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen/SKILL.md",
+      "bytes": 4811,
+      "sha256": "3a633e0acc05d186cd5a378fa205bc0f45a03101d702d57b7a89b5ff33772431",
+      "decision": "Source data only; adapted bounded workflow, no inherited instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen/_meta.json",
+      "bytes": 83,
+      "sha256": "c39599bbe869901cfd36b01d23a61dd1d02b3504f5b2f75f9192015ced5cd4c7",
+      "decision": "Source data only; adapted bounded workflow, no inherited instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen/references/api.md",
+      "bytes": 6770,
+      "sha256": "b989669ac689842ce18f50096c2de4f47903c4966412ac5b0ce79e68f3aab1c5",
+      "decision": "Source data only; adapted bounded workflow, no inherited instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen-multi/SKILL.md",
+      "bytes": 4966,
+      "sha256": "9b29364203f9b06023f7ee89ea52c7538d52148bfbabbb9f1474f1f1dbe1375b",
+      "decision": "Source data only; adapted bounded workflow, no inherited instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen-multi/references/api.md",
+      "bytes": 6685,
+      "sha256": "d6bbbbbb0fb206cabecc8645d8c757f1b1f072ecc37f4e48c301c7f6bb777ef9",
+      "decision": "Source data only; adapted bounded workflow, no inherited instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen-sale/SKILL.md",
+      "bytes": 18055,
+      "sha256": "4678c746bac85ea37a9eda8e42298b05f37deadb84441f489682c070e12aea8f",
+      "decision": "Source data only; adapted bounded workflow, no inherited instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen-sale/_meta.json",
+      "bytes": 121,
+      "sha256": "3ddbfada0a943951f9e0906c7afe5fc4ae9dc185a362c966609461769439196b",
+      "decision": "Source data only; adapted bounded workflow, no inherited instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen-sale/examples/test-cases.md",
+      "bytes": 1902,
+      "sha256": "f6435f82c27679f82de34ebea994ac1d8ee227d79a75ad64a77c07766f3b8e91",
+      "decision": "Source data only; adapted bounded workflow, no inherited instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen-sale/references/api.md",
+      "bytes": 2271,
+      "sha256": "7797f6ef991ad508c86df147748d3e4d333a659d9bf82737a54dd9d08057ebf0",
+      "decision": "Source data only; adapted bounded workflow, no inherited instruction authority"
+    },
+    {
+      "path": "skills/linkfox-aigc-videogen-sale/references/prompt.md",
+      "bytes": 8683,
+      "sha256": "19fbff0013791d533877f90f1022b4347776be97c2f20df101cd95fb52e400ac",
+      "decision": "Source data only; adapted bounded workflow, no inherited instruction authority"
+    }
+  ],
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 287,
+      "sha256": "129aee792f16997a86993fdec8c00bb84498bb5a39bd82b32446c7e1254278eb"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 2946,
+      "sha256": "983745fe45e3f6fc6a58eb38a4598972a2dbbfc4a0c8ed08b1cf8032ddba6c8f"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 1655,
+      "sha256": "a0b7ee4ad426448204ee1b3605e9a1800981283f5fd9397917962625deb0dfd2"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 634,
+      "sha256": "a66a5fb16e5aaded9ba83cdac4bb744442960e26d0adddb804ce7e4c71c27886"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 1932,
+      "sha256": "ede2ea1b03736c802c01c6125c9adf0e6cb0c74a1a35a2c0cbca8e5011b1d6da"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 582,
+      "sha256": "76ef1daf9240c9a69e9be8362245be53edf1865b3d418b1f7549b1308d9f94bd"
+    },
+    {
+      "path": "examples/plan.json",
+      "bytes": 2539,
+      "sha256": "659f42faf89b7a12d8186d3d7efb66d5fbd0e54c245743cf8f557c00a8e13a8f"
+    },
+    {
+      "path": "examples/workflow.md",
+      "bytes": 441,
+      "sha256": "d052158078932a7da9ad1959a8de45d917334f61d3cd495ab3eaa869dc0143e5"
+    },
+    {
+      "path": "references/facts.md",
+      "bytes": 1026,
+      "sha256": "0c590d839ba55638cb19c7ec79ca775a9b0ad30d5566a3a21c075b36e3ec60bf"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 258,
+      "sha256": "83013356a7ec93e8ea64dae2d6303401b8983f5cb646af69f5f251e2b4145df9"
+    },
+    {
+      "path": "references/local-helper.md",
+      "bytes": 2798,
+      "sha256": "61383f6d1b1897725a17a682a686d4aa7557cca3a6d9bbbc20791430da71b256"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 1369,
+      "sha256": "7cb8a9a23e3261b960efe0913bcfd4368bf3c423a7ae297099172b9c986a21b4"
+    },
+    {
+      "path": "references/tool-workflow.md",
+      "bytes": 1723,
+      "sha256": "5087ca5fa343079f3d1b4dfa08271a5749f0a97f31d957e72ddcd453d682c738"
+    },
+    {
+      "path": "scripts/sales_video.py",
+      "bytes": 16098,
+      "sha256": "0092d1b6215c2b98dfc9859f2203d7a70a54b4569ed85882519e5fc7f608abb0"
+    }
+  ],
+  "decisions": {
+    "source_files_modified": false,
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "network_scripts": false,
+    "credential_copy": false,
+    "automatic_feedback": false,
+    "local_upload_implemented": false,
+    "automatic_download_implemented": false,
+    "real_validation": "Local actual App pending; LinkFox account online NOT RUN"
+  }
+}

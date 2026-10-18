@@ -1,0 +1,221 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-17T00:00:00+08:00",
+  "content_version": "0.1.0",
+  "source_root": "plugins/yijie-desktop-skills/experts/linkfox-expert-aigc-imagegen-mannequin-to-model/skills/mannequin-to-model",
+  "review_kind": "source/editorial and local normal protocol/helper review; not live service/model validation",
+  "original_package": {
+    "id": "linkfox-expert-aigc-imagegen-mannequin-to-model",
+    "version": "2.1.0"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "bytes": 2289,
+      "sha256": "2271382bd0712d3209e5de6d8354b4d42dd783f99c03732b0a8a732c5589a87a",
+      "decision": "Mapped identity to YiJie manifest and fixed provider; no WorkBuddy registration"
+    },
+    {
+      "path": ".downloaded_at",
+      "bytes": 24,
+      "sha256": "7482ef337b6408c2fe495aee5322409d30bb1e9709cc652bfdd02ffe029a0e77",
+      "decision": "Retained in source archive for provenance only"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1092,
+      "sha256": "e71aaf16a7dc019d07f27c08ca564fd04e7f09966d95e9d258656983d497f3e5",
+      "decision": "Methods adapted into a single YiJie ROLE and private references; original instructions are source data"
+    },
+    {
+      "path": "agents/linkfox-expert-aigc-imagegen-mannequin-to-model.md",
+      "bytes": 3758,
+      "sha256": "f0ad70076001e835bf9da6daad32003595aa422265fe3cbffc6ab115eb066300",
+      "decision": "Methods adapted into a single YiJie ROLE and private references; original instructions are source data"
+    },
+    {
+      "path": "avatars/expert.png",
+      "bytes": 336844,
+      "sha256": "9a0f5bdcb08dc61568e88ac13a005f38da0cff6878de8858466bdec2d1ef6bd0",
+      "decision": "Existing UI-only avatar; excluded from runtime knowledge"
+    },
+    {
+      "path": "skills/linkfox-aigc-imagegen/SKILL.md",
+      "bytes": 4857,
+      "sha256": "bf1fe6369d4d0286cf9e801a9062e4a600a117435be04e2f26015ef44a794a7b",
+      "decision": "Methods adapted into a single YiJie ROLE and private references; original instructions are source data"
+    },
+    {
+      "path": "skills/linkfox-aigc-imagegen/_meta.json",
+      "bytes": 83,
+      "sha256": "0f88651db3eeefbaa39e5c2bb336c36ce32a4974ddbcbb2a3ce9cc7ea398907f",
+      "decision": "Retained in source archive for provenance only"
+    },
+    {
+      "path": "skills/linkfox-aigc-imagegen/references/api.md",
+      "bytes": 5886,
+      "sha256": "87dc8a97bd6aeee77cc8d37e7b47c3b07d2f0cf78155ba4f6c4598a56d2536ec",
+      "decision": "Methods adapted into a single YiJie ROLE and private references; original instructions are source data"
+    },
+    {
+      "path": "skills/linkfox-aigc-imagegen-mannequin-to-model/SKILL.md",
+      "bytes": 3865,
+      "sha256": "c79ab3c94cd3023b9e7cc35e1282103ef026f16f84de31c7e2344b457a7950ff",
+      "decision": "Methods adapted into a single YiJie ROLE and private references; original instructions are source data"
+    },
+    {
+      "path": "skills/linkfox-aigc-imagegen-mannequin-to-model/_meta.json",
+      "bytes": 102,
+      "sha256": "6534cb8547d87800396a40e858a36752584c5345d0c8b43537942594ca14589a",
+      "decision": "Retained in source archive for provenance only"
+    },
+    {
+      "path": "skills/linkfox-aigc-imagegen-mannequin-to-model/references/data-fields.md",
+      "bytes": 1775,
+      "sha256": "f7eb456fbef451f666ef9b2a16a072cc13c34eae1260f208c3296d49d1ef7361",
+      "decision": "Methods adapted into a single YiJie ROLE and private references; original instructions are source data"
+    },
+    {
+      "path": "skills/linkfox-aigc-imagegen-mannequin-to-model/references/workflow.md",
+      "bytes": 2409,
+      "sha256": "e4c2744ffb1f263687137c1a142b3d6753a33730e6d8bfad5282966875e37874",
+      "decision": "Methods adapted into a single YiJie ROLE and private references; original instructions are source data"
+    },
+    {
+      "path": "skills/linkfox-aigc-imagegen-mannequin-to-model/scripts/build_textgen_params.py",
+      "bytes": 3489,
+      "sha256": "6e5e6a8309526786eaa56f1d6590f0907da5355bd63c9572137c1b7350bda91c",
+      "decision": "Replaced by standard-library no-network request/receipt helper; no old hardcoded model or overwriting output"
+    },
+    {
+      "path": "skills/linkfox-aigc-imagegen-mannequin-to-model/scripts/templates/mannequin.txt",
+      "bytes": 3098,
+      "sha256": "5c73ea64e208f29e6512266f0271c59bc4d1b37d6ed0449a30a8857ace9c6e92",
+      "decision": "Re-authored concise garment-anchor and completion guidance; no exact-identity or fidelity guarantee"
+    },
+    {
+      "path": "skills/linkfox-aigc-textgen/SKILL.md",
+      "bytes": 7329,
+      "sha256": "389c62c99d7ee0f89a0d606babcf02c000c794ed670bc18bbc8adc74f1c74cea",
+      "decision": "Methods adapted into a single YiJie ROLE and private references; original instructions are source data"
+    },
+    {
+      "path": "skills/linkfox-aigc-textgen/_meta.json",
+      "bytes": 82,
+      "sha256": "c0b967f5ce3dd2db32d90039726b6c3e90486666e4ab45609648817beeba87e9",
+      "decision": "Retained in source archive for provenance only"
+    },
+    {
+      "path": "skills/linkfox-aigc-textgen/references/api.md",
+      "bytes": 5575,
+      "sha256": "511c7e201c814b9c291c694f68b01918b33041eb6e173a28668c97a6a02c1cef",
+      "decision": "Methods adapted into a single YiJie ROLE and private references; original instructions are source data"
+    },
+    {
+      "path": "skills/linkfox-file-upload/SKILL.md",
+      "bytes": 1958,
+      "sha256": "3f0653ff39608dbaf7e87c5671ee498eef869a41530083ba93cca9f3dc4e9065",
+      "decision": "Excluded: public upload requires a separate approved connector file-transfer boundary; no Python PUT fallback"
+    },
+    {
+      "path": "skills/linkfox-file-upload/_meta.json",
+      "bytes": 81,
+      "sha256": "d56f2e6b9eebb3f712b3c5660c41b869bb3041aea6509ed23a6ee2920c4b3fb9",
+      "decision": "Excluded: public upload requires a separate approved connector file-transfer boundary; no Python PUT fallback"
+    },
+    {
+      "path": "skills/linkfox-file-upload/references/api.md",
+      "bytes": 1227,
+      "sha256": "478819c0da44e9e1db686ba84a312b06e8bf61d85f1333b713bc77f05529f321",
+      "decision": "Excluded: public upload requires a separate approved connector file-transfer boundary; no Python PUT fallback"
+    },
+    {
+      "path": "skills/linkfox-file-upload/scripts/file_upload.py",
+      "bytes": 1549,
+      "sha256": "7b51c2dd70db35bab428258122796334fadff93071e6573600c93d7adfbdc5a2",
+      "decision": "Excluded: public upload requires a separate approved connector file-transfer boundary; no Python PUT fallback"
+    }
+  ],
+  "decisions": {
+    "source_files_modified": false,
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "credential_copy": false,
+    "network_scripts": false,
+    "automatic_feedback": false,
+    "local_upload_implemented": false,
+    "real_validation": "NOT RUN by current user instruction"
+  },
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 394,
+      "sha256": "3a4650bd4e00d5c05dc046b9eb02d86963ceb2de2de8db56220de9809374476e"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 3093,
+      "sha256": "042a9acb59429f68adccd0a925fa9d83ea8ba1890b2a1b3f23ecd9049703b80c"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 1545,
+      "sha256": "6dc4187cc479c7b11811956055c3e8e94c94d331901e3c92c2e41be0745ec2c1"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 492,
+      "sha256": "ff573906579479e2930c435bad729bf93f1bbb449b0478033939f6a9d9be1352"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 1352,
+      "sha256": "72ac9190050d1fa36a3b87328e45ff5f079cffff52e5914ad5028aeea6deb07a"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 466,
+      "sha256": "3b810b27e0f2be302994ef46819b560b978eeff648fcb2290ad2835d043d91e7"
+    },
+    {
+      "path": "examples/observations.json",
+      "bytes": 428,
+      "sha256": "da3763d75ad66dbdb9c3f25f69e49f60975dfee87a6224e8f77fd55fa64e13eb"
+    },
+    {
+      "path": "examples/request.json",
+      "bytes": 399,
+      "sha256": "7943bf29aeb799bcabc931f4591d465444dd4aac61143565232b96eece611718"
+    },
+    {
+      "path": "references/image-brief.md",
+      "bytes": 1400,
+      "sha256": "ef482c4f622c163db6da1d55982af2128f18d07f7132fb536d8416bc6d6e7f8c"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 240,
+      "sha256": "a5b33cc343375ba9e3fbb90d11391709d699e8e88434c411eb55a7b8b7e083ac"
+    },
+    {
+      "path": "references/local-helper.md",
+      "bytes": 1963,
+      "sha256": "15dc372aba2856a82d3adfeff0dbdabf35ad30ebfe95365c63e14f02387f9463"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 1420,
+      "sha256": "42644afa587e5f264723dc9b40a6ea3f063a93ca4b4ccb7c98b9b624cce33794"
+    },
+    {
+      "path": "references/tool-workflow.md",
+      "bytes": 2475,
+      "sha256": "9656299b27085fa84115af347d90e19a452553f56473e0c49de88e7a45191c74"
+    },
+    {
+      "path": "scripts/prepare_mannequin.py",
+      "bytes": 10932,
+      "sha256": "b1a32d407c53608012c73d797e245371c66787a1820bde6cc8e7f7d89ebc9fcf"
+    }
+  ]
+}

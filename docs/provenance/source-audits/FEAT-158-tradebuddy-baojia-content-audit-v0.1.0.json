@@ -1,0 +1,196 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-16T14:14:59Z",
+  "content_version": "0.1.0",
+  "source_root": "plugins/yijie-desktop-skills/experts/tradebuddy-baojia/skills/local-quotation",
+  "review_kind": "static-source-editorial-and-normal-file-checks",
+  "original_package": {
+    "id": "tradebuddy-baojia",
+    "version": "1.0.5",
+    "export_relative_root": "NextB2B报价专家/原始资源"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "bytes": 2033,
+      "sha256": "7e695cd6daa67f4dfd9fd09fbe0f395712cbab3bc3cd36721478ea1d188ee6b7",
+      "decision": "identity mapped to existing manifest v3; no WorkBuddy registration",
+      "adapted_targets": [
+        "bundle-source.json (parent)"
+      ]
+    },
+    {
+      "path": ".downloaded_at",
+      "bytes": 24,
+      "sha256": "1233bc308f89caf2228e422ee6e81f33fe56b19a18e51fc68780b65d1df8c28c",
+      "decision": "source context preserved in original export; not an executable runtime instruction",
+      "adapted_targets": []
+    },
+    {
+      "path": "README.md",
+      "bytes": 938,
+      "sha256": "1864facbc8bd8e90d5ec8f709aef25370554fc7aeed6351f0a11945540729830",
+      "decision": "source context preserved in original export; not an executable runtime instruction",
+      "adapted_targets": []
+    },
+    {
+      "path": "agents/baojia-expert.md",
+      "bytes": 2782,
+      "sha256": "942e97659d2fe5529cf890a54462456dcb19769efa0fa95f508e253dc660d24f",
+      "decision": "adapted to ROLE/SKILL with explicit local capability boundaries",
+      "adapted_targets": [
+        "ROLE.md",
+        "SKILL.md"
+      ]
+    },
+    {
+      "path": "avatars/baojia-expert.png",
+      "bytes": 340259,
+      "sha256": "7791a6e3aed0f2feb110cdbc1f5571e9dca96d31d5054035ff5fa3c79912097b",
+      "decision": "existing UI ID-mapped presentation only; excluded from runtime archive",
+      "adapted_targets": []
+    },
+    {
+      "path": "skills/_common.md",
+      "bytes": 8787,
+      "sha256": "e84e6574ad8e51b9b601bec73699eab048e9637c08d13214deae1244eeec5c9c",
+      "decision": "methodology adapted to private references; no nested skills/tool permissions or concealed source/error policy",
+      "adapted_targets": [
+        "references/index.md",
+        "references/source-notes.md",
+        "references/file-workflow.md"
+      ]
+    },
+    {
+      "path": "skills/baojiadan-shengcheng/SKILL.md",
+      "bytes": 6078,
+      "sha256": "152007b67bf6d963961ea10b84e1ce6528969dd5456f21efc2d41d3bbd995518",
+      "decision": "methodology adapted to private references; no nested skills/tool permissions or concealed source/error policy",
+      "adapted_targets": [
+        "references/index.md",
+        "references/source-notes.md",
+        "references/file-workflow.md"
+      ]
+    },
+    {
+      "path": "skills/baojiadan-shengcheng/references/asset_api_bridge.md",
+      "bytes": 3710,
+      "sha256": "d9581342619faa4bbe785ef4aeb52e05c485c7b8c56a1018a33f393b5ed4bee1",
+      "decision": "deferred external services; no endpoint/auth copied, local file route adapted",
+      "adapted_targets": [
+        "references/source-notes.md"
+      ]
+    },
+    {
+      "path": "skills/jilu-baojia/SKILL.md",
+      "bytes": 6032,
+      "sha256": "6bd8103ffb65f481afdd129609a3f07e532a43cf07068bf844a29a8742fc1179",
+      "decision": "methodology adapted to private references; no nested skills/tool permissions or concealed source/error policy",
+      "adapted_targets": [
+        "references/index.md",
+        "references/source-notes.md",
+        "references/file-workflow.md"
+      ]
+    },
+    {
+      "path": "skills/jilu-baojia/references/asset_api_bridge.md",
+      "bytes": 3734,
+      "sha256": "01fd73430528f453d8c8b9583fcb63c1582e079b123da66ac01912321652a6e1",
+      "decision": "deferred external services; no endpoint/auth copied, local file route adapted",
+      "adapted_targets": [
+        "references/source-notes.md"
+      ]
+    },
+    {
+      "path": "skills/jilu-baojia/references/doc_bridge.md",
+      "bytes": 1591,
+      "sha256": "5f1b337c9be91ece1d8e120aa155e69bcfa3ea6b809a0f7a6e01ec28ddb292d6",
+      "decision": "deferred external services; no endpoint/auth copied, local file route adapted",
+      "adapted_targets": [
+        "references/source-notes.md"
+      ]
+    }
+  ],
+  "decisions": {
+    "source_files_modified": false,
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "automatic_external_calls": false,
+    "scripts_in_archive": true,
+    "ordinary_skills_changed": false,
+    "previous_expert_versions_changed": false,
+    "model_eval": "separate live acceptance; not asserted by source review"
+  },
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "bytes": 489,
+      "sha256": "f17721f3f95b80e60961a72674b944a7c146e9f549c337636df1a7742dad195d"
+    },
+    {
+      "path": "ROLE.md",
+      "bytes": 1822,
+      "sha256": "51bff95e064bbffecafe1dc99c11361dd1e8bb35c58adb7852bd503ad7b434c6"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 2481,
+      "sha256": "4a6ce227d5039fd42fdf2dc794395a2120c006e87da1d2eda37b0404366e41f8"
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "bytes": 512,
+      "sha256": "2a23bb835a41c60c4d85f1581ba4b74fa093c5ff01ca865e009392bf393a2faf"
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "bytes": 1253,
+      "sha256": "c7e40469da00b6047618805ed2f69828d6d1b9a90725705cd0a8b1389ce527c9"
+    },
+    {
+      "path": "evals/rubric.md",
+      "bytes": 836,
+      "sha256": "bb8355ea1605f919368040cc348e07aef62143383a57a82be3048b3c74e1e710"
+    },
+    {
+      "path": "examples/output-001.md",
+      "bytes": 282,
+      "sha256": "b9679970f1c369d93279531144c1fe18a15723145bbc36e3274d265c365ff83c"
+    },
+    {
+      "path": "examples/quote-config.json",
+      "bytes": 693,
+      "sha256": "d59c2de023fd3ef1cb28cf4486afa06b7bacdbb016a10599f79a26c71dab419f"
+    },
+    {
+      "path": "references/file-workflow.md",
+      "bytes": 1475,
+      "sha256": "33a14357b60be98d74069a4bfd55b1c11787781aa83795be0ea0e6be6710425b"
+    },
+    {
+      "path": "references/index.md",
+      "bytes": 374,
+      "sha256": "676e5a29456a5ad8c577b196a17fee51c987bc71456ce7286c42cac43dc9785a"
+    },
+    {
+      "path": "references/ledger.md",
+      "bytes": 1144,
+      "sha256": "081cd2a8a070ecd322fc2f3e19a6c19ef8a74ba72b81e86614af17b8ba949f58"
+    },
+    {
+      "path": "references/quotation.md",
+      "bytes": 1491,
+      "sha256": "bb1bddc6a43dce5027aba698a67f5e7d4a85a229f8bf1d4620112c54a2c040ce"
+    },
+    {
+      "path": "references/source-notes.md",
+      "bytes": 823,
+      "sha256": "c46840f5cafc0f2a4a5dc533d5719bfe98ad7dcd77ff68706d47f3af6416ac7b"
+    },
+    {
+      "path": "scripts/quotation.py",
+      "bytes": 17647,
+      "sha256": "2904121605b6a096c33f20c37519203cd1bf6c3b98829e53303308476d3df50e"
+    }
+  ]
+}

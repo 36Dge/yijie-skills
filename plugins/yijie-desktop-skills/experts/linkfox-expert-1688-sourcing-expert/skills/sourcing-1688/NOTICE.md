@@ -1,0 +1,2 @@
+# 本地使用说明
+此版本由用户授权在易界本机开发候选适配WorkBuddy专家资源。第三方再分发许可未核实，仅local-development，非Marketplace/生产发布。原来源归其作者，完整文件摘要保留于provenance。无原凭据、外部平台客户端或商家真实数据。

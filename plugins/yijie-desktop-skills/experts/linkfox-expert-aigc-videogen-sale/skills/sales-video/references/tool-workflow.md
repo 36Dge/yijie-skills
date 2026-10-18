@@ -1,0 +1,6 @@
+# LinkFox 工具及任务生命周期
+复用易界现有LinkFox（generic-mcp-v1）连接器：Native显式选择、当前完整schema资格、Host精确ref/scope与逐次批准、Worker一次许可；不新建provider、HTTP客户端或数据库。默认工具风险write，查询也不能绕过审批。
+本地先完成三方案与用户选择。当前工具必须实际提供 proxy_call，且冻结schema支持 {toolName,arguments}。本版请求：aigc/multiImageVideoGenAsync；参数由helper产生。既有16KiB请求审批边界、2000字符prompt、1..9图；SEED/SEED_FAST只作为本地资料审阅子集，不声称当前服务一定可用。voice=true在线支持因原资料矛盾需要账号实测，缺资格停止。
+创建一次后保存原Native操作引用、请求摘要和原taskId。查询仅aigc/taskQuery参数{taskId:原ID}，每次显式请求一次。PROCESSING交代等待，用户后续询问再查询。未知/错误/拒绝/余额不足禁止自动创建重试、换模型或绕审核。收费变化需重新走既有审批，不由user_message文件代替批准。
+多模态图文分析可作为后续需要时通过当前已选LinkFox现有text工具另行明确审批；其输出为观察/候选信息而非商品事实。本版核心从用户已确认商品资料开始，不强制产生额外收费分析，也不把本地方案称远端分析结果。
+MCP错误、代理错误、业务code非200先阻断。structuredContent与文本JSON冲突时unknown；查询任务不匹配时unknown。原服务返回签名URL等本helper不支持格式时，保留当前会话原始结果供人工核对，不截掉签名、代下载或假称生成失败。URL可用不等于已交付本地MP4。

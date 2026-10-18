@@ -1,0 +1,3 @@
+# 四台账与改稿
+
+plot-tracker保存稳定伏笔ID、埋设章、预计回收章、planned/open/resolved及实际回收章；预计未来章用正整数，未定用null，不提前宣称已回收。timeline按故事内sequence排序并标time_label与叙事章节，可支持回忆；序号唯一。character-state为每个人物一条当前状态、截至章节和已知事实；relationships保存双端人物与最近变化。每章有fact_ids引用，facts记录首次确立章节，世界初始规则用null。章节摘要与正文必须一致。改稿时读旧版本，稳定ID不删除，新增版本并写原因；变更Bible/人物/事实自动列旧章节影响，未改的受影响章节标待复核。程序不能理解所有矛盾，必须逐章阅读比对，不将JSON可解析当连续性零矛盾。

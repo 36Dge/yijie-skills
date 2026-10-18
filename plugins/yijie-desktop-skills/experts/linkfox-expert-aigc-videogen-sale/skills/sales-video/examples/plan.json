@@ -1,0 +1,123 @@
+{
+  "brief": {
+    "product_name": "蓝色350mL杯",
+    "source_reference": "用户确认资料 product.txt",
+    "language": "English",
+    "sales_region": "United Kingdom",
+    "target_audience": "Adult commuters",
+    "actor": "A neutral adult presenter, no celebrity resemblance",
+    "claims": [
+      {
+        "id": "color",
+        "source_text": "商品是蓝色杯子",
+        "spoken_text": "A blue cup.",
+        "source_reference": "product.txt:1"
+      },
+      {
+        "id": "capacity",
+        "source_text": "容量350mL",
+        "spoken_text": "It holds 350 millilitres.",
+        "source_reference": "product.txt:2"
+      }
+    ],
+    "unknowns": [
+      "材质未知",
+      "保温时长未知",
+      "认证未知",
+      "价格和优惠未知"
+    ],
+    "image_urls": [
+      "https://media.example.com/blue-cup.png"
+    ],
+    "video": {
+      "videoType": "SEED_FAST",
+      "videoTime": 15,
+      "aspectRatio": "9:16",
+      "resolution": "720p",
+      "voice": true
+    }
+  },
+  "schemes": [
+    {
+      "id": 1,
+      "title": "人物展示",
+      "shots": [
+        {
+          "seconds": 5,
+          "framing": "presenter_hold",
+          "claim_ids": [
+            "color"
+          ]
+        },
+        {
+          "seconds": 5,
+          "framing": "product_closeup",
+          "claim_ids": [
+            "capacity"
+          ]
+        },
+        {
+          "seconds": 5,
+          "framing": "packshot",
+          "claim_ids": [
+            "color"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "细节观察",
+      "shots": [
+        {
+          "seconds": 5,
+          "framing": "product_closeup",
+          "claim_ids": [
+            "color"
+          ]
+        },
+        {
+          "seconds": 5,
+          "framing": "tabletop",
+          "claim_ids": [
+            "capacity"
+          ]
+        },
+        {
+          "seconds": 5,
+          "framing": "presenter_hold",
+          "claim_ids": [
+            "color"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "桌面展示",
+      "shots": [
+        {
+          "seconds": 5,
+          "framing": "tabletop",
+          "claim_ids": [
+            "color"
+          ]
+        },
+        {
+          "seconds": 5,
+          "framing": "presenter_hold",
+          "claim_ids": [
+            "capacity"
+          ]
+        },
+        {
+          "seconds": 5,
+          "framing": "packshot",
+          "claim_ids": [
+            "color"
+          ]
+        }
+      ]
+    }
+  ]
+}

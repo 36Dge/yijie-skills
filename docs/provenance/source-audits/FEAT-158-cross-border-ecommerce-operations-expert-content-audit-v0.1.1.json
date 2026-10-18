@@ -1,0 +1,290 @@
+{
+  "feature": "FEAT-158",
+  "reviewed_at": "2026-10-16T12:00:00Z",
+  "content_version": "0.1.1",
+  "source_root": "plugins/yijie-desktop-skills/experts/cross-border-ecommerce-operations-expert/versions/0.1.1/cross-border-operations",
+  "review_kind": "v011 factual-grounding repair; previous failure retained; real eval required",
+  "original_package": {
+    "id": "cross-border-ecommerce-operations-expert",
+    "version": "1.2.2",
+    "export_relative_root": "跨境电商运营专家/原始资源",
+    "author": "WorkBuddy Developer（原 LICENSE 署名）"
+  },
+  "source_files": [
+    {
+      "path": ".codebuddy-plugin/plugin.json",
+      "sha256": "e217740ce053c41629d8136a6ae9fdfff61a5b346f4334ec153cb54ba1b8468c",
+      "bytes": 2508,
+      "decision": "identity and scope mapped to existing v3 metadata; host registration not imported",
+      "adapted_targets": [
+        "bundle-source.json (parent)"
+      ]
+    },
+    {
+      "path": ".downloaded_at",
+      "sha256": "934b6cee363b844fa3feb58028dec24ccfb858641a6522db470faa4ff5b7946a",
+      "bytes": 24,
+      "decision": "reviewed source context or installation marker; not included in runtime package",
+      "adapted_targets": [
+        "NOTICE.md",
+        "references/source-notes.md"
+      ]
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "a5bac2bd6283c77775b786089c912c5f20a21b3bd1065120af51308288fbde81",
+      "bytes": 1075,
+      "decision": "retained byte-exact",
+      "adapted_targets": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "README.md",
+      "sha256": "3f51925cabb6bf44810082fff28013b37f9d8017f9f32170f6383631252697b5",
+      "bytes": 1479,
+      "decision": "reviewed source context or installation marker; not included in runtime package",
+      "adapted_targets": [
+        "NOTICE.md",
+        "references/source-notes.md"
+      ]
+    },
+    {
+      "path": "agents/cross-border-ecommerce-operations-expert.md",
+      "sha256": "baf132fc9d5e834b0d4d70193118f254cb378da7de10d7197d6919e50879c295",
+      "bytes": 4821,
+      "decision": "adapted to short ROLE without host settings or automatic authorizations",
+      "adapted_targets": [
+        "ROLE.md",
+        "SKILL.md"
+      ]
+    },
+    {
+      "path": "avatars/expert.png",
+      "sha256": "4ea48cfa7caac462a0097270372db4dcf4d832ddf9ea6a5ca454def0614ab8c8",
+      "bytes": 47752,
+      "decision": "UI resource only; not included in executable resource package",
+      "adapted_targets": []
+    },
+    {
+      "path": "skills/ecommerce-image-copywriter/SKILL.md",
+      "sha256": "0763cb3da136fe65c21afc15ee7e9ecda4343d5780f4338fc67b0cc46da903d5",
+      "bytes": 1862,
+      "decision": "converted to private reference; no nested SKILL registration",
+      "adapted_targets": [
+        "references/image-copy.md"
+      ]
+    },
+    {
+      "path": "skills/ecommerce-image-copywriter/references/copywriting-guide.md",
+      "sha256": "d90840f498abc071e38703a35bacd86c8ee614d501c5b83a37f337b8ea645c30",
+      "bytes": 822,
+      "decision": "converted to private reference; no nested SKILL registration",
+      "adapted_targets": [
+        "references/image-copy.md"
+      ]
+    },
+    {
+      "path": "skills/ecommerce-pipeline-advisor/SKILL.md",
+      "sha256": "da2f33f42628403a3cda53e8596e6eabfef2b20bed44afc4835fecd4bb666f55",
+      "bytes": 3045,
+      "decision": "converted to private reference; no nested SKILL registration",
+      "adapted_targets": [
+        "references/pipeline.md"
+      ]
+    },
+    {
+      "path": "skills/ecommerce-pipeline-advisor/references/listing-checklist.md",
+      "sha256": "d51982fc18e52fba56c84b245d99bdb787f48dd7998494bd8acd9fbc3437c822",
+      "bytes": 1128,
+      "decision": "converted to private reference; no nested SKILL registration",
+      "adapted_targets": [
+        "references/pipeline.md"
+      ]
+    },
+    {
+      "path": "skills/ecommerce-pipeline-advisor/references/scoring-guide.md",
+      "sha256": "c98dcee48d663ded18f7bd2d06d0a274970eb730918ada423dfb715cf509c56e",
+      "bytes": 882,
+      "decision": "converted to private reference; no nested SKILL registration",
+      "adapted_targets": [
+        "references/pipeline.md"
+      ]
+    },
+    {
+      "path": "skills/ecommerce-video-marketing/SKILL.md",
+      "sha256": "e6440647683f2d6452cfb42b36566d22942ad9521874b7688f58434ffaf2905c",
+      "bytes": 1720,
+      "decision": "converted to private reference; no nested SKILL registration",
+      "adapted_targets": [
+        "references/video-marketing.md"
+      ]
+    },
+    {
+      "path": "skills/ecommerce-video-marketing/references/script-guide.md",
+      "sha256": "6678377c6b6719f172239f6aa502fa8d7a2af81772de432fe6151247cedc89ed",
+      "bytes": 632,
+      "decision": "converted to private reference; no nested SKILL registration",
+      "adapted_targets": [
+        "references/video-marketing.md"
+      ]
+    },
+    {
+      "path": "skills/product-marketing-longform/SKILL.md",
+      "sha256": "f0aff27bff7840f98105b747e9bf612bb16507a2cd7fdfad7339ea4509b69856",
+      "bytes": 1753,
+      "decision": "converted to private reference; no nested SKILL registration",
+      "adapted_targets": [
+        "references/longform.md"
+      ]
+    },
+    {
+      "path": "skills/product-marketing-longform/references/marketing-guide.md",
+      "sha256": "eec3d75f286abac1456f84f2dd97d328170689cab7e538620a43cefb6c9fbd9e",
+      "bytes": 528,
+      "decision": "converted to private reference; no nested SKILL registration",
+      "adapted_targets": [
+        "references/longform.md"
+      ]
+    },
+    {
+      "path": "skills/product-video-creator/SKILL.md",
+      "sha256": "a46291149e9d5c5aa214146e67de26dc52602127a10bd3b3847864788bec554c",
+      "bytes": 2270,
+      "decision": "converted to private reference; no nested SKILL registration",
+      "adapted_targets": [
+        "references/production-plan.md"
+      ]
+    },
+    {
+      "path": "skills/product-video-creator/references/storyboard-format.md",
+      "sha256": "021318259a3feaeed0d29d25938e75a2551d1df4d27c1855f2a2bb48bf71576a",
+      "bytes": 589,
+      "decision": "converted to private reference; no nested SKILL registration",
+      "adapted_targets": [
+        "references/production-plan.md"
+      ]
+    },
+    {
+      "path": "skills/qingflow-handoff/SKILL.md",
+      "sha256": "065552f4579682fb7bf8e06a9346d2b07bdb109d16b06506d53e4ef349fc433e",
+      "bytes": 1655,
+      "decision": "converted to private reference; no nested SKILL registration",
+      "adapted_targets": [
+        "references/qingflow-handoff.md"
+      ]
+    },
+    {
+      "path": "skills/qingflow-handoff/references/qingflow-connector-contract.md",
+      "sha256": "5a2f42f9439593a07180c6df48f3b8525d59f13d9b81113891a4bd0d9107355c",
+      "bytes": 542,
+      "decision": "converted to private reference; no nested SKILL registration",
+      "adapted_targets": [
+        "references/qingflow-handoff.md"
+      ]
+    }
+  ],
+  "decisions": {
+    "source_files_modified": false,
+    "third_party_avatar_in_archive": false,
+    "local_development_authorized": true,
+    "desktop_redistribution_verified": false,
+    "automatic_external_calls": false,
+    "model_eval": "tracked separately by root implementation verification; not asserted by content audit",
+    "scripts_in_archive": false,
+    "ordinary_skills_changed": false,
+    "jd_expert_changed": false
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "c400ea200b65099a1afff61afd8932bb2b18006a921c603c95b81ade4090a186",
+      "bytes": 1076
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "4c561d29dd3e6da5af5c7e66aba37b64d2411e0589530c91d61a85bfddaf9125",
+      "bytes": 702
+    },
+    {
+      "path": "ROLE.md",
+      "sha256": "995e803f51e8b55d34a3d43b80a7fe9d0b579fcf0fda633506e733499bcc3517",
+      "bytes": 2536
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "820b2b4ffc7fb65f917862c74af43dc87c5082b6d98e8ea2fd8b09e3601b2d74",
+      "bytes": 2948
+    },
+    {
+      "path": "checklists/quality-checklist.md",
+      "sha256": "c4f8fdbe5f67e58271267d3fd60dfc56132ea93f3fc9ca773c47d912497e3819",
+      "bytes": 614
+    },
+    {
+      "path": "evals/dataset.jsonl",
+      "sha256": "0c05dc9fd18da12410e8f21b3323ba1c2280d0481cab2e14ddbc45bfdbf0774a",
+      "bytes": 2511
+    },
+    {
+      "path": "evals/rubric.md",
+      "sha256": "379e6c6d1ddec3134a4eefdc107e9cc1fd2214614a112a2946968ebf407defbf",
+      "bytes": 1331
+    },
+    {
+      "path": "examples/input-001.json",
+      "sha256": "0511914366663da918a3939e3407023599f464132004ea6bffb80afcd7df4504",
+      "bytes": 232
+    },
+    {
+      "path": "examples/output-001.md",
+      "sha256": "1b89817ccd07a1957a02900eed922bbc21314963debd4fd350c500162e8a5af9",
+      "bytes": 891
+    },
+    {
+      "path": "references/claim-ledger.md",
+      "sha256": "72bbc83da05ca691ed2eabf3aaf6611c6f354282ca2da3740a619fb0ebd13838",
+      "bytes": 2152
+    },
+    {
+      "path": "references/image-copy.md",
+      "sha256": "f8abcb7b23f96549fd3b2d26250bdc9ded275c18d2601660ac7f8510f15dba7c",
+      "bytes": 984
+    },
+    {
+      "path": "references/index.md",
+      "sha256": "ec58fd7a846c452edc3d254729b0d7fa2711a6e6b1cf33c527053ed238e7f501",
+      "bytes": 1154
+    },
+    {
+      "path": "references/longform.md",
+      "sha256": "430c70b9d71e6eaaa97b8b3d336ef5135356041eb9504f5566a17c1b597759ef",
+      "bytes": 966
+    },
+    {
+      "path": "references/pipeline.md",
+      "sha256": "254a3ae708e9fb78b6280dc45c6643b75ff75c8184015c7d4db9d85a66e9e037",
+      "bytes": 2410
+    },
+    {
+      "path": "references/production-plan.md",
+      "sha256": "ac4007cb0df4782dca4556b28e5ca893795f3c583a3a294f30060890268c78a2",
+      "bytes": 1338
+    },
+    {
+      "path": "references/qingflow-handoff.md",
+      "sha256": "53aad7211c4e44a691bf36fde26f28d643c47b34a054655ffb8864213ab047f2",
+      "bytes": 1663
+    },
+    {
+      "path": "references/source-notes.md",
+      "sha256": "19b8efc4640f95a1c01c43bae8154d6282e878a2485f261520213928d94d6596",
+      "bytes": 736
+    },
+    {
+      "path": "references/video-marketing.md",
+      "sha256": "ae284b44db41ee26d45548bae67b179ba791212fee01405211c6689b75d3095e",
+      "bytes": 1132
+    }
+  ]
+}

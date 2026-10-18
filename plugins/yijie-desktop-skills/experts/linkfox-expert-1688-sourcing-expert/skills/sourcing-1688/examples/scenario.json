@@ -1,0 +1,228 @@
+{
+  "scenario_id": "synthetic-us-one-unit",
+  "observations": [
+    {
+      "query": {
+        "method": "keepa/productRequest",
+        "target_asin": "B0TEST0001",
+        "market": "US"
+      },
+      "request": {
+        "toolName": "keepa/productRequest",
+        "arguments": {
+          "asin": "B0TEST0001",
+          "domain": "1",
+          "history": 0
+        }
+      },
+      "source_operation_id": "synthetic-product",
+      "captured_at": "2026-10-17T02:00:00Z",
+      "mcp_result": {
+        "structuredContent": {
+          "errcode": 200,
+          "products": [
+            {
+              "asin": "B0TEST0001",
+              "currency": "USD",
+              "price": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "query": {
+        "method": "dld/productSearch",
+        "target_asin": "B0TEST0001",
+        "market": "US",
+        "keyword": "桌面收纳架"
+      },
+      "request": {
+        "toolName": "dld/productSearch",
+        "arguments": {
+          "keyWord": "桌面收纳架",
+          "cycle": "30",
+          "searchType": 1,
+          "pageIndex": 1,
+          "pageSize": 20
+        }
+      },
+      "source_operation_id": "synthetic-supplier",
+      "captured_at": "2026-10-17T02:00:00Z",
+      "mcp_result": {
+        "structuredContent": {
+          "errcode": 200,
+          "products": [
+            {
+              "offerId": "16880001",
+              "asin": "16880001",
+              "currency": "CNY",
+              "price": 36,
+              "quantityBegin": 100,
+              "title": "收纳架 & 配件"
+            }
+          ]
+        }
+      },
+      "offer_id": "16880001"
+    }
+  ],
+  "candidates": [
+    {
+      "target_asin": "B0TEST0001",
+      "market": "US",
+      "offer_id": "16880001",
+      "variant": "蓝色单件装",
+      "supplier_source": "synthetic-supplier",
+      "quote": {
+        "variant": "蓝色单件装",
+        "purchase_quantity": 100,
+        "minimum_order_quantity": 100,
+        "price_basis": "CNY/purchase_unit",
+        "confirmed_at": "2026-10-17T02:00:00Z",
+        "source": "synthetic-user-quotation",
+        "note": "普通合成报价；确认蓝色单件装每采购单位36元，100件档位。"
+      },
+      "costs": {
+        "sale_usd": {
+          "value": "30",
+          "unit": "USD/sale",
+          "basis": "observed",
+          "source": "synthetic-product",
+          "as_of": "2026-10-17T02:00:00Z",
+          "note": "普通合成情景，非当前平台费率；0项明确假设无回收抵减。",
+          "field": "price"
+        },
+        "purchase_cny": {
+          "value": "36",
+          "unit": "CNY/purchase_unit",
+          "basis": "observed",
+          "source": "synthetic-supplier",
+          "as_of": "2026-10-17T02:00:00Z",
+          "note": "普通合成情景，非当前平台费率；0项明确假设无回收抵减。",
+          "field": "price"
+        },
+        "fx_cny_per_usd": {
+          "value": "7.2",
+          "unit": "CNY/USD",
+          "basis": "user_scenario",
+          "source": "synthetic-user-scenario",
+          "as_of": "2026-10-17T02:00:00Z",
+          "note": "普通合成情景，非当前平台费率；0项明确假设无回收抵减。"
+        },
+        "purchase_units_per_sale": {
+          "value": "1",
+          "unit": "purchase_units/sale",
+          "basis": "user_scenario",
+          "source": "synthetic-user-scenario",
+          "as_of": "2026-10-17T02:00:00Z",
+          "note": "普通合成情景，非当前平台费率；0项明确假设无回收抵减。"
+        },
+        "inbound_usd": {
+          "value": "2",
+          "unit": "USD/sale",
+          "basis": "user_scenario",
+          "source": "synthetic-user-scenario",
+          "as_of": "2026-10-17T02:00:00Z",
+          "note": "普通合成情景，非当前平台费率；0项明确假设无回收抵减。"
+        },
+        "fba_usd": {
+          "value": "4",
+          "unit": "USD/sale",
+          "basis": "user_scenario",
+          "source": "synthetic-user-scenario",
+          "as_of": "2026-10-17T02:00:00Z",
+          "note": "普通合成情景，非当前平台费率；0项明确假设无回收抵减。"
+        },
+        "referral_usd": {
+          "value": "4.5",
+          "unit": "USD/sale",
+          "basis": "user_scenario",
+          "source": "synthetic-user-scenario",
+          "as_of": "2026-10-17T02:00:00Z",
+          "note": "普通合成情景，非当前平台费率；0项明确假设无回收抵减。"
+        },
+        "advertising_usd": {
+          "value": "0.5",
+          "unit": "USD/sale",
+          "basis": "user_scenario",
+          "source": "synthetic-user-scenario",
+          "as_of": "2026-10-17T02:00:00Z",
+          "note": "普通合成情景，非当前平台费率；0项明确假设无回收抵减。"
+        },
+        "storage_usd": {
+          "value": "0.2",
+          "unit": "USD/sale",
+          "basis": "user_scenario",
+          "source": "synthetic-user-scenario",
+          "as_of": "2026-10-17T02:00:00Z",
+          "note": "普通合成情景，非当前平台费率；0项明确假设无回收抵减。"
+        },
+        "placement_usd": {
+          "value": "0.3",
+          "unit": "USD/sale",
+          "basis": "user_scenario",
+          "source": "synthetic-user-scenario",
+          "as_of": "2026-10-17T02:00:00Z",
+          "note": "普通合成情景，非当前平台费率；0项明确假设无回收抵减。"
+        },
+        "other_usd": {
+          "value": "0.2",
+          "unit": "USD/sale",
+          "basis": "user_scenario",
+          "source": "synthetic-user-scenario",
+          "as_of": "2026-10-17T02:00:00Z",
+          "note": "普通合成情景，非当前平台费率；0项明确假设无回收抵减。"
+        },
+        "return_rate": {
+          "value": "0.1",
+          "unit": "returns/sale",
+          "basis": "user_scenario",
+          "source": "synthetic-user-scenario",
+          "as_of": "2026-10-17T02:00:00Z",
+          "note": "普通合成情景，非当前平台费率；0项明确假设无回收抵减。"
+        },
+        "refunded_revenue_usd": {
+          "value": "30",
+          "unit": "USD/return",
+          "basis": "user_scenario",
+          "source": "synthetic-user-scenario",
+          "as_of": "2026-10-17T02:00:00Z",
+          "note": "普通合成情景，非当前平台费率；0项明确假设无回收抵减。"
+        },
+        "referral_refund_usd": {
+          "value": "4.5",
+          "unit": "USD/return",
+          "basis": "user_scenario",
+          "source": "synthetic-user-scenario",
+          "as_of": "2026-10-17T02:00:00Z",
+          "note": "普通合成情景，非当前平台费率；0项明确假设无回收抵减。"
+        },
+        "refund_admin_usd": {
+          "value": "0.9",
+          "unit": "USD/return",
+          "basis": "user_scenario",
+          "source": "synthetic-user-scenario",
+          "as_of": "2026-10-17T02:00:00Z",
+          "note": "普通合成情景，非当前平台费率；0项明确假设无回收抵减。"
+        },
+        "return_handling_usd": {
+          "value": "1",
+          "unit": "USD/return",
+          "basis": "user_scenario",
+          "source": "synthetic-user-scenario",
+          "as_of": "2026-10-17T02:00:00Z",
+          "note": "普通合成情景，非当前平台费率；0项明确假设无回收抵减。"
+        },
+        "recovery_usd": {
+          "value": "0",
+          "unit": "USD/return",
+          "basis": "user_scenario",
+          "source": "synthetic-user-scenario",
+          "as_of": "2026-10-17T02:00:00Z",
+          "note": "普通合成情景，非当前平台费率；0项明确假设无回收抵减。"
+        }
+      }
+    }
+  ]
+}
