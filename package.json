@@ -19,6 +19,6 @@
   "devDependencies": {
     "ajv": "8.20.0",
     "ajv-formats": "3.0.1",
-    "smol-toml": "1.7.0"
+    "smol-toml": "1.9.1"
   }
 }

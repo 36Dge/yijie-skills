@@ -11,6 +11,14 @@ pnpm test
 pnpm package
 ```
 
+完整测试需要相邻的 `yijie-connectors` 检出，其中
+`worker/fixtures/linkfox-sale-request.json` 是口播专家请求对照的唯一 fixture；
+本仓不保留副本，缺失时测试必须失败。CI 沿现有 Desktop 多仓目录布局将两个仓库放为兄弟目录，
+只稀疏检出 Connectors 的这一个文件，并在
+[CI workflow](.github/workflows/ci.yml) 固定完整提交
+`e2792f9be5b52cc22d99788157855131224c80dc`。更新来源时修改该明确 pin 并重新运行完整检查，
+不改为浮动分支、不复制 fixture、不跳过跨仓一致性断言。
+
 `pnpm package` 生成 FEAT-129 的确定性 Desktop `local-development` Bundle；
 `pnpm package:desktop-release` 生成内容相同、渠道标记为 `desktop-release` 的正式分发 Bundle：
 

@@ -11,13 +11,31 @@ concurrency:
 jobs:
   skills:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: yijie-skills
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          path: yijie-skills
+          persist-credentials: false
+      - name: Checkout canonical Connectors fixture
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          repository: 36Dge/yijie-connectors
+          ref: e2792f9be5b52cc22d99788157855131224c80dc
+          path: yijie-connectors
+          persist-credentials: false
+          sparse-checkout: /worker/fixtures/linkfox-sale-request.json
+          sparse-checkout-cone-mode: false
       - uses: pnpm/action-setup@d15e628ca66d93ee5f352c71671a7bc6a97af5c9 # v6.0.8
+        with:
+          package_json_file: yijie-skills/package.json
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
         with:
           node-version: 24
           cache: pnpm
+          cache-dependency-path: yijie-skills/pnpm-lock.yaml
       - run: pnpm install --frozen-lockfile
       - run: make lint
       - run: make test
