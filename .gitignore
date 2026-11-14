@@ -7,3 +7,6 @@ evals/reports/
 coverage/
 dist/
 *.log
+
+# Temporary native-skill source reproduction outputs; retain them locally.
+/.local/feat174-source-reproduction-*/
